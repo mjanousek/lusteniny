@@ -243,6 +243,8 @@
 					minutes: ["minuta", "minuty", "minut"]
 				};
 
+				var interval;
+
 				// Return czech text for unit
 				function formatTimeUnit(count, unit) {
 					if (count == 1) {
@@ -271,9 +273,9 @@
 				    return text;
 				}
 
-
-				function updateCountdownElement(countDownDate) {
-
+				// Updates countdown container
+				var updateCountdownElement = function(countDownDate) {
+					console.log("update")
 					// Get todays date and time
 					var now = new Date().getTime();
 
@@ -288,24 +290,34 @@
 					}
 
 					// Display the result in the element with id="demo"
-					document.getElementById("countdown").innerHTML = getRemainingTimeText(remainingTime)
+					document.getElementById("countdown").innerHTML = getRemainingTimeText(remainingTime);
 
-					// If the count down is finished, write some text
-					if (distance < 0) {
-						clearInterval(x);
+					// If the count down is finished and competition is in progress, write some text
+					if (-14400000 < distance && distance < 0) {
 						document.getElementById("countdown").innerHTML = "Soutěž právě probíhá!";
 						document.getElementById("countdown-header").style.display = 'none';
+
+					// If the competition is in progress, write some text
+					} else if (distance < 0) {
+						clearInterval(interval);
+						// Hide elements
+						document.getElementById("countdown-header").style.display = 'none';
+						document.getElementById("countdown").style.display = 'none';
+
+						// Show elements
+						document.getElementById("finish").style.display = 'block';
+						document.getElementById("finish-btn").style.display = 'inline-block';
 					}
 				}
 
 				// Set the date we're counting down to
-				var countDownDate = new Date("Nov 17, 2018 13:00:00").getTime();
+				var countDownDate = new Date("Oct 28, 2018 18:43:00").getTime();
 
 				// Update the count down now
 				updateCountdownElement(countDownDate);
 
 				// Update the count down every 1 second
-				var x = setInterval(updateCountdownElement(countDownDate), 5000);
+				interval = setInterval(function(){updateCountdownElement(countDownDate);}, 5000);
 			</script>
 		</div>
 	</div>
