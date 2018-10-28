@@ -85,6 +85,7 @@
 		p#countdown {
 			margin-bottom: 0;
 			text-align: center;
+			font-weight: bold;
 		}
 
 		#poznavaciznameni {
@@ -93,6 +94,7 @@
 			-webkit-box-shadow: 0px 3px 16px 0px rgba(0,0,0,0.35);
 			-moz-box-shadow: 0px 3px 16px 0px rgba(0,0,0,0.35);
 			box-shadow: 0px 3px 16px 0px rgba(0,0,0,0.35);
+			background-color: #FFF;
 		}
 		#poznavaciznameni img {
 			max-width: 120px;
@@ -118,7 +120,6 @@
 			-webkit-box-shadow: 0px 3px 16px 2px rgba(0,0,0,0.42);
 			-moz-box-shadow: 0px 3px 16px 2px rgba(0,0,0,0.42);
 			box-shadow: 0px 3px 16px 2px rgba(0,0,0,0.42);
-			background-color: rgb(237, 24, 72);
 		}
 
 		.btn-red:hover {
@@ -127,13 +128,50 @@
 			box-shadow: 0px 3px 16px 2px rgba(0,0,0,0.42);
 		}
 
+		.fingerprint {
+    		background-repeat:no-repeat;
+    		background-size: auto 100%;
+		}
+
+		.fingerprint-left{
+			background-image:url('images/fingerprint_lite_left.svg');
+    		background-position: center left;
+		}
+
+		.fingerprint-right{
+			background-image:url('images/fingerprint_lite_right.svg');
+			background-position: center right;
+		}
+
 		/* Fonts sizes*/
 		h3 {
 		    font-size: 1.5rem;
 		}
 
+		h3#finish {
+		    font-size: 2.5rem;
+		}
+
 		p#countdown {
 			font-size: 1.75rem;
+		}
+
+		#finish, #finish-btn {
+			 display: none;
+		}
+
+		@media only screen and (min-width: 1100px) {
+		    h1 {
+		        font-size: 6rem;
+		    }
+
+		    html {
+		    	font-size: 20px;
+		    }
+
+		    p#countdown {
+				font-size: 3rem;
+			}
 		}
 
 	</style>
@@ -175,7 +213,7 @@
 	<!-- Hlavicka a Hlavni menu -->
 	<div id="intro" class="container-intro">
 		<picture>
-			<source media="(min-width: 900px)" srcset="images/main-background-with-logo.jpg" class="img-fluid">
+			<source media="(min-width: 900px)" srcset="images/main-background-with-logo-wider.jpg" class="img-fluid">
 			<img src="images/main-background-mobile-with-logo.jpg" class="img-fluid" alt="">
 		</picture>
 		<div class="text-centered-main text-white text-center">
@@ -190,9 +228,12 @@
 
 	<div id="odpocet" class="container-odpocet">
 		<div class="text-center text-white">
-			<h3>Do začátku zbývá</h3>
+			<h3 id="countdown-header">Do začátku zbývá</h3>
 			<!-- Display the countdown timer in an element -->
 			<p id="countdown"> </p>
+
+			<h3 id="finish">Vyhlášení vítězů začíná již za chvíli v 18:00 ve 13.&nbsp;budově svitu (5.&nbsp;patro)<br />Tak si pospěš!</h3>
+			<a id="finish-btn" class="btn btn-white text-red" href="https://goo.gl/maps/jWa7H1phTE42" target="_blank">Ukaž na mapě</a>
 
 			<script>
 				// Czech texts of units
@@ -252,7 +293,8 @@
 					// If the count down is finished, write some text
 					if (distance < 0) {
 						clearInterval(x);
-						document.getElementById("countdown").innerHTML = "Soutěž u konce";
+						document.getElementById("countdown").innerHTML = "Soutěž právě probíhá!";
+						document.getElementById("countdown-header").style.display = 'none';
 					}
 				}
 
@@ -268,7 +310,7 @@
 		</div>
 	</div>
 
-	<div id="ocojde" class="container-ocojde">
+	<div id="ocojde" class="container-ocojde fingerprint-right fingerprint">
 		<div class="container">
 			<h2 class="text-red text-center">O co jde?</h2>
 			<div class="row">
@@ -281,7 +323,7 @@
 			<h2 class="text-red text-center secondheader">Kdy a kde se potkáme?</h2>
 			<div class="row">
 				<div class="col-sm-8">
-					<p>Sejdeme se ve Zlíně v parku pojmenovaném po učiteli národů v sobotu 17. 11. 2018 ve 13:00.</p>
+					<p>Sejdeme se ve Zlíně v parku pojmenovaném po učiteli národů v <span class="text-red">sobotu 17. 11. 2018 ve 13:00</span>.</p>
 					<p>Na místě na tebe bude čekat náš kontakt, který tě nasměřuje k prvnímu úkolu. </p>
 					<p>A jak jej poznáš? Prohlédni si poznávací	znamení!</p>
 				</div>
@@ -306,12 +348,12 @@
 		</div>
 	</div>
 
-	<div id="vyhlaseni" class="container-ocojde">
+	<div id="vyhlaseni" class="container-ocojde fingerprint-left fingerprint">
 		<div class="container text-center">
 			<h2 class="text-red ">Vyhlášení vítězů</h2>
 			<div class="row">
 				<div class="col-sm-12">
-					<p>Vyhlášení nejlepších týmů nebo jednotlivců se uskuteční 17. 11. v 18:00 na tajném místě, zveřejněném zde v 17:00 tentýž den.</p>
+					<p>Vyhlášení nejlepších týmů nebo jednotlivců se uskuteční <span class="text-red">17. 11. v 18:00</span> na tajném místě, zveřejněném zde v 17:00 tentýž den.</p>
 					<p>Určitě přijď, i když jsi nedokončil všechny šifry! V cíli tě bude čekat občerstvení, ceny pro vítěze a spousta zábavy.</p>
 				</div>
 			</div>
