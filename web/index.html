@@ -9,232 +9,32 @@
 	<title>Luštěniny</title>
 	<meta name="description" content="Šifrovací hra pořádaná společností CN Group CZ s. r. o.">
 
-	<!-- BS4 -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-	 crossorigin="anonymous">
-
-	<!-- Poppins font -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/lusteniny.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-
-	<style>
-		body {
-			font-family: 'Poppins', sans-serif;
-		}
-
-		h2 {
-			margin-top: 0.5rem;
-			margin-bottom: 1rem;	
-		}
-
-		h1, h2 {
-			font-weight: bold;
-		}
-
-		p{
-			text-align: justify;
-		}
-
-		.text-centered-main {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-		}
-
-		.container-intro {
-			position: relative;
-			text-align: center;
-		}
-
-		.container-odpocet {
-			position: relative;
-			text-align: center;
-			background-color: rgb(237, 24, 72);
-			padding-top: 2rem;
-			padding-bottom: 2rem;
-		}
-
-		.container-lumpici {
-			background-color: rgb(237, 24, 72);
-			padding-top: 20px;
-			padding-bottom: 20px;
-		}
-
-		.container-ocojde {
-			padding-top: 60px;
-			padding-bottom: 60px;
-			color: gray
-		}
-
-		.text-red {
-			color: rgb(237, 24, 72)
-		}
-
-		.text-red:hover {
-			color: rgb(237, 24, 72)
-		}
-
-		.btn-red {
-			background-color: rgb(237, 24, 72);
-		}
-
-		.btn-white {
-			background-color: white;
-		}
-
-		p#countdown {
-			margin-bottom: 0;
-			text-align: center;
-			font-weight: bold;
-		}
-
-		#poznavaciznameni {
-			padding: 20px;
-			display: inline-block;
-			-webkit-box-shadow: 0px 3px 16px 0px rgba(0,0,0,0.35);
-			-moz-box-shadow: 0px 3px 16px 0px rgba(0,0,0,0.35);
-			box-shadow: 0px 3px 16px 0px rgba(0,0,0,0.35);
-			background-color: #FFF;
-		}
-		#poznavaciznameni img {
-			max-width: 120px;
-			height: auto;
-			margin-bottom: 20px;
-		}
-
-		#poznavaciznameni p {
-			margin: 0;
-			font-weight: bold;
-		}
-
-		.secondheader {
-			margin-top: 1.5rem;
-		}
-
-		.btn{
-			margin-top:1rem;
-			transition: all 0.3s ease 0s;
-		}
-
-		.btn-white:hover {
-			-webkit-box-shadow: 0px 3px 16px 2px rgba(0,0,0,0.42);
-			-moz-box-shadow: 0px 3px 16px 2px rgba(0,0,0,0.42);
-			box-shadow: 0px 3px 16px 2px rgba(0,0,0,0.42);
-		}
-
-		.btn-red:hover {
-			-webkit-box-shadow: 0px 3px 16px 2px rgba(0,0,0,0.42);
-			-moz-box-shadow: 0px 3px 16px 2px rgba(0,0,0,0.42);
-			box-shadow: 0px 3px 16px 2px rgba(0,0,0,0.42);
-		}
-
-		.fingerprint {
-    		background-repeat:no-repeat;
-    		background-size: auto 100%;
-		}
-
-		.fingerprint-left{
-			background-image:url('images/fingerprint_lite_left.svg');
-    		background-position: center left;
-		}
-
-		.fingerprint-right{
-			background-image:url('images/fingerprint_lite_right.svg');
-			background-position: center right;
-		}
-
-		#finish, #finish-btn {
-			 display: none;
-		}
-
-		#lumpici a {
-			color: #FFF;
-		}
-
-		/* Fonts sizes*/
-		h3 {
-		    font-size: 1.5rem;
-		}
-
-		h3#finish {
-		    font-size: 2.5rem;
-		}
-
-		p#countdown {
-			font-size: 1.75rem;
-		}
-
-		/* Media queries*/
-		@media only screen and (min-width: 1100px) {
-		    h1 {
-		        font-size: 6rem;
-		    }
-
-		    html {
-		    	font-size: 20px;
-		    }
-
-		    p#countdown {
-				font-size: 3rem;
-			}
-		}
-
-	</style>
-
+	<link href="css/lightbox.min.css" rel="stylesheet">
 </head>
 
 <body>
-	<!--
-		OBSAH stranky:
-
-		Zvládneš všechny šifry vyluštit?
-		Přijď se přesvědčit na
-		Luštěniny
-		17. 11. 2018 ve 13:00
-		LOGO-bile
-
-		Do začátku zbývá
-		<dny, hodiny, minuty>
-
-		O co jde?
-		Baví tě šifrovačky a IT? Pojď protáhnout své šedé buňky mozkové a zasoutěžit si o zajímavé ceny.
-		Zúčastnit se můžeš jak sám, tak v týmu. Všechny šifry budou zaměřeny na IT, a proto je vhodné mít alespoň základní znalosti z této oblasti.
-		Kdy a kde se potkáme?
-		Sejdeme se ve Zlíně v parku pojmenovaném po učiteli národů v sobotu 17. 11. 2018 ve 13:00.
-		Na místě na tebe bude čekat náš kontakt, který tě nasměřuje k prvnímu úkolu. A jak jej poznáš? Prohlédni si poznávací znamení!
-		LOGO-indeed
-		Poznávací znamení
-		Chceš se ujistit, že jsi uhodl, kde tě budeme čekat?
-		Ukaž mi více
-		Vyhlášení vítězů
-		Vyhlášení nejlepších týmů nebo jednotlivců se uskuteční 17. 11. v 18:00 na tajném místě, zveřejněném zde v 17:00 tentýž den.
-		Určitě přijď, i když jsi nedokončil všechny šifry! V cíli tě bude čekat občerstvení, ceny pro vítěze a spousta zábavy.
-		Zúčastníš se? Chceš se na něco zeptat?
-		Přidej se k události na facebooku, kde se můžeš v případě potřeby na cokoli zeptat.
-		Událost na FB
-		Lumpíci | CN Group
-	-->
-
-	<!-- Hlavicka a Hlavni menu -->
 	<div id="intro" class="container-intro">
 		<picture>
 			<source media="(min-width: 900px)" srcset="images/main-background-with-logo-wider.jpg" class="img-fluid">
 			<img src="images/main-background-mobile-with-logo.jpg" class="img-fluid" alt="">
 		</picture>
 		<div class="text-centered-main text-white text-center">
-			<h5>Zvládneš všechny šifry vyluštit?</h5>
-			<h5>Přijď se přesvědčit na</h5>
+			<h5>Dokážeš vyluštit všechny naše šifry?</h5>
+			<h5>Přijď se přesvědčit na </h5>
 			<br>
-			<h1>Luštěniny</h1>
+			<h1>Luštěniny II.</h1>
 			<br>
-			<h4>17. 11. 2018 ve 13:00</h4>
+			<h4>22.6.2019 ve Zlíně</h4>
 		</div>
 	</div>
 
-	<div id="odpocet" class="container-odpocet">
+	<!-- <div id="odpocet" class="container-odpocet">
 		<div class="text-center text-white">
 			<h3 id="countdown-header">Do začátku zbývá</h3>
-			<!-- Display the countdown timer in an element -->
+			
 			<p id="countdown"> </p>
 
 			<h3 id="finish">Vyhlášení vítězů začíná již za chvíli v 18:00 ve 13.&nbsp;budově svitu (5.&nbsp;patro)<br />Tak si pospěš!</h3>
@@ -325,27 +125,23 @@
 				interval = setInterval(function(){updateCountdownElement(countDownDate);}, 5000);
 			</script>
 		</div>
-	</div>
+	</div> -->
 
-	<div id="ocojde" class="container-ocojde fingerprint-right fingerprint">
-		<div class="container">
-			<h2 class="text-red text-center">O co jde?</h2>
-			<div class="row">
-				<div class="col-sm-12">
-					<p>Baví tě šifrovačky a IT? Pojď protáhnout své šedé buňky mozkové a zasoutěžit si o zajímavé ceny.</p>
-					<p>Zúčastnit se můžeš jak sám, tak v týmu. Všechny šifry budou zaměřeny na IT, a proto je vhodné mít alespoň základní znalosti
-						z této oblasti.</p>
-				</div>
-			</div>
-			<h2 class="text-red text-center secondheader">Kdy a kde se potkáme?</h2>
-			<div class="row">
-				<div class="col-sm-8">
-					<p>Sejdeme se ve Zlíně v <span class="text-red">parku pojmenovaném po učiteli národů</span> v <span class="text-red">sobotu 17. 11. 2018 ve 13:00</span>.</p>
+	<div class="fingerprint-right fingerprint">
+		<div class="container container-ocojde">
+			<h2 class="text-center">O co jde?</h2>
+			<p>Baví tě šifrovačky a IT? Pojď protáhnout své šedé buňky mozkové a zasoutěžit si o zajímavé ceny.</p>
+			<p>Zúčastnit se můžeš jak sám, tak v týmu. Všechny šifry budou zaměřeny na IT, a proto je vhodné mít alespoň základní znalosti
+				z této oblasti.</p>
+			<h2 class="text-center">Kdy a kde se potkáme?</h2>
+			<div class="row d-flex">
+				<div class="col-sm-8 align-self-center">
+					<p>Sejdeme se ve Zlíně 22.6.2019, místo střetnutí ještě upřesníme ;)</p>
 					<p>Na místě na tebe bude čekat náš kontakt, který tě nasměřuje k prvnímu úkolu. </p>
-					<p>A jak jej poznáš? Prohlédni si poznávací	znamení!</p>
+					<p>A jak jej poznáš? Prohlédni si poznávací znamení!</p>
 				</div>
 				<div class="col-sm-4 text-center">
-					<div id="poznavaciznameni">
+					<div class="poznavaciznameni">
 						<img src="images/indeed.png" alt="Poznavací znamení" class="img-fluid">
 						<p class="text-red">Poznávací znamení</p>
 					</div>
@@ -354,55 +150,187 @@
 		</div>
 	</div>
 
-	<div id="mapa" class="container-intro">
+	<div class="container text-red text-center">
+		<h2>Podívej se na fotky z minulého ročníku</h2>
+		<div class="row">
+			<div class="col-md-3 col-6 img-box">
+				<a class="example-image-link" href="images/Lusteniny2018 (1).jpg" data-lightbox="gallery2018">
+					<img class="example-image img-fluid img-gallery" src="images/Lusteniny2018 (1).jpg" alt="" />
+				</a>
+			</div>
+			<div class="col-md-3 col-6 img-box">
+				<a class="example-image-link" href="images/Lusteniny2018 (2).jpg" data-lightbox="gallery2018">
+					<img class="example-image img-fluid img-gallery" src="images/Lusteniny2018 (2).jpg" alt="" />
+				</a>
+			</div>
+			<div class="col-md-3 col-6 img-box">
+				<a class="example-image-link" href="images/Lusteniny2018 (3).jpg" data-lightbox="gallery2018">
+					<img class="example-image img-fluid img-gallery" src="images/Lusteniny2018 (3).jpg" alt="" />
+				</a>
+			</div>
+			<div class="col-md-3 col-6 img-box">
+				<a class="example-image-link" href="images/Lusteniny2018 (4).jpg" data-lightbox="gallery2018">
+					<img class="example-image img-fluid img-gallery" src="images/Lusteniny2018 (4).jpg" alt="" />
+				</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 col-6 img-box">
+				<a class="example-image-link" href="images/Lusteniny2018 (5).jpg" data-lightbox="gallery2018">
+					<img class="example-image img-fluid img-gallery" src="images/Lusteniny2018 (5).jpg" alt="" />
+				</a>
+			</div>
+			<div class="col-md-3 col-6 img-box">
+				<a class="example-image-link" href="images/Lusteniny2018 (6).jpg" data-lightbox="gallery2018">
+					<img class="example-image img-fluid img-gallery" src="images/Lusteniny2018 (6).jpg" alt="" />
+				</a>
+			</div>
+			<div class="col-md-3 col-6 img-box">
+				<a class="example-image-link" href="images/Lusteniny2018 (7).jpg" data-lightbox="gallery2018">
+					<img class="example-image img-fluid img-gallery" src="images/Lusteniny2018 (7).jpg" alt="" />
+				</a>
+			</div>
+			<div class="col-md-3 col-6 img-box">
+				<a class="example-image-link" href="images/Lusteniny2018 (8).jpg" data-lightbox="gallery2018">
+					<img class="example-image img-fluid img-gallery" src="images/Lusteniny2018 (8).jpg" alt="" />
+				</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 col-6 img-box">
+				<a class="example-image-link" href="images/Lusteniny2018 (9).jpg" data-lightbox="gallery2018">
+					<img class="example-image img-fluid img-gallery" src="images/Lusteniny2018 (9).jpg" alt="" />
+				</a>
+			</div>
+			<div class="col-md-3 col-6 img-box">
+				<a class="example-image-link" href="images/Lusteniny2018 (10).jpg" data-lightbox="gallery2018">
+					<img class="example-image img-fluid img-gallery" src="images/Lusteniny2018 (10).jpg" alt="" />
+				</a>
+			</div>
+			<div class="col-md-3 col-6 img-box">
+				<a class="example-image-link" href="images/Lusteniny2018 (11).jpg" data-lightbox="gallery2018">
+					<img class="example-image img-fluid img-gallery" src="images/Lusteniny2018 (11).jpg" alt="" />
+				</a>
+			</div>
+			<div class="col-md-3 col-6 img-box">
+				<a class="example-image-link" href="images/Lusteniny2018 (12).jpg" data-lightbox="gallery2018">
+					<img class="example-image img-fluid img-gallery" src="images/Lusteniny2018 (12).jpg" alt="" />
+				</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 col-6 img-box">
+				<a class="example-image-link" href="images/Lusteniny2018 (13).jpg" data-lightbox="gallery2018">
+					<img class="example-image img-fluid img-gallery" src="images/Lusteniny2018 (13).jpg" alt="" />
+				</a>
+			</div>
+			<div class="col-md-3 col-6 img-box">
+				<a class="example-image-link" href="images/Lusteniny2018 (14).jpg" data-lightbox="gallery2018">
+					<img class="example-image img-fluid img-gallery" src="images/Lusteniny2018 (14).jpg" alt="" />
+				</a>
+			</div>
+			<div class="col-md-3 col-6 img-box">
+				<a class="example-image-link" href="images/Lusteniny2018 (15).jpg" data-lightbox="gallery2018">
+					<img class="example-image img-fluid img-gallery" src="images/Lusteniny2018 (15).jpg" alt="" />
+				</a>
+			</div>
+			<div class="col-md-3 col-6 img-box">
+				<a class="example-image-link" href="images/Lusteniny2018 (16).jpg" data-lightbox="gallery2018">
+					<img class="example-image img-fluid img-gallery" src="images/Lusteniny2018 (16).jpg" alt="" />
+				</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 col-6 img-box">
+				<a class="example-image-link" href="images/Lusteniny2018 (17).jpg" data-lightbox="gallery2018">
+					<img class="example-image img-fluid img-gallery" src="images/Lusteniny2018 (17).jpg" alt="" />
+				</a>
+			</div>
+			<div class="col-md-3 col-6 img-box">
+				<a class="example-image-link" href="images/Lusteniny2018 (18).jpg" data-lightbox="gallery2018">
+					<img class="example-image img-fluid img-gallery" src="images/Lusteniny2018 (18).jpg" alt="" />
+				</a>
+			</div>
+			<div class="col-md-3 col-6 img-box">
+				<a class="example-image-link" href="images/Lusteniny2018 (19).jpg" data-lightbox="gallery2018">
+					<img class="example-image img-fluid img-gallery" src="images/Lusteniny2018 (19).jpg" alt="" />
+				</a>
+			</div>
+			<div class="col-md-3 col-6 img-box">
+				<a class="example-image-link" href="images/Lusteniny2018 (20).jpg" data-lightbox="gallery2018">
+					<img class="example-image img-fluid img-gallery" src="images/Lusteniny2018 (20).jpg" alt="" />
+				</a>
+			</div>
+		</div>
+		<br>
+		<h2 class="text-center">Vítězové minulého ročníku</h2>
+		<br>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card">
+					<div class="card-body">
+						<img src="images/silver-medal.svg" class="img-fit">
+					</div>
+					<div class="card-footer">Anonymní Abstinenti</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card">
+					<div class="card-body">
+						<img src="images/gold-medal.svg" class="img-fit">
+					</div>
+					<div class="card-footer">Fordi</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card">
+					<div class="card-body">
+						<img src="images/bronze-medal.svg" class="img-fit">
+					</div>
+					<div class="card-footer">Edhouse42</div>
+				</div>
+			</div>
+		</div>
+		<br>
+	</div>
+
+	<div class="container-intro">
 		<picture>
 			<source media="(min-width: 900px)" srcset="images/location-background.jpg" class="img-fluid">
 			<img src="images/location-background-mobile.jpg" class="img-fluid" alt="">
 		</picture>
 		<div class="text-centered-main text-white text-center">
-			<h2>Chceš se ujistit, kde tě budeme čekat?</h2>
-			<a class="btn btn-white text-red" href="https://goo.gl/maps/aHJXAEnhtWC2" target="_blank">Ukaž na mapě</a>
+			<h2 class="text-location">Chceš se ujistit, kde tě budeme čekat?</h2>
+			<a class="btn btn-white text-red" href="https://goo.gl/maps/N9qtvrQbz7L2" target="_blank">Ukaž na mapě</a>
+			<br/>
+			<br/>
+			<h4 class="text-location">Místo konání bude upřesněno</h4>
 		</div>
 	</div>
 
-	<div id="vyhlaseni" class="container-ocojde fingerprint-left fingerprint">
-		<div class="container text-center">
-			<h2 class="text-red ">Vyhlášení vítězů</h2>
-			<div class="row">
-				<div class="col-sm-12">
-					<p>Vyhlášení nejlepších týmů nebo jednotlivců se uskuteční <span class="text-red">17. 11. v 18:00</span> na tajném místě, zveřejněném zde v 17:00 tentýž den.</p>
-					<p>Určitě přijď, i když jsi nedokončil všechny šifry! V cíli tě bude čekat občerstvení, ceny pro vítěze a spousta zábavy.</p>
-				</div>
-			</div>
-			<h2 class="text-red secondheader
-secondheader">Zúčastníš se? Chceš se na něco zeptat?</h2>
-			<div class="row">
-				<div class="col-sm-12">
-					<p>Přidej se k události na facebooku, kde se můžeš v případě potřeby na cokoli zeptat.</p>
-					<a class="btn btn-red text-white"  href="https://www.facebook.com/events/262651914454251/" target="_blank" >Událost na FB</a>
-				</div>
-			</div>
+	<div class="fingerprint-left fingerprint">
+		<div class="container container-ocojde  text-center">
+			<h2>Vyhlášení vítězů</h2>
+			<p>Vyhlášení nejlepších týmů nebo jednotlivců se uskuteční
+				<span class="text-red">26.6.2019 v 18:00</span> na tajném místě, zveřejněném zde v 17:00 tentýž den.</p>
+			<p>Určitě přijď, i když jsi nedokončil všechny šifry! V cíli tě bude čekat občerstvení, ceny pro vítěze a spousta zábavy.</p>
+			<h2 class="text-red secondheader secondheader">Zúčastníš se? Chceš se na něco zeptat?</h2>
+			<p>Přidej se k události na facebooku, kde se můžeš v případě potřeby na cokoli zeptat.</p>
+			<a class="btn btn-red text-white" href="https://www.facebook.com/events/262651914454251/" target="_blank">Událost na FB</a>
 		</div>
 	</div>
 
-	<div id="lumpici">
-		<div class="container-lumpici text-center text-white back ">
-			Lumpíci |
-			<b><a href="http://www.cnjobs.cz/" target="_blank">CN Group</a></b>
-		</div>
+	<div class="container-lumpici text-center text-white back ">
+		Lumpíci |
+		<b>
+			<a href="http://www.cnjobs.cz/" target="_blank">CN Group</a>
+		</b>
 	</div>
 
-
-	<!-- jQuery & Popper (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-	 crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-	 crossorigin="anonymous"></script>
-
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-	 crossorigin="anonymous"></script>
-
+	<script src="js/jquery-3.3.1.slim.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/lightbox-plus-jquery.min.js"></script>
 </body>
 
 </html>

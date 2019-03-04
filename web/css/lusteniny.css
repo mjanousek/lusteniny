@@ -1,0 +1,221 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+h1,
+h2 {
+    font-weight: bold;
+}
+
+p {
+    text-align: justify;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color:rgb(225,225,225);
+    text-decoration: none;
+}
+
+.container {
+    color: gray;
+}
+
+    .container h1{
+        color: rgb(237, 24, 72)
+    }
+
+    .container h2{
+        color: rgb(237, 24, 72)
+    }
+
+    .container h3{
+        color: rgb(237, 24, 72)
+    }
+
+    .container h4{
+        color: rgb(237, 24, 72)
+    }
+
+    .container h5{
+        color: rgb(237, 24, 72)
+    }
+
+.text-centered-main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container-intro {
+    position: relative;
+    text-align: center;
+}
+
+.container-odpocet {
+    position: relative;
+    text-align: center;
+    background-color: rgb(237, 24, 72);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.container-lumpici {
+    background-color: rgb(237, 24, 72);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container-ocojde {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: gray
+}
+
+.text-red {
+    color: rgb(237, 24, 72)
+}
+
+.btn-red {
+    background-color: rgb(237, 24, 72);
+}
+
+.btn-white {
+    background-color: white;
+}
+
+p#countdown {
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.poznavaciznameni {
+    padding: 20px;
+    display: inline-block;
+    -webkit-box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.35);
+    background-color: #FFF;
+}
+
+.poznavaciznameni img {
+    max-width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.poznavaciznameni p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.btn {
+    margin-top: 1rem;
+    transition: all 0.3s ease 0s;
+}
+
+.btn-white:hover {
+    -webkit-box-shadow: 0px 3px 16px 2px rgba(0, 0, 0, 0.42);
+    -moz-box-shadow: 0px 3px 16px 2px rgba(0, 0, 0, 0.42);
+    box-shadow: 0px 3px 16px 2px rgba(0, 0, 0, 0.42);
+}
+
+.btn-red:hover {
+    -webkit-box-shadow: 0px 3px 16px 2px rgba(0, 0, 0, 0.42);
+    -moz-box-shadow: 0px 3px 16px 2px rgba(0, 0, 0, 0.42);
+    box-shadow: 0px 3px 16px 2px rgba(0, 0, 0, 0.42);
+}
+
+.fingerprint {
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+.fingerprint-left {
+    background-image: url('../images/fingerprint_lite_left.svg');
+    background-position: center left;
+}
+
+.fingerprint-right {
+    background-image: url('../images/fingerprint_lite_right.svg');
+    background-position: center right;
+}
+
+#finish,
+#finish-btn {
+    display: none;
+}
+
+#lumpici a {
+    color: #FFF;
+}
+
+/* Fonts sizes*/
+h3#finish {
+    font-size: 2.5rem;
+}
+
+p#countdown {
+    font-size: 1.75rem;
+}
+
+/* Media queries*/
+
+@media only screen and (min-width: 1100px) {
+    h1 {
+        font-size: 6rem;
+    }
+
+    html {
+        font-size: 20px;
+    }
+
+    p#countdown {
+        font-size: 3rem;
+    }
+}
+
+.img-box {
+    height:10rem;
+    width: 10rem;    
+    padding: 0.5rem;
+}
+
+.img-gallery {
+    height: 100%;
+    object-fit: cover;
+    border: solid 0.08rem rgb(237, 24, 72);
+}
+
+    .img-gallery:hover {
+        border: solid 0.05rem rgb(167, 24, 72);
+    }
+
+.card {
+    margin: 0.5rem;
+}
+
+.card-body {
+    height: 5rem;
+}
+
+.img-fit {
+    height: 100%;
+    object-fit: contain;
+}
+
+@media only screen and (max-width: 576px){
+    .text-location{
+        font-size: 1.3rem;
+    }
+}
