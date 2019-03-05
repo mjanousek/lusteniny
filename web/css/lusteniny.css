@@ -193,12 +193,11 @@ p#countdown {
 
 .img-gallery {
     height: 100%;
-    object-fit: cover;
-    border: solid 0.08rem rgb(237, 24, 72);
+    width: 100%;
 }
 
-    .img-gallery:hover {
-        border: solid 0.05rem rgb(167, 24, 72);
+.img-gallery:hover {
+    opacity: 0.65;
     }
 
 .card {
@@ -211,6 +210,7 @@ p#countdown {
 
 .img-fit {
     height: 100%;
+    width: 100%;
     object-fit: contain;
 }
 
@@ -218,4 +218,11 @@ p#countdown {
     .text-location{
         font-size: 1.3rem;
     }
+}
+
+.example-image-link {
+    height: 100%;
+    width: 100%;
+    padding: 0.05rem;
+    object-fit: cover;
 }
