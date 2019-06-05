@@ -226,3 +226,7 @@ p#countdown {
     padding: 0.05rem;
     object-fit: cover;
 }
+
+.text-ref:hover {
+    color: rgb(141, 19, 48)
+}
