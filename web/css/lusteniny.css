@@ -191,9 +191,13 @@ p#countdown {
     padding: 0.5rem;
 }
 
-.img-gallery {
-    height: 100%;
-    width: 100%;
+.gallery img{
+    margin-bottom: 16px;
+}
+
+.gallery .col{
+    padding-right: 8px;
+    padding-left: 8px;
 }
 
 .img-gallery:hover {
@@ -214,9 +218,22 @@ p#countdown {
     object-fit: contain;
 }
 
+#intro h1 {
+    margin: 2rem 0;
+}
+
 @media only screen and (max-width: 576px){
     .text-location{
         font-size: 1.3rem;
+    }
+
+    #intro h1 {
+        font-size: 2rem;
+        margin: 0 0;
+    }
+
+    #intro h4, h5 {
+        font-size: 1rem;
     }
 }
 
@@ -229,4 +246,12 @@ p#countdown {
 
 .text-ref:hover {
     color: rgb(141, 19, 48)
+}
+
+.cn-logo {
+    width: 10rem;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
