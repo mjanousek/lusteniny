@@ -7,296 +7,163 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Luštěniny</title>
-	<meta name="description" content="Šifrovací hra pořádaná společností CN Group CZ s. r. o.">
+	<meta name="description" content="Šifrovací hra">
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/lusteniny.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 	<link rel="stylesheet" href="css/lightbox.min.css">
+	<script src="https://kit.fontawesome.com/68f0af8713.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://api.mapy.cz/loader.js"></script>
+	<script type="text/javascript">Loader.load(null, { api: "simple" })</script>
 </head>
 
-<body>
-	<div id="intro" class="container-intro">
-		<picture>
-			<source media="(min-width: 900px)" srcset="images/main-background.jpg" class="img-fluid">
-			<img src="images/main-background-mobile.jpg" class="img-fluid" alt="">
-		</picture>
-		<div class="text-centered-main text-white text-center">
-			<h5>Dokážeš vyluštit všechny naše šifry?</h5>
-			<h5>Přijď se přesvědčit na </h5>
-			<h1>Luštěniny II.</h1>
-			<h4>22.6.2019 ve Zlíně</h4>
-		</div>
-		<div class="cn-logo">
-			<img src="images/logo_white_rgb.svg" alt="CN Group Zlin" />
-		</div>
-	</div>
+<body data-spy="scroll" data-target="#navbar">
 
-	<div id="odpocet" class="container-odpocet">
-		<div class="text-center text-white">
-			<h3 id="countdown-header">Do začátku zbývá</h3>
-			
-			<p id="countdown"> </p>
-
-			<h3 id="finish">Vyhlášení vítězů začíná již za chvíli v 18:00 ve 13.&nbsp;budově svitu (5.&nbsp;patro)<br />Tak si pospěš!</h3>
-			<a id="finish-btn" class="btn btn-white text-red" href="https://goo.gl/maps/jWa7H1phTE42" target="_blank">Ukaž na mapě</a>
-
-			<script>
-				// Czech texts of units
-				var timeWords = {
-					days: ["den", "dny", "dnů"],
-					hours: ["hodina", "hodiny", "hodin"],
-					minutes: ["minuta", "minuty", "minut"]
-				};
-
-				var interval;
-
-				// Return czech text for unit
-				function formatTimeUnit(count, unit) {
-					if (count == 1) {
-						return timeWords[unit][0];
-					}
-					if (count < 5 && count > 0) {
-						return timeWords[unit][1];
-					}
-					return timeWords[unit][2];
-				}
-
-				// Format time to czech text
-				function getRemainingTimeText(remainingTime) {
-
-					var text = "";
-					var firstNotNotNull = false;
-
-				    // Iterate over units and get remaining time text
-					for (unit in remainingTime) {
-						var n = remainingTime[unit];
-						if (n > 0 || firstNotNotNull) {
-							firstNotNotNull = true;
-							text += n + " " + formatTimeUnit(n, unit) + " ";
-						}
-				    }
-				    return text;
-				}
-
-				// Updates countdown container
-				var updateCountdownElement = function(countDownDate) {
-					console.log("update")
-					// Get todays date and time
-					var now = new Date().getTime();
-
-					// Find the distance between now and the count down date
-					var distance = countDownDate - now;
-
-					// Time calculations for days, hours, minutes and seconds
-					var remainingTime = {
-						days: Math.floor(distance / (1000 * 60 * 60 * 24)),
-						hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
-						minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
-					}
-
-					// Display the result in the element with id="demo"
-					document.getElementById("countdown").innerHTML = getRemainingTimeText(remainingTime);
-
-					// If the count down is finished and competition is in progress, write some text
-					if (-14400000 < distance && distance < 0) {
-						document.getElementById("countdown").innerHTML = "Soutěž právě probíhá!";
-						document.getElementById("countdown-header").style.display = 'none';
-
-					// If the competition is in progress, write some text
-					} else if (distance < 0) {
-						clearInterval(interval);
-						// Hide elements
-						document.getElementById("countdown-header").style.display = 'none';
-						document.getElementById("countdown").style.display = 'none';
-
-						// Show elements
-						document.getElementById("finish").style.display = 'block';
-						document.getElementById("finish-btn").style.display = 'inline-block';
-					}
-				}
-
-				// Set the date we're counting down to
-				var countDownDate = new Date("Jun 22, 2019 13:00:00").getTime();
-
-				// Update the count down now
-				updateCountdownElement(countDownDate);
-
-				// Update the count down every 1 second
-				interval = setInterval(function(){updateCountdownElement(countDownDate);}, 5000);
-			</script>
-		</div>
-	</div>
-
-	<div class="fingerprint-right fingerprint">
-		<div class="container container-ocojde">
-			<h2 class="text-center">O co jde?</h2>
-			<p>
-				Baví tě šifrovačky? Pojď si vyluštit neIT šifry vytvořené ajťaky a zasoutěžit si o zajímavé ceny.
-			</p>
-			<p>
-				Zúčastnit se můžeš jak sám, tak v týmu. Všechny šifry budou tentokrát neIT! Potřebuješ jen nadšení a chuť a vem s sebou i
-				děti, budeme mít připravené šifry i pro ně.
-			</p>
-			<br/>
-			<h2 class="text-center">Kdy a kde se potkáme?</h2>
-			<div class="row d-flex">
-				<div class="col-sm-8 align-self-center">
-					<p>Sejdeme se ve Zlíně 22.6.2019, potkáme se na <a class="text-red text-ref" href="https://goo.gl/maps/1AN8wHWgQ5kJGJwf7" target="_blank">platformě 14|15 Baťova institutu</a></p>
-					<p>Na místě na tebe bude čekat náš kontakt, který tě nasměřuje k prvnímu úkolu. </p>
-					<p>A jak jej poznáš? Prohlédni si poznávací znamení!</p>
-				</div>
-				<div class="col-sm-4 text-center">
-					<div class="poznavaciznameni">
-						<img src="images/indeed.png" alt="Poznavací znamení" class="img-fluid">
-						<p class="text-red">Poznávací znamení</p>
-					</div>
-				</div>
+	<header id="intro" class="">
+		<div class="overlay d-flex flex-column align-items-center justify-content-between">
+			<div class="d-flex flex-column justify-content-center align-items-center flex-fill">
+				<img src="images/Logo2.png" alt="Luštěniny Logo" class="logo">
+				<p>Šifrovací hra v centru Zlína</p>
 			</div>
+			<a class="btn-intro" role="button" href="#about">
+				<i></i><br>
+				<i></i><br>
+				<i></i>
+			</a>
 		</div>
-	</div>
-	<div class=" fingerprint fingerprint-left gallery">
-		<div class="container text-red text-center">
-			<h2>Podívej se na fotky z minulého ročníku</h2>
-			<br/>
-			<div class="row">
-				<div class="col col-6 col-sm-6 col-md-3">
-					<a href="images/Lusteniny2018 (2).jpg" data-lightbox="gallery2018">
-						<img class="img-fluid" src="images/Lusteniny2018 (2).jpg" alt="" />
-					</a>
-					<a href="images/Lusteniny2018 (3).jpg" data-lightbox="gallery2018">
-						<img class="img-fluid" src="images/Lusteniny2018 (3).jpg" alt="" />
-					</a>
-					<a href="images/Lusteniny2018 (4).jpg" data-lightbox="gallery2018">
-						<img class="img-fluid" src="images/Lusteniny2018 (4).jpg" alt="" />
-					</a>
-					<a href="images/Lusteniny2018 (18).jpg" data-lightbox="gallery2018">
-						<img class="img-fluid" src="images/Lusteniny2018 (18).jpg" alt="" />
-					</a>
-				</div>
-				<div class="col col-6 col-sm-6 col-md-3">
-					<a href="images/Lusteniny2018 (5).jpg" data-lightbox="gallery2018">
-						<img class="img-fluid" src="images/Lusteniny2018 (5).jpg" alt="" />
-					</a>
-					<a href="images/Lusteniny2018 (6).jpg" data-lightbox="gallery2018">
-						<img class="img-fluid" src="images/Lusteniny2018 (6).jpg" alt="" />
-					</a>
-					<a href="images/Lusteniny2018 (7).jpg" data-lightbox="gallery2018">
-						<img class="img-fluid" src="images/Lusteniny2018 (7).jpg" alt="" />
-					</a>
-					<a href="images/Lusteniny2018 (8).jpg" data-lightbox="gallery2018">
-						<img class="img-fluid" src="images/Lusteniny2018 (8).jpg" alt="" />
-					</a>
-					<a href="images/Lusteniny2018 (17).jpg" data-lightbox="gallery2018">
-						<img class="img-fluid" src="images/Lusteniny2018 (17).jpg" alt="" />
-					</a>
-					
-				</div>
-				<div class="col col-6 col-sm-6 col-md-3">
-					<a href="images/Lusteniny2018 (9).jpg" data-lightbox="gallery2018">
-						<img class="img-fluid" src="images/Lusteniny2018 (9).jpg" alt="" />
-					</a>
-					<a href="images/Lusteniny2018 (10).jpg" data-lightbox="gallery2018">
-						<img class="img-fluid" src="images/Lusteniny2018 (10).jpg" alt="" />
-					</a>
-					<a href="images/Lusteniny2018 (12).jpg" data-lightbox="gallery2018">
-						<img class="img-fluid" src="images/Lusteniny2018 (12).jpg" alt="" />
-					</a>
-					<a href="images/Lusteniny2018 (20).jpg" data-lightbox="gallery2018">
-						<img class="img-fluid" src="images/Lusteniny2018 (20).jpg" alt="" />
-					</a>
-				</div>
-				<div class="col col-6 col-sm-6 col-md-3">
-					<a href="images/Lusteniny2018 (13).jpg" data-lightbox="gallery2018">
-						<img class="img-fluid" src="images/Lusteniny2018 (13).jpg" alt="" />
-					</a>
-					<a href="images/Lusteniny2018 (14).jpg" data-lightbox="gallery2018">
-						<img class="img-fluid" src="images/Lusteniny2018 (14).jpg" alt="" />
-					</a>
-					<a href="images/Lusteniny2018 (15).jpg" data-lightbox="gallery2018">
-						<img class="img-fluid" src="images/Lusteniny2018 (15).jpg" alt="" />
-					</a>
-					<a href="images/Lusteniny2018 (19).jpg" data-lightbox="gallery2018">
-						<img class="img-fluid" src="images/Lusteniny2018 (19).jpg" alt="" />
-					</a>
-				</div>
-			</div>
-			<br/>
-			<br>
-			<h2 class="text-center">Vítězové minulého ročníku</h2>
-			<br>
-			<div class="row">
-				<div class="col-md-4 d-sm-none d-none d-md-block">
-					<div class="card">
-						<div class="card-body">
-							<img src="images/silver-medal.svg" class="img-fit">
+	</header>
+	<div>
+		<main>
+			<section id="about">
+				<header class="d-flex flex-column align-items-center justify-content-center">
+					<h1>Luštěniny</h1>
+					<hr>
+				</header>
+				<div class="container content d-flex flex-column align-items-center justify-content-around">
+					<article class="row align-items-center">
+						<div class="col-12 col-md-9 order-1">
+							<h2>O co jde ?</h2>
+							<hr>
+							<p>
+								Baví tě šifrovačky? Rád využiješ své mozkové závity?<br><br>
+								Pokud je tvá odpověd ano, jsi na správném místě.<br><br>
+								Luštěniny jsou šifrovací hra, tzv. šifrovačka, která je pořádána ve Zlíně <br>
+								Zúčastnit se můžeš jak sám, tak v týmu. Všechny šifry budou tentokrát neIT! Potřebuješ
+								jen nadšení a chuť a vem s sebou i děti, budeme mít připravené šifry i pro ně.
+							</p>
 						</div>
-						<div class="card-footer">Anonymní Abstinenti</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="card">
-						<div class="card-body">
-							<img src="images/gold-medal.svg" class="img-fit">
+						<img src="images/Logo_Small.png" alt="Logo malé" class="d-none d-md-block col-md-3 order-2">
+					</article>
+					<article class="row align-items-center">
+						<div class="col-12 col-md-9 order-2">
+							<h2>Co mě čeká?</h2>
+							<hr>
+							<p>
+								Krátká výcházka Zlínem lemovaná stanovišti s šiframi.<br><br>
+								Na každěm stanoviště tě budě čekat pomocník s šifrou.<br><br>
+								Pokud šifru vyluštíš, nebo vzdáš, navede tě na další stanoviště.<br>
+								Může ti také nabídnout nápovědu, ovšem ani kuře zadarmo nehrabe.<br><br>
+								Na konci události tě bude čekat vyhlášení vítězů, předání cen a nějaký ten networking
+								včetně
+								občerstvením.
+							</p>
 						</div>
-						<div class="card-footer">Fordi</div>
-					</div>
+						<img src="images/Logo_Small_2.png" alt="Logo malé" class="d-none d-md-block col-md-3 order-1">
+					</article>
 				</div>
-				<div class="col-md-4 d-sm-block d-block d-md-none">
-					<div class="card">
-						<div class="card-body">
-							<img src="images/silver-medal.svg" class="img-fit">
+			</section>
+			<section id="location">
+				<header>
+					<h2>Kam se mám dostavit?</h2>
+					<hr>
+					<p>Potkáme se ve speciálním stánku na tržnici pod Lipami.
+						<br>
+						<br>
+						Neboj, určitě nás nepřehlédneš, stačí hledat luštěniny.
+					</p>
+				</header>
+				<map id="map" name="map"></map>
+				<script type="text/javascript">
+					var point = SMap.Coords.fromWGS84(17.6638886, 49.2251269);
+					var m = new SMap(JAK.gel("map"), point, 16);
+					m.addMarker(point);
+				</script>
+			</section>
+			<section id="time">
+				<header>
+					<h2>A kdy že to bude?</h2>
+					<hr>
+					<time datetime="2020-20-6">20.6.2020</time>
+				</header>
+				<div class="countdown d-flex align-items-center justify-content-center">
+					<time datetime="" id="countdown-timer" class="d-flex">
+						<div class="d-flex flex-column">
+							<span id="days"></span>
+							<span id="days-text"></span>
 						</div>
-						<div class="card-footer">Anonymní Abstinenti</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="card">
-						<div class="card-body">
-							<img src="images/bronze-medal.svg" class="img-fit">
+						<div class="d-flex flex-column">
+							<span id="hours"></span>
+							<span id="hours-text"></span>
 						</div>
-						<div class="card-footer">Edhouse42</div>
-					</div>
+						<div class="d-flex flex-column">
+							<span id="minutes"></span>
+							<span id="minutes-text"></span>
+						</div>
+						<div class="d-flex flex-column">
+							<span id="seconds"></span>
+							<span id="seconds-text"></span>
+						</div>
+					</time>
 				</div>
-			</div>
-			<br>
-		</div>
-	</div>
-	<div class="container-intro">
-		<picture>
-			<source media="(min-width: 900px)" srcset="images/location-background.jpg" class="img-fluid">
-			<img src="images/location-background-mobile.jpg" class="img-fluid" alt="">
-		</picture>
-		<div class="text-centered-main text-white text-center">
-			<h2 class="text-location">Chceš se ujistit, kde tě budeme čekat?</h2>
-			<a class="btn btn-white text-red" href="https://goo.gl/maps/1AN8wHWgQ5kJGJwf7" target="_blank">Ukaž na mapě</a>
-			<br/>
-		</div>
+			</section>
+			<section id="contact" class="d-flex flex-column align-items-center justify-content-center">
+				<article>
+					<header>
+						<h2>Kontakt</h2>
+						<hr>
+						<p>
+							Zúčastníš se? Máš nějaké otázky? Nebo nějaký návrh?<br>
+							Neváhej a napiš nám !
+						</p>
+					</header>
+					<p>
+
+					</p>
+				</article>
+				<article>
+					<header>
+						<h2>Sponzoři</h2>
+						<hr>
+					</header>
+					<div class="row sponsors">
+						<a href="https://zivy-zlin.cz/" class="col-12 col-sm-6">
+							<img src="images/sponsors/zivyzlin.png" alt="Živý Zlín" class="img-fluid sponsor-ZZ">
+						</a>
+						<a href="https://www.cngroup.dk/" class="col-12 col-sm-6">
+							<img src="images/sponsors/cngroup.png" alt="CN GROUP" class="img-fluid sponsor-CN">
+						</a>
+					</div>
+				</article>
+			</section>
+		</main>
+
 	</div>
 
-	<div class="fingerprint-right	 fingerprint">
-		<div class="container container-ocojde  text-center">
-			<h2>Vyhlášení vítězů</h2>
-			<p>Vyhlášení nejlepších týmů nebo jednotlivců se uskuteční
-				<span class="text-red">22.6.2019 v 18:00</span> na tajném místě, zveřejněném zde v 17:00 tentýž den.</p>
-			<p>Určitě přijď, i když jsi nedokončil všechny šifry! V cíli tě bude čekat občerstvení, ceny pro vítěze a spousta zábavy.</p>
-			<h2 class="text-red secondheader secondheader">Zúčastníš se? Chceš se na něco zeptat?</h2>
-			<p>Přidej se k události na facebooku, kde se můžeš v případě potřeby na cokoli zeptat.</p>
-			<a class="btn btn-red text-white" href="https://www.facebook.com/events/504711523393003" target="_blank">Událost na FB</a>
-		</div>
-	</div>
-
-	<div class="container-lumpici text-center text-white back ">
-		Lumpíci |
-		<b>
-			<a href="http://www.cnjobs.cz/" target="_blank">CN Group</a>
-		</b>
-	</div>
-
-	<script src="js/jquery-3.3.1.slim.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/lightbox-plus-jquery.min.js"></script>
+	<footer>
+		2020 © Luštěniny
+		<br>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+	<script src="js/lusteniny.js"></script>
 </body>
 
 </html>
