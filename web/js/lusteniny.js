@@ -24,7 +24,7 @@ $(document).ready(function () {
             daysTextElement.innerHTML = "Den";
 
         document.getElementById("hours").innerHTML = remainingTime.hours;
-        if (remainingTime.hours > 3)
+        if (remainingTime.hours > 3 || remainingTime.hours == 0)
             hoursTextElement.innerHTML = "Hodin";
         else if (remainingTime.hours > 1)
             hoursTextElement.innerHTML = "Hodiny";
@@ -32,7 +32,7 @@ $(document).ready(function () {
             hoursTextElement.innerHTML = "Hodina";
 
         document.getElementById("minutes").innerHTML = remainingTime.minutes;
-        if (remainingTime.minutes > 3)
+        if (remainingTime.minutes > 3 || remainingTime.minutes == 0)
             minutesTextElement.innerHTML = "Minut";
         else if (remainingTime.minutes > 1)
             minutesTextElement.innerHTML = "Minuty";
