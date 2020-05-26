@@ -25,28 +25,33 @@ a:hover {
     text-decoration: none;
 }
 
+#intro img.logo {
+    width: 60%;
+    margin-bottom: 50px;
+}
+
 .container {
     color: gray;
 }
 
     .container h1{
-        color: rgb(237, 24, 72)
+        color: #8dc63f
     }
 
     .container h2{
-        color: rgb(237, 24, 72)
+        color: #8dc63f
     }
 
     .container h3{
-        color: rgb(237, 24, 72)
+        color: #8dc63f
     }
 
     .container h4{
-        color: rgb(237, 24, 72)
+        color: #8dc63f
     }
 
     .container h5{
-        color: rgb(237, 24, 72)
+        color: #8dc63f
     }
 
 .text-centered-main {
@@ -61,16 +66,26 @@ a:hover {
     text-align: center;
 }
 
+#intro {
+  height: 100vh;
+  color: #fff;
+  background-image: url("../images/background-2020.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .container-odpocet {
     position: relative;
     text-align: center;
-    background-color: rgb(237, 24, 72);
+    background-color: #8dc63f;
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
 
 .container-lumpici {
-    background-color: rgb(237, 24, 72);
+    background-color: #8dc63f;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -82,11 +97,11 @@ a:hover {
 }
 
 .text-red {
-    color: rgb(237, 24, 72)
+    color: #8dc63f
 }
 
 .btn-red {
-    background-color: rgb(237, 24, 72);
+    background-color: #8dc63f;
 }
 
 .btn-white {
@@ -99,22 +114,19 @@ p#countdown {
     font-weight: bold;
 }
 
-.poznavaciznameni {
-    padding: 20px;
-    display: inline-block;
+.shadow-box {
     -webkit-box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.35);
     -moz-box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.35);
     box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.35);
     background-color: #FFF;
 }
 
-.poznavaciznameni img {
-    max-width: 120px;
+.shadow-box img {
+    padding: 20px;
     height: auto;
-    margin-bottom: 20px;
 }
 
-.poznavaciznameni p {
+.shadow-box p {
     margin: 0;
     font-weight: bold;
 }
@@ -222,7 +234,65 @@ p#countdown {
     margin: 2rem 0;
 }
 
+#intro .btn-intro {
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+    width: 4em;
+    height: 4em;
+    text-align: center;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+#intro .btn-intro i {
+    -webkit-transition: border-color 200ms linear;
+    transition: border-color 200ms linear;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin: 20px;
+}
+
+#intro .btn-intro:hover {
+background-color: white;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#intro .btn-intro:hover i {
+    border-color: #000;
+}
+
+map {
+  background: #000;
+  display: block;
+  width: 100%;
+  min-height: 43vh;
+}
+
+map > img {
+      opacity: 0.85;
+}
+
+map > img:last-child {
+      opacity: 1;
+  border-radius: 50%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-animation: pulse-black 2s infinite;
+          animation: pulse-black 2s infinite;
+ }
+
+
 @media only screen and (max-width: 576px){
+    #intro img.logo {
+        width: 80%;
+    }
+
     .text-location{
         font-size: 1.3rem;
     }
