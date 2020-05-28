@@ -18,12 +18,8 @@
 	<script type="text/javascript">Loader.load(null, { api: "simple" })</script>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar">
 	<div id="intro" class="container-intro overlay d-flex flex-column align-items-center justify-content-between">
-		<!-- <picture>
-			<source media="(min-width: 900px)" srcset="images/background-2020.jpg" class="img-fluid">
-			<img src="images/main-background-mobile.jpg" class="img-fluid" alt="">
-		</picture> -->
 		<div class="d-flex flex-column justify-content-center align-items-center flex-fill">
 			<img src="images/logo-lusteniny.svg" alt="Luštěniny Logo" class="logo">
 			<h5>Šifrovací hra v centru Zlína</h5>
@@ -134,12 +130,10 @@
 			<div class="col-12 col-md-8">
 				<h2 id="about">O co jde?</h2>
 				<p>
-				 Baví tě šifrovačky? Pokud ano, jsi na správném místě. Luštěniny jsou šifrovací hra, která je pořádána v centru Zlína a můžeš jak v týmu, tak sám. A vem s sebou i děti, budeme mít připravené šifry i pro ně.
+				 Baví tě šifrovačky? Pokud ano, jsi na správném místě. Luštěniny jsou šifrovací hra pořádána v centru Zlína, které se můžeš zůčastnit jak v týmu, tak sám. Navíc s sebou můžes vzít i děti, budeme mít připravené šifry i pro ně.
 				</p>
-				<p>
-					Čeká na tebe krátká procházka Zlínem lemovaná stanovišti s šiframi a tvým úkolem bude, jich vyluštit co nejvíc.
-					Na konci události tě bude čekat vyhlášení vítězů, předání cen a nějaký ten networking včetně občerstvení.
-				</p>
+				<p>Čeká na tebe krátká procházka Zlínem lemovaná stanovišti s šiframi a tvým úkolem bude, jich vyluštit co nejvíc.
+					Na konci události tě bude čekat vyhlášení vítězů, předání cen a nějaký ten networking včetně občerstvení.</p>
 			</div>
 			<div class="col-12 col-md-4 d-none d-md-block">
 				<div class="shadow-box">
@@ -148,20 +142,19 @@
 			</div>
 		</div>
 		<div class="row d-flex">
-			<div class="col-12 col-md-8 align-self-center order-2">
+			<div class="col-12 col-md-8 align-self-center order-md-last">
 				<h2>Kam se mám dostavit?</h2>
 				<p>I letos to je malá hádanka a musíš si nás najít. Budeme tě čekat <span class="text-red">20. 6. 2020 ve 13:00</span> na tržišti Pod Kaštany. A jak nás poznáš? Stačí přece hledat luštěniny. :)</p>
 				<p>Vyhlášení nejlepších týmů nebo jednotlivců se uskuteční
-				<span class="text-red">20. 6. 2020 v 18:00</span> na místě, které se dozvíš v průběhu hry. Určitě přijď, i když jsi nedokončil všechny šifry! V cíli tě bude čekat občerstvení, ceny pro vítěze a spousta zábavy.</p>
+				<span class="text-red">20. 6. 2020 v 18:00</span> na místě, které se dozvíš v průběhu hry. Určitě přijď, i když nedokončíš všechny šifry! V cíli tě bude čekat občerstvení, ceny pro vítěze a spousta zábavy.</p>
 			</div>
-			<div class="col-md-4 text-center">
+			<div class="col-12 col-md-4 text-center">
 				<div class="shadow-box">
 					<map id="map" name="map"></map>
 					<script type="text/javascript">
 						var point = SMap.Coords.fromWGS84(17.6638886, 49.2251269);
 						var m = new SMap(JAK.gel("map"), point, 16);
 						m.addMarker(point);
-						m.addDefaultControls();
 					</script>
 				</div>
 			</div>
@@ -176,21 +169,24 @@
 	</div>
 
 	<div class="container container-ocojde">
-		<h2>Fotogalerie minulých ročníků</h2>
+		<h2 class="bottom-margin">Fotogalerie minulých ročníků</h2>
 		<div class="row d-flex">
 			<div class="col-12 col-sm-6 col-md-4 gallery-link d-flex justify-content-center" id="gallery2019">
-				<img src="images/Lusteniny2018.jpg" alt="Fotogalerie Lusteniny 2019" class="img-fluid">
-				<p class="align-self-center">2019</p>
+				<img src="images/lusteniny-2019.jpg" alt="Fotogalerie Lusteniny 2019">
+				
+				<a href="https://www.facebook.com/events/504711523393003/permalink/563433937520761/" alt="Luštěniny 2019" class="align-self-center"><p class="align-self-center">2019</p></a>
 			</div>
+		
 			<div class="col-12 col-sm-6 col-md-4 gallery-link d-flex justify-content-center" id="gallery2018">
-				<img src="images/Lusteniny2018.jpg" alt="Fotogalerie Lusteniny 2019" class="img-fluid">
-				<p class="align-self-center">2018</p>
+				<img src="images/Lusteniny2018.jpg" alt="Fotogalerie Lusteniny 2018">
+				
+				<a href="https://www.facebook.com/media/set/?set=ms.c.eJxNjskRxEAIAzNycYkj~%3B8Rchh1mPzy61EKMQnDCg8tD7eEGRd9xT~%3BxAlmi6qmMT2gC2CUxCFkzCbymNEifhICgR6oCYHbylsE8x0gO0WrnDjAasotkKb6nJgFWiSzW31KXfSu70Wep3aczSv~_mj3NLshPkByd0RC6CdCH4B1a1MTg~-~-.bps.a.1595718363863421&type=1&__tn__=HH-R&fbclid=IwAR0VMa5_kOI7qLBJ5J70dHADkLK4QahPmwP-gMyk2RPuX6etHt9khl0SBYY" alt="Luštěniny 2018" class="align-self-center"><p class="align-self-center">2018</p></a>
 			</div>
 		</div>
 	</div>
 
 	<div class="container">
-		<h2>Sponzoři</h2>
+		<h2 class="bottom-margin">Sponzoři</h2>
 		<div class="row sponsors">
 			<a href="https://zivy-zlin.cz/" class="col-12 col-sm-6">
 				<img src="images/sponsors/zivyzlin.png" alt="Živý Zlín" class="img-fluid sponsor-ZZ">
@@ -209,7 +205,6 @@
 	<script src="js/jquery-3.3.1.slim.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/lightbox-plus-jquery.min.js"></script>
 </body>
 
 </html>

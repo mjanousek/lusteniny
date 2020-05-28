@@ -48,7 +48,7 @@ a:hover {
 }
 
 .gallery-link:hover {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 
@@ -56,17 +56,34 @@ a:hover {
     color: #212844;
 }
 
+.bottom-margin {
+    margin-bottom: 1em;
+}
+
 .gallery-link img {
     z-index: -1;
+
+    display: block;
+    margin: auto;
+
+    height: auto;
+    max-height: 100%;
+
+    width: auto;
+    max-width: 100%;
 }
 
 .gallery-link p {
     font-size: 3em;
     text-align: center;
     color: #FFF;
-    position: absolute;
+    /*position: absolute;*/
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
+}
+
+.gallery-link a {
+    position: absolute;
 }
 
 .sponsors img{
