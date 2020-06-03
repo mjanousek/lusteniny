@@ -5,9 +5,15 @@
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
 	<title>Luštěniny</title>
 	<meta name="description" content="Šifrovací hra">
+	<meta property="og:image" content="images/fb-share-image.jpg" />
+	<meta property="og:image:type" content="image/jpg">
+	<meta property="og:image:width" content="1024">
+	<meta property="og:image:height" content="1024">
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/lusteniny.css">
@@ -23,7 +29,7 @@
 		<div class="d-flex flex-column justify-content-center align-items-center flex-fill">
 			<img src="images/logo-lusteniny.svg" alt="Luštěniny Logo" class="logo">
 			<h5>Šifrovací hra v centru Zlína</h5>
-			<h3>20. 6. 2020</h3>
+			<!-- <h3>20. 6. 2020</h3> -->
 		</div>
 		<a class="btn-intro" role="button" href="#about">
 			<i></i>
@@ -32,8 +38,9 @@
 
 	<div id="odpocet" class="container-odpocet">
 		<div class="text-center text-white">
-			<h3 id="countdown-header">Do začátku zbývá</h3>
-			
+			<!-- Puvodne: Do akce zbývá -->
+			<h3 id="countdown-header">Akce je prozatím odložena na neurčito.<h3>
+
 			<p id="countdown"> </p>
 
 			<h3 id="finish">Luštěniny 2020 již bohužel skončily.<br />Nevěš hlavu, přístí rok tady budeme zas!</h3>
@@ -116,11 +123,12 @@
 				// Set the date we're counting down to
 				var countDownDate = new Date("Jun 22, 2020 13:00:00").getTime();
 
+				// Prozatim odstraneno
 				// Update the count down now
-				updateCountdownElement(countDownDate);
+				// updateCountdownElement(countDownDate);
 
 				// Update the count down every 1 second
-				interval = setInterval(function(){updateCountdownElement(countDownDate);}, 5000);
+				// interval = setInterval(function(){updateCountdownElement(countDownDate);}, 5000);
 			</script>
 		</div>
 	</div>
@@ -130,10 +138,9 @@
 			<div class="col-12 col-md-8">
 				<h2 id="about">O co jde?</h2>
 				<p>
-				 Baví tě šifrovačky? Pokud ano, jsi na správném místě. Luštěniny jsou šifrovací hra pořádána v centru Zlína, které se můžeš zůčastnit jak v týmu, tak sám. Navíc s sebou můžes vzít i děti, budeme mít připravené šifry i pro ně.
+				 Baví tě šifrovačky? Pokud ano, jsi na správném místě. Luštěniny jsou šifrovací hra pořádána v centru Zlína, které se můžeš zúčastnit jak v týmu, tak sám.
 				</p>
-				<p>Čeká na tebe krátká procházka Zlínem lemovaná stanovišti s šiframi a tvým úkolem bude, jich vyluštit co nejvíc.
-					Na konci události tě bude čekat vyhlášení vítězů, předání cen a nějaký ten networking včetně občerstvení.</p>
+				<p>Čeká na tebe krátká procházka Zlínem lemovaná stanovišti s šiframi a tvým úkolem bude jich vyluštit co nejvíc. Na konci události tě bude čekat vyhlášení vítězů.</p>
 			</div>
 			<div class="col-12 col-md-4 d-none d-md-block">
 				<div class="shadow-box">
@@ -144,9 +151,9 @@
 		<div class="row d-flex">
 			<div class="col-12 col-md-8 align-self-center order-md-last">
 				<h2>Kam se mám dostavit?</h2>
-				<p>I letos to je malá hádanka a musíš si nás najít. Budeme tě čekat <span class="text-red">20. 6. 2020 ve 13:00</span> na tržišti Pod Kaštany. A jak nás poznáš? Stačí přece hledat luštěniny. :)</p>
+				<p>I letos to je malá hádanka a musíš si nás najít. Budeme tě čekat <span style="display:none" class="text-red">20. 6. 2020 ve 13:00</span> na tržišti Pod Kaštany. A jak nás poznáš? Stačí přece hledat luštěniny. :)</p>
 				<p>Vyhlášení nejlepších týmů nebo jednotlivců se uskuteční
-				<span class="text-red">20. 6. 2020 v 18:00</span> na místě, které se dozvíš v průběhu hry. Určitě přijď, i když nedokončíš všechny šifry! V cíli tě bude čekat občerstvení, ceny pro vítěze a spousta zábavy.</p>
+				<span  style="display:none" class="text-red">20. 6. 2020 v 18:00</span> na místě, které se dozvíš v průběhu hry. Určitě přijď, i když nedokončíš všechny šifry!</p>
 			</div>
 			<div class="col-12 col-md-4 text-center">
 				<div class="shadow-box">
@@ -164,8 +171,8 @@
 
 	<div class="container-odpocet text-center text-white">
 		<h2>Zúčastníš se? Chceš se na něco zeptat?</h2>
-		<p class="text-center">Přidej se k události na facebooku, kde se můžeš v případě potřeby na cokoli zeptat.</p>
-		<a class="btn btn-white text-red" href="https://www.facebook.com/events/504711523393003" target="_blank">Událost na FB</a>
+		<p class="text-center">Sleduj naši stránku na facebooku, kde se můžeš v případě potřeby na cokoli zeptat.</p>
+		<a class="btn btn-white text-red" href="https://www.facebook.com/lusteniny/" target="_blank">Luštěniny na FB</a>
 	</div>
 
 	<div class="container container-ocojde">
@@ -199,7 +206,7 @@
 
 
 	<div class="container-lumpici text-center text-white back ">
-				2020 © Luštěniny
+				© 2020 Luštěniny
 	</div>
 
 	<script src="js/jquery-3.3.1.slim.min.js"></script>
