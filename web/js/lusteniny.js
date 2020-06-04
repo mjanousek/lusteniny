@@ -1,80 +1,82 @@
-$(document).ready(function () {
-    // Updates countdown container
-    var updateCountdownElement = function (countDownDate) {
-        var now = new Date().getTime();
-        var distance = countDownDate - now;
-        var remainingTime = {
-            days: Math.floor(distance / (1000 * 60 * 60 * 24)),
-            hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
-            minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
-            seconds: Math.floor((distance % (1000 * 60)) / (1000)),
-        }
+// Czech texts of units
+var timeWords = {
+    days: ["den", "dny", "dnů"],
+    hours: ["hodina", "hodiny", "hodin"],
+    minutes: ["minuta", "minuty", "minut"]
+};
 
-        var daysTextElement = document.getElementById("days-text")
-        var hoursTextElement = document.getElementById("hours-text")
-        var minutesTextElement = document.getElementById("minutes-text")
-        var secondsTextElement = document.getElementById("seconds-text")
+var interval;
 
-        document.getElementById("days").innerHTML = remainingTime.days;
-        if (remainingTime.days > 3)
-            daysTextElement.innerHTML = "Dnů";
-        else if (remainingTime.days > 1)
-            daysTextElement.innerHTML = "Dny";
-        else
-            daysTextElement.innerHTML = "Den";
+// Return czech text for unit
+function formatTimeUnit(count, unit) {
+    if (count == 1) {
+        return timeWords[unit][0];
+    }
+    if (count < 5 && count > 0) {
+        return timeWords[unit][1];
+    }
+    return timeWords[unit][2];
+}
 
-        document.getElementById("hours").innerHTML = remainingTime.hours;
-        if (remainingTime.hours > 3 || remainingTime.hours == 0)
-            hoursTextElement.innerHTML = "Hodin";
-        else if (remainingTime.hours > 1)
-            hoursTextElement.innerHTML = "Hodiny";
-        else
-            hoursTextElement.innerHTML = "Hodina";
+// Format time to czech text
+function getRemainingTimeText(remainingTime) {
 
-        document.getElementById("minutes").innerHTML = remainingTime.minutes;
-        if (remainingTime.minutes > 3 || remainingTime.minutes == 0)
-            minutesTextElement.innerHTML = "Minut";
-        else if (remainingTime.minutes > 1)
-            minutesTextElement.innerHTML = "Minuty";
-        else
-            minutesTextElement.innerHTML = "Minuta";
+    var text = "";
+    var firstNotNotNull = false;
 
-        document.getElementById("seconds").innerHTML = remainingTime.seconds;
-        if (remainingTime.seconds > 3)
-            secondsTextElement.innerHTML = "Sekund";
-        else if (remainingTime.seconds > 1)
-            secondsTextElement.innerHTML = "Sekundy";
-        else
-            secondsTextElement.innerHTML = "Sekunda";
-
-
-        var getTextRepresentationOfDateTime = function (dateTime) {
-            var text = "P";
-            if (dateTime.days > 0)
-                text += dateTime.days + "D";
-            if (dateTime.hours > 0)
-                text += dateTime.hours + "H";
-            if (dateTime.minutes > 0)
-                text += dateTime.minutes + "M";
-            if (dateTime.seconds > 0)
-                text += dateTime.seconds + "S";
-            return text;
-        }
-
-        document.getElementById("countdown-timer").setAttribute("datetime", getTextRepresentationOfDateTime(remainingTime));
-
-        if (-14400000 < distance && distance < 0) {
-        } else if (distance < 0) {
+    // Iterate over units and get remaining time text
+    for (unit in remainingTime) {
+        var n = remainingTime[unit];
+        if (n > 0 || firstNotNotNull) {
+            firstNotNotNull = true;
+            text += n + " " + formatTimeUnit(n, unit) + " ";
         }
     }
+    return text;
+}
 
-    // Set the date we're counting down to
-    var countDownDate = new Date("Jun 20, 2020 13:00:00").getTime();
+// Updates countdown container
+var updateCountdownElement = function(countDownDate) {
+    console.log("update")
+    // Get todays date and time
+    var now = new Date().getTime();
 
-    // Update the count down now
-    updateCountdownElement(countDownDate);
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
 
-    // Update the count down every 1 second
-    interval = setInterval(function () { updateCountdownElement(countDownDate); }, 1000);
-});
+    // Time calculations for days, hours, minutes and seconds
+    var remainingTime = {
+        days: Math.floor(distance / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+        minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
+    }
 
+    // Display the result in the element with id="demo"
+    document.getElementById("countdown").innerHTML = getRemainingTimeText(remainingTime);
+
+    // If the count down is finished and competition is in progress, write some text
+    if (-14400000 < distance && distance < 0) {
+        document.getElementById("countdown").innerHTML = "Soutěž právě probíhá!";
+        document.getElementById("countdown-header").style.display = 'none';
+
+    // If the competition is in progress, write some text
+    } else if (distance < 0) {
+        clearInterval(interval);
+        // Hide elements
+        document.getElementById("countdown-header").style.display = 'none';
+        document.getElementById("countdown").style.display = 'none';
+
+        // Show elements
+        document.getElementById("finish").style.display = 'block';
+        document.getElementById("finish-btn").style.display = 'inline-block';
+    }
+}
+
+// Set the date we're counting down to
+var countDownDate = new Date("Jun 22, 2020 13:00:00").getTime();
+
+// Update the count down now
+updateCountdownElement(countDownDate);
+
+// Update the count down every 1 second
+interval = setInterval(function(){updateCountdownElement(countDownDate);}, 5000);
