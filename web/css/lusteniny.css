@@ -169,7 +169,6 @@ hr {
 .section-gallery .gallery-link img {
   z-index: -1;
   display: block;
-  margin: auto;
   height: auto;
   max-height: 100%;
   width: auto;
@@ -185,6 +184,14 @@ hr {
 }
 
 .section-gallery .gallery-link a {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute;
 }
 
