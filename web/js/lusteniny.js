@@ -1,3 +1,18 @@
+$(function () {
+    $(document).scroll(function () {
+        var $nav = $("#navbar");
+        var $intro = $("#hero");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $intro.height() - $nav.height());
+    });
+});
+
+jQuery(document).ready(function ($) {
+    var $nav = $("#navbar");
+    var $intro = $("#hero");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $intro.height() - $nav.height());
+});
+
+
 // Czech texts of units
 var timeWords = {
     days: ["den", "dny", "dnů"],
@@ -36,7 +51,7 @@ function getRemainingTimeText(remainingTime) {
 }
 
 // Updates countdown container
-var updateCountdownElement = function(countDownDate) {
+var updateCountdownElement = function (countDownDate) {
     console.log("update")
     // Get todays date and time
     var now = new Date().getTime();
@@ -59,7 +74,7 @@ var updateCountdownElement = function(countDownDate) {
         document.getElementById("countdown").innerHTML = "Soutěž právě probíhá!";
         document.getElementById("countdown-header").style.display = 'none';
 
-    // If the competition is in progress, write some text
+        // If the competition is in progress, write some text
     } else if (distance < 0) {
         clearInterval(interval);
         // Hide elements
@@ -79,4 +94,4 @@ var countDownDate = new Date("Jul 18, 2020 16:00:00").getTime();
 updateCountdownElement(countDownDate);
 
 // Update the count down every 1 second
-interval = setInterval(function(){updateCountdownElement(countDownDate);}, 5000);
+interval = setInterval(function () { updateCountdownElement(countDownDate); }, 5000);
