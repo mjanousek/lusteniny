@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 </head>
 
-<body >
+<body>
     <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-gradient-primary shadow-box fixed-top scrolled">
         <div class="container">
             <a class="navbar-brand" href="#">
@@ -43,8 +43,7 @@
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Minulé Ročníky
                         </a>
-                        <div class="dropdown-menu border-0 text-center"
-                            aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu border-0 text-center" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="lusteniny3">Luštěniny III.</a>
                             <a class="dropdown-item" href="lusteniny2">Luštěniny II.</a>
                             <a class="dropdown-item" href="lusteniny1">Luštěniny I.</a>
@@ -102,12 +101,321 @@
     <main style="min-height: 60vh;">
         <section class="container">
             <a id="cyphers" class="anchor"></a>
-            <header class="text-center mb-4">
+            <header class="text-center">
                 <h2>Šifry a Řešení</h2>
                 <hr class="mx-auto">
+                <nav>
+					<a href="lusteniny1/#cypher-1" class="btn btn-sm btn-primary mt-1">Úvodní šifra</a>
+					<a href="lusteniny1/#cypher-2" class="btn btn-sm btn-primary mt-1">Binary</a>
+					<a href="lusteniny1/#cypher-3" class="btn btn-sm btn-primary mt-1">C lang</a>
+					<a href="lusteniny1/#cypher-4" class="btn btn-sm btn-primary mt-1">Šifra č.4</a>
+					<a href="lusteniny1/#cypher-5" class="btn btn-sm btn-primary mt-1">Šifra č.5</a>
+					<a href="lusteniny1/#cypher-6" class="btn btn-sm btn-primary mt-1">QR Code</a>
+					<a href="lusteniny1/#cypher-7" class="btn btn-sm btn-primary mt-1">Šifra č.7</a>
+					<a href="lusteniny1/#cypher-8" class="btn btn-sm btn-primary mt-1">Síť</a>
+				</nav>
             </header>
-            <div class="alert alert-info">
-                Tuto sekci pro vás teprve připravujeme.
+            <div class="row">
+
+                <div class="col-12 col-md-6">
+                    <div class="card my-4 border-0 shadow-box">
+                        <a id="cypher-1" class="anchor"></a>
+                        <div class="card-header">
+                            <h5 class="text-center mb-0">Úvodní šifra</h5>
+                        </div>
+                        <img class="card-img-top" src="images/cyphers/Lusteniny2018-UvodniSifra.jpg" alt="Zadaní 1. šifry">
+
+                        <div class="card-header p-0 border-0">
+                            <button class="btn btn-primary btn-block rounded-0" type="button" data-toggle="collapse"
+                                data-target="#cypher-1-hint" aria-expanded="false" aria-controls="collapseExample">
+                                Zobrazit Nápovědu
+                            </button>
+                        </div>
+                        <div class="collapse p-3" id="cypher-1-hint">
+                            <p class="mb-0">
+                                Caesarova šifra
+                            <p>
+                        </div>
+
+                        <div class="card-header p-0 border-bottom-0">
+                            <button class="btn btn-primary btn-block rounded-0" type="button" data-toggle="collapse"
+                                data-target="#cypher-1-solution" aria-expanded="false" aria-controls="collapseExample">
+                                Zobrazit Řešení
+                            </button>
+                        </div>
+                        <div class="collapse p-3" id="cypher-1-solution">
+                            <ol>
+                                <li>Každé písmeno posuň o 13 míst v abecedě</li>
+                            </ol>
+                            <div class="alert alert-primary text-center mb-0">Řešení: I FAILED THE TURING TEST</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="card my-4 border-0 shadow-box">
+                        <a id="cypher-2" class="anchor"></a>
+                        <div class="card-header">
+                            <h5 class="text-center mb-0">Binary</h5>
+                        </div>
+                        <img class="card-img-top" src="images/cyphers/Lusteniny2018-Binary.jpg" alt="Zadaní 2. šifry">
+
+                        <div class="card-header p-0 border-0">
+                            <button class="btn btn-primary btn-block rounded-0" type="button" data-toggle="collapse"
+                                data-target="#cypher-2-hint" aria-expanded="false" aria-controls="collapseExample">
+                                Zobrazit Nápovědu
+                            </button>
+                        </div>
+                        <div class="collapse p-3" id="cypher-2-hint">
+                            <p class="mb-0">
+                                Vybarvuj zleva doprava
+                            <p>
+                        </div>
+
+                        <div class="card-header p-0 border-bottom-0">
+                            <button class="btn btn-primary btn-block rounded-0" type="button" data-toggle="collapse"
+                                data-target="#cypher-2-solution" aria-expanded="false" aria-controls="collapseExample">
+                                Zobrazit Řešení
+                            </button>
+                        </div>
+                        <div class="collapse p-3" id="cypher-2-solution">
+                            <ol>
+                                <li>Pokud do kulicky vchazi pouze jedna barva, pak vybarvi kuličku stejnou barvou</li>
+                                <li>Pokud do kuličky vchází dvě kuličky stejné barvy, pak vybarvi kuličku opačnou barvou</li>
+                                <li>Vznikne obrázek s nápisem ZLIN</li>
+                            </ol>
+                            <div class="alert alert-primary text-center mb-0">Řešení: ZLIN</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="card my-4 border-0 shadow-box">
+                        <a id="cypher-3" class="anchor"></a>
+                        <div class="card-header">
+                            <h5 class="text-center mb-0">C lang</h5>
+                        </div>
+                        <img class="card-img-top" src="images/cyphers/Lusteniny2018-CLang.jpg" alt="Zadaní 3. šifry">
+
+                        <div class="card-header p-0 border-0">
+                            <button class="btn btn-primary btn-block rounded-0" type="button" data-toggle="collapse"
+                                data-target="#cypher-3-hint" aria-expanded="false" aria-controls="collapseExample">
+                                Zobrazit Nápovědu
+                            </button>
+                        </div>
+                        <div class="collapse p-3" id="cypher-3-hint">
+                            <p class="mb-0">
+                                Hledej chyby
+                            <p>
+                        </div>
+
+                        <div class="card-header p-0 border-bottom-0">
+                            <button class="btn btn-primary btn-block rounded-0" type="button" data-toggle="collapse"
+                                data-target="#cypher-3-solution" aria-expanded="false" aria-controls="collapseExample">
+                                Zobrazit Řešení
+                            </button>
+                        </div>
+                        <div class="collapse p-3" id="cypher-3-solution">
+                            <ol>
+                                <li>Najdi syntaktické chyby v kódu</li>
+                                <li>Písmena odpovídající řádkům s chybami (je nutné písmena přeskládat a čísla odpovídají pořadí písmen v abecedě)</li>
+                            </ol>
+                            <p>Chyby na řádních: 2, 7, 9, 14, 15</p>
+                            <div class="alert alert-primary text-center mb-0">Řešení: BINGO</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="card my-4 border-0 shadow-box">
+                        <a id="cypher-4" class="anchor"></a>
+                        <div class="card-header">
+                            <h5 class="text-center mb-0">Šifra č. 4</h5>
+                        </div>
+                        <img class="card-img-top" src="images/cyphers/Lusteniny2018-Brail.jpg" alt="Zadaní 4. šifry">
+
+                        <div class="card-header p-0 border-0">
+                            <button class="btn btn-primary btn-block rounded-0" type="button" data-toggle="collapse"
+                                data-target="#cypher-4-hint" aria-expanded="false" aria-controls="collapseExample">
+                                Zobrazit Nápovědu
+                            </button>
+                        </div>
+                        <div class="collapse p-3" id="cypher-4-hint">
+                            <p class="mb-0">
+                                Brailovo písmo
+                            <p>
+                        </div>
+
+                        <div class="card-header p-0 border-bottom-0">
+                            <button class="btn btn-primary btn-block rounded-0" type="button" data-toggle="collapse"
+                                data-target="#cypher-4-solution" aria-expanded="false" aria-controls="collapseExample">
+                                Zobrazit Řešení
+                            </button>
+                        </div>
+                        <div class="collapse p-3" id="cypher-4-solution">
+                            <ol>
+                                <li>Tabulka je pole 4x4 brailových písmen (1 znamená plnou tečku, 0 prázdnou)</li>
+                                <li>Přepiš Brailovo písmo na písmena normální abecedy</li>
+                                <li>Písmena čtená po řádcích</li>
+                            </ol>
+                            <div class="alert alert-primary text-center mb-0">Řešení: BINARY IS FUN !!</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="card my-4 border-0 shadow-box">
+                        <a id="cypher-5" class="anchor"></a>
+                        <div class="card-header">
+                            <h5 class="text-center mb-0">Šifra č. 5</h5>
+                        </div>
+                        <img class="card-img-top" src="images/cyphers/Lusteniny2018-Sifra5.jpg" alt="Zadaní 5. šifry">
+
+                        <div class="card-header p-0 border-0">
+                            <button class="btn btn-primary btn-block rounded-0" type="button" data-toggle="collapse"
+                                data-target="#cypher-5-hint" aria-expanded="false" aria-controls="collapseExample">
+                                Zobrazit Nápovědu
+                            </button>
+                        </div>
+                        <div class="collapse p-3" id="cypher-5-hint">
+                            <p class="mb-0">
+                                Walk/kráčej/jdi…
+                            <p>
+                        </div>
+
+                        <div class="card-header p-0 border-bottom-0">
+                            <button class="btn btn-primary btn-block rounded-0" type="button" data-toggle="collapse"
+                                data-target="#cypher-5-solution" aria-expanded="false" aria-controls="collapseExample">
+                                Zobrazit Řešení
+                            </button>
+                        </div>
+                        <div class="collapse p-3" id="cypher-5-solution">
+                            <ol>
+                                <li>WSAD odpovídá klávesám na klávesnici, které se používají ve hrách k chůzi 4 směry (W - pohyb nahoru, S - pohyb dolů, A - vlevo, D - vpravo</li>
+                                <li>tabulka představuje pole, po kterém se pohybuje hráč (kulička udává jeho první pozici)</li>
+                                <li>Každý řádek odpovídá sekvenci kroků, kterou musí hráč provést, a pak se ocitne na písmenu, které zapíše</li>
+                                <li>Písmena, na kterých se hráč ocitne po každé sekvenci kroků
+                                </li>
+                            </ol>
+                            <div class="alert alert-primary text-center mb-0">Řešení: CNGROUP</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="card my-4 border-0 shadow-box">
+                        <a id="cypher-6" class="anchor"></a>
+                        <div class="card-header">
+                            <h5 class="text-center mb-0">QR Code</h5>
+                        </div>
+                        <img class="card-img-top" src="images/cyphers/Lusteniny2018-QRCode.jpg" alt="Zadaní 6. šifry">
+
+                        <div class="card-header p-0 border-0">
+                            <button class="btn btn-primary btn-block rounded-0" type="button" data-toggle="collapse"
+                                data-target="#cypher-6-hint" aria-expanded="false" aria-controls="collapseExample">
+                                Zobrazit Nápovědu
+                            </button>
+                        </div>
+                        <div class="collapse p-3" id="cypher-6-hint">
+                            <p class="mb-0">
+                                Sloupce
+                            <p>
+                        </div>
+
+                        <div class="card-header p-0 border-bottom-0">
+                            <button class="btn btn-primary btn-block rounded-0" type="button" data-toggle="collapse"
+                                data-target="#cypher-6-solution" aria-expanded="false" aria-controls="collapseExample">
+                                Zobrazit Řešení
+                            </button>
+                        </div>
+                        <div class="collapse p-3" id="cypher-6-solution">
+                            <ol>
+                                <li>Sečti čtverečky v každém sloupci</li>
+                                <li>Součet čtverečků udává pořadí písmene v abecedě</li>
+                                <li>Písmena ve stejném pořadí, jako sloupce</li>
+                            </ol>
+                            <div class="alert alert-primary text-center mb-0">Řešení: THINK DIFFERENT AND THEN AGAIN (bez mezer)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="card my-4 border-0 shadow-box">
+                        <a id="cypher-7" class="anchor"></a>
+                        <div class="card-header">
+                            <h5 class="text-center mb-0">Šifra č.: 7</h5>
+                        </div>
+                        <img class="card-img-top" src="images/cyphers/Lusteniny2018-Sifra7.jpg" alt="Zadaní 7. šifry">
+
+                        <div class="card-header p-0 border-0">
+                            <button class="btn btn-primary btn-block rounded-0" type="button" data-toggle="collapse"
+                                data-target="#cypher-7-hint" aria-expanded="false" aria-controls="collapseExample">
+                                Zobrazit Nápovědu
+                            </button>
+                        </div>
+                        <div class="collapse p-3" id="cypher-7-hint">
+                            <p class="mb-0">
+                                Přiřaď města
+                            <p>
+                        </div>
+
+                        <div class="card-header p-0 border-bottom-0">
+                            <button class="btn btn-primary btn-block rounded-0" type="button" data-toggle="collapse"
+                                data-target="#cypher-7-solution" aria-expanded="false" aria-controls="collapseExample">
+                                Zobrazit Řešení
+                            </button>
+                        </div>
+                        <div class="collapse p-3" id="cypher-7-solution">
+                            <ol>
+                                <li>Tečky představují města v Čr</li>
+                                <li>Přiřaď pojmy k městům (Zjisti, jaké města jsou zaznačené)</li>
+                                <li>Číslo udává písmeno v názvu města</li>
+                                <li>Písmena z měst ve stejném pořadí, jako jsou jejich pojmy</li>
+                            </ol>
+                            <div class="alert alert-primary text-center mb-0">Řešení: HAPPINESS</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="card my-4 border-0 shadow-box">
+                        <a id="cypher-8" class="anchor"></a>
+                        <div class="card-header">
+                            <h5 class="text-center mb-0">Šifra č.: 7</h5>
+                        </div>
+                        <img class="card-img-top" src="images/cyphers/Lusteniny2018-Síť.jpg" alt="Zadaní 7. šifry">
+
+                        <div class="card-header p-0 border-0">
+                            <button class="btn btn-primary btn-block rounded-0" type="button" data-toggle="collapse"
+                                data-target="#cypher-8-hint" aria-expanded="false" aria-controls="collapseExample">
+                                Zobrazit Nápovědu
+                            </button>
+                        </div>
+                        <div class="collapse p-3" id="cypher-8-hint">
+                            <p class="mb-0">
+                                Http stavové kódy
+                            <p>
+                        </div>
+
+                        <div class="card-header p-0 border-bottom-0">
+                            <button class="btn btn-primary btn-block rounded-0" type="button" data-toggle="collapse"
+                                data-target="#cypher-8-solution" aria-expanded="false" aria-controls="collapseExample">
+                                Zobrazit Řešení
+                            </button>
+                        </div>
+                        <div class="collapse p-3" id="cypher-8-solution">
+                            <ol>
+                                <li>Zkratky představují chybové hlášky Http protokolu</li>
+                                <li>Najdi kódy jednotlivých hlášek</li>
+                                <li>Sečti čísla v http ködu (př.: 404 -> 4 + 0 + 4 = 8)</li>
+                                <li>Číslo udává pořadí písmene v abecedě</li>
+                                <li>Písmena ve stejném pořadí, jako http stavové kódy (čtverečky výše)</li>
+                            </ol>
+                            <div class="alert alert-primary text-center mb-0">Řešení: BOHEMIA</div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
         <section class="container">
@@ -117,8 +425,10 @@
                 <hr class="mx-auto">
             </header>
             <div class="text-center mb-4">
-                <p >Fotografie z prvního ročníku naleznete v albumu na facebooku</p>
-                <a class="btn btn-lg btn-facebook" href="https://www.facebook.com/media/set/?vanity=CNGroupZL&set=a.1595718363863421"><i class="fab fa-facebook-square pr-2"></i> Odkaz na Galerii</a>
+                <p>Fotografie z prvního ročníku naleznete v albumu na facebooku</p>
+                <a class="btn btn-lg btn-facebook"
+                    href="https://www.facebook.com/media/set/?vanity=CNGroupZL&set=a.1595718363863421"><i
+                        class="fab fa-facebook-square pr-2"></i> Odkaz na Galerii</a>
             </div>
         </section>
     </main>
