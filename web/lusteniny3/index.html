@@ -1,0 +1,733 @@
+<!doctype html>
+<html lang="cs">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+	<title>Luštěniny III.</title>
+	<base href="../">
+	<meta name="description" content="Šifrovací hra">
+	<meta property="og:image" content="images/fb-share-image.jpg" />
+	<meta property="og:image:type" content="image/jpg">
+	<meta property="og:image:width" content="1024">
+	<meta property="og:image:height" content="1024">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/lusteniny.min.css">
+	<link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
+
+<body>
+	<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-gradient-primary shadow-box fixed-top scrolled">
+		<div class="container">
+			<a class="navbar-brand" href="#">
+				<img src="images/logo-lusteniny.svg" height="40px" alt="Luštěniny">
+			</a>
+			<button class="navbar-toggler border-0" type="button" data-toggle="collapse"
+				data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="fas fa-bars text-light " style="font-size: 2rem;"></span>
+			</button>
+			<div class="collapse navbar-collapse " id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto text-center">
+					<li class="nav-item">
+						<a class="nav-link" href="#about">Úvod </a>
+					</li>
+					<li class="nav-item dropdown ">
+						<a class="nav-link active" id="navbarDropdown" role="button" href="#" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">
+							Minulé Ročníky
+						</a>
+						<div class="dropdown-menu border-0 text-center" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="lusteniny3">Luštěniny III.</a>
+							<a class="dropdown-item" href="lusteniny2">Luštěniny II.</a>
+							<a class="dropdown-item" href="lusteniny1">Luštěniny I.</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#sponsors">Sponzoři</a>
+					</li>
+					<li class="nav-item d-none d-lg-inline">
+						<a class="nav-link" href="https://www.facebook.com/lusteniny">
+							<span class="fab fa-facebook-square"></span>
+						</a>
+					</li>
+					<li class="nav-item d-none d-lg-inline">
+						<a class="nav-link" href="https://www.m.me/lusteniny/">
+							<span class="fab fa-facebook-messenger"></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<header class="mt-5 py-4 text-center container">
+		<h1>Luštěniny III.</h1>
+		<hr class="mx-auto">
+		<small class="text-muted">18.07.2020</small>
+		<div class="row mt-2">
+			<div class="col-md-8 col-12 order-2 order-md-1 sh">
+				<div class="shadow-box h-100 py-3 rounded my-1">
+					<h2>Stupínek Vítězů</h2>
+					<hr class="mx-auto">
+					1. Eště Nevim <br>
+					2. Edhouse 42 <br>
+					3. Chromý tým se Safronem
+				</div>
+			</div>
+			<div class="col-md-4 col-12 order-1 order-md-2">
+				<nav class="text-center">
+					<a href="lusteniny3/#cyphers" class="btn btn-primary btn-block my-1 shadow-box">
+						<i class="fas fa-search pr-2"></i>Šifry a Řešení
+					</a>
+					<a href="lusteniny3/#gallery" class="btn btn-primary btn-block my-1 shadow-box">
+						<i class="fas fa-images pr-2"></i>Fotogalerie
+					</a>
+					<a href="lusteniny3/#bonus" class="btn btn-primary btn-block my-1 shadow-box">
+						<i class="fas fa-info-circle pr-2"></i>Bonusové informace k šifrám
+					</a>
+					<a class="btn btn-sm btn-block btn-facebook my-1"
+						href="https://www.facebook.com/events/943937172709526/">
+						<i class="fab fa-facebook-square pr-2"></i>
+						Událost na Facebooku
+					</a>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="container">
+			<a id="cyphers" class="anchor"></a>
+			<header class="text-center ">
+				<h2>Šifry a Řešení</h2>
+				<hr class="mx-auto">
+				<nav>
+					<a href="lusteniny3/#cypher-1" class="btn btn-sm btn-primary mt-1">Filmové Klasiky</a>
+					<a href="lusteniny3/#cypher-2" class="btn btn-sm btn-primary mt-1">Míček</a>
+					<a href="lusteniny3/#cypher-3" class="btn btn-sm btn-primary mt-1">Dopis</a>
+					<a href="lusteniny3/#cypher-4" class="btn btn-sm btn-primary mt-1">Jiný Pohled</a>
+					<a href="lusteniny3/#cypher-5" class="btn btn-sm btn-primary mt-1">Skládačka</a>
+					<a href="lusteniny3/#cypher-6" class="btn btn-sm btn-primary mt-1">Kruhy</a>
+					<a href="lusteniny3/#cypher-7" class="btn btn-sm btn-primary mt-1">Kamera, Klapka, Akce!</a>
+					<a href="lusteniny3/#cypher-8" class="btn btn-sm btn-primary mt-1">Rozsypaný čaj</a>
+					<a href="lusteniny3/#cypher-9" class="btn btn-sm btn-primary mt-1">Mat nebo Pat</a>
+					<a href="lusteniny3/#cypher-10" class="btn btn-sm btn-primary mt-1">Loga</a>
+				</nav>
+			</header>
+			<div class="row">
+				<div class="col-12 col-md-6">
+					<div class="card my-4 border-0 shadow-box">
+						<a id="cypher-1" class="anchor"></a>
+						<div class="card-header">
+							<h5 class="text-center mb-0">Filmové Klasiky</h5>
+						</div>
+						<img class="card-img-top" src="images/cyphers/Lusteniny2020-Filmové klasiky-1.jpg"
+							alt="Zadaní 1. šifry">
+
+
+						<div class="card-header p-0 border-0">
+							<button class="btn btn-primary btn-block rounded-0" type="button" data-toggle="collapse"
+								data-target="#cypher-1-hint" aria-expanded="false" aria-controls="collapseExample">
+								Zobrazit Nápovědu
+							</button>
+						</div>
+						<div class="collapse" id="cypher-1-hint">
+							<p class="p-3 mb-0">
+								Nápověda: Počet herců na obrázku je důležitý.
+							</p>
+						</div>
+
+						<div class="card-header p-0 border-bottom-0">
+							<button class="btn btn-primary btn-block rounded-0" type="button" data-toggle="collapse"
+								data-target="#cypher-1-solution" aria-expanded="false" aria-controls="collapseExample">
+								Zobrazit Řešení
+							</button>
+						</div>
+						<div class="collapse p-3" id="cypher-1-solution">
+							<ol>
+								<li>Přiřadit hlášky z filmů k jednotlivým obrázkům.</li>
+								<li>Počet lidí na obrázku udává pozici písmene v přiřazené hlášce a toto písmeno je
+									částí zašifrované zprávy.</li>
+								<li>Písmena přečtena popořadě od první hlášky..</li>
+							</ol>
+							<div class="alert alert-primary text-center mb-0">Řešení: klapky</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6">
+					<div class="card my-4 border-0 shadow-box">
+						<div class="card-header">
+							<a id="cypher-2" class="anchor"></a>
+							<h5 class="text-center mb-0">Míček</h5>
+						</div>
+						<img class="card-img-top" src="images/cyphers/Lusteniny2020-Micek.jpg" alt="Zadaní 2. šifry">
+						<div class="card-body">
+							Šifra míček byla zadána jako skutečný předmět. Zde na stránkach můžete naleznout pouze
+							fotografie daného míčku.
+							Pozor! Na fotkách se jedná o stejný míček.
+						</div>
+						<div class="card-header p-0 border-0">
+							<button class="btn btn-primary btn-block rounded-0" type="button" data-toggle="collapse"
+								data-target="#cypher-2-hint" aria-expanded="false" aria-controls="collapseExample">
+								Zobrazit Nápovědu
+							</button>
+						</div>
+						<div class="collapse" id="cypher-2-hint">
+							<p class="p-3 mb-0">
+								Nápověda: Otvory jako korálky na šňůrce. Teď už jen zjistit, který je který.
+							</p>
+						</div>
+
+						<div class="card-header p-0 border-bottom-0">
+							<button class="btn btn-primary btn-block rounded-0" type="button" data-toggle="collapse"
+								data-target="#cypher-2-solution" aria-expanded="false" aria-controls="collapseExample">
+								Zobrazit Řešení
+							</button>
+						</div>
+						<div class="collapse p-3" id="cypher-2-solution">
+							<ol>
+								<li>Podle písmen daných na míčku, přiřaď písmena abecedy i k ostatním otvorům</li>
+								<li>Zapiš si písmena, kterými prochází šňůrka, v pořadí daném šňůrkou</li>
+								<li>Teď už stačí jen zjistit, které písmeno je první, aby heslo dávalo smysluplné slovo
+								</li>
+							</ol>
+							<div class="alert alert-primary text-center mb-0">Řešení: Macourek</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6">
+					<div class="card my-4 border-0 shadow-box">
+						<a id="cypher-3" class="anchor"></a>
+						<div class="card-header">
+							<h5 class="text-center mb-0">Dopis</h5>
+						</div>
+						<img class="card-img-top" src="images/cyphers/Lusteniny2020 - Dopis-1.jpg"
+							alt="Zadaní 3. šifry">
+
+						<div class="card-header p-0 border-0">
+							<button class="btn btn-primary btn-block rounded-0" type="button" data-toggle="collapse"
+								data-target="#cypher-3-hint" aria-expanded="false" aria-controls="collapseExample">
+								Zobrazit Nápovědu
+							</button>
+						</div>
+						<div class="collapse" id="cypher-3-hint">
+							<p class="p-3 mb-0">
+								Nápověda: Při psaní je potřebné dobře volit slova.
+							</p>
+						</div>
+
+						<div class="card-header p-0 border-bottom-0">
+							<button class="btn btn-primary btn-block rounded-0" type="button" data-toggle="collapse"
+								data-target="#cypher-3-solution" aria-expanded="false" aria-controls="collapseExample">
+								Zobrazit Řešení
+							</button>
+						</div>
+						<div class="collapse p-3" id="cypher-3-solution">
+							<ol>
+								<li>Zedník → <b>M</b>úrár</li>
+								<li>Tramvaj → <b>E</b>lektrička</li>
+								<li>Nádobí → <b>R</b>iad</li>
+								<li>Žízeň → <b>S</b>mäd</li>
+							</ol>
+							<div class="alert alert-primary text-center mb-0">Řešení: mers</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-6">
+					<div class="card my-4 border-0 shadow-box">
+						<div class="card-header">
+							<a id="cypher-4" class="anchor"></a>
+							<h5 class="text-center mb-0">Jiný Pohled</h5>
+						</div>
+						<img class="card-img-top" src="images/cyphers/Lusteniny2020-Jiny Pohled na Vec-1.jpg"
+							alt="Zadaní 4. šifry">
+
+						<div class="card-header p-0 border-0">
+							<button class="btn btn-primary btn-block rounded-0" type="button" data-toggle="collapse"
+								data-target="#cypher-4-hint" aria-expanded="false" aria-controls="collapseExample">
+								Zobrazit Nápovědu
+							</button>
+						</div>
+						<div class="collapse" id="cypher-4-hint">
+							<p class="p-3 mb-0">
+								Nápověda: Socha Masaryka, model starého Zlína na terase 21. budovy
+							</p>
+						</div>
+
+						<div class="card-header p-0 border-bottom-0">
+							<button class="btn btn-primary btn-block rounded-0" type="button" data-toggle="collapse"
+								data-target="#cypher-4-solution" aria-expanded="false" aria-controls="collapseExample">
+								Zobrazit Řešení
+							</button>
+						</div>
+						<div class="collapse p-3" id="cypher-4-solution">
+							<ol>
+								<li>Najít sochu Masaryka a směr, kterým se dívá</li>
+								<li>Vyměřit 150 metrů dozadu od něj</li>
+								<li>Zde se nachází Fakulta Humanitních studií</li>
+								<li>Na Modelu starého Zlína se ovšem skrýva nápis “školy”</li>
+							</ol>
+							<div class="alert alert-primary text-center mb-0">Řešení: školy</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-6">
+					<div class="card my-4 border-0 shadow-box">
+						<div class="card-header">
+							<a id="cypher-5" class="anchor"></a>
+							<h5 class="text-center mb-0">Skládačka</h5>
+						</div>
+						<img class="card-img-top" src="images/cyphers/Lusteniny2020 - KNE-1.jpg" alt="Zadaní 5. šifry">
+
+						<div class="card-header p-0 border-0">
+							<button class="btn btn-primary btn-block rounded-0" type="button" data-toggle="collapse"
+								data-target="#cypher-5-hint" aria-expanded="false" aria-controls="collapseExample">
+								Zobrazit Nápovědu
+							</button>
+						</div>
+						<div class="collapse" id="cypher-5-hint">
+							<p class="p-3 mb-0">
+								Nápověda: Otoč a vynásob
+							</p>
+						</div>
+
+						<div class="card-header p-0 border-bottom-0">
+							<button class="btn btn-primary btn-block rounded-0" type="button" data-toggle="collapse"
+								data-target="#cypher-5-solution" aria-expanded="false" aria-controls="collapseExample">
+								Zobrazit Řešení
+							</button>
+						</div>
+						<div class="collapse p-3" id="cypher-5-solution">
+							<ol>
+								<li>Otoč jednotlivé čtverce ve směru hodinových ručiček tak, aby červená čára vytvořila
+									spojený obrazec</li>
+								<li>Číslo ve čtvercích vynásobené počtem otočení ve směru hodinových ručiček udává
+									hodnotu písmene</li>
+								<li>Dosaď písmena za čísla z kódovací tabulky</li>
+							</ol>
+							<div class="alert alert-primary text-center mb-0">Řešení: elmarklos</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-6">
+					<div class="card my-4 border-0 shadow-box">
+						<div class="card-header">
+							<a id="cypher-6" class="anchor"></a>
+							<h5 class="text-center mb-0">Kruhy</h5>
+						</div>
+						<img class="card-img-top" src="images/cyphers/Lusteniny2020-call me baby-1.jpg"
+							alt="Zadaní 6. šifry">
+
+						<div class="card-header p-0 border-0">
+							<button class="btn btn-primary btn-block rounded-0" type="button" data-toggle="collapse"
+								data-target="#cypher-6-hint" aria-expanded="false" aria-controls="collapseExample">
+								Zobrazit Nápovědu
+							</button>
+						</div>
+						<div class="collapse" id="cypher-6-hint">
+							<p class="p-3 mb-0">
+								Nápověda: Telefonní číslo
+							</p>
+						</div>
+
+						<div class="card-header p-0 border-bottom-0">
+							<button class="btn btn-primary btn-block rounded-0" type="button" data-toggle="collapse"
+								data-target="#cypher-6-solution" aria-expanded="false" aria-controls="collapseExample">
+								Zobrazit Řešení
+							</button>
+						</div>
+						<div class="collapse p-3" id="cypher-6-solution">
+							<ol>
+								<li>Kruhy reprezentují pohyby pro vytočení čísel na starém telefonu s otáčecím
+									číselníkem</li>
+								<li>Číslo je na infolinku Památníku Tomáše Bati no a to je i zašifrovaná zpráva</li>
+							</ol>
+							<div class="alert alert-primary text-center mb-0">Řešení: PAMÁTNÍK TOMÁŠE BATI</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-6">
+					<div class="card my-4 border-0 shadow-box">
+						<div class="card-header">
+							<a id="cypher-7" class="anchor"></a>
+							<h5 class="text-center mb-0">Kamera, klapka, akce!</h5>
+						</div>
+						<img class="card-img-top" src="images/cyphers/Lusteniny2020-kamera, klapka, akce-1.jpg"
+							alt="Zadaní 7. šifry">
+
+						<div class="card-header p-0 border-0">
+							<button class="btn btn-primary btn-block rounded-0" type="button" data-toggle="collapse"
+								data-target="#cypher-7-hint" aria-expanded="false" aria-controls="collapseExample">
+								Zobrazit Nápovědu
+							</button>
+						</div>
+						<div class="collapse" id="cypher-7-hint">
+							<p class="p-3 mb-0">
+								Nápověda: Najdi spojení.. ..tedy né. Najdi spojnici!
+							</p>
+						</div>
+
+						<div class="card-header p-0 border-bottom-0">
+							<button class="btn btn-primary btn-block rounded-0" type="button" data-toggle="collapse"
+								data-target="#cypher-7-solution" aria-expanded="false" aria-controls="collapseExample">
+								Zobrazit Řešení
+							</button>
+						</div>
+						<div class="collapse p-3" id="cypher-7-solution">
+							<ol>
+								<li>Klapky musejí být seřazeny tak, aby je propojovala spojnice</li>
+								<li>Na klapkách se nachází zašifrovaná zpráva v Braillově písmu</li>
+							</ol>
+							<div class="alert alert-primary text-center mb-0">Řešení: velke kino</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-6">
+					<div class="card my-4 border-0 shadow-box">
+						<div class="card-header">
+							<a id="cypher-8" class="anchor"></a>
+							<h5 class="text-center mb-0">Rozsypaný čaj</h5>
+						</div>
+						<img class="card-img-top" src="images/cyphers/Lusteniny2020-TTR-1.jpg" alt="Zadaní 8. šifry">
+
+						<div class="card-header p-0 border-0">
+							<button class="btn btn-primary btn-block rounded-0" type="button" data-toggle="collapse"
+								data-target="#cypher-8-hint" aria-expanded="false" aria-controls="collapseExample">
+								Zobrazit Nápovědu
+							</button>
+						</div>
+						<div class="collapse" id="cypher-8-hint">
+							<p class="p-3 mb-0">
+								Nápověda: Graphic anagram
+							</p>
+						</div>
+
+						<div class="card-header p-0 border-bottom-0">
+							<button class="btn btn-primary btn-block rounded-0" type="button" data-toggle="collapse"
+								data-target="#cypher-8-solution" aria-expanded="false" aria-controls="collapseExample">
+								Zobrazit Řešení
+							</button>
+						</div>
+						<div class="collapse p-3" id="cypher-8-solution">
+							<ol>
+								<li>Jedná se o přesmyčku - záměnnou každé dvojice po sobě jdoucích znaků (první s
+									druhým, třetí se čtvrtým, atd.) získáme pravý název šifry - “Graphic anagram”</li>
+								<li>Stejným způsobem pak v obrázku zaměníme každé dva po sobě následující sloupce a
+									získáme výslednou zprávu</li>
+							</ol>
+							<div class="alert alert-primary text-center mb-0">Řešení: FILMFEST</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-6">
+					<div class="card my-4 border-0 shadow-box">
+						<div class="card-header">
+							<a id="cypher-9" class="anchor"></a>
+							<h5 class="text-center mb-0">Mat nebo Pat</h5>
+						</div>
+						<img class="card-img-top" src="images/cyphers/Lusteniny2020 - Mat nebo Pat-1.jpg"
+							alt="Zadaní 9. šifry">
+
+						<div class="card-header p-0 border-0">
+							<button class="btn btn-primary btn-block rounded-0" type="button" data-toggle="collapse"
+								data-target="#cypher-9-hint" aria-expanded="false" aria-controls="collapseExample">
+								Zobrazit Nápovědu
+							</button>
+						</div>
+						<div class="collapse" id="cypher-9-hint">
+							<p class="p-3 mb-0">
+								Nápověda: Bílý dá mat ve 3 tazích.
+							</p>
+						</div>
+
+						<div class="card-header p-0 border-bottom-0">
+							<button class="btn btn-primary btn-block rounded-0" type="button" data-toggle="collapse"
+								data-target="#cypher-9-solution" aria-expanded="false" aria-controls="collapseExample">
+								Zobrazit Řešení
+							</button>
+						</div>
+						<div class="collapse p-3" id="cypher-9-solution">
+							<ol>
+								<li>Vc8+ Dxc8</li>
+								<li>Dxg7+ Vxg7 (Nejlepší tah. Pokud černý hraje Ve8, hra končí dalším tahem bílého)</li>
+								<li>Vxg7</li>
+							</ol>
+							<div class="alert alert-primary text-center mb-0">Řešení: pes</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-6">
+					<div class="card my-4 border-0 shadow-box">
+						<div class="card-header">
+							<a id="cypher-10" class="anchor"></a>
+							<h5 class="text-center mb-0">Loga</h5>
+						</div>
+						<img class="card-img-top" src="images/cyphers/Lusteniny2020 - JSN - Loga-1.jpg"
+							alt="Zadaní 10. šifry">
+
+						<div class="card-header p-0 border-0">
+							<button class="btn btn-primary btn-block rounded-0" type="button" data-toggle="collapse"
+								data-target="#cypher-10-hint" aria-expanded="false" aria-controls="collapseExample">
+								Zobrazit Nápovědu
+							</button>
+						</div>
+						<div class="collapse" id="cypher-10-hint">
+							<p class="p-3 mb-0">
+								Nápověda: Loga, zkratky, žádný zmatky, hlava mapa souřadnice, předposlední u radnice.
+							</p>
+						</div>
+
+						<div class="card-header p-0 border-bottom-0">
+							<button class="btn btn-primary btn-block rounded-0" type="button" data-toggle="collapse"
+								data-target="#cypher-10-solution" aria-expanded="false" aria-controls="collapseExample">
+								Zobrazit Řešení
+							</button>
+						</div>
+						<div class="collapse p-3" id="cypher-10-solution">
+							<ol>
+								<li>Nejprve je potřeba napsat první písmeno firmy pro daná loga.</li>
+								<li>Dvojice čísel udávají souřadnice log, která tvoří zprávu:
+									<ul>
+										<li>[2,4] -> Drupal -> písmeno <b>D</b></li>
+										<li>[1,1] -> Starbucks -> písmeno <b>S</b></li>
+										<li>[5,1] -> Zlín -> písmeno <b>Z</b></li>
+										<li>[5,2] -> O2 -> písmeno <b>O</b></li>
+									</ul>
+								</li>
+							</ol>
+							<div class="alert alert-primary text-center mb-0">Řešení: pes</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<section class="container">
+			<a id="gallery" class="anchor"></a>
+			<header class="text-center mb-4">
+				<h2>Fotogalerie</h2>
+				<hr class="mx-auto">
+			</header>
+			<div class="alert alert-info">
+				Tuto sekci připravujeme
+			</div>
+		</section>
+		<section class="container">
+			<a id="bonus" class="anchor"></a>
+			<header class="text-center mb-4">
+				<h2>Bonusové informace k šifrám</h2>
+				<hr class="mx-auto">
+			</header>
+			<div>
+				<div class="jumbotron py-4">
+					<h5>Filmové klasiky</h5>
+					<hr>
+					<p class="text-justify">
+						Aukce filmových klapek je významným bodem doprovodného programu. Koná se od roku 1998. Každý rok
+						je
+						osloveno několik desítek význačných umělců z Česka i zahraničí, kteří obdrží filmovou klapku,
+						již
+						mají přetvořit na umělecké dílo (od maleb po plastiky). Takto umělecky ztvárněné klapky se pak
+						draží
+						ve veřejné aukci a výtěžek je určen na studentskou filmovou tvorbu. Minulý ročník bylo v nabídce
+						123
+						umělecky ztvárněných klapek, jejichž dražba celkem přinesla 2 654 000 Kč, což je nejvíc za celou
+						historii. Největší zájem byl o klapku Jaroslava Němečka, jejíž cena se vyšplhala na 85 000 Kč.
+					</p>
+				</div>
+				<div class="jumbotron py-4">
+					<h5>Míček</h5>
+					<hr>
+					<p class="text-justify">
+						Miloš Macourek byl český dramatik, básník a scenárista. Jako scenárista se podílel na mnoha
+						českých
+						komediích (např. Pane, vy jste vdova! nebo Čtyři vraždy stačí, drahoušku) a seriálech (především
+						Arabela nebo večerníčky s Machem a Šebestovou). Na nich spolupracoval především s režiséry
+						Oldřichem
+						Lipským a Václavem Vorlíčkem a už málo kdo ví, že Miloš Macourek pochází z nedaleké Kroměříže.
+					</p>
+				</div>
+				<div class="jumbotron py-4">
+					<h5>Dopis</h5>
+					<hr>
+					<p class="text-justify">
+						MERS je Zlínská kapela, která se nerada škatulkuje do určitého hudebního žánru. Tvrdí o sobě, že
+						je
+						jejich hudba různorodá od pop/rocku až po alternativní směry. Mezi jejich největší úspěchy patří
+						soundtrack k filmu INTIMITY režiséra Iva Macharáčka a scénaristy Evžena Gogely (Tajemství staré
+						bambitky).
+					</p>
+				</div>
+				<div class="jumbotron py-4">
+					<h5>Jiný pohled</h5>
+					<hr>
+					<p class="text-justify">
+						Baťův mrakodrap nechal postavit Jan Antonín Baťa ve Zlíně podle projektu architekta Vladimíra
+						Karfíka v letech 1936–1938 jako sídlo ředitelství obuvnické firmy Baťa. Budova má číslo 21, říká
+						se
+						jí proto „jednadvacítka“. Označení budov v Baťově závodě bylo podle amerického stylu, kdy číslo
+						udává přesnou polohu budovy v areálu, neboť první číslice (tedy dvojka) označuje řadu budovy
+						(počítáno od východu k západu) a druhé číslo (tedy jednička) představuje řadu budovy (číslováno
+						od
+						jihu k severu). Původně měla být administrativa firmy soustředěna do tří navzájem propojených
+						třípodlažních budov. Avšak architekt Karfík přišel s návrhem jedné výškové budovy a Jana
+						Antonína
+						Baťu pro svou představu získal. Mrakodrap má 16 pater a výšku 77,5 m. Během výstavby se uplatnil
+						standardní zlínský modul 6,15 × 6,15 m, který byl použit u většiny budov stavěných firmou Baťa.
+						Vzhledem k výšce stavby se jednalo o druhou nejvyšší budovu Evropy. Vyšší v té době byl již jen
+						palác Všeobecné bankovní jednoty v Antverpách známý jako Boerentoren, mající výšku 87 m (dnes 97
+						m).
+						Nejvyšší budovou světa tehdy byla Empire State Building v New Yorku o výšce 381 m.
+					</p>
+				</div>
+				<div class="jumbotron py-4">
+					<h5>Skládačka</h5>
+					<hr>
+					<p class="text-justify">
+						Elmar Klos (26. ledna 1910 Brno – 19. července 1993 Praha) byl český filmový režisér,
+						scenárista, dramaturg, pedagog a filmový manažer. Od roku 1934 působil ve Zlíně, na Kudlově, u
+						Baťovy filmové firmy. Mezi jeho největší filmové úspěchy patří film Obchod na korze z roku 1965,
+						který získal o rok později Oscara za nejlepší cizojazyčný film. Filmografie: 1952 Únos, 1955
+						Hudba z Marsu, 1957 Tam na konečné, 1958 Tři přání, 1963 Smrt si říká Engelchen, 1964
+						Obžalovaný, 1965 Obchod na korze, 1969 Touha zvaná Anada, ... Tak co, znáte některé z nich? :)
+					</p>
+				</div>
+				<div class="jumbotron py-4">
+					<h5>Kruhy</h5>
+					<hr>
+					<p class="text-justify">
+						Budova od architekta Františka Lýdie Gahury, otevřená v roce 1933, rok po smrti Tomáše Bati, je
+						nejhodnotnější památkou zlínského konstruktivismu a vrcholem fenoménu tzv. baťovské
+						architektury. Na první pohled je idea památníku jednoduchá: prázdný hranol umístěný ve viditelné
+						poloze nad městem, v ose stoupajícího parkového prostoru, tvořený několika moduly zlínského
+						skeletu o rozměrech 6,15 × 6,15 m a opláštěný pouze katedrálním sklem; uvnitř osudný letoun
+						Junkers F 13, ve kterém Tomáš Baťa v roce 1932 zahynul krátce po startu z nedalekých Otrokovic
+						při plánované letecké pracovní cestě do švýcarského Möhlinu. Jeho mimořádnost spočívá v tom, že
+						do něj architekt Gahura vtělil přímo vlastnosti Tomáše Bati – velkorysost, jasnost, vzlet,
+						optimismus, prostotu, pravdivost a poctivost – a vyjádřil je stavbou samotnou.
+					</p>
+				</div>
+				<div class="jumbotron py-4">
+					<h5>Kamera, klapka, akce! </h5>
+					<hr>
+					<p class="text-justify">
+						Velké kino se nachází v centru Zlína. Spolu s ostatními funkcionalistickými budovami tvoří
+						dominantu náměstí Práce a je jednou z charakteristických tváří centra moderního Zlína.
+						Funkcionalistickou stavbu architekta Františka Lydie Gahury nechala v roce 1932 postavit firma
+						Baťa, původně jako provizórium. I díky tomu při stavbě byla použita unikátní svařovaná ocelová
+						konstrukce, v takovém rozsahu vůbec poprvé na území tehdejšího Československa. Od roku 1961 se v
+						něm každoročně koná Mezinárodní festival filmů pro děti a mládež. Budova je od roku 2001
+						chráněna jako kulturní památka. Původní kapacita sálu kina převyšovala 2 500 míst, jednalo se o
+						první objekt kulturní vybavenosti ve Zlíně určený pro masovější návštěvy. Svou ohromnou
+						kapacitou se stalo největším předválečným kinem v Československu. I současný počet míst (1 010)
+						řadí toto kino k největším kinosálům v republice. V roce 2016 byl vypracován posudek, podle
+						kterého má kino narušenou statiku střechy, stěn a nosných konstrukcí, kino je tak od 1. 3. 2016
+						uzavřeno. Pro další provoz je potřebná komplikovaná rekonstrukce budovy, s níž však město Zlín,
+						které kino vlastní, počítá. V současné době se připravuje ve spolupráci s památkáři
+						rekonstrukce, po jejímž ukončení bude kino nadále sloužit svému účelu.
+					</p>
+				</div>
+				<div class="jumbotron py-4">
+					<h5>Rozsypaný čaj</h5>
+					<hr>
+					<p class="text-justify">
+						Zlín Film Festival (též Mezinárodní festival filmů pro děti a mládež) je mezinárodní filmový
+						festival určený pro děti a mládež, který se pořádá na přelomu května a června ve Zlíně. První
+						ročník se uskutečnil již v roce 1961 jako národní přehlídka československé kinematografie pro
+						děti. V průběhu následujících desetiletí se ze zlínského festivalu stala významná mezinárodní
+						filmová událost. Přestože v podtitulu názvu se hovoří o dětech a mládeži, festival nabízí
+						filmový i doprovodný program všem věkovým kategoriím. V posledních letech se festivalové filmové
+						projekce uskutečňují nejen v samotném Zlíně, ale i v řadě dalších měst České republiky.
+						Návštěvnost zlínského festivalu má dlouhodobě vzrůstající tendenci. Od roku 2010 přesahuje
+						návštěvnost 95 000 dětí i dospělých.
+					</p>
+				</div>
+				<div class="jumbotron py-4">
+					<h5>Mat nebo Pat</h5>
+					<hr>
+					<p class="text-justify">
+						Útulek pro zvířata v nouzi Zlín Vršava je situován nedaleko zastavěné části Zlína a je přístupný
+						městskou hromadnou dopravou. Kapacita útulku umožňuje umístit zde až 80 psů a 40 koček a může na
+						přechodnou dobu sloužit i jako útočiště pro handicapovaná volně žijící zvířata, jako jsou
+						například ježci a ptáci. Jen za rok 2017 zde přijali 521 psů a 340 koček.
+					</p>
+				</div>
+				<div class="jumbotron py-4">
+					<h5>Loga</h5>
+					<hr>
+					<p class="text-justify">
+						Po patnácti letech provozu ukončil svou službu na linkách MHD Dopravní společnosti Zlín –
+						Otrokovice první nízkopodlažní kloubový trolejbus. Vozidlo Škoda 25 Tr Irisbus má najeto 1 021
+						121 kilometrů. Podle znaleckého posudku i doporučení výrobce se po vzniklé závadě již nevyplatí
+						trolejbus opravovat.
+					</p>
+					<p class="text-justify">
+						Dopravní společnost Zlín – Otrokovice zakoupila v roce 2005 svůj tehdy
+						první nízkopodlažní třínápravový kloubový trolejbus s dieselagregátem od výrobce Škoda Electric
+						Plzeň za 11,7 milionu korun (bez DPH). Šlo o prototyp tohoto nového trolejbusu, který dosud
+						nebyl nikde nasazen do běžného provozu. Byl vyroben v roce 2004, a než se dostal do Zlína,
+						fungoval rok jako zkušební a předváděcí vozidlo výrobce. V DSZO dostal tento vůz evidenční číslo
+						401. Prototyp vznikl u výrobce nestandartní přestavbou karoserie z autobusu na trolejbus. Ve
+						stejném provedení se další přesně takový trolejbus nevyrobil.
+					</p>
+					<p class="text-justify">
+						V síti MHD ve Zlíně a Otrokovicích, nejčastěji na linkách 2, 6 nebo 8, najezdil tento trolejbus
+						za patnáct let 984 841
+						kilometrů. Před zařazením do provozu ve Zlíně s ním už výrobce najezdil 36 280 kilometrů.
+						„Uvažovali jsme nejdříve, že trolejbus ještě opravíme. Ale ukázalo se, že oprava by byla náročná
+						a nákladná, takže by při stáří vozidla nedávala ekonomický smysl. Potvrdil nám to i zástupce
+						Škody Electric Plzeň i odborný posudek soudního znalce. Trolejbus proto definitivně vyřazujeme z
+						provozu. Zůstane ještě u nás v depu a bude využit jako zdroj náhradních dílů pro další vozy
+						stejného typu, které u nás jezdí,“ uvedl ředitel DSZO Josef Kocháň. Mezi prvními díly se využije
+						například dieselagregát vyřazovaného trolejbusu – bude instalován do jiného trolejbusu, jehož
+						původní agregát se pokazil. 
+					</p>
+					<p class="text-justify">
+						„Trolejbus 401 u nás vykonal dobrou službu. Jezdil patnáct let bez
+						nutnosti větší opravy,“ řekl vedoucí úseku údržby vozidel DSZO Antonín Červenka. Pro současný
+						vozový park nízkopodlažních trolejbusů je příznačné, že již během své životnosti neprocházejí u
+						DSZO žádnou generální opravou. V minulosti byly nutností a pravidlem generálky trolejbusů po
+						nájezdu 360 tisíc kilometrů, tedy asi po šesti až sedmi letech provozu. Vůz byl při generálce
+						zhruba jeden až jeden a půl měsíce nepojízdný a generální oprava přišla téměř na půl milionu
+						korun. Vyřazovaný trolejbus ev. č. 401 má hmotnost 18,7 tuny. Měl podle technického průkazu 40
+						míst k sezení a 95 míst k stání. Měl čtvery dveře a byl dlouhý 18,5 metru. Jeho trakční motor
+						měl výkon 240 kW. Dosahoval maximální rychlosti jízdy 65 km/h.
+					</p>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<a class="btn-floating btn btn-lg btn-primary shadow-box" href="lusteniny3/#">
+		<i class="fas fa-angle-double-up"></i>
+	</a>
+
+	<footer class="footer shadow-box">
+		© 2020 Luštěniny
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>

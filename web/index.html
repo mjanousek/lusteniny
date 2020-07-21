@@ -17,36 +17,83 @@
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/lusteniny.min.css">
+	<link rel="stylesheet" href="css/fontawesome/css/all.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 
-	<script src="https://kit.fontawesome.com/68f0af8713.js" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="https://api.mapy.cz/loader.js"></script>
 	<script type="text/javascript">Loader.load(null, { api: "simple" })</script>
 </head>
 
-<body>
-	<header class="container-intro overlay d-flex flex-column align-items-center justify-content-between intro">
+<body data-spy="scroll">
+	<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-gradient-primary shadow-box fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="#">
+				<img src="images/logo-lusteniny.svg" height="40px" alt="Luštěniny">
+			</a>
+			<button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="fas fa-bars text-light " style="font-size: 2rem;"></span>
+			</button>
+			<div class="collapse navbar-collapse " id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto text-center">
+					<li class="nav-item">
+						<a class="nav-link" href="#about">Úvod </a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link" id="navbarDropdown" role="button" href="#"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Minulé Ročníky <i class="fas fa-caret-down ml-1"></i>
+						</a>
+						<div class="dropdown-menu border-0 text-center" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="lusteniny3">Luštěniny III.</a>
+							<a class="dropdown-item" href="lusteniny2">Luštěniny II.</a>
+							<a class="dropdown-item" href="lusteniny1">Luštěniny I.</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#sponsors">Sponzoři</a>
+					</li>
+					<li class="nav-item d-none d-lg-inline">
+						<a class="nav-link" href="https://www.facebook.com/lusteniny">
+							<span class="fab fa-facebook-square"></span>
+						</a>
+					</li>
+					<li class="nav-item d-none d-lg-inline">
+						<a class="nav-link" href="https://www.m.me/lusteniny/">
+							<span class="fab fa-facebook-messenger"></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+	<header id="hero"
+		class="container-intro overlay d-flex flex-column align-items-center justify-content-between intro">
 		<div class="d-flex flex-column justify-content-center align-items-center flex-fill">
 			<img src="images/logo-lusteniny.svg" alt="Luštěniny Logo" class="logo">
 			<h1 class="sr-only">Luštěniny</h1>
-			<h2 class="mt-2 mb-2">Šifrovací hra v centru Zlína</h5>
-			<time datetime="2020-18-7">18.7.2020</time>
+			<h2 class="mt-2 mb-2 text-shadow">Šifrovací hra v centru Zlína</h5>
 		</div>
-		<a class="btn-intro" role="button" href="#about">
-			<i></i>
+		<a class="btn-intro d-flex align-items-center justify-content-center text-light" role="button" href="#about">
+			<i class="fas fa-angle-double-down fa-2x"></i>
 		</a>
 	</header>
 
 	<main>
 		<article>
-			<section class="section section-main">
-				<header class="section-header">
+			<section class="section section-main" id="about">
+				<header class="section-header shadow-box">
+					<h2>Luštěniny</h2>
+					<hr>
 					<!-- <h2>Akce je prozatím odložena na neurčito.</h2> -->
-					<h2 id="countdown-header">Do začátku zbývá</h2>
+					<h3 id="countdown-header">Do začátku zbývá</h3>
 					<p id="countdown"> </p>
-					<h3 id="finish" style="display: none">Luštěniny 2020 již bohužel skončily.<br />Nevěš hlavu, přístí rok tady budeme zas!</h3>
+					<h4 id="finish" style="display: none">Luštěniny 2020 již bohužel skončily.<br />Nevěš hlavu, přístí
+						rok tady budeme zas!</h4>
 				</header>
-				<div class="section-body" id="about">
+				<div class="section-body" >
 					<div class="container">
 						<div class="row">
 							<div class="col-12 col-md-8">
@@ -67,7 +114,7 @@
 									jich
 									vyluštit
 									co nejvíc.
-									Na konci události ve 20:30 tě bude čekat vyhlášení vítězů, předání cen a nějaký ten
+									Na konci události tě bude čekat vyhlášení vítězů, předání cen a nějaký ten
 									networking
 									včetně
 									občerstvení.</p>
@@ -79,43 +126,21 @@
 							</div>
 						</div>
 
-						<div class="row d-flex pt-4">
-							<div class="col-12 col-md-8 align-self-center order-md-last">
-								<h2 class="text-center text-md-left">Kam se mám dostavit?</h2>
-								<hr class="mx-auto mr-md-auto ml-md-0">
-								<p>
-									I letos to je malá hádanka a musíš si nás najít. Budeme tě čekat na tržišti Pod
-									Kaštany.
-									A jak nás poznáš? Stačí přece hledat luštěniny. :)
-								</p>
-								<p>
-									Vyhlášení nejlepších týmů nebo jednotlivců se uskuteční na místě, které se dozvíš v
-									průběhu hry.
-									Určitě přijď, i když nedokončíš všechny šifry!
-								</p>
-							</div>
-							<div class="col-12 col-md-4">
-								<div class="shadow-box">
-									<map id="map" name="map"></map>
-									<script type="text/javascript">
-										var point = SMap.Coords.fromWGS84(17.6638886, 49.2251269);
-										var m = new SMap(JAK.gel("map"), point, 16);
-										m.addMarker(point);
-									</script>
-								</div>
-							</div>
-						</div>
 						<div class="row pt-4">
 							<div class="col-12 text-center">
 								<h2>Zúčastníš se? Chceš se na něco zeptat?</h2>
 								<hr class="mx-auto">
-								<p>Přidej se k události na facebooku, kde se můžeš v případě potřeby na
+								<p>Přidej se k stránce luštěnin na facebooku, kde se můžeš v případě potřeby na
 									cokoli zeptat.
 								</p>
-								<a class="btn btn-facebook" href="https://www.facebook.com/lusteniny/" target="_blank"
+								<a class="btn btn-facebook m-1" href="https://www.facebook.com/lusteniny/" target="_blank"
 									role="button">
 									<i class="fab fa-facebook-square pr-2"></i>
 									Luštěniny na Facebooku</a>
+									<a class="btn btn-facebook m-1" href="https://www.m.me/lusteniny/" target="_blank"
+									role="button">
+									<i class="fab fa-facebook-messenger pr-2"></i>
+									Luštěniny na Messengeru</a>
 								<!-- <br>
 								<a class="btn btn-instagram mt-3" href="https://www.instagram.com/lusteniny/"
 									target="_blank" role="button">
@@ -125,40 +150,60 @@
 						</div>
 					</div>
 			</section>
-			<section class="section section-gallery">
-				<header class="section-header">
-					<h2>Fotogalerie</h2>
+			<section class="section section-gallery" id="gallery">
+				<header class="section-header shadow-box">
+					<h2>Minulé ročníky</h2>
 					<hr>
-					<p>Podívej se na fotky z minulých ročníků</p>
+					<p>Fotky, šifry, řešení - podívej se na již proběhlé akce!</p>
 				</header>
-				<div class="container section-body">
-					<div class="row d-flex justify-content-center">
-						<div class="col-12 col-sm-6 col-md-4 gallery-link d-flex justify-content-center pt-3"
-							id="gallery2019">
-							<img src="images/lusteniny-2019.jpg" class="shadow-box" alt="Fotogalerie Lusteniny 2019">
-
-							<a href="https://www.facebook.com/events/504711523393003/permalink/563433937520761/"
-								alt="Luštěniny 2019" class="align-self-center">
-								<p class="align-self-center">2019</p>
-							</a>
+				<div class="container">
+					<div class="row py-2">
+						<div class="col-12 col-sm-6 col-md-4">
+							<div class="card border-0 shadow-box my-2" >
+								<img src="images/Lusteniny2020.JPG" class="card-img-top" alt="Lusteniny 2019">
+								<div class="card-body text-center">
+									<h3 class="card-title mb-0">Luštěniny III.</h3>
+									<small class="card-subtitle mb-2 text-muted">18.07.2020</small>
+									<a href="lusteniny3" class="btn btn-primary w-100 stretched-link mt-2">Více
+										informací
+										<span class="fas fa-angle-double-right ml-2"></span>
+									</a>
+								</div>
+							</div>
 						</div>
-
-						<div class="col-12 col-sm-6 col-md-4 gallery-link d-flex justify-content-center pt-3"
-							id="gallery2018">
-							<img src="images/Lusteniny2018.jpg" class="shadow-box" alt="Fotogalerie Lusteniny 2018">
-
-							<a href="https://www.facebook.com/media/set/?set=ms.c.eJxNjskRxEAIAzNycYkj~%3B8Rchh1mPzy61EKMQnDCg8tD7eEGRd9xT~%3BxAlmi6qmMT2gC2CUxCFkzCbymNEifhICgR6oCYHbylsE8x0gO0WrnDjAasotkKb6nJgFWiSzW31KXfSu70Wep3aczSv~_mj3NLshPkByd0RC6CdCH4B1a1MTg~-~-.bps.a.1595718363863421&type=1&__tn__=HH-R&fbclid=IwAR0VMa5_kOI7qLBJ5J70dHADkLK4QahPmwP-gMyk2RPuX6etHt9khl0SBYY"
-								alt="Luštěniny 2018" class="align-self-center">
-								<p class="align-self-center">2018</p>
-							</a>
+						<div class="col-12 col-sm-6 col-md-4">
+							<div class="card border-0 shadow-box my-2" >
+								<img src="images/lusteniny-2019.jpg" class="card-img-top" alt="Lusteniny 2019">
+								<div class="card-body text-center">
+									<h3 class="card-title mb-0">Luštěniny II.</h3>
+									<small class="card-subtitle mb-2 text-muted">22.06.2019</small>
+									<a href="lusteniny2" class="btn btn-primary w-100 stretched-link mt-2">Více
+										informací
+										<span class="fas fa-angle-double-right ml-2"></span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-4">
+							<div class="card border-0 shadow-box my-2" >
+								<img src="images/Lusteniny2018.jpg" class="card-img-top" alt="Lusteniny 2018">
+								<div class="card-body text-center">
+									<h3 class="card-title mb-0">Luštěniny I.</h3>
+									<small class="card-subtitle mb-2 text-muted">17.11.2018</small>
+									<a href="lusteniny1" class="btn btn-primary w-100 stretched-link mt-2">Více
+										informací
+										<span class="fas fa-angle-double-right ml-2"></span>
+									</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 
 
-			<section class="section section-sponsors">
-				<header class="section-header">
+			<section class="section section-sponsors" id="sponsors">
+				<header class="section-header shadow-box">
 					<h2>Sponzoři</h2>
 					<hr>
 				</header>
@@ -176,14 +221,13 @@
 		</article>
 	</main>
 
-	<footer class="footer">
+	<footer class="footer shadow-box">
 		© 2020 Luštěniny
 	</footer>
-
-	<script src="js/lusteniny.min.js"></script>
-	<script src="js/jquery-3.3.1.slim.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="js/lusteniny.js"></script>
 </body>
 
 </html>
