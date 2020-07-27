@@ -1,8 +1,3 @@
-* {
-  -webkit-transition: all 150ms ease-out;
-  transition: all 150ms ease-out;
-}
-
 html, body {
   scroll-behavior: smooth;
   font-family: 'Poppins', sans-serif;
