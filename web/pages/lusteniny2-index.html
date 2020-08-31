@@ -1,79 +1,11 @@
-<!doctype html>
-<html lang="cs">
+@extends(master)
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+@section(base)
+<base href="..">
+@endsection
 
-	<base href="..">
-
-	<title>Luštěniny</title>
-	<meta name="description" content="Šifrovací hra">
-	<meta property="og:image" content="images/fb-share-image.jpg" />
-	<meta property="og:image:type" content="image/jpg">
-	<meta property="og:image:width" content="1024">
-	<meta property="og:image:height" content="1024">
-
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/lusteniny.min.css">
-	<link rel="stylesheet" href="css/fontawesome/css/all.min.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-
-	<script type="text/javascript" src="https://api.mapy.cz/loader.js"></script>
-	<script type="text/javascript">Loader.load(null, { api: "simple" })</script>
-</head>
-
-<body data-spy="scroll">
-	<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-secondary shadow-box fixed-top">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="#">
-				<img src="images/logo-lusteniny.svg" height="40px" alt="Luštěniny">
-			</a>
-			<button class="navbar-toggler border-0" type="button" data-toggle="collapse"
-				data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-				aria-label="Toggle navigation">
-				<span class="fas fa-bars text-light " style="font-size: 2rem;"></span>
-			</button>
-			<div class="collapse navbar-collapse " id="navbarSupportedContent">
-				<ul class="navbar-nav ml-auto text-center">
-					<li class="nav-item">
-						<a class="nav-link" href="#about">Úvod </a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link" id="navbarDropdown" role="button" href="#" data-toggle="dropdown"
-							aria-haspopup="true" aria-expanded="false">
-							Minulé Ročníky <i class="fas fa-caret-down ml-1"></i>
-						</a>
-						<div class="dropdown-menu border-0 text-center" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="lusteniny3">Luštěniny III.</a>
-							<a class="dropdown-item" href="lusteniny2">Luštěniny II.</a>
-							<a class="dropdown-item" href="lusteniny1">Luštěniny I.</a>
-						</div>
-					</li>
-					<li class="nav-item d-none d-lg-inline">
-						<a class="nav-link" href="https://www.facebook.com/lusteniny">
-							<span class="fab fa-facebook-square"></span>
-						</a>
-					</li>
-					<li class="nav-item d-none d-lg-inline">
-						<a class="nav-link" href="https://www.m.me/lusteniny/">
-							<span class="fab fa-facebook-messenger"></span>
-						</a>
-					</li>
-					<li class="nav-item ml-2 disable-hover">
-						<button class="btn btn-light rounded-pill">
-							Zimní Luštěniny !
-						</button>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-
-	<main>
+@section(content)
+<main>
     <header class="mt-6 text-center container">
         <h1>Luštěniny II.</h1>
         <hr class="mx-auto">
@@ -761,52 +693,4 @@
     </a>
 </main>
 
-	<footer class="footer bg-gradient-primary shadow-box py-4">
-		<div class="container">
-			<div class="row">
-				<div class="col-12 col-md-4 text-center">
-					<h4>Luštěniny</h4>
-					<hr class="bg-white mx-auto">
-					<nav>
-						<a class="nav-link text-white px-0" href="./#about">Úvod</a>
-						<a class="nav-link text-white px-0" href="./#about">O co jde</a>
-						<a class="nav-link text-white px-0" href="./#gallery">Minulé ročníky</a>
-
-					</nav>
-				</div>
-				<div class="col-12 col-md-4 text-center">
-					<h4>Minulé Ročníky</h4>
-					<hr class="bg-white mx-auto">
-					<nav>
-						<a class="nav-link text-white px-0" href="lusteniny3">Luštěniny III.</a>
-						<a class="nav-link text-white px-0" href="lusteniny2">Luštěniny II.</a>
-						<a class="nav-link text-white px-0" href="lusteniny1">Luštěniny I.</a>
-					</nav>
-				</div>
-				<div class="col-12 col-md-4 text-center">
-					<h4>Sponzoři</h4>
-					<hr class="bg-white mx-auto">
-					<nav>
-						<a class="nav-link text-white px-0" href="https://zivy-zlin.cz/">Živý Zlín</a>
-						<a class="nav-link text-white px-0" href="https://www.cngroup.dk/">CN Group</a>
-					</nav>
-				</div>
-			</div>
-		</div>
-		<div class="mt-4">
-			© 2020 Luštěniny
-		</div>
-	</footer>
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-		crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-		crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-		crossorigin="anonymous"></script>
-	<script src="js/lusteniny.js"></script>
-</body>
-
-</html>
+@endsection

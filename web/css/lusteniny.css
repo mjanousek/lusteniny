@@ -26,7 +26,7 @@ a:hover {
 }
 
 hr {
-  background: #212844;
+  background: #000;
   height: 3px;
   width: 90px;
   margin: 0.5rem 0;
@@ -64,7 +64,7 @@ hr {
   margin-bottom: 1.25rem;
 }
 
-.bg-gradient-primary, .footer {
+.bg-gradient-primary {
   background: #39a236;
   background: -webkit-gradient(linear, left top, right top, from(#39a236), to(#2a7527));
   background: linear-gradient(90deg, #39a236 0%, #2a7527 100%);
@@ -105,7 +105,7 @@ hr {
   transition: width 200ms ease-out;
 }
 
-.navbar .nav-link:hover::after {
+.navbar .nav-link:not(.disable-hover):hover::after {
   width: 100%;
 }
 
@@ -219,7 +219,6 @@ hr {
 
 .section .section-body {
   padding: 2rem 0;
-  color: gray;
 }
 
 .section .section-body h2, .section .section-body h3, .section .section-body h4, .section .section-body h5, .section .section-body h6 {
@@ -255,6 +254,14 @@ hr {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
 }
 
+@media screen and (min-width: 576px) {
+  .section-main .section-header {
+    margin-top: -90.75px;
+    position: relative;
+    border-radius: 50rem !important;
+  }
+}
+
 .section-gallery .card {
   -webkit-transition: all 150ms ease-out;
   transition: all 150ms ease-out;
@@ -265,4 +272,15 @@ hr {
   padding-bottom: 0.5rem;
   text-align: center;
   color: white;
+}
+
+.mt-6 {
+  margin-top: 6rem;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -50px;
+  visibility: hidden;
 }

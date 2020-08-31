@@ -35,7 +35,7 @@ a:hover {
 }
 
 hr {
-    background: $dark;
+    background: #000;
     height: 3px;
     width: 90px;
     margin: 0.5rem 0;
@@ -112,7 +112,7 @@ hr {
             transition: width 200ms ease-out;
         }
 
-        &:hover::after {
+        &:not(.disable-hover):hover::after {
             width: 100%;
         }
 
@@ -231,7 +231,6 @@ hr {
 
     .section-body{
         padding:2rem 0;
-        color: gray;
 
         h2, h3, h4, h5, h6 {
             color: $dark;
@@ -281,7 +280,15 @@ hr {
             @extend .shadow-box;
         }
     }
-    
+ 
+    .section-header {
+
+        @media screen and (min-width: 576px){ 
+            margin-top: -90.75px;
+            position: relative;   
+            border-radius: 50rem !important;
+        }
+    }
 }
 
 .section-gallery {
@@ -296,9 +303,20 @@ hr {
 }
 
 .footer {
-    @extend .bg-gradient-primary;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     text-align: center;
     color: white;
+
+}
+
+.mt-6 {
+    margin-top: 6rem;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
 }

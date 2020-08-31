@@ -2,14 +2,21 @@ $(function () {
     $(document).scroll(function () {
         var $nav = $("#navbar");
         var $intro = $("#hero");
-        $nav.toggleClass('scrolled', $(this).scrollTop() > $intro.height() - $nav.height());
+
+        if ($intro.length === 0)
+            $nav.toggleClass('scrolled', true);
+        else
+            $nav.toggleClass('scrolled', $(this).scrollTop() > $intro.height() - $nav.height());
     });
 });
 
 jQuery(document).ready(function ($) {
     var $nav = $("#navbar");
     var $intro = $("#hero");
-    $nav.toggleClass('scrolled', $(this).scrollTop() > $intro.height() - $nav.height());
+    if ($intro.length === 0)
+        $nav.toggleClass('scrolled', true);
+    else
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $intro.height() - $nav.height());
 });
 
 
