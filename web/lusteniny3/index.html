@@ -26,7 +26,7 @@
 	<script type="text/javascript">Loader.load(null, { api: "simple" })</script>
 </head>
 
-<body data-spy="scroll">
+<body data-spy="scroll" id="body">
 	<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-secondary shadow-box fixed-top">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#">
@@ -63,15 +63,69 @@
 							<span class="fab fa-facebook-messenger"></span>
 						</a>
 					</li>
-					<li class="nav-item ml-2 disable-hover">
-						<button class="btn btn-light rounded-pill">
-							Zimní Luštěniny !
-						</button>
-					</li>
 				</ul>
 			</div>
 		</div>
 	</nav>
+
+	<div id="offcanvasMenu" class="offcanvas">
+		<i class="offcanvas-close fas fa-times" onclick="closeOffCanvas()" role="button"></i>
+		<div class="offcanvas-overlay"></div>
+		<div class="offcanvas-content container text-center py-5">
+			<div class="rounded">
+				<header class="pt-4 rounded-top">
+					<h2>Zimní Luštěniny</h2>
+					<hr class="bg-primary mx-auto">
+				</header>
+				<p>
+					Zimní edice luštěnin je tady. Tentokrát na Zlinském zámku!</p>
+				<p>
+					Tato speciální edice luštěnin bude mít omezený počet účastníků - <b>pouze 10</b> týmu bude mít
+					možnost se registrovat. <br>
+					Opět na vás bude čekat nová várka šifer, tentokrát zaměřená právě na místo konání - zlínský
+					zámek.
+				</p>
+				<p>
+					Dále se můžete těšit na exkluzivní atmosféru, kterou pro vás pečlivě připravujeme.
+					A jelikož se vše odehrává ve vnitř zámku, nemusíte se tentokrát obávat ani nepříznivého počasí.
+				</p>
+				<div class="row">
+					<div class="col-4">
+						<i class="fas fa-calendar-day icon"></i>
+						<div><b>6. Února 2021</b></div>
+					</div>
+					<div class="col-4">
+						<i class="fas fa-users icon"></i>
+						<div>
+							<b>Pouze 10 týmů</b>
+						</div>
+					</div>
+					<div class="col-4">
+						<i class="fas fa-map-marked-alt icon"></i>
+						<div>
+							<b>Zámek Zlín <br>
+								Soudní 1, 760 01 Zlín
+							</b>
+						</div>
+					</div>
+				</div>
+
+				<button class="btn btn-facebook mt-4 shadow-box"><i class="fab fa-facebook-square pr-2"></i>Událost na
+					facebooku</button>
+				<map id="map" name="map" class="border shadow-box mt-4 rounded"></map>
+				<script type="text/javascript">
+					var point = SMap.Coords.fromWGS84(17.6631863, 49.2255077);
+					var m = new SMap(JAK.gel("map"), point, 16);
+					m.addMarker(point);
+				</script>
+				<button class="btn btn-lg btn-primary btn-block mt-4 shadow-box"
+					onclick="closeOffCanvas()">Zavřít</button>
+
+			</div>
+		</div>
+
+
+	</div>
 
 	<main>
 	<header class="mt-6 text-center container">
@@ -155,14 +209,14 @@
 							Zobrazit Řešení
 						</button>
 					</div>
-					<div class="collapse p-3" id="cypher-1-solution">
-						<ol>
+					<div class="collapse" id="cypher-1-solution">
+						<ol class="m-3">
 							<li>Přiřadit hlášky z filmů k jednotlivým obrázkům.</li>
 							<li>Počet lidí na obrázku udává pozici písmene v přiřazené hlášce a toto písmeno je
 								částí zašifrované zprávy.</li>
 							<li>Písmena přečtena popořadě od první hlášky..</li>
 						</ol>
-						<div class="alert alert-primary text-center mb-0">Řešení: klapky</div>
+						<div class="alert alert-primary text-center m-3">Řešení: klapky</div>
 					</div>
 				</div>
 			</div>
@@ -196,14 +250,14 @@
 							Zobrazit Řešení
 						</button>
 					</div>
-					<div class="collapse p-3" id="cypher-2-solution">
-						<ol>
+					<div class="collapse" id="cypher-2-solution">
+						<ol class="m-3">
 							<li>Podle písmen daných na míčku, přiřaď písmena abecedy i k ostatním otvorům</li>
 							<li>Zapiš si písmena, kterými prochází šňůrka, v pořadí daném šňůrkou</li>
 							<li>Teď už stačí jen zjistit, které písmeno je první, aby heslo dávalo smysluplné slovo
 							</li>
 						</ol>
-						<div class="alert alert-primary text-center mb-0">Řešení: Macourek</div>
+						<div class="alert alert-primary text-center m-3">Řešení: Macourek</div>
 					</div>
 				</div>
 			</div>
@@ -233,22 +287,22 @@
 							Zobrazit Řešení
 						</button>
 					</div>
-					<div class="collapse p-3" id="cypher-3-solution">
-						<ol>
+					<div class="collapse" id="cypher-3-solution">
+						<ol class="m-3">
 							<li>Zedník → <b>M</b>úrár</li>
 							<li>Tramvaj → <b>E</b>lektrička</li>
 							<li>Nádobí → <b>R</b>iad</li>
 							<li>Žízeň → <b>S</b>mäd</li>
 						</ol>
-						<div class="alert alert-primary text-center mb-0">Řešení: mers</div>
+						<div class="alert alert-primary text-center m-3">Řešení: mers</div>
 					</div>
 				</div>
 			</div>
 
 			<div class="col-12 col-md-6">
 				<div class="card my-4 border-0 shadow-box">
+					<a id="cypher-4" class="anchor"></a>
 					<div class="card-header">
-						<a id="cypher-4" class="anchor"></a>
 						<h5 class="text-center mb-0">Jiný Pohled</h5>
 					</div>
 					<img class="card-img-top" src="images/cyphers/Lusteniny2020-Jiny Pohled na Vec-1.jpg"
@@ -272,22 +326,22 @@
 							Zobrazit Řešení
 						</button>
 					</div>
-					<div class="collapse p-3" id="cypher-4-solution">
-						<ol>
+					<div class="collapse" id="cypher-4-solution">
+						<ol class="m-3">
 							<li>Najít sochu Masaryka a směr, kterým se dívá</li>
 							<li>Vyměřit 150 metrů dozadu od něj</li>
 							<li>Zde se nachází Fakulta Humanitních studií</li>
 							<li>Na Modelu starého Zlína se ovšem skrýva nápis “školy”</li>
 						</ol>
-						<div class="alert alert-primary text-center mb-0">Řešení: školy</div>
+						<div class="alert alert-primary text-center m-3">Řešení: školy</div>
 					</div>
 				</div>
 			</div>
 
 			<div class="col-12 col-md-6">
 				<div class="card my-4 border-0 shadow-box">
+					<a id="cypher-5" class="anchor"></a>
 					<div class="card-header">
-						<a id="cypher-5" class="anchor"></a>
 						<h5 class="text-center mb-0">Skládačka</h5>
 					</div>
 					<img class="card-img-top" src="images/cyphers/Lusteniny2020 - KNE-1.jpg" alt="Zadaní 5. šifry">
@@ -310,23 +364,23 @@
 							Zobrazit Řešení
 						</button>
 					</div>
-					<div class="collapse p-3" id="cypher-5-solution">
-						<ol>
+					<div class="collapse" id="cypher-5-solution">
+						<ol class="m-3">
 							<li>Otoč jednotlivé čtverce ve směru hodinových ručiček tak, aby červená čára vytvořila
 								spojený obrazec</li>
 							<li>Číslo ve čtvercích vynásobené počtem otočení ve směru hodinových ručiček udává
 								hodnotu písmene</li>
 							<li>Dosaď písmena za čísla z kódovací tabulky</li>
 						</ol>
-						<div class="alert alert-primary text-center mb-0">Řešení: Elmar Klos</div>
+						<div class="alert alert-primary text-center m-3">Řešení: Elmar Klos</div>
 					</div>
 				</div>
 			</div>
 
 			<div class="col-12 col-md-6">
 				<div class="card my-4 border-0 shadow-box">
+					<a id="cypher-6" class="anchor"></a>
 					<div class="card-header">
-						<a id="cypher-6" class="anchor"></a>
 						<h5 class="text-center mb-0">Kruhy</h5>
 					</div>
 					<img class="card-img-top" src="images/cyphers/Lusteniny2020-call me baby-1.jpg"
@@ -350,21 +404,21 @@
 							Zobrazit Řešení
 						</button>
 					</div>
-					<div class="collapse p-3" id="cypher-6-solution">
-						<ol>
+					<div class="collapse" id="cypher-6-solution">
+						<ol class="m-3">
 							<li>Kruhy reprezentují pohyby pro vytočení čísel na starém telefonu s otáčecím
 								číselníkem</li>
 							<li>Číslo je na infolinku Památníku Tomáše Bati no a to je i zašifrovaná zpráva</li>
 						</ol>
-						<div class="alert alert-primary text-center mb-0">Řešení: PAMÁTNÍK TOMÁŠE BATI</div>
+						<div class="alert alert-primary text-center m-3">Řešení: PAMÁTNÍK TOMÁŠE BATI</div>
 					</div>
 				</div>
 			</div>
 
 			<div class="col-12 col-md-6">
 				<div class="card my-4 border-0 shadow-box">
+					<a id="cypher-7" class="anchor"></a>
 					<div class="card-header">
-						<a id="cypher-7" class="anchor"></a>
 						<h5 class="text-center mb-0">Kamera, klapka, akce!</h5>
 					</div>
 					<img class="card-img-top" src="images/cyphers/Lusteniny2020-kamera, klapka, akce-1.jpg"
@@ -388,20 +442,20 @@
 							Zobrazit Řešení
 						</button>
 					</div>
-					<div class="collapse p-3" id="cypher-7-solution">
-						<ol>
+					<div class="collapse" id="cypher-7-solution">
+						<ol class="m-3">
 							<li>Klapky musejí být seřazeny tak, aby je propojovala spojnice</li>
 							<li>Na klapkách se nachází zašifrovaná zpráva v Braillově písmu</li>
 						</ol>
-						<div class="alert alert-primary text-center mb-0">Řešení: velke kino</div>
+						<div class="alert alert-primary text-center m-3">Řešení: velke kino</div>
 					</div>
 				</div>
 			</div>
 
 			<div class="col-12 col-md-6">
 				<div class="card my-4 border-0 shadow-box">
+					<a id="cypher-8" class="anchor"></a>
 					<div class="card-header">
-						<a id="cypher-8" class="anchor"></a>
 						<h5 class="text-center mb-0">Rozsypaný čaj</h5>
 					</div>
 					<img class="card-img-top" src="images/cyphers/Lusteniny2020-TTR-1.jpg" alt="Zadaní 8. šifry">
@@ -424,22 +478,22 @@
 							Zobrazit Řešení
 						</button>
 					</div>
-					<div class="collapse p-3" id="cypher-8-solution">
-						<ol>
+					<div class="collapse" id="cypher-8-solution">
+						<ol class="m-3">
 							<li>Jedná se o přesmyčku - záměnnou každé dvojice po sobě jdoucích znaků (první s
 								druhým, třetí se čtvrtým, atd.) získáme pravý název šifry - “Graphic anagram”</li>
 							<li>Stejným způsobem pak v obrázku zaměníme každé dva po sobě následující sloupce a
 								získáme výslednou zprávu</li>
 						</ol>
-						<div class="alert alert-primary text-center mb-0">Řešení: FILMFEST</div>
+						<div class="alert alert-primary text-center m-3">Řešení: FILMFEST</div>
 					</div>
 				</div>
 			</div>
 
 			<div class="col-12 col-md-6">
 				<div class="card my-4 border-0 shadow-box">
+					<a id="cypher-9" class="anchor"></a>
 					<div class="card-header">
-						<a id="cypher-9" class="anchor"></a>
 						<h5 class="text-center mb-0">Mat nebo Pat</h5>
 					</div>
 					<img class="card-img-top" src="images/cyphers/Lusteniny2020 - Mat nebo Pat-1.jpg"
@@ -463,21 +517,21 @@
 							Zobrazit Řešení
 						</button>
 					</div>
-					<div class="collapse p-3" id="cypher-9-solution">
-						<ol>
+					<div class="collapse" id="cypher-9-solution">
+						<ol class="m-3">
 							<li>Vc8+ Dxc8</li>
 							<li>Dxg7+ Vxg7 (Nejlepší tah. Pokud černý hraje Ve8, hra končí dalším tahem bílého)</li>
 							<li>Vxg7</li>
 						</ol>
-						<div class="alert alert-primary text-center mb-0">Řešení: pes</div>
+						<div class="alert alert-primary text-center m-3">Řešení: pes</div>
 					</div>
 				</div>
 			</div>
 
 			<div class="col-12 col-md-6">
 				<div class="card my-4 border-0 shadow-box">
-					<div class="card-header">
 						<a id="cypher-10" class="anchor"></a>
+					<div class="card-header">
 						<h5 class="text-center mb-0">Loga</h5>
 					</div>
 					<img class="card-img-top" src="images/cyphers/Lusteniny2020 - JSN - Loga-1.jpg"
@@ -501,8 +555,8 @@
 							Zobrazit Řešení
 						</button>
 					</div>
-					<div class="collapse p-3" id="cypher-10-solution">
-						<ol>
+					<div class="collapse" id="cypher-10-solution">
+						<ol class="m-3">
 							<li>Nejprve je potřeba napsat první písmeno firmy pro daná loga.</li>
 							<li>Dvojice čísel udávají souřadnice log, která tvoří zprávu:
 								<ul>
@@ -513,7 +567,7 @@
 								</ul>
 							</li>
 						</ol>
-						<div class="alert alert-primary text-center mb-0">Řešení: DSZO</div>
+						<div class="alert alert-primary text-center m-3">Řešení: DSZO</div>
 					</div>
 				</div>
 			</div>
@@ -717,45 +771,51 @@
 			</div>
 		</div>
 	</section>
-	<a class="btn-floating btn btn-lg btn-primary shadow-box" href="lusteniny3/#">
+	<a id="scroll-button" class="btn-floating btn btn-lg btn-primary shadow-box" href="lusteniny3/#">
 		<i class="fas fa-angle-double-up"></i>
 	</a>
 </main>
 
-	<footer class="footer bg-gradient-primary shadow-box py-4">
+	<button id="bottom-button" class="btn btn-bottom btn-primary btn-lg pt-3 rounded-top shadow-box"
+		onclick="openOffCanvas()">Zimní Luštěniny
+		!</button>
+
+	<footer class="footer  text-center py-4 mt-6">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-md-4 text-center py-2">
 					<h4>Luštěniny</h4>
-					<hr class="bg-white mx-auto">
+					<hr class="bg-primary mx-auto">
 					<nav>
-						<a class="nav-link text-white px-0" href="./#about">Úvod</a>
-						<a class="nav-link text-white px-0" href="./#about">O co jde</a>
-						<a class="nav-link text-white px-0" href="./#gallery">Minulé ročníky</a>
+						<a class="nav-link text-dark px-0" href="./#about">Úvod</a>
+						<a class="nav-link text-dark px-0" href="./#about">O co jde</a>
+						<a class="nav-link text-dark px-0" href="./#gallery">Minulé ročníky</a>
 
 					</nav>
 				</div>
 				<div class="col-12 col-md-4 text-center py-2">
 					<h4>Minulé Ročníky</h4>
-					<hr class="bg-white mx-auto">
+					<hr class="bg-primary mx-auto">
 					<nav>
-						<a class="nav-link text-white px-0" href="lusteniny3">Luštěniny III.</a>
-						<a class="nav-link text-white px-0" href="lusteniny2">Luštěniny II.</a>
-						<a class="nav-link text-white px-0" href="lusteniny1">Luštěniny I.</a>
+						<a class="nav-link text-dark px-0" href="lusteniny3">Luštěniny III.</a>
+						<a class="nav-link text-dark px-0" href="lusteniny2">Luštěniny II.</a>
+						<a class="nav-link text-dark px-0" href="lusteniny1">Luštěniny I.</a>
 					</nav>
 				</div>
 				<div class="col-12 col-md-4 text-center py-2">
 					<h4>Sponzoři</h4>
-					<hr class="bg-white mx-auto">
+					<hr class="bg-primary mx-auto">
 					<nav>
-						<a class="nav-link text-white px-0" href="https://zivy-zlin.cz/">Živý Zlín</a>
-						<a class="nav-link text-white px-0" href="https://www.cngroup.dk/">CN Group</a>
+						<a class="nav-link text-dark px-0" href="https://zivy-zlin.cz/">Živý Zlín</a>
+						<a class="nav-link text-dark px-0" href="https://www.cngroup.dk/">CN Group</a>
 					</nav>
 				</div>
 			</div>
 		</div>
 		<div class="mt-4">
-			© 2020 Luštěniny
+			<small>
+				© 2020 Luštěniny
+			</small>
 		</div>
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

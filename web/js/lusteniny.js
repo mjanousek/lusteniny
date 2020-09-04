@@ -1,35 +1,69 @@
 $(function () {
     $(document).scroll(function () {
         var $nav = $("#navbar");
-        var $intro = $("#hero");
+        var $hero = $("#hero");
+        var $bottomButton = $("#bottom-button");
+        var $extraHero = $("#extraHero");
 
-        if ($intro.length === 0)
+        if ($hero.length === 0)
+        {
             $nav.toggleClass('scrolled', true);
+            $bottomButton.toggleClass('scrolled', true);
+        }
         else
-            $nav.toggleClass('scrolled', $(this).scrollTop() > $intro.height() - $nav.height());
+        {
+            $nav.toggleClass('scrolled', $(this).scrollTop() > $hero.height() - $nav.height());
+            $bottomButton.toggleClass('scrolled', $(this).scrollTop() > $extraHero.height());
+        }
     });
 });
 
 jQuery(document).ready(function ($) {
     var $nav = $("#navbar");
-    var $intro = $("#hero");
-    if ($intro.length === 0)
+    var $hero = $("#hero");
+    var $bottomButton = $("#bottom-button");
+    var $extraHero = $("#extraHero");
+
+    if ($hero.length === 0)
+    {
         $nav.toggleClass('scrolled', true);
+        $bottomButton.toggleClass('scrolled', true);
+    }
     else
-        $nav.toggleClass('scrolled', $(this).scrollTop() > $intro.height() - $nav.height());
+    {
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $hero.height() - $nav.height());
+        $bottomButton.toggleClass('scrolled', $(this).scrollTop() > $extraHero.height());
+    }
 });
 
 
 // Czech texts of units
 var timeWords = {
     days: ["den", "dny", "dnů"],
-    hours: ["hodina", "hodiny", "hodin"],
+    // hours: ["hodina", "hodiny", "hodin"],
     minutes: ["minuta", "minuty", "minut"]
 };
 
 var interval;
 
-// Return czech text for unit
+function openOffCanvas(){
+    document.getElementById("offcanvasMenu").classList.toggle("open");
+    document.getElementById("body").classList.toggle("modal-open")
+    document.getElementById("bottom-button").classList.toggle("d-none")
+    document.getElementById("scroll-button").classList.toggle("d-none")
+}
+
+function closeOffCanvas(){
+    document.getElementById("offcanvasMenu").classList.toggle("open");
+    document.getElementById("offcanvasMenu").classList.toggle("closing");
+    setTimeout(function(){
+        document.getElementById("offcanvasMenu").classList.toggle("closing");
+    },  350)
+    document.getElementById("body").classList.toggle("modal-open")
+    document.getElementById("bottom-button").classList.toggle("d-none")
+    document.getElementById("scroll-button").classList.toggle("d-none")
+}
+
 function formatTimeUnit(count, unit) {
     if (count == 1) {
         return timeWords[unit][0];
@@ -40,7 +74,6 @@ function formatTimeUnit(count, unit) {
     return timeWords[unit][2];
 }
 
-// Format time to czech text
 function getRemainingTimeText(remainingTime) {
 
     var text = "";
@@ -57,7 +90,6 @@ function getRemainingTimeText(remainingTime) {
     return text;
 }
 
-// Updates countdown container
 var updateCountdownElement = function (countDownDate) {
     console.log("update")
     // Get todays date and time

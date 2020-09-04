@@ -26,7 +26,7 @@
 	<script type="text/javascript">Loader.load(null, { api: "simple" })</script>
 </head>
 
-<body data-spy="scroll">
+<body data-spy="scroll" id="body">
 	<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-secondary shadow-box fixed-top">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#">
@@ -63,15 +63,69 @@
 							<span class="fab fa-facebook-messenger"></span>
 						</a>
 					</li>
-					<li class="nav-item ml-2 disable-hover">
-						<button class="btn btn-light rounded-pill">
-							Zimní Luštěniny !
-						</button>
-					</li>
 				</ul>
 			</div>
 		</div>
 	</nav>
+
+	<div id="offcanvasMenu" class="offcanvas">
+		<i class="offcanvas-close fas fa-times" onclick="closeOffCanvas()" role="button"></i>
+		<div class="offcanvas-overlay"></div>
+		<div class="offcanvas-content container text-center py-5">
+			<div class="rounded">
+				<header class="pt-4 rounded-top">
+					<h2>Zimní Luštěniny</h2>
+					<hr class="bg-primary mx-auto">
+				</header>
+				<p>
+					Zimní edice luštěnin je tady. Tentokrát na Zlinském zámku!</p>
+				<p>
+					Tato speciální edice luštěnin bude mít omezený počet účastníků - <b>pouze 10</b> týmu bude mít
+					možnost se registrovat. <br>
+					Opět na vás bude čekat nová várka šifer, tentokrát zaměřená právě na místo konání - zlínský
+					zámek.
+				</p>
+				<p>
+					Dále se můžete těšit na exkluzivní atmosféru, kterou pro vás pečlivě připravujeme.
+					A jelikož se vše odehrává ve vnitř zámku, nemusíte se tentokrát obávat ani nepříznivého počasí.
+				</p>
+				<div class="row">
+					<div class="col-4">
+						<i class="fas fa-calendar-day icon"></i>
+						<div><b>6. Února 2021</b></div>
+					</div>
+					<div class="col-4">
+						<i class="fas fa-users icon"></i>
+						<div>
+							<b>Pouze 10 týmů</b>
+						</div>
+					</div>
+					<div class="col-4">
+						<i class="fas fa-map-marked-alt icon"></i>
+						<div>
+							<b>Zámek Zlín <br>
+								Soudní 1, 760 01 Zlín
+							</b>
+						</div>
+					</div>
+				</div>
+
+				<button class="btn btn-facebook mt-4 shadow-box"><i class="fab fa-facebook-square pr-2"></i>Událost na
+					facebooku</button>
+				<map id="map" name="map" class="border shadow-box mt-4 rounded"></map>
+				<script type="text/javascript">
+					var point = SMap.Coords.fromWGS84(17.6631863, 49.2255077);
+					var m = new SMap(JAK.gel("map"), point, 16);
+					m.addMarker(point);
+				</script>
+				<button class="btn btn-lg btn-primary btn-block mt-4 shadow-box"
+					onclick="closeOffCanvas()">Zavřít</button>
+
+			</div>
+		</div>
+
+
+	</div>
 
 	<main>
     <header class="mt-6 text-center container">
@@ -137,10 +191,10 @@
                             Zobrazit Nápovědu
                         </button>
                     </div>
-                    <div class="collapse p-3" id="cypher-1-hint">
-                        <p class="mb-0">
+                    <div class="collapse" id="cypher-1-hint">
+                        <p class="m-3">
                             Caesarova šifra
-                            <p>
+                        <p>
                     </div>
 
                     <div class="card-header p-0 border-bottom-0">
@@ -149,11 +203,11 @@
                             Zobrazit Řešení
                         </button>
                     </div>
-                    <div class="collapse p-3" id="cypher-1-solution">
-                        <ol>
+                    <div class="collapse" id="cypher-1-solution">
+                        <ol class="m-3">
                             <li>Každé písmeno posuň o 13 míst v abecedě</li>
                         </ol>
-                        <div class="alert alert-primary text-center mb-0">Řešení: I FAILED THE TURING TEST</div>
+                        <div class="alert alert-primary text-center m-3">Řešení: I FAILED THE TURING TEST</div>
                     </div>
                 </div>
             </div>
@@ -172,10 +226,10 @@
                             Zobrazit Nápovědu
                         </button>
                     </div>
-                    <div class="collapse p-3" id="cypher-2-hint">
-                        <p class="mb-0">
+                    <div class="collapse" id="cypher-2-hint">
+                        <p class="m-3">
                             Vybarvuj zleva doprava
-                            <p>
+                        <p>
                     </div>
 
                     <div class="card-header p-0 border-bottom-0">
@@ -184,14 +238,14 @@
                             Zobrazit Řešení
                         </button>
                     </div>
-                    <div class="collapse p-3" id="cypher-2-solution">
-                        <ol>
+                    <div class="collapse" id="cypher-2-solution">
+                        <ol class="m-3">
                             <li>Pokud do kulicky vchazi pouze jedna barva, pak vybarvi kuličku stejnou barvou</li>
                             <li>Pokud do kuličky vchází dvě kuličky stejné barvy, pak vybarvi kuličku opačnou barvou
                             </li>
                             <li>Vznikne obrázek s nápisem ZLIN</li>
                         </ol>
-                        <div class="alert alert-primary text-center mb-0">Řešení: ZLIN</div>
+                        <div class="alert alert-primary text-center m-3">Řešení: ZLIN</div>
                     </div>
                 </div>
             </div>
@@ -210,10 +264,10 @@
                             Zobrazit Nápovědu
                         </button>
                     </div>
-                    <div class="collapse p-3" id="cypher-3-hint">
-                        <p class="mb-0">
+                    <div class="collapse" id="cypher-3-hint">
+                        <p class="m-3">
                             Hledej chyby
-                            <p>
+                        <p>
                     </div>
 
                     <div class="card-header p-0 border-bottom-0">
@@ -222,14 +276,14 @@
                             Zobrazit Řešení
                         </button>
                     </div>
-                    <div class="collapse p-3" id="cypher-3-solution">
-                        <ol>
+                    <div class="collapse" id="cypher-3-solution">
+                        <ol class="m-3">
                             <li>Najdi syntaktické chyby v kódu</li>
                             <li>Písmena odpovídající řádkům s chybami (je nutné písmena přeskládat a čísla odpovídají
                                 pořadí písmen v abecedě)</li>
                         </ol>
-                        <p>Chyby na řádních: 2, 7, 9, 14, 15</p>
-                        <div class="alert alert-primary text-center mb-0">Řešení: BINGO</div>
+                        <p class="m-3">Chyby na řádních: 2, 7, 9, 14, 15</p>
+                        <div class="alert alert-primary text-center m-3">Řešení: BINGO</div>
                     </div>
                 </div>
             </div>
@@ -248,8 +302,8 @@
                             Zobrazit Nápovědu
                         </button>
                     </div>
-                    <div class="collapse p-3" id="cypher-4-hint">
-                        <p class="mb-0">
+                    <div class="collapse" id="cypher-4-hint">
+                        <p class="m-3">
                             Brailovo písmo
                             <p>
                     </div>
@@ -260,13 +314,13 @@
                             Zobrazit Řešení
                         </button>
                     </div>
-                    <div class="collapse p-3" id="cypher-4-solution">
-                        <ol>
+                    <div class="collapse" id="cypher-4-solution">
+                        <ol class="m-3">
                             <li>Tabulka je pole 4x4 brailových písmen (1 znamená plnou tečku, 0 prázdnou)</li>
                             <li>Přepiš Brailovo písmo na písmena normální abecedy</li>
                             <li>Písmena čtená po řádcích</li>
                         </ol>
-                        <div class="alert alert-primary text-center mb-0">Řešení: BINARY IS FUN !!</div>
+                        <div class="alert alert-primary text-center m-3">Řešení: BINARY IS FUN !!</div>
                     </div>
                 </div>
             </div>
@@ -285,10 +339,10 @@
                             Zobrazit Nápovědu
                         </button>
                     </div>
-                    <div class="collapse p-3" id="cypher-5-hint">
-                        <p class="mb-0">
+                    <div class="collapse" id="cypher-5-hint">
+                        <p class="m-3">
                             Walk/kráčej/jdi…
-                            <p>
+                        <p>
                     </div>
 
                     <div class="card-header p-0 border-bottom-0">
@@ -297,8 +351,8 @@
                             Zobrazit Řešení
                         </button>
                     </div>
-                    <div class="collapse p-3" id="cypher-5-solution">
-                        <ol>
+                    <div class="collapse" id="cypher-5-solution">
+                        <ol class="m-3">
                             <li>WSAD odpovídá klávesám na klávesnici, které se používají ve hrách k chůzi 4 směry (W -
                                 pohyb nahoru, S - pohyb dolů, A - vlevo, D - vpravo</li>
                             <li>tabulka představuje pole, po kterém se pohybuje hráč (kulička udává jeho první pozici)
@@ -308,7 +362,7 @@
                             <li>Písmena, na kterých se hráč ocitne po každé sekvenci kroků
                             </li>
                         </ol>
-                        <div class="alert alert-primary text-center mb-0">Řešení: CNGROUP</div>
+                        <div class="alert alert-primary text-center m-3">Řešení: CNGROUP</div>
                     </div>
                 </div>
             </div>
@@ -327,10 +381,10 @@
                             Zobrazit Nápovědu
                         </button>
                     </div>
-                    <div class="collapse p-3" id="cypher-6-hint">
-                        <p class="mb-0">
+                    <div class="collapse" id="cypher-6-hint">
+                        <p class="m-3">
                             Sloupce
-                            <p>
+                        <p>
                     </div>
 
                     <div class="card-header p-0 border-bottom-0">
@@ -339,13 +393,13 @@
                             Zobrazit Řešení
                         </button>
                     </div>
-                    <div class="collapse p-3" id="cypher-6-solution">
-                        <ol>
+                    <div class="collapse" id="cypher-6-solution">
+                        <ol class="m-3">
                             <li>Sečti čtverečky v každém sloupci</li>
                             <li>Součet čtverečků udává pořadí písmene v abecedě</li>
                             <li>Písmena ve stejném pořadí, jako sloupce</li>
                         </ol>
-                        <div class="alert alert-primary text-center mb-0">Řešení: THINK DIFFERENT AND THEN AGAIN (bez
+                        <div class="alert alert-primary text-center m-3">Řešení: THINK DIFFERENT AND THEN AGAIN (bez
                             mezer)</div>
                     </div>
                 </div>
@@ -365,10 +419,10 @@
                             Zobrazit Nápovědu
                         </button>
                     </div>
-                    <div class="collapse p-3" id="cypher-7-hint">
-                        <p class="mb-0">
+                    <div class="collapse" id="cypher-7-hint">
+                        <p class="m-3">
                             Přiřaď města
-                            <p>
+                        <p>
                     </div>
 
                     <div class="card-header p-0 border-bottom-0">
@@ -377,14 +431,14 @@
                             Zobrazit Řešení
                         </button>
                     </div>
-                    <div class="collapse p-3" id="cypher-7-solution">
-                        <ol>
+                    <div class="collapse" id="cypher-7-solution">
+                        <ol class="m-3">
                             <li>Tečky představují města v Čr</li>
                             <li>Přiřaď pojmy k městům (Zjisti, jaké města jsou zaznačené)</li>
                             <li>Číslo udává písmeno v názvu města</li>
                             <li>Písmena z měst ve stejném pořadí, jako jsou jejich pojmy</li>
                         </ol>
-                        <div class="alert alert-primary text-center mb-0">Řešení: HAPPINESS</div>
+                        <div class="alert alert-primary text-center m-3">Řešení: HAPPINESS</div>
                     </div>
                 </div>
             </div>
@@ -403,10 +457,10 @@
                             Zobrazit Nápovědu
                         </button>
                     </div>
-                    <div class="collapse p-3" id="cypher-8-hint">
-                        <p class="mb-0">
+                    <div class="collapse" id="cypher-8-hint">
+                        <p class="m-3">
                             Http stavové kódy
-                            <p>
+                        <p>
                     </div>
 
                     <div class="card-header p-0 border-bottom-0">
@@ -415,15 +469,15 @@
                             Zobrazit Řešení
                         </button>
                     </div>
-                    <div class="collapse p-3" id="cypher-8-solution">
-                        <ol>
+                    <div class="collapse" id="cypher-8-solution">
+                        <ol class="m-3">
                             <li>Zkratky představují chybové hlášky Http protokolu</li>
                             <li>Najdi kódy jednotlivých hlášek</li>
                             <li>Sečti čísla v http kódu (př.: 404 -> 4 + 0 + 4 = 8)</li>
                             <li>Číslo udává pořadí písmene v abecedě</li>
                             <li>Písmena ve stejném pořadí, jako http stavové kódy (čtverečky výše)</li>
                         </ol>
-                        <div class="alert alert-primary text-center mb-0">Řešení: BOHEMIA</div>
+                        <div class="alert alert-primary text-center m-3">Řešení: BOHEMIA</div>
                     </div>
                 </div>
             </div>
@@ -444,45 +498,51 @@
         </div>
     </section>
 
-	<a class="btn-floating btn btn-lg btn-primary shadow-box" href="lusteniny1/#">
-		<i class="fas fa-angle-double-up"></i>
-	</a>
+    <a id="scroll-button" class="btn-floating btn btn-lg btn-primary shadow-box" href="lusteniny1/#">
+        <i class="fas fa-angle-double-up"></i>
+    </a>
 </main>
 
-	<footer class="footer bg-gradient-primary shadow-box py-4">
+	<button id="bottom-button" class="btn btn-bottom btn-primary btn-lg pt-3 rounded-top shadow-box"
+		onclick="openOffCanvas()">Zimní Luštěniny
+		!</button>
+
+	<footer class="footer  text-center py-4 mt-6">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-md-4 text-center py-2">
 					<h4>Luštěniny</h4>
-					<hr class="bg-white mx-auto">
+					<hr class="bg-primary mx-auto">
 					<nav>
-						<a class="nav-link text-white px-0" href="./#about">Úvod</a>
-						<a class="nav-link text-white px-0" href="./#about">O co jde</a>
-						<a class="nav-link text-white px-0" href="./#gallery">Minulé ročníky</a>
+						<a class="nav-link text-dark px-0" href="./#about">Úvod</a>
+						<a class="nav-link text-dark px-0" href="./#about">O co jde</a>
+						<a class="nav-link text-dark px-0" href="./#gallery">Minulé ročníky</a>
 
 					</nav>
 				</div>
 				<div class="col-12 col-md-4 text-center py-2">
 					<h4>Minulé Ročníky</h4>
-					<hr class="bg-white mx-auto">
+					<hr class="bg-primary mx-auto">
 					<nav>
-						<a class="nav-link text-white px-0" href="lusteniny3">Luštěniny III.</a>
-						<a class="nav-link text-white px-0" href="lusteniny2">Luštěniny II.</a>
-						<a class="nav-link text-white px-0" href="lusteniny1">Luštěniny I.</a>
+						<a class="nav-link text-dark px-0" href="lusteniny3">Luštěniny III.</a>
+						<a class="nav-link text-dark px-0" href="lusteniny2">Luštěniny II.</a>
+						<a class="nav-link text-dark px-0" href="lusteniny1">Luštěniny I.</a>
 					</nav>
 				</div>
 				<div class="col-12 col-md-4 text-center py-2">
 					<h4>Sponzoři</h4>
-					<hr class="bg-white mx-auto">
+					<hr class="bg-primary mx-auto">
 					<nav>
-						<a class="nav-link text-white px-0" href="https://zivy-zlin.cz/">Živý Zlín</a>
-						<a class="nav-link text-white px-0" href="https://www.cngroup.dk/">CN Group</a>
+						<a class="nav-link text-dark px-0" href="https://zivy-zlin.cz/">Živý Zlín</a>
+						<a class="nav-link text-dark px-0" href="https://www.cngroup.dk/">CN Group</a>
 					</nav>
 				</div>
 			</div>
 		</div>
 		<div class="mt-4">
-			© 2020 Luštěniny
+			<small>
+				© 2020 Luštěniny
+			</small>
 		</div>
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

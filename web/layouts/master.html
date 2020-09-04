@@ -26,7 +26,7 @@
 	<script type="text/javascript">Loader.load(null, { api: "simple" })</script>
 </head>
 
-<body data-spy="scroll">
+<body data-spy="scroll" id="body">
 	<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-secondary shadow-box fixed-top">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#">
@@ -63,52 +63,112 @@
 							<span class="fab fa-facebook-messenger"></span>
 						</a>
 					</li>
-					<li class="nav-item ml-2 disable-hover">
-						<button class="btn btn-light rounded-pill">
-							Zimní Luštěniny !
-						</button>
-					</li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 
+	<div id="offcanvasMenu" class="offcanvas">
+		<i class="offcanvas-close fas fa-times" onclick="closeOffCanvas()" role="button"></i>
+		<div class="offcanvas-overlay"></div>
+		<div class="offcanvas-content container text-center py-5">
+			<div class="rounded">
+				<header class="pt-4 rounded-top">
+					<h2>Zimní Luštěniny</h2>
+					<hr class="bg-primary mx-auto">
+				</header>
+				<p>
+					Zimní edice luštěnin je tady. Tentokrát na Zlinském zámku!</p>
+				<p>
+					Tato speciální edice luštěnin bude mít omezený počet účastníků - <b>pouze 10</b> týmu bude mít
+					možnost se registrovat. <br>
+					Opět na vás bude čekat nová várka šifer, tentokrát zaměřená právě na místo konání - zlínský
+					zámek.
+				</p>
+				<p>
+					Dále se můžete těšit na exkluzivní atmosféru, kterou pro vás pečlivě připravujeme.
+					A jelikož se vše odehrává ve vnitř zámku, nemusíte se tentokrát obávat ani nepříznivého počasí.
+				</p>
+				<div class="row">
+					<div class="col-4">
+						<i class="fas fa-calendar-day icon"></i>
+						<div><b>6. Února 2021</b></div>
+					</div>
+					<div class="col-4">
+						<i class="fas fa-users icon"></i>
+						<div>
+							<b>Pouze 10 týmů</b>
+						</div>
+					</div>
+					<div class="col-4">
+						<i class="fas fa-map-marked-alt icon"></i>
+						<div>
+							<b>Zámek Zlín <br>
+								Soudní 1, 760 01 Zlín
+							</b>
+						</div>
+					</div>
+				</div>
+
+				<button class="btn btn-facebook mt-4 shadow-box"><i class="fab fa-facebook-square pr-2"></i>Událost na
+					facebooku</button>
+				<map id="map" name="map" class="border shadow-box mt-4 rounded"></map>
+				<script type="text/javascript">
+					var point = SMap.Coords.fromWGS84(17.6631863, 49.2255077);
+					var m = new SMap(JAK.gel("map"), point, 16);
+					m.addMarker(point);
+				</script>
+				<button class="btn btn-lg btn-primary btn-block mt-4 shadow-box"
+					onclick="closeOffCanvas()">Zavřít</button>
+
+			</div>
+		</div>
+
+
+	</div>
+
 	@yield(content)
 
-	<footer class="footer bg-gradient-primary shadow-box py-4">
+	<button id="bottom-button" class="btn btn-bottom btn-primary btn-lg pt-3 rounded-top shadow-box"
+		onclick="openOffCanvas()">Zimní Luštěniny
+		!</button>
+
+	<footer class="footer  text-center py-4 mt-6">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-md-4 text-center py-2">
 					<h4>Luštěniny</h4>
-					<hr class="bg-white mx-auto">
+					<hr class="bg-primary mx-auto">
 					<nav>
-						<a class="nav-link text-white px-0" href="./#about">Úvod</a>
-						<a class="nav-link text-white px-0" href="./#about">O co jde</a>
-						<a class="nav-link text-white px-0" href="./#gallery">Minulé ročníky</a>
+						<a class="nav-link text-dark px-0" href="./#about">Úvod</a>
+						<a class="nav-link text-dark px-0" href="./#about">O co jde</a>
+						<a class="nav-link text-dark px-0" href="./#gallery">Minulé ročníky</a>
 
 					</nav>
 				</div>
 				<div class="col-12 col-md-4 text-center py-2">
 					<h4>Minulé Ročníky</h4>
-					<hr class="bg-white mx-auto">
+					<hr class="bg-primary mx-auto">
 					<nav>
-						<a class="nav-link text-white px-0" href="lusteniny3">Luštěniny III.</a>
-						<a class="nav-link text-white px-0" href="lusteniny2">Luštěniny II.</a>
-						<a class="nav-link text-white px-0" href="lusteniny1">Luštěniny I.</a>
+						<a class="nav-link text-dark px-0" href="lusteniny3">Luštěniny III.</a>
+						<a class="nav-link text-dark px-0" href="lusteniny2">Luštěniny II.</a>
+						<a class="nav-link text-dark px-0" href="lusteniny1">Luštěniny I.</a>
 					</nav>
 				</div>
 				<div class="col-12 col-md-4 text-center py-2">
 					<h4>Sponzoři</h4>
-					<hr class="bg-white mx-auto">
+					<hr class="bg-primary mx-auto">
 					<nav>
-						<a class="nav-link text-white px-0" href="https://zivy-zlin.cz/">Živý Zlín</a>
-						<a class="nav-link text-white px-0" href="https://www.cngroup.dk/">CN Group</a>
+						<a class="nav-link text-dark px-0" href="https://zivy-zlin.cz/">Živý Zlín</a>
+						<a class="nav-link text-dark px-0" href="https://www.cngroup.dk/">CN Group</a>
 					</nav>
 				</div>
 			</div>
 		</div>
 		<div class="mt-4">
-			© 2020 Luštěniny
+			<small>
+				© 2020 Luštěniny
+			</small>
 		</div>
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
