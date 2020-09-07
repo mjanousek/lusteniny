@@ -290,7 +290,10 @@ a.anchor {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../images/pattern.png");
+  background-image: url("../images/pattern-dark.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   -webkit-filter: drop-shadow(0 0 10px white);
           filter: drop-shadow(0 0 10px white);
 }
@@ -300,12 +303,43 @@ a.anchor {
   position: relative;
 }
 
+.offcanvas .offcanvas-content .btn-light {
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+  background-image: url("../images/pattern-white.png");
+}
+
+.offcanvas .offcanvas-content .btn-light:hover {
+  -webkit-box-shadow: 0px 0px 64px 18px rgba(255, 255, 255, 0.35);
+  box-shadow: 0px 0px 64px 18px rgba(255, 255, 255, 0.35);
+}
+
+.offcanvas .offcanvas-content .btn-facebook {
+  background-color: #3b5998;
+}
+
+.offcanvas .offcanvas-content .btn-facebook:hover {
+  -webkit-box-shadow: 0px 0px 64px 18px rgba(255, 255, 255, 0.35);
+  box-shadow: 0px 0px 64px 18px rgba(255, 255, 255, 0.35);
+}
+
+.offcanvas .offcanvas-content .icon:hover {
+  -webkit-box-shadow: 0px 0px 64px 18px rgba(255, 255, 255, 0.35);
+  box-shadow: 0px 0px 64px 18px rgba(255, 255, 255, 0.35);
+}
+
 .offcanvas .offcanvas-close {
   top: 2rem;
   right: 3rem;
   font-size: 2rem;
   position: absolute;
   z-index: 1051;
+  background-color: transparent;
+}
+
+.offcanvas .offcanvas-close:hover {
+  -webkit-box-shadow: 0px 0px 64px 18px rgba(255, 255, 255, 0.35);
+  box-shadow: 0px 0px 64px 18px rgba(255, 255, 255, 0.35);
 }
 
 .offcanvas map {
@@ -343,15 +377,15 @@ a.anchor {
   transition: all 150ms linear;
   border-radius: 50%;
   padding: 1rem;
-  background-color: #fff;
+  background-color: black;
   font-size: 1.5rem;
-  color: #39A236;
-  border: 2px solid #39A236;
+  color: #fff;
+  border: 2px solid #fff;
   margin-bottom: 0.5rem;
 }
 
 .icon:hover {
-  background-color: #39A236;
-  color: #fff;
-  border: 2px solid #fff;
+  background-color: #fff;
+  color: black;
+  border: 2px solid black;
 }
