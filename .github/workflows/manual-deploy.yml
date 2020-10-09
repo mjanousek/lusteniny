@@ -23,4 +23,3 @@ jobs:
         FTP_USERNAME: w248147_github
         FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
         LOCAL_DIR: web
-        REMOTE_DIR: test
