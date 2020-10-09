@@ -31,7 +31,7 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@2.0.0
       env:
         FTP_SERVER: 248147.w47.wedos.net
-        FTP_USERNAME: w248147
+        FTP_USERNAME: w248147_github
         FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
         LOCAL_DIR: web
         REMOTE_DIR: www/test
