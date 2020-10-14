@@ -1,0 +1,140 @@
+@extends(master)
+
+@section(base)
+<base href=".">
+@endsection
+
+@section(content)
+
+<main>
+	<header id="hero"
+		class="container-intro overlay d-flex flex-column align-items-center justify-content-between intro">
+		<div class="d-flex flex-column justify-content-center align-items-center flex-fill">
+			<img src="images/logo-lusteniny.svg" alt="Luštěniny Logo" class="logo">
+			<h1 class="sr-only">Luštěniny</h1>
+			<h2 class="mt-2 mb-2 text-shadow">Šifrovací hra v centru Zlína</h5>
+		</div>
+		<a class="btn-intro d-flex align-items-center justify-content-center text-light text-decoration-none" role="button" href="#about">
+			<i class="fas fa-angle-double-down fa-2x"></i>
+		</a>
+	</header>
+	<a class="anchor" id="about"></a>
+	<div id="extraHero" class="extra-hero">
+		
+	</div>
+	<section class="section section-main">
+		<header
+			class="section-header shadow-box container bg-gradient-primary py-4 text-white text-center position-relative">
+			<h2>Zimní Luštěniny</h2>
+			<hr>
+			<h3 id="countdown-header">Do začátku zbývá</h3>
+			<p id="countdown"> </p>
+			<p>Zimní edice luštěnin je před námi</p>
+			<button class="btn btn-light btn-lg m-1 stretched-link shadow-sm" onclick="openOffCanvas()">Klikni zde pro
+				více informací !</button>
+		</header>
+		<div class="section-body mt-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-8">
+						<h2 class="text-center text-md-left">O co jde?</h2>
+						<hr class="mx-auto mr-md-auto ml-md-0 bg-primary">
+						<p>
+							Baví tě šifrovačky? Pokud ano, jsi na správném místě. Luštěniny jsou šifrovací hra
+							pořádána
+							v centru
+							Zlína, které se můžeš zúčastnit jak v týmu, tak sám. Navíc s sebou můžeš vzít i
+							děti,
+							budeme
+							mít
+							připravené šifry i pro ně.
+						</p>
+						<p>Čeká na tebe krátká procházka Zlínem lemovaná stanovišti s šiframi a tvým úkolem
+							bude,
+							jich
+							vyluštit
+							co nejvíc.
+							Na konci události tě bude čekat vyhlášení vítězů, předání cen a nějaký ten
+							networking
+							včetně
+							občerstvení.</p>
+					</div>
+					<div class="col-12 col-md-4 d-none d-md-block">
+						<div class="shadow-box bg-white rounded-circle">
+							<img src="images/Logo_Small.png" alt="Logo malé" class="img-fluid p-4">
+						</div>
+					</div>
+				</div>
+
+				<div class="row mt-5">
+					<div class="col-12 text-center">
+
+					</div>
+				</div>
+			</div>
+	</section>
+	<section class="section mt-5 container text-center">
+		<h2>Zúčastníš se? Chceš se na něco zeptat?</h2>
+		<hr class="bg-primary mx-auto">
+		<p>Přidej se k stránce luštěnin na facebooku, kde se můžeš v případě potřeby na
+			cokoli zeptat.
+		</p>
+		<a class="btn btn-facebook m-1" href="https://www.facebook.com/lusteniny/" target="_blank" role="button">
+			<i class="fab fa-facebook-square pr-2"></i>
+			Luštěniny na Facebooku</a>
+		<a class="btn btn-facebook m-1" href="https://www.m.me/lusteniny/" target="_blank" role="button">
+			<i class="fab fa-facebook-messenger pr-2"></i>
+			Luštěniny na Messengeru</a>
+	</section>
+	<section class="section section-gallery mt-5 container">
+		<a class="anchor" id="gallery"></a>
+		<header class="section-header text-center py-3">
+			<h2>Minulé ročníky</h2>
+			<hr class="bg-primary">
+			<p>Fotky, šifry, řešení - podívej se na již proběhlé akce!</p>
+		</header>
+		<div class="row">
+			<div class="col-12 col-sm-6 col-md-4">
+				<div class="card shadow-sm my-2">
+					<img src="images/Lusteniny2020.JPG" class="card-img-top" alt="Lusteniny 2019">
+					<div class="card-body text-center">
+						<h3 class="card-title mb-0">Luštěniny III.</h3>
+						<small class="card-subtitle mb-2 text-muted">18.07.2020</small>
+						<a href="lusteniny3" class="btn btn-primary w-100 stretched-link mt-2">Více
+							informací
+							<span class="fas fa-angle-double-right ml-2"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-6 col-md-4">
+				<div class="card shadow-sm my-2">
+					<img src="images/lusteniny-2019.jpg" class="card-img-top" alt="Lusteniny 2019">
+					<div class="card-body text-center">
+						<h3 class="card-title mb-0">Luštěniny II.</h3>
+						<small class="card-subtitle mb-2 text-muted">22.06.2019</small>
+						<a href="lusteniny2" class="btn btn-primary w-100 stretched-link mt-2">Více
+							informací
+							<span class="fas fa-angle-double-right ml-2"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-6 col-md-4">
+				<div class="card shadow-sm my-2">
+					<img src="images/Lusteniny2018.jpg" class="card-img-top" alt="Lusteniny 2018">
+					<div class="card-body text-center">
+						<h3 class="card-title mb-0">Luštěniny I.</h3>
+						<small class="card-subtitle mb-2 text-muted">17.11.2018</small>
+						<a href="lusteniny1" class="btn btn-primary w-100 stretched-link mt-2">Více
+							informací
+							<span class="fas fa-angle-double-right ml-2"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+
+@endsection

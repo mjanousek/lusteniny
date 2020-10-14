@@ -5,15 +5,28 @@
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
-	<title>Luštěniny</title>
-	<meta name="description" content="Šifrovací hra">
-	<meta property="og:image" content="images/fb-share-image.jpg" />
-	<meta property="og:image:type" content="image/jpg">
-	<meta property="og:image:width" content="1024">
-	<meta property="og:image:height" content="1024">
+	<title>Lu&scaron;těniny - &Scaron;ifrovac&iacute; hra ve Zl&iacute;ně</title>
+	<meta name="title" content="Lu&scaron;těniny - &Scaron;ifrovac&iacute; hra ve Zl&iacute;ně">
+	<meta name="description" content="Bav&iacute; tě &scaron;ifrovačky? Pokud ano, jsi na spr&aacute;vn&eacute;m m&iacute;stě. Lu&scaron;těniny jsou &scaron;ifrovac&iacute; hra poř&aacute;d&aacute;na v centru Zl&iacute;na, kter&eacute; se může&scaron; z&uacute;častnit jak v t&yacute;mu, tak s&aacute;m. Nav&iacute;c s sebou může&scaron; vz&iacute;t i děti, budeme m&iacute;t připraven&eacute; &scaron;ifry i pro ně.">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+	<link rel="manifest" href="/images/icons/site.webmanifest">
+	<link rel="mask-icon" href="/images/icons/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="/images/icons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="/images/icons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+
+	<base href=".">
+	<meta property="og:description" content=" Bav&iacute; tě &scaron;ifrovačky? Pokud ano, jsi na spr&aacute;vn&eacute;m m&iacute;stě. Lu&scaron;těniny jsou &scaron;ifrovac&iacute; hra poř&aacute;d&aacute;na v centru Zl&iacute;na, kter&eacute; se může&scaron; z&uacute;častnit jak v t&yacute;mu, tak s&aacute;m. Nav&iacute;c s sebou může&scaron; vz&iacute;t i děti, budeme m&iacute;t připraven&eacute; &scaron;ifry i pro ně.">
+	<meta property="og:image:height" content="1047">
+	<meta property="og:image:width" content="2000">
+	<meta property="og:title" content="Lu&scaron;těniny - &Scaron;ifrovac&iacute; hra ve Zl&iacute;ně">
+	<meta property="og:url" content="https://lusteniny.eu">
+	<meta property="og:image" content="https://lusteniny.eu/images/background-2020-overlay-2.jpg/og-image.jpg">
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/lusteniny.min.css">
@@ -22,16 +35,27 @@
 
 	<script type="text/javascript" src="https://api.mapy.cz/loader.js"></script>
 	<script type="text/javascript">Loader.load(null, { api: "simple" })</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-179555801-5"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-179555801-5');
+	</script>
+
 </head>
 
-<body data-spy="scroll">
-	<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-gradient-primary shadow-box fixed-top">
-		<div class="container">
+<body data-spy="scroll" id="body">
+	<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-secondary shadow-box fixed-top">
+		<div class="container-fluid">
 			<a class="navbar-brand" href="#">
 				<img src="images/logo-lusteniny.svg" height="40px" alt="Luštěniny">
 			</a>
-			<button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler border-0" type="button" data-toggle="collapse"
+				data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
 				<span class="fas fa-bars text-light " style="font-size: 2rem;"></span>
 			</button>
 			<div class="collapse navbar-collapse " id="navbarSupportedContent">
@@ -40,8 +64,8 @@
 						<a class="nav-link" href="#about">Úvod </a>
 					</li>
 					<li class="nav-item dropdown">
-						<a class="nav-link" id="navbarDropdown" role="button" href="#"
-							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<a class="nav-link" id="navbarDropdown" role="button" href="#" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">
 							Minulé Ročníky <i class="fas fa-caret-down ml-1"></i>
 						</a>
 						<div class="dropdown-menu border-0 text-center" aria-labelledby="navbarDropdown">
@@ -49,9 +73,6 @@
 							<a class="dropdown-item" href="lusteniny2">Luštěniny II.</a>
 							<a class="dropdown-item" href="lusteniny1">Luštěniny I.</a>
 						</div>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#sponsors">Sponzoři</a>
 					</li>
 					<li class="nav-item d-none d-lg-inline">
 						<a class="nav-link" href="https://www.facebook.com/lusteniny">
@@ -68,7 +89,60 @@
 		</div>
 	</nav>
 
+	<div id="offcanvasMenu" class="offcanvas text-light">
+		<i class="offcanvas-close fas fa-times" onclick="closeOffCanvas()" role="button"></i>
+		<div class="offcanvas-overlay"></div>
+		<div class="offcanvas-content container text-center py-5">
+			<header class="pt-4 rounded-top">
+				<h2>Zimní Luštěniny</h2>
+				<hr class="bg-primary mx-auto">
+			</header>
+			<p>
+				Zimní edice luštěnin je tady. Tentokrát na Zlinském zámku!</p>
+			<p>
+				Tato speciální edice luštěnin bude mít omezený počet účastníků - <b>pouze 10</b> týmu bude mít
+				možnost se registrovat. <br>
+				Opět na vás bude čekat nová várka šifer, tentokrát zaměřená právě na místo konání - zlínský
+				zámek.
+			</p>
+			<p>
+				Dále se můžete těšit na exkluzivní atmosféru, kterou pro vás pečlivě připravujeme.
+				A jelikož se vše odehrává ve vnitř zámku, nemusíte se tentokrát obávat ani nepříznivého počasí.
+			</p>
+			<div class="row">
+				<div class="col-4">
+					<i class="fas fa-calendar-day icon"></i>
+					<div><b>6. Února 2021</b></div>
+				</div>
+				<div class="col-4">
+					<i class="fas fa-users icon"></i>
+					<div>
+						<b>Pouze 13 týmů</b>
+					</div>
+				</div>
+				<div class="col-4">
+					<i class="fas fa-map-marked-alt icon"></i>
+					<div>
+						<b>Zámek Zlín <br>
+							Soudní 1, 760 01 Zlín
+						</b>
+					</div>
+				</div>
+			</div>
 
+			<button class="btn btn-facebook mt-4 shadow-box"><i class="fab fa-facebook-square pr-2"></i>Událost na
+				facebooku</button>
+			<map id="map" name="map" class="border shadow-box mt-4 rounded"></map>
+			<script type="text/javascript">
+				var point = SMap.Coords.fromWGS84(17.6631863, 49.2255077);
+				var m = new SMap(JAK.gel("map"), point, 16);
+				m.addMarker(point);
+			</script>
+			<button class="btn btn-lg btn-light btn-block mt-4" onclick="closeOffCanvas()">Zavřít</button>
+		</div>
+	</div>
+
+	<main>
 	<header id="hero"
 		class="container-intro overlay d-flex flex-column align-items-center justify-content-between intro">
 		<div class="d-flex flex-column justify-content-center align-items-center flex-fill">
@@ -76,157 +150,180 @@
 			<h1 class="sr-only">Luštěniny</h1>
 			<h2 class="mt-2 mb-2 text-shadow">Šifrovací hra v centru Zlína</h5>
 		</div>
-		<a class="btn-intro d-flex align-items-center justify-content-center text-light" role="button" href="#about">
+		<a class="btn-intro d-flex align-items-center justify-content-center text-light text-decoration-none" role="button" href="#about">
 			<i class="fas fa-angle-double-down fa-2x"></i>
 		</a>
 	</header>
-
-	<main>
-		<article>
-			<section class="section section-main" id="about">
-				<header class="section-header shadow-box">
-					<h2>Luštěniny</h2>
-					<hr>
-					<!-- <h2>Akce je prozatím odložena na neurčito.</h2> -->
-					<h3 id="countdown-header">Do začátku zbývá</h3>
-					<p id="countdown"> </p>
-					<h4 id="finish" style="display: none">Luštěniny 2020 již bohužel skončily.<br />Nevěš hlavu, přístí
-						rok tady budeme zas!</h4>
-				</header>
-				<div class="section-body" >
-					<div class="container">
-						<div class="row">
-							<div class="col-12 col-md-8">
-								<h2 class="text-center text-md-left">O co jde?</h2>
-								<hr class="mx-auto mr-md-auto ml-md-0">
-								<p>
-									Baví tě šifrovačky? Pokud ano, jsi na správném místě. Luštěniny jsou šifrovací hra
-									pořádána
-									v centru
-									Zlína, které se můžeš zúčastnit jak v týmu, tak sám. Navíc s sebou můžeš vzít i
-									děti,
-									budeme
-									mít
-									připravené šifry i pro ně.
-								</p>
-								<p>Čeká na tebe krátká procházka Zlínem lemovaná stanovišti s šiframi a tvým úkolem
-									bude,
-									jich
-									vyluštit
-									co nejvíc.
-									Na konci události tě bude čekat vyhlášení vítězů, předání cen a nějaký ten
-									networking
-									včetně
-									občerstvení.</p>
-							</div>
-							<div class="col-12 col-md-4 d-none d-md-block">
-								<div class="shadow-box">
-									<img src="images/Logo_Small.png" alt="Logo malé" class="img-fluid p-4">
-								</div>
-							</div>
-						</div>
-
-						<div class="row pt-4">
-							<div class="col-12 text-center">
-								<h2>Zúčastníš se? Chceš se na něco zeptat?</h2>
-								<hr class="mx-auto">
-								<p>Přidej se k stránce luštěnin na facebooku, kde se můžeš v případě potřeby na
-									cokoli zeptat.
-								</p>
-								<a class="btn btn-facebook m-1" href="https://www.facebook.com/lusteniny/" target="_blank"
-									role="button">
-									<i class="fab fa-facebook-square pr-2"></i>
-									Luštěniny na Facebooku</a>
-									<a class="btn btn-facebook m-1" href="https://www.m.me/lusteniny/" target="_blank"
-									role="button">
-									<i class="fab fa-facebook-messenger pr-2"></i>
-									Luštěniny na Messengeru</a>
-								<!-- <br>
-								<a class="btn btn-instagram mt-3" href="https://www.instagram.com/lusteniny/"
-									target="_blank" role="button">
-									<i class="fab fa-instagram pr-2 "></i>
-									Luštěniny na Instagramu</a> -->
-							</div>
-						</div>
+	<a class="anchor" id="about"></a>
+	<div id="extraHero" class="extra-hero">
+		
+	</div>
+	<section class="section section-main">
+		<header
+			class="section-header shadow-box container bg-gradient-primary py-4 text-white text-center position-relative">
+			<h2>Zimní Luštěniny</h2>
+			<hr>
+			<h3 id="countdown-header">Do začátku zbývá</h3>
+			<p id="countdown"> </p>
+			<p>Zimní edice luštěnin je před námi</p>
+			<button class="btn btn-light btn-lg m-1 stretched-link shadow-sm" onclick="openOffCanvas()">Klikni zde pro
+				více informací !</button>
+		</header>
+		<div class="section-body mt-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-8">
+						<h2 class="text-center text-md-left">O co jde?</h2>
+						<hr class="mx-auto mr-md-auto ml-md-0 bg-primary">
+						<p>
+							Baví tě šifrovačky? Pokud ano, jsi na správném místě. Luštěniny jsou šifrovací hra
+							pořádána
+							v centru
+							Zlína, které se můžeš zúčastnit jak v týmu, tak sám. Navíc s sebou můžeš vzít i
+							děti,
+							budeme
+							mít
+							připravené šifry i pro ně.
+						</p>
+						<p>Čeká na tebe krátká procházka Zlínem lemovaná stanovišti s šiframi a tvým úkolem
+							bude,
+							jich
+							vyluštit
+							co nejvíc.
+							Na konci události tě bude čekat vyhlášení vítězů, předání cen a nějaký ten
+							networking
+							včetně
+							občerstvení.</p>
 					</div>
-			</section>
-			<section class="section section-gallery" id="gallery">
-				<header class="section-header shadow-box">
-					<h2>Minulé ročníky</h2>
-					<hr>
-					<p>Fotky, šifry, řešení - podívej se na již proběhlé akce!</p>
-				</header>
-				<div class="container">
-					<div class="row py-2">
-						<div class="col-12 col-sm-6 col-md-4">
-							<div class="card border-0 shadow-box my-2" >
-								<img src="images/Lusteniny2020.JPG" class="card-img-top" alt="Lusteniny 2019">
-								<div class="card-body text-center">
-									<h3 class="card-title mb-0">Luštěniny III.</h3>
-									<small class="card-subtitle mb-2 text-muted">18.07.2020</small>
-									<a href="lusteniny3" class="btn btn-primary w-100 stretched-link mt-2">Více
-										informací
-										<span class="fas fa-angle-double-right ml-2"></span>
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-12 col-sm-6 col-md-4">
-							<div class="card border-0 shadow-box my-2" >
-								<img src="images/lusteniny-2019.jpg" class="card-img-top" alt="Lusteniny 2019">
-								<div class="card-body text-center">
-									<h3 class="card-title mb-0">Luštěniny II.</h3>
-									<small class="card-subtitle mb-2 text-muted">22.06.2019</small>
-									<a href="lusteniny2" class="btn btn-primary w-100 stretched-link mt-2">Více
-										informací
-										<span class="fas fa-angle-double-right ml-2"></span>
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-12 col-sm-6 col-md-4">
-							<div class="card border-0 shadow-box my-2" >
-								<img src="images/Lusteniny2018.jpg" class="card-img-top" alt="Lusteniny 2018">
-								<div class="card-body text-center">
-									<h3 class="card-title mb-0">Luštěniny I.</h3>
-									<small class="card-subtitle mb-2 text-muted">17.11.2018</small>
-									<a href="lusteniny1" class="btn btn-primary w-100 stretched-link mt-2">Více
-										informací
-										<span class="fas fa-angle-double-right ml-2"></span>
-									</a>
-								</div>
-							</div>
+					<div class="col-12 col-md-4 d-none d-md-block">
+						<div class="shadow-box bg-white rounded-circle">
+							<img src="images/Logo_Small.png" alt="Logo malé" class="img-fluid p-4">
 						</div>
 					</div>
 				</div>
-			</section>
 
+				<div class="row mt-5">
+					<div class="col-12 text-center">
 
-			<section class="section section-sponsors" id="sponsors">
-				<header class="section-header shadow-box">
-					<h2>Sponzoři</h2>
-					<hr>
-				</header>
-				<div class="container section-body px-4">
-					<div class="row">
-						<a href="https://zivy-zlin.cz/" class="col-12 col-sm-6 sponsor sponsor-zz pt-3">
-							<img src="images/sponsors/zivyzlin.png" alt="Živý Zlín" class="img-fluid shadow-box">
-						</a>
-						<a href="https://www.cngroup.dk/" class="col-12 col-sm-6 sponsor sponsor-cn pt-3">
-							<img src="images/sponsors/cngroup.png" alt="CN GROUP" class="img-fluid shadow-box">
+					</div>
+				</div>
+			</div>
+	</section>
+	<section class="section mt-5 container text-center">
+		<h2>Zúčastníš se? Chceš se na něco zeptat?</h2>
+		<hr class="bg-primary mx-auto">
+		<p>Přidej se k stránce luštěnin na facebooku, kde se můžeš v případě potřeby na
+			cokoli zeptat.
+		</p>
+		<a class="btn btn-facebook m-1" href="https://www.facebook.com/lusteniny/" target="_blank" role="button">
+			<i class="fab fa-facebook-square pr-2"></i>
+			Luštěniny na Facebooku</a>
+		<a class="btn btn-facebook m-1" href="https://www.m.me/lusteniny/" target="_blank" role="button">
+			<i class="fab fa-facebook-messenger pr-2"></i>
+			Luštěniny na Messengeru</a>
+	</section>
+	<section class="section section-gallery mt-5 container">
+		<a class="anchor" id="gallery"></a>
+		<header class="section-header text-center py-3">
+			<h2>Minulé ročníky</h2>
+			<hr class="bg-primary">
+			<p>Fotky, šifry, řešení - podívej se na již proběhlé akce!</p>
+		</header>
+		<div class="row">
+			<div class="col-12 col-sm-6 col-md-4">
+				<div class="card shadow-sm my-2">
+					<img src="images/Lusteniny2020.JPG" class="card-img-top" alt="Lusteniny 2019">
+					<div class="card-body text-center">
+						<h3 class="card-title mb-0">Luštěniny III.</h3>
+						<small class="card-subtitle mb-2 text-muted">18.07.2020</small>
+						<a href="lusteniny3" class="btn btn-primary w-100 stretched-link mt-2">Více
+							informací
+							<span class="fas fa-angle-double-right ml-2"></span>
 						</a>
 					</div>
 				</div>
-			</section>
-		</article>
-	</main>
+			</div>
+			<div class="col-12 col-sm-6 col-md-4">
+				<div class="card shadow-sm my-2">
+					<img src="images/lusteniny-2019.jpg" class="card-img-top" alt="Lusteniny 2019">
+					<div class="card-body text-center">
+						<h3 class="card-title mb-0">Luštěniny II.</h3>
+						<small class="card-subtitle mb-2 text-muted">22.06.2019</small>
+						<a href="lusteniny2" class="btn btn-primary w-100 stretched-link mt-2">Více
+							informací
+							<span class="fas fa-angle-double-right ml-2"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-6 col-md-4">
+				<div class="card shadow-sm my-2">
+					<img src="images/Lusteniny2018.jpg" class="card-img-top" alt="Lusteniny 2018">
+					<div class="card-body text-center">
+						<h3 class="card-title mb-0">Luštěniny I.</h3>
+						<small class="card-subtitle mb-2 text-muted">17.11.2018</small>
+						<a href="lusteniny1" class="btn btn-primary w-100 stretched-link mt-2">Více
+							informací
+							<span class="fas fa-angle-double-right ml-2"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
 
-	<footer class="footer shadow-box">
-		© 2020 Luštěniny
+	<button id="bottom-button" class="btn btn-bottom btn-primary btn-lg pt-3 rounded-top shadow-box"
+		onclick="openOffCanvas()">Zimní Luštěniny
+		!</button>
+
+	<footer class="footer  text-center py-4 mt-6">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-4 text-center py-2">
+					<h4>Luštěniny</h4>
+					<hr class="bg-primary mx-auto">
+					<nav>
+						<a class="nav-link text-dark px-0" href="./#about">Úvod</a>
+						<a class="nav-link text-dark px-0" href="./#about">O co jde</a>
+						<a class="nav-link text-dark px-0" href="./#gallery">Minulé ročníky</a>
+
+					</nav>
+				</div>
+				<div class="col-12 col-md-4 text-center py-2">
+					<h4>Minulé Ročníky</h4>
+					<hr class="bg-primary mx-auto">
+					<nav>
+						<a class="nav-link text-dark px-0" href="lusteniny3">Luštěniny III.</a>
+						<a class="nav-link text-dark px-0" href="lusteniny2">Luštěniny II.</a>
+						<a class="nav-link text-dark px-0" href="lusteniny1">Luštěniny I.</a>
+					</nav>
+				</div>
+				<div class="col-12 col-md-4 text-center py-2">
+					<h4>Sponzoři</h4>
+					<hr class="bg-primary mx-auto">
+					<nav>
+						<a class="nav-link text-dark px-0" href="https://zivy-zlin.cz/">Živý Zlín</a>
+						<a class="nav-link text-dark px-0" href="https://www.cngroup.dk/">CN Group</a>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="mt-4">
+			<small>
+				© 2020 Luštěniny
+			</small>
+		</div>
 	</footer>
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+		crossorigin="anonymous"></script>
 	<script src="js/lusteniny.js"></script>
 </body>
 

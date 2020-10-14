@@ -1,4 +1,5 @@
 # Lušteniny
+This project uses [Krisell / Static-HTML-Generator](https://github.com/Krisell/Static-HTML-Generator).
 
 ## About (CZ)  
 Šifrovací hra ve Zlíně  
