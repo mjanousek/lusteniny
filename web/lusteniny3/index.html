@@ -22,11 +22,12 @@
 
 	<base href="..">
 	<meta property="og:description" content=" Bav&iacute; tě &scaron;ifrovačky? Pokud ano, jsi na spr&aacute;vn&eacute;m m&iacute;stě. Lu&scaron;těniny jsou &scaron;ifrovac&iacute; hra poř&aacute;d&aacute;na v centru Zl&iacute;na, kter&eacute; se může&scaron; z&uacute;častnit jak v t&yacute;mu, tak s&aacute;m. Nav&iacute;c s sebou může&scaron; vz&iacute;t i děti, budeme m&iacute;t připraven&eacute; &scaron;ifry i pro ně.">
-	<meta property="og:image:height" content="1047">
+	<meta property="og:image:height" content="1153">
 	<meta property="og:image:width" content="2000">
+	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Lu&scaron;těniny - &Scaron;ifrovac&iacute; hra ve Zl&iacute;ně">
 	<meta property="og:url" content="https://lusteniny.eu">
-	<meta property="og:image" content="https://lusteniny.eu/images/background-2020-overlay-2.jpg/og-image.jpg">
+	<meta property="og:image" content="https://lusteniny.eu/images/background-2020-overlay-2.jpg">
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/lusteniny.min.css">
@@ -88,59 +89,6 @@
 			</div>
 		</div>
 	</nav>
-
-	<div id="offcanvasMenu" class="offcanvas text-light">
-		<i class="offcanvas-close fas fa-times" onclick="closeOffCanvas()" role="button"></i>
-		<div class="offcanvas-overlay"></div>
-		<div class="offcanvas-content container text-center py-5">
-			<header class="pt-4 rounded-top">
-				<h2>Zimní Luštěniny</h2>
-				<hr class="bg-primary mx-auto">
-			</header>
-			<p>
-				Zimní edice luštěnin je tady. Tentokrát na Zlinském zámku!</p>
-			<p>
-				Tato speciální edice luštěnin bude mít omezený počet účastníků - <b>pouze 13</b> týmu bude mít
-				možnost se registrovat. <br>
-				Opět na vás bude čekat nová várka šifer, tentokrát zaměřená právě na místo konání - zlínský
-				zámek.
-			</p>
-			<p>
-				Dále se můžete těšit na exkluzivní atmosféru, kterou pro vás pečlivě připravujeme.
-				A jelikož se vše odehrává ve vnitř zámku, nemusíte se tentokrát obávat ani nepříznivého počasí.
-			</p>
-			<div class="row">
-				<div class="col-4">
-					<i class="fas fa-calendar-day icon"></i>
-					<div><b>6. Února 2021</b></div>
-				</div>
-				<div class="col-4">
-					<i class="fas fa-users icon"></i>
-					<div>
-						<b>Pouze 13 týmů</b>
-					</div>
-				</div>
-				<div class="col-4">
-					<i class="fas fa-map-marked-alt icon"></i>
-					<div>
-						<b>Zámek Zlín <br>
-							Soudní 1, 760 01 Zlín
-						</b>
-					</div>
-				</div>
-			</div>
-
-			<button class="btn btn-facebook mt-4 shadow-box"><i class="fab fa-facebook-square pr-2"></i>Událost na
-				facebooku</button>
-			<map id="map" name="map" class="border shadow-box mt-4 rounded"></map>
-			<script type="text/javascript">
-				var point = SMap.Coords.fromWGS84(17.6631863, 49.2255077);
-				var m = new SMap(JAK.gel("map"), point, 16);
-				m.addMarker(point);
-			</script>
-			<button class="btn btn-lg btn-light btn-block mt-4" onclick="closeOffCanvas()">Zavřít</button>
-		</div>
-	</div>
 
 	<main>
 	<header class="mt-6 text-center container">
@@ -790,10 +738,6 @@
 		<i class="fas fa-angle-double-up"></i>
 	</a>
 </main>
-
-	<button id="bottom-button" class="btn btn-bottom btn-primary btn-lg pt-3 rounded-top shadow-box"
-		onclick="openOffCanvas()">Zimní Luštěniny
-		!</button>
 
 	<footer class="footer  text-center py-4 mt-6">
 		<div class="container">
