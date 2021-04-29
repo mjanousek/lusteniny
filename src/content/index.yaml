@@ -1,0 +1,42 @@
+hero: 
+  title: title
+  description: description
+  slides:
+    - title: Luštěniny I.
+      description: Tady to vše začalo. Premiéra Luštěnin, spousta nejistoty a očekávání ze strany organizátorů. Na konci dne však bylo jasné, že toto rozhodně nebude jediný ročník.
+      link: /udalosti/lusteniny-2018
+      image: /2018/Lusteniny2018.jpg
+about:
+  title: Co jsou Luštěniny ?
+  subtitle: Luštěniny jsou šifrovací hra pořádána v centru Zlína, které se můžeš zúčastnit
+    jak v týmu, tak sám.
+  features:
+  - icon: route
+    title: Krátká procházka Zlínem
+    text: Čeká na tebe krátká procházka Zlínem lemovaná stanovišti s šiframi a tvým
+      úkolem bude, jich vyluštit co nejvíc.
+  - icon: map-marker-alt
+    title: Stanoviště s šiframi
+    text: Na každém stanovišti na tebe bude čekat jeden z organizátorů, který ti předá
+      zadání a případně pomůže s čím bude potřeba.
+  - icon: pencil-ruler
+    title: Připravené pomůcky
+    text: Před záhájením dostaneš vše, co je potřeba k luštění - propisky, volné papíry
+      dokonce i tahák na šifry.
+  - icon: child
+    title: Šifry i pro děti
+    text: Můžeš s sebou vzít i děti, budeme mít připravené šifry a ceny i pro ně.
+  - icon: mobile-alt
+    title: Řešení šifer v telefonu
+    text: Pro účastníky šifrovačky bude připravena webová aplikace, kde bude například
+      možnost šifru odevzat a získat místo dalšího stanoviště.
+  - icon: trophy
+    title: Vyhlášení vítězů
+    text: Na konci události tě bude čekat vyhlášení vítězů, předání cen a nějaký ten
+      networking včetně občerstvení.
+contact:
+  title: Chceš se na něco zeptat?
+  subtitle: Přidej se k stránce luštěnin na facebooku, kde tvé dotazy rádi zodpovíme.
+archive:
+  title: Minulé Ročníky
+  subtitle: Fotky, šifry, řešení - podívej se na již proběhlé akce!
