@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: "Lusteniny",
+    siteUrl: "https://lusteniny.eu",
   },
   plugins: [
-    "gatsby-plugin-sass",
+    "gatsby-plugin-postcss",
     "gatsby-plugin-image",
     {
       resolve: "gatsby-plugin-google-analytics",
@@ -25,8 +26,6 @@ module.exports = {
         icon: "src/images/logo/Logo_Green.png",
       },
     },
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -35,6 +34,8 @@ module.exports = {
       },
       __key: "images",
     },
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     "gatsby-transformer-yaml",
     {
       resolve: "gatsby-source-filesystem",
@@ -48,10 +49,14 @@ module.exports = {
       options: {
         fonts: [
           `Poppins\:400,500,600,700`,
-          `Quicksand\:400,500,600,700`, // you can also specify font weights and styles
+          `Quicksand\:400,500,600,700`,
+          `Inter\:400,500,600,700`,
         ],
         display: "swap",
       },
     },
   ],
+  flags: {
+    DEV_SSR: false,
+  },
 };

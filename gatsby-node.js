@@ -50,7 +50,7 @@ exports.createPages = async ({ graphql, actions }) => {
   result.data.allEventsYaml.edges.forEach(({ node }) => {
     createPage({
       path: "/udalosti" + node.slug,
-      component: path.resolve(`./src/templates/event.tsx`),
+      component: path.resolve(`./src/components/templates/eventPage.tsx`),
       context: {
         ...node,
       },

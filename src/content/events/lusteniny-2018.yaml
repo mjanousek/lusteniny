@@ -9,9 +9,74 @@ winners:
   - Fordi
   - Edhouse 42
 cyphers:
-  - title: Úvodní šifra
-    image: ""
-    hint: Caesarova šifra
-    steps: 
+  - title: Úvodní Šifra
+    image: "events/2018/Lusteniny2018-UvodniSifra.jpg"
+    hint: Caesarova šifra.
+    steps:
       - Každé písmeno posuň o 13 míst v abecedě
     solution: I FAILED THE TURING TEST
+  - title: Binary
+    image: "events/2018/Lusteniny2018-Binary.jpg"
+    hint: Vybarvuj zleva doprava.
+    steps:
+      - Pokud do kulicky vchazi pouze jedna barva, pak vybarvi kuličku stejnou barvou
+      - "Pokud do kuličky vchází dvě kuličky stejné barvy, pak vybarvi kuličku opačnou
+        barvou "
+      - Vznikne obrázek s nápisem ZLIN
+    solution: ZLIN
+  - title: C lang
+    image: "events/2018/Lusteniny2018-Clang.jpg"
+    hint: Hledej chyby.
+    steps:
+      - Najdi syntaktické chyby v kódu
+      - Písmena odpovídající řádkům s chybami (je nutné písmena přeskládat a čísla
+        odpovídají pořadí písmen v abecedě)
+      - "Chyby na řádních: 2, 7, 9, 14, 15"
+    solution: BINGO
+  - title: Šifra č. 4
+    image: "events/2018/Lusteniny2018-Brail.jpg"
+    hint: Brailovo písmo.
+    steps:
+      - Tabulka je pole 4x4 brailových písmen (1 znamená plnou tečku, 0 prázdnou)
+      - Přepiš Brailovo písmo na písmena normální abecedy
+      - Písmena čtená po řádcích
+    solution: BINARY IS FUN !!
+  - title: Šifra č. 5
+    image: "events/2018/Lusteniny2018-Sifra5.jpg"
+    hint: Walk/kráčej/jdi.
+    steps:
+      - WSAD odpovídá klávesám na klávesnici, které se používají ve hrách k chůzi
+        4 směry (W - pohyb nahoru, S - pohyb dolů, A - vlevo, D - vpravo
+      - "Tabulka představuje pole, po kterém se pohybuje hráč (kulička udává jeho
+        první pozici) "
+      - Každý řádek odpovídá sekvenci kroků, kterou musí hráč provést, a pak se
+        ocitne na písmenu, které zapíše
+      - "Písmena, na kterých se hráč ocitne po každé sekvenci kroků "
+    solution: CNGROUP
+  - title: QR Code
+    image: "events/2018/Lusteniny2018-QRCode.jpg"
+    hint: Sloupce.
+    steps:
+      - Sečti čtverečky v každém sloupci
+      - Součet čtverečků udává pořadí písmene v abecedě
+      - Písmena ve stejném pořadí, jako sloupce
+    solution: THINK DIFFERENT AND THEN AGAIN (bez mezer)
+  - title: Šifra č.7
+    image: "events/2018/Lusteniny2018-Sifra7.jpg"
+    hint: Přiřaď města .
+    steps:
+      - Tečky představují města v Čr
+      - Přiřaď pojmy k městům (Zjisti, jaké města jsou zaznačené)
+      - Číslo udává písmeno v názvu města
+      - Písmena z měst ve stejném pořadí, jako jsou jejich pojmy
+    solution: HAPPINESS
+  - title: Síť
+    image: "events/2018/Lusteniny2018-Síť.jpg"
+    hint: Http stavové kódy .
+    steps:
+      - Zkratky představují chybové hlášky Http protokolu
+      - Najdi kódy jednotlivých hlášek
+      - "Sečti čísla v http kódu (př.: 404 -> 4 + 0 + 4 = 8)"
+      - Číslo udává pořadí písmene v abecedě
+      - Písmena ve stejném pořadí, jako http stavové kódy (čtverečky výše)
+    solution: BOHEMIA
