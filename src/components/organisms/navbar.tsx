@@ -15,15 +15,26 @@ export default function Navbar() {
           <img src={logo} alt="Luštěniny" className="h-12" />
         </Link>
         <div className="md:ml-auto flex flex-wrap items-center text-base justify-center space-x-8">
-          <Link to="/">
+          <Link to="/" className="hover:text-green-600 transition-all">
             <FontAwesomeIcon icon="home" size="lg" className="mr-2" />
             Domů
           </Link>
-          <Link to="/udalosti">Události</Link>
-          <ExternalLink href="https://www.facebook.com/lusteniny">
+          <Link
+            to="/udalosti"
+            className="hover:text-green-600 transition-all"
+          >
+            Události
+          </Link>
+          <ExternalLink
+            href="https://www.facebook.com/lusteniny"
+            className="hover:text-green-600 transition-all"
+          >
             <FontAwesomeIcon icon={["fab", "facebook-f"]} size="lg" />
           </ExternalLink>
-          <ExternalLink href="https://www.m.me/lusteniny/">
+          <ExternalLink
+            href="https://www.m.me/lusteniny/"
+            className="hover:text-green-600 transition-all"
+          >
             <FontAwesomeIcon icon={["fab", "facebook-messenger"]} size="lg" />
           </ExternalLink>
         </div>

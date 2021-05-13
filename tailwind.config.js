@@ -40,6 +40,7 @@ module.exports = {
       // ...
 
       filter: ["dark"],
+      scale: ["group-hover"]
     },
   },
   plugins: [],

@@ -3,7 +3,7 @@ import * as React from "react";
 type Props = {
   children?: React.ReactNode;
   level: 1 | 2 | 3 | 4 | 5 | 6;
-  color?: "light" | "dark";
+  color?: "light";
 };
 
 export default function Title(props: Props) {
@@ -20,8 +20,8 @@ export default function Title(props: Props) {
 
   const color = () => {
     switch (props.color) {
-      case "light":
-        return "text-gray-100";
+      case "light": 
+        return "text-gray-100 dark:text-gray-100";
       default:
         return "text-gray-900 dark:text-gray-100";
     }

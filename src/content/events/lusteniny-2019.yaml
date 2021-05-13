@@ -9,4 +9,260 @@ winners:
   - "Edhouse 42"
   - "No Game No Life "
 cyphers:
-  - title: ""
+  - title: Noty
+    image: "events/2019/cyphers/Lusteniny2019-Noty.jpg"
+    hints:
+      - Na délce záleží
+    steps:
+      - Půlové noty představují čárky a čtvrťové noty tečky v Morseově kódu.
+    solution: hudba
+  - title: Stříbrné Plátno
+    image: "events/2019/cyphers/Lusteniny2019-StříbrnéPlátno.jpg"
+    hints:
+      - "Slož mě! "
+      - Co se promítalo na stříbrné plátno? No přece filmy! A ve Zlíně se spoustu
+        z nich natáčelo. Zkus je tedy najít
+      - Přečti písmena na vrcholech krychle.
+    steps:
+      - Složíme kostku tak, aby slova na hranách dávala názvy filmů produkovaných
+        ve zlínkých filmových ateliérech
+      - Na vrcholech krychle vziknou písmena, která jsou viditelná při pohledu přímo
+        na vrchol
+      - Písmena přečteme popořadě nejdříve z horní a následně spodní strany
+    solution: Vavrecka
+  - title: Hamilton
+    image: "events/2019/cyphers/Lusteniny2019-Hamilton.jpg"
+    hints:
+      - Najdi cestu
+      - Nejkratší Hamiltonovská cesta
+    steps:
+      - Najdi nejkratší/nejlevnější Hamiltonovskou cestu z bodu 4 do bodu 3 (=ceste,
+        která projdem každým uzlem grafu právě jednou).
+      - " Čísla 1-6 představují jednotlivé vrcholy grafu "
+      - "Ostatní čísla v tabulce zastupují délky/ceny hran. "
+      - Vyjdi z bodu 4 - najdi nejlevnější cestu do dalšího bodu
+      - Pokračuj dál tak, aby žádný bod nebyl navštíven znovu a aby bod 3 byl poslední
+      - Napiš ceny použítých cest popořadě a nahraď je písmeny z abecedy
+    solution: Cesta
+  - title: Český jazyk
+    image: "events/2019/cyphers/Lusteniny2019_Cesky-jazyk.jpg"
+    hints: 
+      - Kolik jazyků znáš, tolikrát si člověkem.
+    steps:
+      - Najdi latinské výrazy
+      - Zkombinuj čísloz prvního sloupce a prvního řádku pro počáteční písmeno daného
+        slova/slovního spojení
+      - Výsledná čísla pak představují písmena v abecedě
+      - Alma Mater -> 11 = K
+      - Carpe diem -> 14 = N
+      - artefakt -> 09 = I
+      - femme fatal -> 08 = H
+      - femur -> 25 = Y
+    solution: knihy
+  - title: DSZO
+    image: "events/2019/cyphers/Lusteniny2019-DSZO.jpg"
+    hints: 
+      - "(Tato šifra nemá nápovědu)"
+    steps:
+      - Vyhledej linky pro 2 zadané skupiny zastávek
+      - Označ linku, která zastavuje na všech zastávkách.
+      - Spoj na mapě DSZO konečné zastávky zvlášt pro obě linky
+      - Výsledkem je místo v průsečíku těchto spojnic
+    solution: Nám. Míru
+  - title: Koláče
+    image: "events/2019/cyphers/Lusteniny2019-Kolace.jpg"
+    hints:
+      - Koláče to nejsou :P
+      - Něco chybí? Nebo spíš naopak?
+      - Auta
+    steps:
+      - Každý ze sedmi obrázků představuje lehce pozměněnou značku výrobce aut.
+      - Počet stejných přebytečných útvarů ve značce pak udává index písmene v názvu
+        tohoto výrobce
+      - Lexus - s
+      - BMW - M
+      - Opel - e
+      - Chrysler - s
+      - Suzuki - i
+      - Citroen - C
+      - Mercedes Benz - e
+    solution: Nám. Míru
+  - title: Tomáš Bata
+    image: "events/2019/cyphers/Lusteniny2019-Tomas Bata.jpg"
+    hints:
+      - Klíč má 7 písmen
+      - Hledej letopočty
+      - Použij jednotlivé číslice v letopočtech
+    steps:
+      - Najdi letopočty spojené s výrazy v * *
+      - Přiřaď letopočty k matematickým výrazům
+      - Najdi sloupec s písmenem klíče v prvním řádku
+      - Jednotlivá čísla ve výrazech určují, která číslice z letopočtu má být do
+        výrazu dosazena.
+      - "Výsledná čísla nahraď písmeny z kódovací tabulky "
+      - 2-4 1876 8-6 = 2 B
+      - 1+2+3 1894 1+8+9= 18 R
+      - 1+2+4 1905 1+9+5 = 15 O
+      - 2+3+4 1923 9*2+3 = 21 U
+      - 1-2+3+4 1891 1-8+9+1 = 3 C
+      - 1+2-9-4 1932 1+9-3-2 = 5 E
+      - 1+2+4 2019 2+0+9 = 11 K
+    solution: Broucek
+  - title: Caesarův ćtverec
+    image: "events/2019/cyphers/Lusteniny2019-Vigenere.jpg"
+    hints:
+      - Luštěniny
+      - Vigenere
+    steps:
+      - Najdi si Vigenerův čtverec.
+      - Najdi klíč ke zprávě - luštěniny
+      - Najdi sloupec s písmenem klíče v prvním řádku
+      - V daném sloupci najdi písmeno šifry
+      - Zapiš písmeno z prvního sloupce na řádku nalezeném v předchozím kroku
+    solution: SifrovackyJsouFajn
+  - title: Zvířata
+    image: "events/2019/cyphers/Lusteniny2019-Zvirata.jpg"
+    hints:
+      - Olympijské kruhy
+      - Co sem nepatří?
+      - Najdi počet zvířat, které nepatří do jednotlivých kruhů olympijských her.
+        Víš co kruhy znamenají?
+    steps:
+      - Nakresli kolem zvířat olympijské kruhy tak, aby všechna zvířata byla obsažena
+        v některém z kruhů
+      - "Kruhy reprezentují kontinenty: Afrika, Amerika, Evropa, Asie, Austrálie
+        a Oceánie "
+      - V každém kruhu najdi počet zvířaat které se nevyskytují na daném kontinentu
+      - Čísla udávají pořadí písmene z daného kontinentu
+    solution: Vafle
+  - title: Muffin
+    image: none
+    info:
+      - "Tato šifra měla zadání v podobě upečeného muffinu, bohužel se žádný muffin
+        ani foto nedochovalo, proto je toto zadání v této upravené formě. "
+      - "Zpráva v muffinu: R B 2Z 3R 6M B Na muffinu: 7 růžových, 1 bílá, 4 zelené,
+        3 modré"
+    hints:
+      - Olympijské kruhy
+      - Co sem nepatří?
+      - Najdi počet zvířat, které nepatří do jednotlivých kruhů olympijských her.
+        Víš co kruhy znamenají?
+    steps:
+      - Nakresli kolem zvířat olympijské kruhy tak, aby všechna zvířata byla obsažena
+        v některém z kruhů
+      - "Kruhy reprezentují kontinenty: Afrika, Amerika, Evropa, Asie, Austrálie
+        a Oceánie "
+      - V každém kruhu najdi počet zvířaat které se nevyskytují na daném kontinentu
+      - Čísla udávají pořadí písmene z daného kontinentu
+    solution: Vafle
+bonusInformation:
+  - title: Noty
+    text:
+      - "Filharmonie Bohuslava Martinů je Zlínský symfonický orchestr, který byl
+        založen již v roce 1946. Každoročně pořádá mnoho koncertů nejen operní a komorní
+        hudby, ale i symfonické vystoupení například na festivalu Masters of Rock
+        spolu s Martou Jandovou a Václavem Noid Bártou, zpěvačkou Tarja Turunen nebo
+        Švédskou metalovou kapelou Sabaton.Hostuje na nejvýznamnějších českých festivalech
+        a uskutečnila i turné do 13 zemí Evropy a do Spojených států amerických. "
+  - title: Stříbrné Plátno
+    text:
+      - Hugo Vavrečka byl český novinář, národohospodář, politik a diplomat.
+        Byl dědečkem Václava a Ivana Havla. Hugo Vavrečka k firmě Baťa nastoupil 7.
+        června 1932 na pozici ředitele, kde měl na starosti národohospodářské, obchodní
+        a diplomatické vztahy firmy Baťa s obchodními partnery v prvorepublikovém
+        Československu i zahraničí. Poté co Tomáš Baťa 12. července 1932 tragicky
+        zahynul, stal se majitelem a šéfem firmy Jan Antonín Baťa. Vavrečka s Dominikem
+        Čiperou zastávali funkce dvou nejvýše postavených zaměstnanců. "
+  - title: Hamilton
+    text:
+      - Hamiltonovská cesta je pojem z teorie grafů a vyjadřuje takovou cestu, která
+        projde každým uzlem grafu právě jednou. Hamiltonovská kružnice taktéž obsahuje
+        každý uzel právě jednou s výjimkou výchozího uzlu, který je zároveň i uzlem
+        koncovým.
+      - Jednou z nejznámějších aplikací je Problém obchodního cestujícího. Jedná se
+        o problém zmiňovaný od r. 1759 Eulerem. Obchodní cestující má navštívit n
+        měst (každé právě jednou) a vrátit se zpět domů. Přitom vzdálenost/čas/náklady
+        musí být nejmenší možné. Jinými slovy hledáme nejkratší HC v hranově ohodnoceném
+        grafu.
+      - "V naší šifře jsme hledali nejkratší Hamiltonovskou cestu z bodu 4 do bodu
+        3. Náš obchodní cestující se tedy nevracel do stejného bodu, ze kterého vyšel. "
+  - title: Český jazyk
+    text:
+      - "Krajská knihovna Františka Bartoše nyní se sídlem v areálu Svitu v 15.
+        budově je největší veřejnou knihovnou ve Zlínském kraji. Poskytuje návštěvníkům
+        knihovnické a informační služby, pořádá kulturní a vzdělávací akce pro školy
+        a veřejnost. Její vznik sahá až do roku 1885, kdy byl založen Čtenářský spolek
+        ve Zlíně, kde byl později František Bartoš jmenován jako první čestný člen
+        spolku. Její fond činí přes 410 000 knih a ročně má knihovna až přes 1 200
+        000 výpůjček. "
+  - title: DSZO
+    text:
+      - "Počátky zlínské dopravní společnosti sahají do dob rozvoje města a to
+        díky růstu Baťových závodů a mohutné výstavbě bytů pro zaměstanance. Jako
+        první bylo připrveno připraveno zahájení trolejbusového provozu na protisměrných
+        okružních linkách A a B v trase Náměstí Práce – Nemocnice – Náměstí Práce
+        a kyvadlové lince C Lesní čtvrť – Prštné. Tyto linky sloužily primárně pro
+        svážení a rozvážení zaměstnanců firmy Baťa. Zkušební provoz těchto linek byl
+        zahájen 13. listopadu 1943. "
+  - title: Koláče
+    text:
+      - "Kudlovská přehrada - Na úvod je nutno smutně konstatovat, že název 'přehrada'
+        je pro umělou vodní nádrž poněkud zavádějící, neboť plocha vodní hladiny nedosahuje
+        větších rozměrů než má průměrný český rybníček. I tak je ale přehrádka vítaným
+        oživením při procházce a obdivování moderních budov a zeleně centra města
+        Zlína. "
+      - Příjemným překvapením pro návštěvníka bude 'napevno' zakotvená výletní loď
+        s restaurací u jednoho z břehů. Díky tomuto originálnímu nápadu je vám umožněno
+        příjemné posezení nejen v interiéru, ale za příznivého počasí i na palubě
+        lodi a vy se můžete 'kochat' pohledem do nevábně zbarvených vod přehrádky.
+        Ale tady pozor! Kapalina nádrže není zabarvena do hněda od špíny, ale díky
+        nánosům bahna na jejím dně.
+      - "Kudlovská přehrada totiž vznikla už v letech 1931 až 1932 v minulém století
+        jako nádrž, která bude zastavovat přívaly vody a kaly z Kudlovského potoka.
+        Byla ale hlavně využívána jako zdroj vody při hašení požárů a byly z ní napájeny
+        městské kašny. Protože ale nebyla celá čištěna už několik desítek let - panuje
+        totiž důvodný předpoklad, že se na jejím dně nachází munice z 2. světové války,
+        a tak doposud město a ani její správce, jímž je Povodí Moravy, nepřistoupili
+        k jejímu celistvému vyčištění. "
+      - "Dno přehrady v současnosti vyplňují nánosy bahna o síle od 1 do 5 metrů!
+        Že je ale kvalita vody v přehradě více jak ucházející, o tom by vás mohli
+        přesvědčit nejen rybáři, kterým Kudlovská nádrž slouží jako lovecký revír,
+        ale hlavně ekologové. Podle nich se v hladinách přehrádky vyskytují vzácní
+        živočichové, jakými jsou například škeble rybničné a populace raka říčního.
+        A na závěr něco pro lovce informací: výška přehradní hráze dosahuje 7.5 m
+        a plocha vodní hladiny r. 1936 dosahovala 6977 metrů čtverečních. "
+  - title: Tomáš Baťa
+    text:
+      - "Jindřich Brouček byl pilotem, který se podílel na založení a vývoji Baťovské
+        letecké společnosti. Byl také pilotem, který řídil letadlo Junkers F 13 a
+        zahynul společně s Tomášem Baťou při havárii v roce 1932. "
+  - title: Vigenerova šifra
+    text:
+      - "Právě se nacházíte u budovy kongresového centra. Zajímavostí je, že jedním
+        z největších oříšků pro tým architektů bylo navržení 60 metrů dlouhé a 90
+        tun vážící střechy kongresového centra. Eva Jiřičná se nechala inspirovat
+        přírodou. Vybrala si rostlinu tzv. Rozsivku, jednobuněčnou řasu s křemičitou
+        schránkou. Tato rostlina má oválný tvar, uprostřed má dvě tepny a z nich vedou
+        ke krajům malá žebírka. Při pohledu z výšky střešní nosníky připomínají právě
+        tyto dvě tepny. "
+  - title: Zvířata
+    text:
+      - "Nacházíte se na místě, kde byl 28. října otevřen park z 28 lip k výročí
+        100 let od založení československého státu. Tyto stromy, vysázené v pravidelném
+        rastru čtyř řad po sedmi kusech, jsou pravidelně tvarovány do střihu bosket
+        a nabízí místo k odpočinku v centru města s výhledem na Zlín. Lípy jsou považovány
+        za stromy republiky a součást národních dějin. Jejich výsadba u příležitosti
+        významných výročí má dlouhou tradici. "
+  - title: Muffin
+    text:
+      - "František Lydie Gahura byl český architekt a sochař patřící mezi nejvýznamnější
+        české architekty, sochaře tvořící v duchu funkcionalismu. Hned po ukončení
+        studií byl zaměstnán ve stavebním oddělení firmy Baťa ve Zlíně, kde pracoval
+        do roku 1946. Proslavil se jako sochař. K jeho raným dílům patří socha J.
+        A. Komenského a v roce 1920 sochy Františka Bartoše a Boženy Němcové. Až s
+        určitým zpožděním se začal uplatňovat jako architekt a urbanista. Na jeho
+        schopnosti upozornil Tomáše Baťu právě jeho profesor Jan Kotěra, když projektoval
+        zahradní obytnou čtvrť pro zaměstnance továrny. Vrcholem jeho urbanistické
+        tvorby byl Regulační plán Velkého Zlína z roku 1934, který si udržel kontinuitu
+        až do dnešní doby. Zaobíral se celým zlínským regionem a byl autorem celé
+        řady účelových staveb. "

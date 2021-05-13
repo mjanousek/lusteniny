@@ -1,7 +1,6 @@
 import { graphql, useStaticQuery } from "gatsby";
 import * as React from "react";
-import { Section, Title } from "../components/atoms";
-import { EventCard } from "../components/molecules";
+import { Section, SectionHeader, Title } from "../components/atoms";
 import { EventList } from "../components/organisms";
 import Page from "../components/templates/page";
 
@@ -55,14 +54,19 @@ export default function Events() {
         ).node.childImageSharp.gatsbyImageData,
       };
     })
-    .sort((node) => node.date);
+    .slice()
+    .sort((node) => new Date(node.date));
 
   return (
     <Page>
       <Section>
-        <div className="pb-5 mb-12 border-b-2 dark:border-gray-600 text-center">
-          <Title level={1}>Poslední události</Title>
-        </div>
+        <SectionHeader
+          subtitle="Archiv"
+          title="Poslední události"
+          description="Fotky, šifry, řešení - podívej se na již proběhlé akce!"
+          level={1}
+          align="center"
+        />
         <EventList events={events} />
       </Section>
     </Page>

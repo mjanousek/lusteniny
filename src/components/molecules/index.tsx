@@ -1,4 +1,4 @@
+import CypherCard from "./cypherCard";
 import EventCard from "./eventCard";
-import SectionHeader from "./sectionHeader";
 
-export { EventCard, SectionHeader };
+export { CypherCard, EventCard };

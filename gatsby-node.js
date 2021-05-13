@@ -1,7 +1,5 @@
 const path = require(`path`);
 
-const IMAGE_PATH = "./src/images/";
-
 exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions;
 
@@ -37,9 +35,14 @@ exports.createPages = async ({ graphql, actions }) => {
             cyphers {
               title
               image
-              hint
+              info
+              hints
               steps
               solution
+            }
+            bonusInformation {
+              title
+              text
             }
           }
         }

@@ -4,9 +4,7 @@ import Page from "../components/templates/page";
 
 import data from "../content/index.yaml";
 import { getImage } from "gatsby-plugin-image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Button, Section } from "../components/atoms/";
-import { SectionHeader } from "../components/molecules/";
+import { Button, Section, SectionHeader } from "../components/atoms/";
 import { CTA, EventList, FeatureList } from "../components/organisms";
 
 // markup
@@ -67,7 +65,8 @@ const IndexPage = () => {
         ).node.childImageSharp.gatsbyImageData,
       };
     })
-    .sort((node) => node.date)
+    .slice()
+    .sort((node) => new Date(node.date))
     .reverse();
 
   return (
@@ -81,9 +80,7 @@ const IndexPage = () => {
         />
         <FeatureList features={data.about.features} />
       </Section>
-
       <CTA image={getImage(query.image)} />
-
       <Section>
         <SectionHeader
           subtitle="Archiv"
@@ -95,9 +92,7 @@ const IndexPage = () => {
 
         <div className="mt-10 flex justify-center">
           <Link to="/udalosti">
-            <Button icon="archive" color="primary" darkColor="primary">
-              Zobrazit Archiv
-            </Button>
+            <Button icon="archive">Zobrazit Archiv</Button>
           </Link>
         </div>
       </Section>
