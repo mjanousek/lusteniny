@@ -58,7 +58,7 @@ export default function Events() {
     .sort((node) => new Date(node.date));
 
   return (
-    <Page>
+    <Page title="Archiv | Luštěniny | Šifrovací hra ve Zlíně">
       <Section>
         <SectionHeader
           subtitle="Archiv"

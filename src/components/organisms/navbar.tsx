@@ -28,12 +28,14 @@ export default function Navbar() {
           <ExternalLink
             href="https://www.facebook.com/lusteniny"
             className="hover:text-green-600 transition-all"
+            title="Facebook - @lusteniny"
           >
             <FontAwesomeIcon icon={["fab", "facebook-f"]} size="lg" />
           </ExternalLink>
           <ExternalLink
             href="https://www.m.me/lusteniny/"
             className="hover:text-green-600 transition-all"
+            title="Messenger - @lusteniny"
           >
             <FontAwesomeIcon icon={["fab", "facebook-messenger"]} size="lg" />
           </ExternalLink>

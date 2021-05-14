@@ -22,7 +22,7 @@ export default function Card(props: Props) {
       }`}
     >
       {props.head && (
-        <div className="bg-green-600 dark:bg-green-500 flex justify-center items-center p-4 shadow-lg relative z-10">
+        <div className="bg-green-600 flex justify-center items-center p-4 shadow-lg relative z-10">
           {props.head}
         </div>
       )}

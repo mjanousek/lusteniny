@@ -8,7 +8,7 @@ type Props = {
 
 export default function CTA(props: Props) {
   return (
-    <div className="my-12 py-48 border-t-2 border-b-2 dark:border-gray-600 bg-white dark:bg-gray-700 relative flex justify-center items-center px-2">
+    <section className="my-12 py-48 border-t-2 border-b-2 dark:border-gray-600 bg-white dark:bg-gray-700 relative flex justify-center items-center px-2">
       <div className="relative z-20 bg-white dark:bg-gray-700 p-4 md:p-6 shadow-md rounded-md bg-opacity-95">
         <SectionHeader
           subtitle="Kontaktujte nás"
@@ -26,12 +26,14 @@ export default function CTA(props: Props) {
           </ExternalLink>
         </div>
       </div>
-      <GatsbyImage
-        image={props.image}
-        alt="Luštěniny 2019"
-        imgClassName="object-cover object-center dark:filter brightness-75"
-        className="h-full object-cover absolute top-0 left-0 w-full z-10 opacity-75"
-      />
-    </div>
+      <div className="absolute top-0 left-0 h-full w-full">
+        <GatsbyImage
+          image={props.image}
+          alt="Luštěniny 2019"
+          imgClassName="object-cover object-center dark:filter brightness-75 h-full w-full"
+          className="relative h-full object-cover w-full z-10 opacity-75"
+        />
+      </div>
+    </section>
   );
 }

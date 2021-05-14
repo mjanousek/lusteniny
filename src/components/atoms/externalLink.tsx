@@ -6,7 +6,7 @@ export default function ExternalLink(
     HTMLAnchorElement
   >
 ) {
-  return <a {...props} rel="noopener noreferrer" target="_blank">
+  return <a {...props} rel="external noopener noreferrer" target="_blank">
       {props.children}
   </a>;
 }

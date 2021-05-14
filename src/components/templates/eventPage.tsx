@@ -52,6 +52,9 @@ export default function EventPage(props: Props) {
                 quality: 100
                 width: 2000
               )
+              original {
+                src
+              }
             }
           }
         }
@@ -105,13 +108,17 @@ export default function EventPage(props: Props) {
   });
 
   return (
-    <Page>
-      <div className="h-96 relative">
+    <Page
+      title={pageContext.title + " | Luštěniny | Šifrovací hra ve Zlíně"}
+      description={pageContext.description}
+      image={eventImageEdge.node.childImageSharp.original.src}
+    >
+      <div className="h-96 relative w-full">
         <GatsbyImage
           image={eventImage}
           alt={pageContext.title}
-          className="h-full "
-          imgClassName="object-fit object-center dark:filter brightness-75"
+          className="h-full w-full"
+          imgClassName="object-fit object-center dark:filter brightness-75 w-full"
         />
       </div>
       <Section>

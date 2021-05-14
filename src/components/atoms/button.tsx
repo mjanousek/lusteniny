@@ -22,7 +22,7 @@ export default function Button(props: Props) {
 
   return (
     <button
-      className={`px-6 py-3 border border-transparent transition-all text-base font-medium rounded-md ${rounded} ${shadow} bg-green-600 text-gray-100 dark:bg-green-500 dark:text-gray-100 hover:bg-green-700 hover:text-white focus:shadow-lg`}
+      className={`px-6 py-3 border border-transparent transition-all duration-200 text-base font-medium rounded-md ${rounded} ${shadow} bg-green-600 text-gray-100 dark:text-gray-100 hover:bg-green-700 hover:text-white focus:shadow-lg`}
     >
       <span>{props.children}</span>
       <FontAwesomeIcon icon={props.icon} className="ml-2" />
