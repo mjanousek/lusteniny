@@ -25,7 +25,7 @@ type PageContext = {
   description: string;
   slug: string;
   date: string;
-  image: string;
+  image: any;
   galleryLink: string;
   winners: string[];
   cyphers: Cypher[];
@@ -37,8 +37,8 @@ export default function EventPage(props: Props) {
 
   const query = useStaticQuery(graphql`
     {
-      eventsImages: allFile(
-        filter: { relativeDirectory: { regex: "/events/[0-9]{4}$/" } }
+      cypherImages: allFile(
+        filter: { relativeDirectory: { regex: "/events/[0-9]{4}/" } }
       ) {
         edges {
           node {
@@ -59,40 +59,10 @@ export default function EventPage(props: Props) {
           }
         }
       }
-      cypherImages: allFile(
-        filter: { relativeDirectory: { regex: "/events/[0-9]{4}/" } }
-      ) {
-        edges {
-          node {
-            id
-            relativePath
-            relativeDirectory
-            childImageSharp {
-              id
-              gatsbyImageData(
-                placeholder: BLURRED
-                formats: [WEBP, AVIF]
-                quality: 100
-                width: 2000
-              )
-            }
-          }
-        }
-      }
     }
   `);
 
-  const eventImageEdge = query.eventsImages.edges.find(
-    (edge) => edge.node.relativePath === pageContext.image
-  );
-
-  if (!eventImageEdge) {
-    throw `Image "${pageContext.title} - ${pageContext.image}" not found!`;
-  }
-
-  const eventImage = getImage(eventImageEdge.node);
-
-  const cypherImages = pageContext.cyphers?.map((cypher) => {
+    const cypherImages = pageContext.cyphers?.map((cypher) => {
     if (cypher.image === "none")
       return { title: cypher.title, image: undefined };
 
@@ -107,15 +77,18 @@ export default function EventPage(props: Props) {
     return { title: cypher.title, image: getImage(image.node) };
   });
 
+
+
   return (
     <Page
       title={pageContext.title + " | Luštěniny | Šifrovací hra ve Zlíně"}
       description={pageContext.description}
-      image={eventImageEdge.node.childImageSharp.original.src}
+      image={pageContext.image.childImageSharp.original.src}
+      eventsForSchema={[pageContext]}
     >
       <div className="h-96 relative w-full">
         <GatsbyImage
-          image={eventImage}
+          image={getImage(pageContext.image.childImageSharp.gatsbyImageData)}
           alt={pageContext.title}
           className="h-full w-full"
           imgClassName="object-fit object-center dark:filter brightness-75 w-full"

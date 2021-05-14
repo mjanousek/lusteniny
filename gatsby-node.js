@@ -1,23 +1,5 @@
 const path = require(`path`);
 
-exports.onCreateNode = ({ node, actions }) => {
-  const { createNodeField } = actions;
-
-  if (node.internal.type === `EventsYaml`) {
-    createNodeField({
-      node,
-      name: "slug",
-      value: "/udalosti" + node.slug,
-    });
-
-    createNodeField({
-      node,
-      name: "image",
-      value: "../images/" + node.image,
-    });
-  }
-};
-
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
   const result = await graphql(`
@@ -28,7 +10,19 @@ exports.createPages = async ({ graphql, actions }) => {
             title
             description
             date
-            image
+            image {
+              childImageSharp {
+                gatsbyImageData(
+                  placeholder: BLURRED
+                  formats: [WEBP, AVIF]
+                  quality: 100
+                  width: 2000
+                )
+                original {
+                  src
+                }
+              }
+            }
             galleryLink
             winners
             slug
@@ -52,7 +46,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   result.data.allEventsYaml.edges.forEach(({ node }) => {
     createPage({
-      path: "/udalosti" + node.slug,
+      path: node.slug,
       component: path.resolve(`./src/components/templates/eventPage.tsx`),
       context: {
         ...node,

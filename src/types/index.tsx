@@ -19,3 +19,10 @@ export type BonusInformation = {
   title: string;
   text: string[];
 };
+
+export type Event = {
+  title: string;
+  description: string;
+  date: string;
+  image: any;
+};

@@ -42,7 +42,7 @@ export default function EventCard(props: Props) {
           </div>
         }
         isFullheight
-      ></Card>
+      />
     </article>
   );
 }

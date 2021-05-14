@@ -17,10 +17,19 @@ const IndexPage = () => {
             title
             description
             date
-            image
-            fields {
-              slug
-              image
+            slug
+            image {
+              childImageSharp {
+                gatsbyImageData(
+                  height: 500
+                  placeholder: BLURRED
+                  formats: [WEBP, AVIF]
+                  aspectRatio: 1.5
+                )
+                original {
+                  src
+                }
+              }
             }
           }
         }
@@ -32,45 +41,16 @@ const IndexPage = () => {
           gatsbyImageData
         }
       }
-      eventImages: allFile(
-        filter: { relativeDirectory: { regex: "/events/[0-9]{4}$/" } }
-      ) {
-        edges {
-          node {
-            id
-            relativePath
-            relativeDirectory
-            childImageSharp {
-              gatsbyImageData(
-                height: 500
-                placeholder: BLURRED
-                formats: [WEBP, AVIF]
-                aspectRatio: 1.5
-              )
-            }
-          }
-        }
-      }
     }
   `);
 
   const events = query.events.edges
     .map((edge) => edge.node)
-    .map((node) => {
-      return {
-        ...node,
-        slug: node.fields.slug,
-        image: query.eventImages.edges.find(
-          (imageEdge) => imageEdge.node.relativePath === node.image
-        ).node.childImageSharp.gatsbyImageData,
-      };
-    })
-    .slice()
     .sort((node) => new Date(node.date))
     .reverse();
 
   return (
-    <Page>
+    <Page eventsForSchema={events}>
       <Section>
         <SectionHeader
           subtitle="Luštěniny"

@@ -1,6 +1,6 @@
 import { graphql, useStaticQuery } from "gatsby";
 import * as React from "react";
-import { Section, SectionHeader, Title } from "../components/atoms";
+import { Section, SectionHeader } from "../components/atoms";
 import { EventList } from "../components/organisms";
 import Page from "../components/templates/page";
 
@@ -13,29 +13,16 @@ export default function Events() {
             title
             description
             date
-            image
-            fields {
-              slug
-              image
-            }
-          }
-        }
-      }
-      eventImages: allFile(
-        filter: { relativeDirectory: { regex: "/events/[0-9]{4}$/" } }
-      ) {
-        edges {
-          node {
-            id
-            relativePath
-            relativeDirectory
-            childImageSharp {
-              gatsbyImageData(
-                height: 500
-                placeholder: BLURRED
-                formats: [WEBP, AVIF]
-                aspectRatio: 1.5
-              )
+            slug
+            image {
+              childImageSharp {
+                gatsbyImageData(
+                  height: 500
+                  placeholder: BLURRED
+                  formats: [WEBP, AVIF]
+                  aspectRatio: 1.5
+                )
+              }
             }
           }
         }
@@ -45,20 +32,13 @@ export default function Events() {
 
   const events = query.events.edges
     .map((edge) => edge.node)
-    .map((node) => {
-      return {
-        ...node,
-        slug: node.fields.slug,
-        image: query.eventImages.edges.find(
-          (imageEdge) => imageEdge.node.relativePath === node.image
-        ).node.childImageSharp.gatsbyImageData,
-      };
-    })
-    .slice()
     .sort((node) => new Date(node.date));
 
   return (
-    <Page title="Archiv | Luštěniny | Šifrovací hra ve Zlíně">
+    <Page
+      title="Archiv | Luštěniny | Šifrovací hra ve Zlíně"
+      eventsForSchema={events}
+    >
       <Section>
         <SectionHeader
           subtitle="Archiv"
