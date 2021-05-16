@@ -1,11 +1,12 @@
-import * as React from "react";
-import { Subtitle, Text, Title } from ".";
+import * as React from 'react';
+
+import { Subtitle, Text, Title } from '.';
 
 type Props = {
   subtitle?: string;
   title: string;
   description: string;
-  align: "left" | "center" | "right";
+  align: 'left' | 'center' | 'right';
   level?: 1 | 2 | 3 | 4 | 5 | 6;
 };
 

@@ -1,7 +1,8 @@
-import * as React from "react";
-import { Feature as FeatureType } from "../../types";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Text, Title } from "../atoms";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import * as React from 'react';
+
+import { Feature as FeatureType } from '../../types';
+import { Text, Title } from '../atoms';
 
 type Props = {
   features: FeatureType[];
@@ -9,13 +10,16 @@ type Props = {
 
 export default function FeatureList(props: Props) {
   return (
-    <div className="space-y-12 md:space-y-0 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-x-8 md:gap-y-12 pt-6">
+    <div className="space-y-16 md:space-y-0 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-x-10 md:gap-y-16 pt-6">
       {props.features.map((feature) => (
-        <div className="relative p-4 rounded shadow-lg bg-white dark:bg-gray-800 text-center">
-          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 shadow-lg flex items-center justify-center h-12 w-12 rounded-md bg-green-600 dark:bg-green-500 text-gray-100">
-            <FontAwesomeIcon icon={feature.icon} size="lg" />
+        <div
+          key={feature.title}
+          className="relative p-4 rounded-lg shadow-lg bg-white dark:bg-gray-800 shadow-md text-center"
+        >
+          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center h-20 w-20 rounded-full border-4 border-white bg-green-500 text-gray-100 shadow-lg dark:bg-green-600 dark:border-gray-700 dark:text-gray-200">
+            <FontAwesomeIcon icon={feature.icon} size="2x" />
           </div>
-          <div className="mt-5 mb-4">
+          <div className="mt-9 mb-4">
             <Title level={3}>{feature.title}</Title>
           </div>
           <Text size="normal">{feature.description}</Text>

@@ -1,8 +1,10 @@
-import { graphql, useStaticQuery } from "gatsby";
-import * as React from "react";
-import { Section, SectionHeader } from "../components/atoms";
-import { EventList } from "../components/organisms";
-import Page from "../components/templates/page";
+import { graphql, useStaticQuery } from 'gatsby';
+import * as React from 'react';
+
+import { Section, SectionHeader } from '../components/atoms';
+import { EventList } from '../components/organisms';
+import Page from '../components/templates/page';
+import data from '../content/udalosti.yaml';
 
 export default function Events() {
   const query = useStaticQuery(graphql`
@@ -22,6 +24,9 @@ export default function Events() {
                   formats: [WEBP, AVIF]
                   aspectRatio: 1.5
                 )
+                original {
+                  src
+                }
               }
             }
           }
@@ -36,14 +41,15 @@ export default function Events() {
 
   return (
     <Page
-      title="Archiv | Luštěniny | Šifrovací hra ve Zlíně"
+      title={data.title}
+      description={data.description}
       eventsForSchema={events}
     >
       <Section>
         <SectionHeader
           subtitle="Archiv"
-          title="Poslední události"
-          description="Fotky, šifry, řešení - podívej se na již proběhlé akce!"
+          title={data.archive.title}
+          description={data.archive.description}
           level={1}
           align="center"
         />

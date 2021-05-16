@@ -1,6 +1,6 @@
-import { Link } from "gatsby";
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
-import React from "react";
+import { Link } from 'gatsby';
+import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image';
+import React from 'react';
 
 type Props = {
   head?: React.ReactNode;
@@ -15,35 +15,38 @@ type Props = {
 };
 
 export default function Card(props: Props) {
+  const image = props.image && (
+    <GatsbyImage
+      image={props.image.data}
+      alt={props.image.alt}
+      className="transition-all duration-500 transform group-hover:scale-125 h-full"
+      imgClassName="rounded-t-lg dark:filter brightness-90"
+    />
+  );
+
   return (
     <div
-      className={`shadow-lg rounded-md overflow-hidden bg-white dark:bg-gray-800 flex flex-col ${
-        props.isFullheight ? "h-full" : ""
+      className={`shadow-lg rounded-lg bg-white dark:bg-gray-800 flex flex-col relative ${
+        props.isFullheight ? 'h-full' : ''
       }`}
     >
       {props.head && (
-        <div className="bg-green-600 flex justify-center items-center p-4 shadow-lg relative z-10">
+        <h3 className="px-6 py-3 border-4 border-white shadow-md rounded-full font-medium bg-green-600 text-gray-100 absolute left-1/2 top-0 z-20 transform -translate-x-1/2 -translate-y-1/2 dark:border-gray-700">
           {props.head}
-        </div>
+        </h3>
       )}
-      {props.image &&
-        (props.image.link ? (
-          <Link to={props.image.link} className="group overflow-hidden">
-            <GatsbyImage
-              image={props.image.data}
-              alt={props.image.alt}
-              className="transition-all duration-500 transform group-hover:scale-125"
-              imgClassName="dark:filter brightness-90"
-            />{" "}
+      {props.image
+        && (props.image.link ? (
+          <Link
+            to={props.image.link}
+            className="group overflow-hidden rounded-t-lg"
+          >
+            {image}
           </Link>
         ) : (
-          <GatsbyImage
-            image={props.image.data}
-            alt={props.image.alt}
-            imgClassName="dark:filter brightness-90"
-          />
+          <>{image}</>
         ))}
-      <div className=" flex-grow flex flex-col">
+      <div className="flex-grow flex flex-col rounded-lg">
         {props.body && <div className="flex-grow p-4">{props.body}</div>}
         {props.footer && <div className="">{props.footer}</div>}
       </div>

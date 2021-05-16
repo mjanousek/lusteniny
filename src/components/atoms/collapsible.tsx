@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 type Props = {
   toggleRenderer: (isExpanded: boolean) => React.ReactNode;
@@ -8,7 +8,7 @@ type Props = {
 
 export default function Collapsible(props: Props) {
   const [isExpanded, setIsExpanded] = useState(false);
-  const className = isExpanded ? "" : "h-0 overflow-hidden";
+  const className = isExpanded ? '' : 'h-0 overflow-hidden';
 
   return (
     <div className="w-full">

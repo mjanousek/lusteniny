@@ -1,25 +1,24 @@
-import * as React from "react";
-import { Helmet } from "react-helmet";
-import { Footer, Navbar } from "../organisms";
-import heroImage from "../../images/Hero.jpg";
-import { Event } from "../../types";
+import * as React from 'react';
+import { Helmet } from 'react-helmet';
+
+import data from '../../content/index.yaml';
+import heroImage from '../../images/Hero.jpg';
+import { Event } from '../../types';
+import { Footer, Navbar } from '../organisms';
 
 type Props = {
-  title?: string;
+  title: string;
   description?: string;
   image?: string;
   children?: React.ReactNode;
   eventsForSchema?: Event[];
+  floatingNavbar?: boolean;
 };
 
 export default function Page(props: Props) {
-  const url = typeof window !== "undefined" ? window.location.href : "";
-  const host = "https://www.lusteniny.eu";
+  const url = typeof window !== 'undefined' ? window.location.href : '';
+  const host = data.url;
 
-  const title = props.title ?? "Luštěniny | Šifrovací hra ve Zlíně";
-  const description =
-    props.description ??
-    "Baví tě šifrovačky? Pokud ano, jsi na správném místě. Luštěniny jsou šifrovací hra pořádána v centru Zlína, které se můžeš zúčastnit jak v týmu, tak sám.";
   const image = host + (props.image ?? heroImage);
   const schemaImage = host + heroImage;
 
@@ -79,9 +78,9 @@ export default function Page(props: Props) {
             ] 
           }`}
         </script>
-        {props.eventsForSchema?.length > 0 &&
-          props.eventsForSchema.map((event) => (
-            <script type="application/ld+json">
+        {props.eventsForSchema?.length > 0
+          && props.eventsForSchema.map((event) => (
+            <script type="application/ld+json" key={event.title}>
               {`
                 {
                   "@context": "https://schema.org",
@@ -89,8 +88,12 @@ export default function Page(props: Props) {
                   "name": "${event.title}",
                   "description": "${event.description}",
                   "image": "${host}${event.image.childImageSharp.original.src}",
-                  "startDate": "${new Date(new Date(event.date).setHours(18)).toISOString()}",
-                  "endDate": "${new Date(new Date(event.date).setHours(18)).toISOString()}",
+                  "startDate": "${new Date(
+                new Date(event.date).setHours(18),
+              ).toISOString()}",
+                  "endDate": "${new Date(
+                new Date(event.date).setHours(18),
+              ).toISOString()}",
                   "eventStatus": "https://schema.org/EventScheduled",
                   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
                   "organizer": {
@@ -126,11 +129,9 @@ export default function Page(props: Props) {
             </script>
           ))}
       </Helmet>
-      <div className="min-h-screen flex flex-col">
-        <Navbar />
-        <main className="bg-gray-100 dark:bg-gray-900 flex-grow">
-          {props.children}
-        </main>
+      <div className="min-h-screen flex flex-col bg-indigo-50 dark:bg-gray-900">
+        <Navbar isFixed={props.floatingNavbar} />
+        <main className=" flex-grow">{props.children}</main>
         <Footer />
       </div>
     </>

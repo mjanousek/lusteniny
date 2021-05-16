@@ -1,7 +1,8 @@
 import { IGatsbyImageData } from "gatsby-plugin-image";
 import React from "react";
+
 import { Cypher } from "../../types";
-import { Button, Card, Collapsible, Text, Title } from "../atoms";
+import { Card, Collapsible, Text } from "../atoms";
 
 type Props = Omit<Cypher, "image"> & {
   image: {
@@ -11,35 +12,31 @@ type Props = Omit<Cypher, "image"> & {
 };
 
 export default function CypherCard(props: Props) {
-  const toggleHintButtonRenderer = (isExpanded: boolean) => (
-    <div className="flex flex-col items-stretch">
-      <Button roundedTop={false} roundedBottom={false} shadow={false}>
-        Zobrazit Nápovědu
-      </Button>
+  const toggleHintButtonRenderer = () => (
+    <div className="items-stretch bg-green-500 p-4 text-center text-base font-medium bg-green-600 text-gray-100">
+      Zobrazit Nápovědu
     </div>
   );
   const toggleSolutionButtonRenderer = (isExpanded: boolean) => (
-    <div className="flex flex-col items-stretch">
-      <Button roundedTop={false} roundedBottom={!isExpanded} shadow={false}>
-        Zobrazit Řešení
-      </Button>
+    <div
+      className={`items-stretch bg-green-500 p-4 text-center text-base font-medium bg-green-600 text-gray-100 ${
+        isExpanded ? "" : "rounded-b-lg"
+      }`}
+    >
+      Zobrazit Řešení
     </div>
   );
 
   return (
     <div>
       <Card
-        head={
-          <Title level={3} color="light">
-            {props.title}
-          </Title>
-        }
+        head={props.title}
         image={props.image}
         body={
           props.info?.length > 0 && (
-            <div className="space-y-4">
+            <div className="space-y-4 mt-6">
               {props.info.map((i) => (
-                <Text>{i}</Text>
+                <Text key={`cypher_${props.title}_info_${i}`}>{i}</Text>
               ))}
             </div>
           )
@@ -53,11 +50,10 @@ export default function CypherCard(props: Props) {
                   <Text>
                     {props.steps?.length > 0 && (
                       <ol
-                        role="list"
                         className="list-decimal list-outside pl-8 space-y-1"
                       >
                         {props.hints.map((hint) => (
-                          <li>{hint}</li>
+                          <li key={`cypher_${props.title}_hint_${hint}`}>{hint}</li>
                         ))}
                       </ol>
                     )}
@@ -73,17 +69,19 @@ export default function CypherCard(props: Props) {
                   <Text>
                     {props.steps?.length > 0 && (
                       <ol
-                        role="list"
                         className="list-decimal list-outside pl-8 space-y-1"
                       >
                         {props.steps.map((step) => (
-                          <li>{step}</li>
+                          <li key={`cypher_${props.title}_solution_${step}`}>{step}</li>
                         ))}
                       </ol>
                     )}
                   </Text>
-                  <div className="mt-4 p-2 border bg-gray-50 dark:bg-gray-700 border-green-600  rounded-md text-center">
-                    <Text>Řešení: {props.solution}</Text>
+                  <div className="mt-4 p-2 border shadow-inner bg-indigo-50 bg-opacity-25 border-green-600  rounded-md text-center">
+                    <Text>
+                      Řešení:
+                      {props.solution}
+                    </Text>
                   </div>
                 </div>
               }

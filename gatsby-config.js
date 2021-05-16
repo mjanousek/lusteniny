@@ -4,6 +4,7 @@ module.exports = {
     siteUrl: "https://lusteniny.eu",
   },
   plugins: [
+    "gatsby-plugin-sass",
     "gatsby-plugin-postcss",
     "gatsby-plugin-image",
     {
@@ -23,7 +24,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/logo/Logo_Green.png",
+        icon: "src/images/logo/Logo.png",
         name: `Luštěniny`,
         short_name: `Luštěniny`,
         start_url: `/`,
