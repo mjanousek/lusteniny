@@ -13,13 +13,13 @@ type Props = Omit<Cypher, "image"> & {
 
 export default function CypherCard(props: Props) {
   const toggleHintButtonRenderer = () => (
-    <div className="items-stretch bg-green-500 p-4 text-center text-base font-medium bg-green-600 text-gray-100">
+    <div className="items-stretch transition-all duration-300 cursor-pointer p-4 text-center text-base font-medium bg-green-600 text-gray-100 hover:bg-green-700 hover:text-white">
       Zobrazit Nápovědu
     </div>
   );
   const toggleSolutionButtonRenderer = (isExpanded: boolean) => (
     <div
-      className={`items-stretch bg-green-500 p-4 text-center text-base font-medium bg-green-600 text-gray-100 ${
+      className={`items-stretch transition-all duration-300g cursor-pointer p-4 text-center text-base font-medium bg-green-600 text-gray-100 hover:bg-green-700 hover:text-white ${
         isExpanded ? "" : "rounded-b-lg"
       }`}
     >

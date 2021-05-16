@@ -13,6 +13,8 @@ import {
   Text,
   Title,
 } from "../components/atoms";
+import ZivyZlinLogo from "../components/atoms/sponsors/zivyZlinLogo";
+import CNGroupLogo from "../components/atoms/sponsors/cngroupLogo";
 import { Countdown, EventList, FeatureList } from "../components/organisms";
 import Page from "../components/templates/page";
 import data from "../content/index.yaml";
@@ -52,6 +54,15 @@ const IndexPage = () => {
       heroImage: file(relativePath: { eq: "Hero.jpg" }) {
         childImageSharp {
           gatsbyImageData(placeholder: BLURRED, quality: 100, formats: [WEBP])
+        }
+      }
+      sponsors: allFile(filter: { relativeDirectory: { eq: "sponsors" } }) {
+        edges {
+          node {
+            id
+            name
+            publicURL
+          }
         }
       }
     }
@@ -123,6 +134,10 @@ const IndexPage = () => {
           align="center"
         />
         <FeatureList features={data.about.features} />
+        <div className="flex flex-col md:flex-row items-center justify-center mt-12 mx-auto space-y-8 md:space-y-0 md:space-x-12">
+          <CNGroupLogo />
+          <ZivyZlinLogo />
+        </div>
       </Section>
 
       <div className="shadow-lg bg-green-600 my-12 dark:bg-opacity-80">

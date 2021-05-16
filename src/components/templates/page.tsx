@@ -1,10 +1,10 @@
-import * as React from 'react';
-import { Helmet } from 'react-helmet';
+import * as React from "react";
+import { Helmet } from "react-helmet";
 
-import data from '../../content/index.yaml';
-import heroImage from '../../images/Hero.jpg';
-import { Event } from '../../types';
-import { Footer, Navbar } from '../organisms';
+import data from "../../content/index.yaml";
+import heroImage from "../../images/Hero.jpg";
+import { Event } from "../../types";
+import { Footer, Navbar } from "../organisms";
 
 type Props = {
   title: string;
@@ -16,7 +16,8 @@ type Props = {
 };
 
 export default function Page(props: Props) {
-  const url = typeof window !== 'undefined' ? window.location.href : '';
+  const { title, description } = props;
+  const url = typeof window !== "undefined" ? window.location.href : "";
   const host = data.url;
 
   const image = host + (props.image ?? heroImage);
@@ -78,8 +79,8 @@ export default function Page(props: Props) {
             ] 
           }`}
         </script>
-        {props.eventsForSchema?.length > 0
-          && props.eventsForSchema.map((event) => (
+        {props.eventsForSchema?.length > 0 &&
+          props.eventsForSchema.map((event) => (
             <script type="application/ld+json" key={event.title}>
               {`
                 {
@@ -89,11 +90,11 @@ export default function Page(props: Props) {
                   "description": "${event.description}",
                   "image": "${host}${event.image.childImageSharp.original.src}",
                   "startDate": "${new Date(
-                new Date(event.date).setHours(18),
-              ).toISOString()}",
+                    new Date(event.date).setHours(18)
+                  ).toISOString()}",
                   "endDate": "${new Date(
-                new Date(event.date).setHours(18),
-              ).toISOString()}",
+                    new Date(event.date).setHours(18)
+                  ).toISOString()}",
                   "eventStatus": "https://schema.org/EventScheduled",
                   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
                   "organizer": {
