@@ -19,16 +19,6 @@ export default function Page(props: Props) {
   const { title, description } = props;
   const url = typeof window !== "undefined" ? window.location.href : "";
   const host = data.url;
-  
-  const eventImages = props.eventsForSchema.map((x) => {
-    return { title: x.title, image: x.image };
-  });
-  const log = {
-    title: props.title,
-    eventImages
-  }
-
-  console.log(JSON.stringify(log, null , 4));
 
   const image = host + (props.image ?? heroImage);
   const schemaImage = host + heroImage;
