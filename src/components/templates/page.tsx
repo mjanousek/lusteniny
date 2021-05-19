@@ -19,6 +19,7 @@ export default function Page(props: Props) {
   const { title, description } = props;
   const url = typeof window !== "undefined" ? window.location.href : "";
   const host = data.url;
+  console.log(JSON.stringify(props.eventsForSchema, null, 4))
 
   const image = host + (props.image ?? heroImage);
   const schemaImage = host + heroImage;
