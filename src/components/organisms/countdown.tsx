@@ -50,7 +50,7 @@ export default function Countdown() {
   return (
     <div className="relative z-10 shadow-lg bg-green-600 overflow-hidden dark:bg-opacity-90">
       <div className="mx-auto text-white py-8 px-4 md:px-5 flex max-w-6xl text-center flex flex-col items-center lg:flex-row">
-        <div className="px-10 flex-grow flex flex-col justify-center text-center lg:text-left">
+        <div className="px-10 flex-grow flex flex-col justify-center text-center lg:text-left mb-4 lg:mb-0">
           <p className="uppercase text-gray-100 font-quicksand font-semibold mb-1">
             Datum Luštěnin
           </p>
