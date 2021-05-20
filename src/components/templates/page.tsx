@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet";
 import data from "../../content/index.yaml";
 import heroImage from "../../images/Hero.jpg";
 import { Event } from "../../types";
+import { SchemaEvent, SchemaLocalBusiness } from "../../types/schema";
 import { Footer, Navbar } from "../organisms";
 
 type Props = {
@@ -21,7 +22,76 @@ export default function Page(props: Props) {
   const host = data.url;
 
   const image = host + (props.image ?? heroImage);
-  const schemaImage = host + heroImage;
+
+  const schemaLocalBussiness: SchemaLocalBusiness = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: "Luštěniny",
+    image: host + heroImage,
+    "@id": host,
+    url: host,
+    telephone: "+420 776 747 421",
+    priceRange: "free",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "",
+      addressLocality: "Zlín",
+      postalCode: "76001",
+      addressCountry: "CZ",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 49.2309578,
+      longitude: 17.5364241,
+    },
+    sameAs: ["https://www.facebook.com/lusteniny", host],
+  };
+
+  const schemaEvents =
+    props.eventsForSchema?.length > 0 &&
+    props.eventsForSchema.map<SchemaEvent>((event) => {
+      return {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        name: event.title,
+        description: event.description,
+        image: host + event.image.childImageSharp.original.src,
+        startDate: new Date(new Date(event.date).setHours(12)),
+        endDate: new Date(new Date(event.date).setHours(18)),
+        eventStatus: "https://schema.org/EventScheduled",
+        eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+        organizer: {
+          "@type": "Organization",
+          name: "Luštěniny",
+          url: host,
+        },
+
+        location: {
+          "@type": "Place",
+          name: "Zlín",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "",
+            addressLocality: "Zlín",
+            postalCode: "76001",
+            addressCountry: "CZ",
+          },
+        },
+        performer: {
+          "@type": "PerformingGroup",
+          name: "Luštěniny",
+        },
+        offers: {
+          "@type": "Offer",
+          name: "Vstup Zdarma",
+          price: "0",
+          priceCurrency: "CZK",
+          validFrom: new Date(event.date),
+          url: host,
+          availability: "https://schema.org/InStock",
+        },
+      };
+    });
 
   return (
     <>
@@ -56,77 +126,12 @@ export default function Page(props: Props) {
         <meta property="twitter:image" content={image} />
 
         <script type="application/ld+json">
-          {`
-          {
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "name": "Luštěniny",
-            "image": "${schemaImage}",
-            "@id": "${host}",
-            "url": "${host}",
-            "telephone": "+420 776 747 421",
-            "priceRange": "free",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "",
-              "addressLocality": "Zlín",
-              "postalCode": "76001",
-              "addressCountry": "CZ"
-            } ,
-            "sameAs": [
-              "https://www.facebook.com/lusteniny",
-              "${host}"
-            ] 
-          }`}
+          {JSON.stringify(schemaLocalBussiness, null, 4)}
         </script>
-        {props.eventsForSchema?.length > 0 &&
-          props.eventsForSchema.map((event) => (
-            <script type="application/ld+json" key={event.title}>
-              {`
-                {
-                  "@context": "https://schema.org",
-                  "@type": "Event",
-                  "name": "${event.title}",
-                  "description": "${event.description}",
-                  "image": "${host}${event.image.childImageSharp.original.src}",
-                  "startDate": "${new Date(
-                    new Date(event.date).setHours(18)
-                  ).toISOString()}",
-                  "endDate": "${new Date(
-                    new Date(event.date).setHours(18)
-                  ).toISOString()}",
-                  "eventStatus": "https://schema.org/EventScheduled",
-                  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-                  "organizer": {
-                    "@type": "Organization",
-                    "name": "Luštěniny",
-                    "url": "${host}"
-                  },
-                  "location": {		
-                    "@type": "Place",
-                    "name": "Zlín",
-                    "address": {
-                      "@type": "PostalAddress",
-                      "streetAddress": "",
-                      "addressLocality": "Zlín",
-                      "postalCode": "76001",
-                      "addressCountry": "CZ"
-                    }
-                  },
-                  "performer": {
-                    "@type": "PerformingGroup",
-                    "name": "Luštěniny"
-                  },
-                  "offers": {
-                    "@type": "Offer",
-                    "name": "Vstup Zdarma",
-                    "price": "0",
-                    "priceCurrency": "CZK",
-                    "validFrom": "${event.date}",
-                    "url": "${host}",
-                    "availability": "https://schema.org/InStock"
-                  }
-                }`}
+        {schemaEvents?.length > 0 &&
+          schemaEvents.map((event) => (
+            <script type="application/ld+json" key={event.name}>
+              {JSON.stringify(event, null, 4)}
             </script>
           ))}
       </Helmet>

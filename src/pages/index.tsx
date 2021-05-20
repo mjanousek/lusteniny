@@ -48,7 +48,12 @@ const IndexPage = () => {
       }
       image: file(relativePath: { eq: "Team.jpg" }) {
         childImageSharp {
-          gatsbyImageData(placeholder: BLURRED, quality: 100, formats: [WEBP])
+          gatsbyImageData(
+            placeholder: BLURRED
+            quality: 100
+            formats: [WEBP]
+            height: 600
+          )
         }
       }
       heroImage: file(relativePath: { eq: "Hero.jpg" }) {
@@ -70,7 +75,7 @@ const IndexPage = () => {
 
   const events = query.events.edges
     .map((edge) => edge.node)
-    .sort((node) => new Date(node.date))
+    .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
     .reverse();
 
   const settings = {
@@ -140,9 +145,9 @@ const IndexPage = () => {
         </div>
       </Section>
 
-      <div className="shadow-lg bg-green-600 my-12 dark:bg-opacity-80">
-        <div className="flex flex-col justify-end items-center lg:grid grid-cols-2">
-          <div className="flex flex-col items-center lg:items-end text-center lg:text-right px-4 py-10  lg:py-20 lg:pl-20 lg:pr-16">
+      <div className="shadow-inner my-12">
+        <div className="shadow-lg bg-green-600 py-6 relative z-10">
+          <div className="container mx-auto text-center">
             <p className="uppercase text-gray-100 font-quicksand font-semibold mb-1">
               Kontakt
             </p>
@@ -150,7 +155,7 @@ const IndexPage = () => {
               {data.contact.title}
             </Title>
             <Text color="light">{data.contact.description}</Text>
-            <div className="mt-6 flex items-center space-x-2 lg:space-x-4">
+            <div className="mt-6 flex justify-center space-x-2 lg:space-x-4 mx-auto">
               <ExternalLink href={data.facebookUrl}>
                 <Button icon={["fab", "facebook"]}>Facebook</Button>
               </ExternalLink>
@@ -159,12 +164,16 @@ const IndexPage = () => {
               </ExternalLink>
             </div>
           </div>
-          <GatsbyImage
-            image={getImage(query.image)}
-            alt="Luštěniny"
-            className="h-screen-half w-full opacity-80 dark:filter brightness-75"
-            imgClassName="object-fit object-center filter brightness-90"
-          />
+        </div>
+        <div className="container mx-auto text-center transform flex justify-center mt-6">
+          <div className="shadow-lg rounded-full overflow-hidden border-2 border-white dark:border-gray-700">
+            <GatsbyImage
+              image={getImage(query.image)}
+              alt="Luštěniny"
+              className="dark:filter brightness-75 h-full"
+              imgClassName="object-fit object-center filter brightness-90 h-full"
+            />
+          </div>
         </div>
       </div>
 

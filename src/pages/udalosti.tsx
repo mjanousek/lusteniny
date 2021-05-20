@@ -37,7 +37,8 @@ export default function Events() {
 
   const events = query.events.edges
     .map((edge) => edge.node)
-    .sort((node) => new Date(node.date));
+    .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
+    .reverse();
 
   return (
     <Page
