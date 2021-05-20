@@ -2,7 +2,7 @@ import React from "react";
 
 export default function CNGroupLogo() {
   return (
-    <svg height="80px" viewBox="0 0 211.67 51.626">
+    <svg className="max-h-16" viewBox="0 0 211.67 51.626">
       <g transform="translate(-101.92 -92.639)">
         <g transform="matrix(1.0141 0 0 .99465 -.74336 .39356)">
           <path

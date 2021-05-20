@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
-import { Title } from '../atoms';
+import { Title } from "../atoms";
 
 type TimeDifference = {
   days: number;
@@ -11,7 +11,7 @@ type TimeDifference = {
 
 export default function Countdown() {
   const calculateTimeLeft = (): TimeDifference => {
-    const difference = +new Date('06/19/2021') - +new Date();
+    const difference = +new Date(2021, 9, 4, 12, 0, 0, 0) - +new Date();
 
     if (difference > 0) {
       return {
@@ -42,8 +42,12 @@ export default function Countdown() {
 
   const circle = (value, label) => (
     <div className="w-20 h-20 md:w-32 md:h-32 border-4 border-white shadow-lg rounded-full flex flex-col items-center justify-center dark:border-gray-300">
-      <div className="text-xl md:text-4xl font-bold -mb-1 md:mb-2 dark:text-gray-100">{value}</div>
-      <div className="text-semibold text-gray-100 text-md md:text-2xl dark:text-gray-200">{label}</div>
+      <div className="text-xl md:text-4xl font-bold -mb-1 md:mb-2 dark:text-gray-100">
+        {value}
+      </div>
+      <div className="text-semibold text-gray-100 text-md md:text-2xl dark:text-gray-200">
+        {label}
+      </div>
     </div>
   );
 
@@ -54,13 +58,19 @@ export default function Countdown() {
           <p className="uppercase text-gray-100 font-quicksand font-semibold mb-1">
             Datum Luštěnin
           </p>
-          <Title level={2} color="light">Další Luštěniny již za</Title>
+          <Title level={2} color="light">
+            Další Luštěniny již za
+          </Title>
         </div>
-        <div className="flex flex-wrap gap-1 md:gap-4">
-          {circle(timeLeft.days, 'Dní')}
-          {circle(timeLeft.hours, 'Hodin')}
-          {circle(timeLeft.minutes, 'Minut')}
-          {circle(timeLeft.seconds, 'Sekund')}
+        <div className="flex flex-wrap gap-2 md:gap-4 items-center justify-center">
+          <div className="flex gap-2 md:gap-4">
+            {circle(timeLeft.days, "Dní")}
+            {circle(timeLeft.hours, "Hodin")}
+          </div>
+          <div className="flex gap-2 md:gap-4">
+            {circle(timeLeft.minutes, "Minut")}
+            {circle(timeLeft.seconds, "Sekund")}
+          </div>
         </div>
       </div>
     </div>

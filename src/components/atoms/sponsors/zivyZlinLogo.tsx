@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ZivyZlinLogo() {
   return (
-    <svg height="80px" viewBox="0 0 131.88 51.892">
+    <svg className="max-h-16" height="80px" viewBox="0 0 131.88 51.892">
       <g transform="translate(-107.21 -95.352)">
         <g transform="matrix(1.0141 0 0 .99465 -.74336 .39356)">
           <path

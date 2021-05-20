@@ -26,7 +26,7 @@ export default function Slide(props: Props) {
           imgClassName="object-fit object-center filter filter brightness-90"
         />
       </div>
-      <div className="w-full bg-black bg-opacity-40  mx-auto relative z-20 flex flex-col justify-center items-center">
+      <div className="w-full bg-black bg-opacity-40 shadow-lg  mx-auto relative z-20 flex flex-col justify-center items-center">
         <div className="lg:max-w-5xl py-8 px-4 md:px-16 text-center lg:rounded-full">
           {props.main && <h1 className={titleClassName}>{props.title}</h1>}
           {!props.main && <h2 className={titleClassName}>{props.title}</h2>}

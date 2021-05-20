@@ -108,7 +108,7 @@ cyphers:
       - 1+2-9-4 1932 1+9-3-2 = 5 E
       - 1+2+4 2019 2+0+9 = 11 K
     solution: Broucek
-  - title: Caesarův ćtverec
+  - title: Caesarův čtverec
     image: "events/2019/cyphers/Lusteniny2019-Vigenere.jpg"
     hints:
       - Luštěniny
