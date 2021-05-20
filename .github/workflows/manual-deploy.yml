@@ -16,7 +16,7 @@ jobs:
       - run: npm run build  
       - name: FTP-Deploy-Action
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
-        env:
+        with:
           server: 248147.w47.wedos.net
           username: w248147_github
           password: ${{ secrets.FTP_PASSWORD }}
