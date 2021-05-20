@@ -20,6 +20,5 @@ jobs:
           server: 248147.w47.wedos.net
           username: w248147_github
           password: ${{ secrets.FTP_PASSWORD }}
-          dangerous-clean-slate: true
           local-dir: public/
       
