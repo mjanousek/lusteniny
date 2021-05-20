@@ -1,0 +1,228 @@
+title: Luštěniny III.
+description: Třetí ročník Luštěnin. Náš standart deštivého počasí byl dodržen a hodnotíme tedy jako úspěšnou akci. Děkujeme vám všem, že jste přišli na naše již klasické upršené odpoledne.
+slug: /udalosti/lusteniny-2020
+date: 2020-07-18
+image: ../../images/events/2020/Lusteniny2020.png
+galleryLink: "https://www.facebook.com/media/set/?vanity=lusteniny&set=a.140567267694805"
+winners:
+  - "Eště Nevim"
+  - "Edhouse 42"
+  - "Chromý tým se Safronem"
+cyphers:
+  - title: Filmové Klasiky
+    image: "events/2020/cyphers/Lusteniny2020-FilmovéKlasiky.jpg"
+    hints:
+      - "Počet herců na obrázku je důležitý. "
+    steps:
+      - Přiřadit hlášky z filmů k jednotlivým obrázkům.
+      - Počet lidí na obrázku udává pozici písmene v přiřazené hlášce a toto písmeno
+        je částí zašifrované zprávy.
+      - Písmena přečtena popořadě od první hlášky.
+    solution: " klapky"
+  - title: Míček
+    image: "events/2020/cyphers/Lusteniny2020-Micek.jpg"
+    info:
+      - Šifra míček byla zadána jako skutečný předmět. Zde na stránkach můžete
+        naleznout pouze fotografie daného míčku. Pozor! Na fotkách se jedná o stejný
+        míček.
+    hints:
+      - "Otvory jako korálky na šňůrce. Teď už jen zjistit, který je který. "
+    steps:
+      - Podle písmen daných na míčku, přiřaď písmena abecedy i k ostatním otvorům.
+      - Zapiš si písmena, kterými prochází šňůrka, v pořadí daném šňůrkou.
+      - Teď už stačí jen zjistit, které písmeno je první, aby heslo dávalo smysluplné
+        slovo.
+    solution: " klapky"
+  - title: Dopis
+    image: "events/2020/cyphers/Lusteniny2020-Dopis.jpg"
+    hints:
+      - Při psaní je potřebné dobře volit slova.
+    steps:
+      - Zedník → Múrár - M
+      - Tramvaj → Električka - E
+      - Nádobí → Riad - R
+      - Žízeň → Smäd - S
+    solution: "MERS "
+  - title: Jiný Pohled
+    image: "events/2020/cyphers/Lusteniny2020-JinyPohledNaVec.jpg"
+    hints:
+      - Socha Masaryka, model starého Zlína na terase 21. budovy.
+    steps:
+      - Najít sochu Masaryka a směr, kterým se dívá
+      - Vyměřit 150 metrů dozadu od něj
+      - Zde se nachází Fakulta Humanitních studií
+      - Na Modelu starého Zlína se ovšem skrýva nápis “školy”
+    solution: školy
+  - title: Skládačka
+    image: "events/2020/cyphers/Lusteniny2020-Skladacka.jpg"
+    hints:
+      - Socha Masaryka, model starého Zlína na terase 21. budovy.
+    steps:
+      - "Otoč a vynásob "
+      - Otoč jednotlivé čtverce ve směru hodinových ručiček tak, aby červená čára
+        vytvořila spojený obrazec
+      - Číslo ve čtvercích vynásobené počtem otočení ve směru hodinových ručiček
+        udává hodnotu písmene
+      - Dosaď písmena za čísla z kódovací tabulky
+    solution: Elmar Klos
+  - title: Kruhy
+    image: "events/2020/cyphers/Lusteniny2020-CallMeBaby.jpg"
+    hints:
+      - Telefonní číslo.
+    steps:
+      - Kruhy reprezentují pohyby pro vytočení čísel na starém telefonu s otáčecím
+        číselníkem
+      - Číslo je na infolinku Památníku Tomáše Bati no a to je i zašifrovaná zpráva
+    solution: PAMÁTNÍK TOMÁŠE BATI
+  - title: Kamera, klapka, akce!
+    image: "events/2020/cyphers/Lusteniny2020-KameraKlapkaAkce.jpg"
+    hints:
+      - Najdi spojení.. ..tedy né. Najdi spojnici!
+    steps:
+      - Klapky musejí být seřazeny tak, aby je propojovala spojnice
+      - Na klapkách se nachází zašifrovaná zpráva v Braillově písmu
+    solution: velke kino
+  - title: Rozsypaný čaj
+    image: "events/2020/cyphers/Lusteniny2020-Graphic.jpg"
+    hints:
+      - "Graphic anagram "
+    steps:
+      - Jedná se o přesmyčku - záměnnou každé dvojice po sobě jdoucích znaků (první
+        s druhým, třetí se čtvrtým, atd.) získáme pravý název šifry - “Graphic anagram”
+      - Stejným způsobem pak v obrázku zaměníme každé dva po sobě následující sloupce
+        a získáme výslednou zprávu
+    solution: FILMFEST
+  - title: Mat nebo Pat
+    image: "events/2020/cyphers/Lusteniny2020-MatNeboPat.jpg"
+    hints:
+      - "Bílý dá mat ve 3 tazích. "
+    steps:
+      - Vc8+ Dxc8
+      - Dxg7+ Vxg7 (Nejlepší tah. Pokud černý hraje Ve8, hra končí dalším tahem
+        bílého)
+      - Vxg7
+    solution: pes
+  - title: Loga
+    image: "events/2020/cyphers/Lusteniny2020-Loga.jpg"
+    hints:
+      - "Loga, zkratky, žádný zmatky, hlava mapa souřadnice, předposlední u radnice."
+    steps:
+      - Nejprve je potřeba napsat první písmeno firmy pro daná loga.
+      - "Dvojice čísel udávají souřadnice log, která tvoří zprávu: "
+      - "[2,4] -> Drupal -> písmeno D"
+      - "[1,1] -> Starbucks -> písmeno S"
+      - "[5,1] -> Zlín -> písmeno Z"
+      - "[5,2] -> O2 -> písmeno O"
+    solution: DSZO
+bonusInformation:
+  - title: Filmové klasiky
+    text:
+      - "Aukce filmových klapek je významným bodem doprovodného programu. Koná se
+        od roku 1998. Každý rok je osloveno několik desítek význačných umělců z Česka
+        i zahraničí, kteří obdrží filmovou klapku, již mají přetvořit na umělecké
+        dílo (od maleb po plastiky). Takto umělecky ztvárněné klapky se pak draží
+        ve veřejné aukci a výtěžek je určen na studentskou filmovou tvorbu. "
+      - Minulý ročník bylo v nabídce 123 umělecky ztvárněných klapek, jejichž dražba
+        celkem přinesla 2 654 000 Kč, což je nejvíc za celou historii. Největší zájem
+        byl o klapku Jaroslava Němečka, jejíž cena se vyšplhala na 85 000 Kč.
+  - title: Míček
+    text:
+      - "Miloš Macourek byl český dramatik, básník a scenárista. Jako scenárista
+        se podílel na mnoha českých komediích (např. Pane, vy jste vdova! nebo Čtyři
+        vraždy stačí, drahoušku) a seriálech (především Arabela nebo večerníčky s
+        Machem a Šebestovou). Na nich spolupracoval především s režiséry Oldřichem
+        Lipským a Václavem Vorlíčkem a už málo kdo ví, že Miloš Macourek pochází z
+        nedaleké Kroměříže. "
+  - title: Dopis
+    text:
+      - "MERS je Zlínská kapela, která se nerada škatulkuje do určitého hudebního
+        žánru. Tvrdí o sobě, že je jejich hudba různorodá od pop/rocku až po alternativní
+        směry. Mezi jejich největší úspěchy patří soundtrack k filmu INTIMITY režiséra
+        Iva Macharáčka a scénaristy Evžena Gogely (Tajemství staré bambitky). "
+  - title: Jiný pohled
+    text:
+      - Baťův mrakodrap nechal postavit Jan Antonín Baťa ve Zlíně podle projektu architekta
+        Vladimíra Karfíka v letech 1936–1938 jako sídlo ředitelství obuvnické firmy
+        Baťa.
+      - "Budova má číslo 21, říká se jí proto „jednadvacítka“. Označení budov v Baťově
+        závodě bylo podle amerického stylu, kdy číslo udává přesnou polohu budovy
+        v areálu, neboť první číslice (tedy dvojka) označuje řadu budovy (počítáno
+        od východu k západu) a druhé číslo (tedy jednička) představuje řadu budovy
+        (číslováno od jihu k severu). "
+      - "Původně měla být administrativa firmy soustředěna do tří navzájem propojených
+        třípodlažních budov. Avšak architekt Karfík přišel s návrhem jedné výškové
+        budovy a Jana Antonína Baťu pro svou představu získal. Mrakodrap má 16 pater
+        a výšku 77,5 m. Během výstavby se uplatnil standardní zlínský modul 6,15 ×
+        6,15 m, který byl použit u většiny budov stavěných firmou Baťa. Vzhledem k
+        výšce stavby se jednalo o druhou nejvyšší budovu Evropy. Vyšší v té době byl
+        již jen palác Všeobecné bankovní jednoty v Antverpách známý jako Boerentoren,
+        mající výšku 87 m (dnes 97 m). Nejvyšší budovou světa tehdy byla Empire State
+        Building v New Yorku o výšce 381 m. "
+  - title: Skládačka
+    text:
+      - "Elmar Klos (26. ledna 1910 Brno – 19. července 1993 Praha) byl český
+        filmový režisér, scenárista, dramaturg, pedagog a filmový manažer. Od roku
+        1934 působil ve Zlíně, na Kudlově, u Baťovy filmové firmy. Mezi jeho největší
+        filmové úspěchy patří film Obchod na korze z roku 1965, který získal o rok
+        později Oscara za nejlepší cizojazyčný film. Filmografie: 1952 Únos, 1955
+        Hudba z Marsu, 1957 Tam na konečné, 1958 Tři přání, 1963 Smrt si říká Engelchen,
+        1964 Obžalovaný, 1965 Obchod na korze, 1969 Touha zvaná Anada, ... Tak co,
+        znáte některé z nich? :) "
+  - title: Kruhy
+    text:
+      - "Budova od architekta Františka Lýdie Gahury, otevřená v roce 1933, rok
+        po smrti Tomáše Bati, je nejhodnotnější památkou zlínského konstruktivismu
+        a vrcholem fenoménu tzv. baťovské architektury. Na první pohled je idea památníku
+        jednoduchá: prázdný hranol umístěný ve viditelné poloze nad městem, v ose
+        stoupajícího parkového prostoru, tvořený několika moduly zlínského skeletu
+        o rozměrech 6,15 × 6,15 m a opláštěný pouze katedrálním sklem; uvnitř osudný
+        letoun Junkers F 13, ve kterém Tomáš Baťa v roce 1932 zahynul krátce po startu
+        z nedalekých Otrokovic při plánované letecké pracovní cestě do švýcarského
+        Möhlinu. Jeho mimořádnost spočívá v tom, že do něj architekt Gahura vtělil
+        přímo vlastnosti Tomáše Bati – velkorysost, jasnost, vzlet, optimismus, prostotu,
+        pravdivost a poctivost – a vyjádřil je stavbou samotnou. "
+  - title: "Kamera, klapka, akce! "
+    text:
+      - "Velké kino se nachází v centru Zlína. Spolu s ostatními funkcionalistickými
+        budovami tvoří dominantu náměstí Práce a je jednou z charakteristických tváří
+        centra moderního Zlína. Funkcionalistickou stavbu architekta Františka Lydie
+        Gahury nechala v roce 1932 postavit firma Baťa, původně jako provizórium.
+        I díky tomu při stavbě byla použita unikátní svařovaná ocelová konstrukce,
+        v takovém rozsahu vůbec poprvé na území tehdejšího Československa. "
+      - Od roku 1961 se v něm každoročně koná Mezinárodní festival filmů pro děti
+        a mládež. Budova je od roku 2001 chráněna jako kulturní památka. Původní kapacita
+        sálu kina převyšovala 2 500 míst, jednalo se o první objekt kulturní vybavenosti
+        ve Zlíně určený pro masovější návštěvy. Svou ohromnou kapacitou se stalo největším
+        předválečným kinem v Československu. I současný počet míst (1 010) řadí toto
+        kino k největším kinosálům v republice.
+      - " V roce 2016 byl vypracován posudek, podle kterého má kino narušenou statiku
+        střechy, stěn a nosných konstrukcí, kino je tak od 1. 3. 2016 uzavřeno. Pro
+        další provoz je potřebná komplikovaná rekonstrukce budovy, s níž však město
+        Zlín, které kino vlastní, počítá. V současné době se připravuje ve spolupráci
+        s památkáři rekonstrukce, po jejímž ukončení bude kino nadále sloužit svému
+        účelu. "
+  - title: Rozsypaný čaj
+    text:
+      - "Zlín Film Festival (též Mezinárodní festival filmů pro děti a mládež) je
+        mezinárodní filmový festival určený pro děti a mládež, který se pořádá na
+        přelomu května a června ve Zlíně. První ročník se uskutečnil již v roce 1961
+        jako národní přehlídka československé kinematografie pro děti. V průběhu následujících
+        desetiletí se ze zlínského festivalu stala významná mezinárodní filmová událost. "
+      - "Přestože v podtitulu názvu se hovoří o dětech a mládeži, festival nabízí
+        filmový i doprovodný program všem věkovým kategoriím. V posledních letech
+        se festivalové filmové projekce uskutečňují nejen v samotném Zlíně, ale i
+        v řadě dalších měst České republiky. Návštěvnost zlínského festivalu má dlouhodobě
+        vzrůstající tendenci. Od roku 2010 přesahuje návštěvnost 95 000 dětí i dospělých. "
+  - title: Mat nebo Pat
+    text:
+      - "Útulek pro zvířata v nouzi Zlín Vršava je situován nedaleko zastavěné
+        části Zlína a je přístupný městskou hromadnou dopravou. Kapacita útulku umožňuje
+        umístit zde až 80 psů a 40 koček a může na přechodnou dobu sloužit i jako
+        útočiště pro handicapovaná volně žijící zvířata, jako jsou například ježci
+        a ptáci. Jen za rok 2017 zde přijali 521 psů a 340 koček. "
+  - title: Loga
+    text:
+      - "Po patnácti letech provozu ukončil svou službu na linkách MHD Dopravní
+        společnosti Zlín – Otrokovice první nízkopodlažní kloubový trolejbus. Vozidlo
+        Škoda 25 Tr Irisbus má najeto 1 021 121 kilometrů. Podle znaleckého posudku
+        i doporučení výrobce se po vzniklé závadě již nevyplatí trolejbus opravovat. "
