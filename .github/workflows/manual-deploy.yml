@@ -20,7 +20,7 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: webRoot
-          path: / # or path/to/artifac
+          path: public
   
   # FTP-Deploy-Action:
   #   name: FTP Deploy (master)
