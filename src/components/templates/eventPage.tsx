@@ -1,8 +1,8 @@
-import { graphql, useStaticQuery } from 'gatsby';
-import { getImage, GatsbyImage } from 'gatsby-plugin-image';
-import * as React from 'react';
+import { graphql, useStaticQuery } from "gatsby";
+import { getImage, GatsbyImage } from "gatsby-plugin-image";
+import * as React from "react";
 
-import { BonusInformation, Cypher } from '../../types';
+import { BonusInformation, Cypher } from "../../types";
 import {
   Button,
   Card,
@@ -11,10 +11,10 @@ import {
   SectionHeader,
   Text,
   Title,
-} from '../atoms';
-import { CypherCard } from '../molecules';
+} from "../atoms";
+import { CypherCard } from "../molecules";
 
-import Page from './page';
+import Page from "./page";
 
 type Props = {
   pageContext: PageContext;
@@ -63,10 +63,12 @@ export default function EventPage(props: Props) {
   `);
 
   const cypherImages = pageContext.cyphers?.map((cypher) => {
-    if (cypher.image === 'none') { return { title: cypher.title, image: undefined }; }
+    if (cypher.image === "none") {
+      return { title: cypher.title, image: undefined };
+    }
 
     const image = query.cypherImages.edges.find(
-      (edge) => edge.node.relativePath === cypher.image,
+      (edge) => edge.node.relativePath === cypher.image
     );
 
     if (!image) {
@@ -101,7 +103,7 @@ export default function EventPage(props: Props) {
         />
         <div className="flex justify-center">
           <ExternalLink href={pageContext.galleryLink}>
-            <Button icon={['fab', 'facebook']}>Odkaz na fotogalerii</Button>
+            <Button icon={["fab", "facebook"]}>Odkaz na fotogalerii</Button>
           </ExternalLink>
         </div>
       </Section>
@@ -136,44 +138,53 @@ export default function EventPage(props: Props) {
           align="center"
         />
         <div className="mt-12 space-y-12 md:space-y-0 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-x-8 md:gap-y-12">
-          {pageContext.cyphers?.length > 0
-            && pageContext.cyphers.map((cypher) => {
+          {pageContext.cyphers?.length > 0 &&
+            pageContext.cyphers.map((cypher) => {
               const cypherImage = cypherImages.find(
-                (x) => x.title === cypher.title,
+                (x) => x.title === cypher.title
               ).image;
               const image = {
                 data: cypherImage,
                 alt: `${pageContext.title} - ${cypher.title}`,
               };
 
-              return <CypherCard {...cypher} image={image} key={`cypher_${cypher.title}`}/>;
+              return (
+                <CypherCard
+                  {...cypher}
+                  image={image}
+                  key={`cypher_${cypher.title}`}
+                />
+              );
             })}
         </div>
       </Section>
-      <Section>
-        <SectionHeader
-          subtitle="Objevte"
-          title="Bonusové informace k šifrám"
-          description="Každá šifra obsahuje menší, či delší doplňující informaci, která se váže buď s danou šifrou, nebo se stanovištěm šifry."
-          align="center"
-        />
-        <div className="space-y-8">
-          {pageContext.bonusInformation?.length > 0
-            && pageContext.bonusInformation.map((information) => (
+      {pageContext.bonusInformation?.length > 0 && (
+        <Section>
+          <SectionHeader
+            subtitle="Objevte"
+            title="Bonusové informace k šifrám"
+            description="Každá šifra obsahuje menší, či delší doplňující informaci, která se váže buď s danou šifrou, nebo se stanovištěm šifry."
+            align="center"
+          />
+          <div className="space-y-8">
+            {pageContext.bonusInformation.map((information) => (
               <Card
-              key={`bonusInformation_${information.title}`}
-                body={(
+                key={`bonusInformation_${information.title}`}
+                body={
                   <div className="space-y-4">
                     <Title level={3}>{information.title}</Title>
                     {information.text.map((p) => (
-                      <Text key={`bonusInformation_${information.title}_${p}`}>{p}</Text>
+                      <Text key={`bonusInformation_${information.title}_${p}`}>
+                        {p}
+                      </Text>
                     ))}
                   </div>
-                )}
+                }
               />
             ))}
-        </div>
-      </Section>
+          </div>
+        </Section>
+      )}
     </Page>
   );
 }
