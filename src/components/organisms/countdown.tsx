@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import { Title } from "../atoms";
+import { Tag, Title } from "../atoms";
 
 type TimeDifference = {
   days: number;
@@ -10,8 +10,11 @@ type TimeDifference = {
 };
 
 export default function Countdown() {
+  // Note: JavaScript counts months from 0 to 11.
+  const date = new Date(2021, 8, 4, 12, 0, 0, 0);
+
   const calculateTimeLeft = (): TimeDifference => {
-    const difference = +new Date(2021, 9, 4, 12, 0, 0, 0) - +new Date();
+    const difference = +date - +new Date();
 
     if (difference > 0) {
       return {
@@ -54,13 +57,16 @@ export default function Countdown() {
   return (
     <div className="relative z-10 shadow-lg bg-green-600 overflow-hidden dark:bg-opacity-90">
       <div className="mx-auto text-white py-8 px-4 md:px-5 flex max-w-6xl text-center flex flex-col items-center lg:flex-row">
-        <div className="px-10 flex-grow flex flex-col justify-center text-center lg:text-left mb-4 lg:mb-0">
-          <p className="uppercase text-gray-100 font-quicksand font-semibold mb-1">
+        <div className="px-10 flex-grow flex flex-col justify-center text-center lg:text-left mb-4 lg:mb-0 space-y-1">
+          <p className="uppercase text-gray-100 font-quicksand font-semibold">
             Datum Luštěnin
           </p>
           <Title level={2} color="light">
             Další Luštěniny již za
           </Title>
+          <div className="flex pt-1">
+            <Tag icon="calendar-day" color="white">{date.toLocaleDateString("cs")}</Tag>
+          </div>
         </div>
         <div className="flex flex-wrap gap-2 md:gap-4 items-center justify-center">
           <div className="flex gap-2 md:gap-4">
