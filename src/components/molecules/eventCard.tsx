@@ -34,7 +34,7 @@ export default function EventCard(props: Props) {
               </Link>
             </div>
             <div className="mb-4">
-              <Tag icon="calendar-check">{new Date(props.date).toLocaleDateString('cs-CZ')}</Tag>
+              <Tag icon="calendar-check" color="primary">{new Date(props.date).toLocaleDateString('cs-CZ')}</Tag>
             </div>
             <Text size="normal">{props.description}</Text>
 

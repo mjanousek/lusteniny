@@ -64,7 +64,7 @@ export default function Countdown() {
           <Title level={2} color="light">
             Další Luštěniny již za
           </Title>
-          <div className="flex pt-1">
+          <div className="flex pt-1 justify-center lg:justify-start">
             <Tag icon="calendar-day" color="white">{date.toLocaleDateString("cs")}</Tag>
           </div>
         </div>
