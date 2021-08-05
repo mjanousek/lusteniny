@@ -64,8 +64,8 @@ export default function Countdown() {
           <Title level={2} color="light">
             Další Luštěniny již za
           </Title>
-          <div className="flex pt-1 justify-center lg:justify-start">
-            <Tag icon="calendar-day" color="white">{date.toLocaleDateString("cs")}</Tag>
+          <div className="pt-1 justify-center lg:justify-start hidden lg:flex">
+            <Tag size="large" icon="calendar-day" color="white">{date.toLocaleDateString("cs")}</Tag>
           </div>
         </div>
         <div className="flex flex-wrap gap-2 md:gap-4 items-center justify-center">
@@ -78,6 +78,9 @@ export default function Countdown() {
             {circle(timeLeft.seconds, "Sekund")}
           </div>
         </div>
+          <div className="flex justify-center lg:hidden pt-4">
+            <Tag size="large" icon="calendar-day" color="white">{date.toLocaleDateString("cs")}</Tag>
+          </div>
       </div>
     </div>
   );
