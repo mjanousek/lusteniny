@@ -11,7 +11,7 @@ type TimeDifference = {
 
 export default function Countdown() {
   // Note: JavaScript counts months from 0 to 11.
-  const date = new Date(2021, 8, 4, 12, 0, 0, 0);
+  const date = new Date(2021, 8, 4, 14, 0, 0, 0);
 
   const calculateTimeLeft = (): TimeDifference => {
     const difference = +date - +new Date();
