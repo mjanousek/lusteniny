@@ -3,7 +3,6 @@ import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image';
 import React from 'react';
 
 type Props = {
-  head?: React.ReactNode;
   image?: {
     data: IGatsbyImageData;
     alt: string;
@@ -30,11 +29,6 @@ export default function Card(props: Props) {
         props.isFullheight ? 'h-full' : ''
       }`}
     >
-      {props.head && (
-        <h3 className="px-6 py-3 border-4 border-white shadow-md rounded-full font-medium bg-green-600 text-gray-100 absolute left-1/2 top-0 z-20 transform -translate-x-1/2 -translate-y-1/2 dark:border-gray-700 text-center">
-          {props.head}
-        </h3>
-      )}
       {props.image
         && (props.image.link ? (
           <Link

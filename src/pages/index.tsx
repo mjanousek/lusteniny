@@ -129,7 +129,6 @@ const IndexPage = () => {
             ))}
         </Slider>
       </div>
-      <Countdown />
 
       <Section id="info">
         <SectionHeader
@@ -185,14 +184,6 @@ const IndexPage = () => {
           align="center"
         />
         <EventList events={events} />
-
-        <div className="mt-16 flex justify-center">
-          <Link to="/udalosti">
-            <Button icon="archive" size="large">
-              Zobrazit Archiv
-            </Button>
-          </Link>
-        </div>
       </Section>
     </Page>
   );

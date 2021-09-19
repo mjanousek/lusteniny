@@ -1,11 +1,9 @@
-import { Link } from 'gatsby';
-import { getImage, IGatsbyImageData } from 'gatsby-plugin-image';
-import * as React from 'react';
+import { Link } from "gatsby";
+import { getImage, IGatsbyImageData } from "gatsby-plugin-image";
+import * as React from "react";
 
-import {
-  Button, Tag, Text, Title,
-} from '../atoms';
-import Card from '../atoms/card';
+import { Button, Tag, Text, Title } from "../atoms";
+import Card from "../atoms/card";
 
 type Props = {
   title: string;
@@ -21,12 +19,16 @@ export default function EventCard(props: Props) {
     alt: props.title,
     link: props.slug,
   };
+  const trimmedDescription =
+    props.description.length > 200
+      ? props.description.substring(0, 200) + " ..."
+      : props.description;
 
   return (
     <article>
       <Card
         image={image}
-        body={(
+        body={
           <div className="text-center pb-4">
             <div className="mb-2">
               <Link to={props.slug}>
@@ -34,9 +36,11 @@ export default function EventCard(props: Props) {
               </Link>
             </div>
             <div className="mb-4">
-              <Tag size="regular" icon="calendar-check" color="primary">{new Date(props.date).toLocaleDateString('cs-CZ')}</Tag>
+              <Tag size="regular" icon="calendar-check" color="primary">
+                {new Date(props.date).toLocaleDateString("cs-CZ")}
+              </Tag>
             </div>
-            <Text size="normal">{props.description}</Text>
+            <Text size="normal">{trimmedDescription}</Text>
 
             <div className="absolute left-1/2 bottom-0 z-20 transform -translate-x-1/2 translate-y-1/2">
               <Link to={props.slug}>
@@ -44,7 +48,7 @@ export default function EventCard(props: Props) {
               </Link>
             </div>
           </div>
-        )}
+        }
         isFullheight
       />
     </article>

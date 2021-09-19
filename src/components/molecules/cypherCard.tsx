@@ -30,7 +30,6 @@ export default function CypherCard(props: Props) {
   return (
     <div>
       <Card
-        head={props.title}
         image={props.image}
         body={
           props.info?.length > 0 && (
