@@ -45,7 +45,7 @@ cyphers:
       - Písmena jsou zakódována v domě stojícím na pravé straně scény od A umístěného na první čárce zespodu.
       - Pro dekódování písmene dinosaura je nutné vést čáru z kamery na dům, která se dotýká daného dinosaura. Tj. reprezentuje velikost dinosaura ve filmu ve srovnání s budovou.
       - Na následujícím obrázku je vidět první dinosaur, který “vrhá stín” na 6. čárku tj, na 6. písmeno v abecedě, tedy F. Na dalším obrázku je řešení pro 2. dinosaura.
-    solution: fryšták
+    solution: frystak
 
   - title: Schůzka
     image: "events/2021/cyphers/Schuzka.jpg"
@@ -57,7 +57,7 @@ cyphers:
       - Beth a Eliz - Elizabeth’s (met)
       - Iced Donut - Deduction Street (rá)
       - Don Farring - Farringdon (ček)
-    solution: metráček
+    solution: metracek
 
   - title: Na dobrou noc
     image: "events/2021/cyphers/Na-dobrou-noc.jpg"
@@ -76,7 +76,7 @@ cyphers:
       - Časy běhů jsou klíčem šifry.
       - Jednotlivé čísla udávají pořadí písmen v textu, které tvoří zašifrovanou zprávu.
       - Tj. čísla 14, 6 (čas na 5 km), 29, 17 (čas na 10 km) 2, 23, 3 (čas na maraton) nám dají písmena L, U, Ž, Á, N, K, Y 
-    solution: lužánky
+    solution: luzanky
 
   - title: Stížnost na život
     image: "events/2021/cyphers/Stiznost-na-zivot.jpg"
