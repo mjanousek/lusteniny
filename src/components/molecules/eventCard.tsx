@@ -1,21 +1,15 @@
 import { Link } from "gatsby";
 import { getImage, IGatsbyImageData } from "gatsby-plugin-image";
 import * as React from "react";
+import { Event } from "../../types/content";
 
 import { Button, Tag, Text, Title } from "../atoms";
 import Card from "../atoms/card";
 
-type Props = {
-  title: string;
-  description: string;
-  date: string;
-  image: IGatsbyImageData;
-  slug: string;
-};
 
-export default function EventCard(props: Props) {
+export default function EventCard(props: Event) {
   const image = {
-    data: getImage(props.image),
+    data: getImage(props.image.childImageSharp),
     alt: props.title,
     link: props.slug,
   };

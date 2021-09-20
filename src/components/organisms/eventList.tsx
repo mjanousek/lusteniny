@@ -1,15 +1,7 @@
-import { IGatsbyImageData } from "gatsby-plugin-image";
 import * as React from "react";
+import { Event } from "../../types/content";
 
 import { EventCard } from "../molecules";
-
-type Event = {
-  title: string;
-  description: string;
-  date: string;
-  image: IGatsbyImageData;
-  slug: string;
-};
 
 type Props = {
   events: Event[];

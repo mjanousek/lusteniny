@@ -1,0 +1,94 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js
+
+PATH: 
+  C:\Program Files (x86)\PHP\v7.0;C:\Program Files\PHP\v5.3;C:\Program Files\Microsoft MPI\Bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\dotnet\;C:\Users\juricka\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Users\juricka\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Program Files (x86)\dotnet-core-uninstall\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft\Azure Functions Core Tools\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\juricka\.dnx\bin;C:\Users\juricka\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin;C:\Users\juricka\.dotnet\tools;C:\Users\juricka\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Users\juricka\AppData\Roaming\npm;C:\Users\juricka\Downloads\apache-groovy-binary-3.0.4\groovy-3.0.4\bin;C:\Users\juricka\.dotnet\tools;C:\Program Files (x86)\NUnit.org\nunit-console;C:\Users\juricka\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\juricka\AppData\Local\Programs\Azure Data Studio\bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  15.9.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: read ECONNRESET
+      at TLSWrap.onStreamRead (node:internal/stream_base_commons:211:20)
+
+npm manifest: 
+  {
+    "name": "lusteniny",
+    "version": "1.0.0",
+    "private": true,
+    "description": "Lusteniny",
+    "author": "Juřička, Tomáš ",
+    "keywords": [
+      "gatsby"
+    ],
+    "scripts": {
+      "develop": "gatsby develop",
+      "start": "gatsby develop",
+      "build": "gatsby build",
+      "serve": "gatsby serve",
+      "clean": "gatsby clean",
+      "lint": "eslint \"src/**/*.{ts,tsx}\"",
+      "lint:fix": "eslint --fix \"src/**/*.{ts,tsx}\""
+    },
+    "dependencies": {
+      "@types/react-helmet": "^6.1.2",
+      "@fortawesome/fontawesome-svg-core": "^1.2.35",
+      "@fortawesome/free-brands-svg-icons": "^5.15.3",
+      "@fortawesome/free-solid-svg-icons": "^5.15.3",
+      "@fortawesome/react-fontawesome": "^0.1.14",
+      "gatsby": "^3.2.1",
+      "gatsby-plugin-google-analytics": "^3.3.0",
+      "gatsby-plugin-google-fonts": "^1.0.1",
+      "gatsby-plugin-image": "^1.3.1",
+      "gatsby-plugin-manifest": "^3.3.0",
+      "gatsby-plugin-react-helmet": "^4.3.0",
+      "gatsby-plugin-robots-txt": "^1.6.2",
+      "gatsby-plugin-sass": "^4.5.0",
+      "gatsby-plugin-sharp": "^3.3.1",
+      "gatsby-plugin-sitemap": "^3.3.0",
+      "gatsby-source-filesystem": "^3.3.0",
+      "gatsby-transformer-sharp": "^3.3.0",
+      "gatsby-transformer-yaml": "^3.3.0",
+      "react": "^17.0.1",
+      "react-dom": "^17.0.1",
+      "react-helmet": "^6.1.0",
+      "react-slick": "^0.28.1",
+      "sass": "^1.32.13",
+      "slick-carousel": "^1.8.1",
+      "typescript": "^4.2.4"
+    },
+    "devDependencies": {
+      "autoprefixer": "^10.2.5",
+      "eslint": "^7.27.0",
+      "eslint-config-node": "^4.1.0",
+      "eslint-config-prettier": "^8.3.0",
+      "eslint-plugin-node": "^11.1.0",
+      "eslint-plugin-prettier": "^3.4.0",
+      "gatsby-plugin-postcss": "^4.5.0",
+      "postcss": "^8.3.0",
+      "prettier": "^2.3.0",
+      "tailwindcss": "^2.1.2",
+      "typescript": "^4.2.4"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/mjanousek/lusteniny.git"
+    },
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/mjanousek/lusteniny/issues"
+    },
+    "homepage": "https://github.com/mjanousek/lusteniny#readme"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

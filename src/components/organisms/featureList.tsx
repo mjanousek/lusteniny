@@ -1,11 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as React from 'react';
+import { Feature } from '../../types/content';
 
-import { Feature as FeatureType } from '../../types';
 import { Text, Title } from '../atoms';
 
 type Props = {
-  features: FeatureType[];
+  features: Feature[];
 };
 
 export default function FeatureList(props: Props) {
