@@ -132,10 +132,12 @@ export type EventPageQuery = {
   data: {
     file: {
       childUdalostiYaml: EventPageData;
+      fields: {
+        slug: string;
+      }
     };
-  };
-
-  global: {
-    childContentYaml: GlobalData;
+    global: {
+      childContentYaml: GlobalData;
+    };
   };
 };

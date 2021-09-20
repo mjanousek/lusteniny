@@ -27,7 +27,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/logo/Logo.png",
+        icon: "src/content/images/Logo.png",
         name: `Luštěniny`,
         short_name: `Luštěniny`,
         start_url: `/`,

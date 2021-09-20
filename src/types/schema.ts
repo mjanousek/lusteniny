@@ -55,7 +55,7 @@ export type SchemaDayOfWeek =
   | 'Sunday';
 
 export type SchemaEvent = {
-  '@context': 'https://schema.org';
+  '@context': 'https://schema.org/';
   '@type': 'Event';
   name: string;
   description: string;
