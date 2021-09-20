@@ -7,6 +7,11 @@ module.exports = {
     "gatsby-plugin-sass",
     "gatsby-plugin-postcss",
     "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+    "gatsby-transformer-yaml",
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
@@ -19,12 +24,10 @@ module.exports = {
         siteSpeedSampleRate: 10,
       },
     },
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/logo/Logo.png",
+        icon: "src/content/images/Logo.png",
         name: `Luštěniny`,
         short_name: `Luštěniny`,
         start_url: `/`,
@@ -33,7 +36,6 @@ module.exports = {
         display: `standalone`,
       },
     },
-    "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
@@ -44,18 +46,7 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: "./src/images/",
-      },
-      __key: "images",
-    },
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
-    "gatsby-transformer-yaml",
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "events",
-        path: "./src/content/events",
+        path: "./src/content/",
       },
     },
     {

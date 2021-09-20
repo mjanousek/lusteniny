@@ -3,9 +3,8 @@ description: >
   Filmové luštěniny, náš 4 ročník. Z počátku nás pronásledovala nervozita z nízkého počtu účastníku, a tedy počet připravených materiálů byl nižší než minulé ročníky. 
   To se nám naštěstí stalo osudné, v sobotní poledne nás čekala rekordní účast a naši organizátoři, kteří sami vtipkovali o běhací šifře, si sami dali lehký výklus.
   Zajímavostí tohoto ročníku bylo, že jsme zlomili naše deštivé prokletí a užili jsme si slunečný den.
-slug: /udalosti/lusteniny-2021
 date: 2021-09-04
-image: ../../images/events/2021/Lusteniny2021.jpg
+image: ../images/Lusteniny-2021.jpg
 galleryLink: "https://www.facebook.com/media/set?vanity=lusteniny&set=a.379746937110169"
 winners:
   - "Nebuďte slušnej, řekněte jméno"
@@ -13,7 +12,7 @@ winners:
   - "Abakus"
 cyphers:
   - title: Telegram do vězení č.4
-    image: "events/2021/cyphers/Dopis-do-vezeni.jpg"
+    image: ../images/Lusteniny-2021-Dopis-do-vezeni.jpg
     hints:
       - Na délce záleží.
     steps:
@@ -24,7 +23,7 @@ cyphers:
     solution: bonton
 
   - title: Karty
-    image: "events/2021/cyphers/Karty.jpg"
+    image: ../images/Lusteniny-2021-Karty.jpg
     hints:
       - Abeceda z Karet.
     steps:
@@ -36,7 +35,7 @@ cyphers:
     solution: zlinsky klenot
 
   - title: Cesta do pravěku
-    image: "events/2021/cyphers/Cesta-do-praveku.jpg"
+    image: ../images/Lusteniny-2021-Cesta-do-praveku.jpg
     hints:
       - Jak velcí se zdají být dinosauři ve filmu?
     steps:
@@ -48,7 +47,7 @@ cyphers:
     solution: frystak
 
   - title: Schůzka
-    image: "events/2021/cyphers/Schuzka.jpg"
+    image: ../images/Lusteniny-2021-Schuzka.jpg
     hints:
       - Historikové tvrdí, že Ceasar měl rád anagramy.
     steps:
@@ -60,7 +59,7 @@ cyphers:
     solution: metracek
 
   - title: Na dobrou noc
-    image: "events/2021/cyphers/Na-dobrou-noc.jpg"
+    image: ../images/Lusteniny-2021-Na-dobrou-noc.jpg
     hints:
       - Slož z papíru pokrývku hlavy Večerníčka.
     steps:
@@ -69,7 +68,7 @@ cyphers:
     solution: bobek
 
   - title: Zátopek
-    image: "events/2021/cyphers/Zatopek.jpg"
+    image: ../images/Lusteniny-2021-Zatopek.jpg
     hints:
       - Časy běhů jsou klíčem.
     steps:
@@ -79,7 +78,7 @@ cyphers:
     solution: luzanky
 
   - title: Stížnost na život
-    image: "events/2021/cyphers/Stiznost-na-zivot.jpg"
+    image: ../images/Lusteniny-2021-Stiznost-na-zivot.jpg
     hints:
       - Počítačové staženiny.
     steps:
@@ -100,7 +99,7 @@ cyphers:
     solution: baron prasil
 
   - title: Filmový pás
-    image: "events/2021/cyphers/Filmovy-pas.jpg"
+    image: ../images/Lusteniny-2021-Filmovy-pas.jpg
     hints:
       - Morse.
     steps:
@@ -111,7 +110,7 @@ cyphers:
     solution: smecka 2020
 
   - title: Šachovnice
-    image: "events/2021/cyphers/Sachovnice.jpg"
+    image: ../images/Lusteniny-2021-Sachovnice.jpg
     hints:
       - I slepý by to vyluštil.
     steps:
@@ -122,7 +121,7 @@ cyphers:
     solution: kamera
     
   - title: Elektrický obvod
-    image: "events/2021/cyphers/Elektricky-obvod.jpg"
+    image: ../images/Lusteniny-2021-Elektricky-obvod.jpg
     hints:
       - Jdi po proudu
     steps:

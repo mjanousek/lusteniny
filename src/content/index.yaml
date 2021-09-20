@@ -1,9 +1,6 @@
-title: Luštěniny | Šifrovací hra ve Zlíně 
+title: Šifrovací hra ve Zlíně 
 description: Baví tě šifrovačky? Pokud ano, jsi na správném místě. Luštěniny jsou šifrovací hra pořádána v centru Zlína, které se můžeš zúčastnit jak v týmu, tak sám. 
-facebookUrl: https://www.facebook.com/lusteniny
-messengerUrl: https://www.m.me/lusteniny/
-url: https://lusteniny.eu
-
+image: ./images/Lusteniny.jpg
 hero:
   title: Luštěniny
   description: Šifrovací hra ve Zlíně
@@ -42,6 +39,7 @@ about:
 contact:
   title: Chceš se na něco zeptat?
   description: Přidej se k stránce luštěnin na facebooku, kde tvé dotazy rádi zodpovíme.
+  image: ./images/Team.jpg
 archive:
   title: Minulé Ročníky
   description: Fotky, šifry, řešení - podívej se na již proběhlé akce!

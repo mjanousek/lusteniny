@@ -1,7 +1,7 @@
 import { IGatsbyImageData } from "gatsby-plugin-image";
 import React from "react";
+import { Cypher } from "../../types/content";
 
-import { Cypher } from "../../types";
 import { Card, Collapsible, Text } from "../atoms";
 
 type Props = Omit<Cypher, "image"> & {

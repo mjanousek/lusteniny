@@ -1,14 +1,37 @@
-import * as React from "react";
-import { Link } from "gatsby";
+import * as React from 'react';
+import { graphql, Link, useStaticQuery } from 'gatsby';
 
-import data from "../content/index.yaml";
-import Page from "../components/templates/page";
-import { Button, Section, SectionHeader } from "../components/atoms";
+import { Button, Section, SectionHeader } from '../components/atoms';
+import { HomePageQuery } from '../types/content';
+import { Layout } from '../components/organisms/Layout';
 
 // markup
 const NotFoundPage = () => {
+  const query = useStaticQuery<HomePageQuery>(graphql`
+    {
+      file(name: { eq: "index" }) {
+        childContentYaml {
+          title
+          description
+          image {
+            childImageSharp {
+              gatsbyImageData(placeholder: BLURRED, formats: [PNG], width: 1400, aspectRatio: 1.5)
+            }
+          }
+        }
+      }
+      global: file(name: { eq: "global" }) {
+        childContentYaml {
+          facebookUrl
+          messengerUrl
+          host
+        }
+      }
+    }
+  `);
+
   return (
-    <Page title={data.title} description={data.description}>
+    <Layout {...query.file.childContentYaml} {...query.global.childContentYaml}>
       <Section>
         <SectionHeader
           level={1}
@@ -23,7 +46,7 @@ const NotFoundPage = () => {
           </Link>
         </div>
       </Section>
-    </Page>
+    </Layout>
   );
 };
 

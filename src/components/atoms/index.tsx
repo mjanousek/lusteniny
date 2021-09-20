@@ -10,6 +10,8 @@ import Tag from './tag';
 import Text from './text';
 import Title from './title';
 
+export { Logo } from './Logo';
+
 export {
   Button,
   Card,

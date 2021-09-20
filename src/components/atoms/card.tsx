@@ -1,5 +1,5 @@
 import { Link } from 'gatsby';
-import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image';
+import { GatsbyImage, getImage, IGatsbyImageData } from 'gatsby-plugin-image';
 import React from 'react';
 
 type Props = {
@@ -16,7 +16,7 @@ type Props = {
 export default function Card(props: Props) {
   const image = props.image && (
     <GatsbyImage
-      image={props.image.data}
+      image={getImage(props.image.data)}
       alt={props.image.alt}
       className="transition-all duration-500 transform group-hover:scale-125 h-full"
       imgClassName="rounded-t-lg dark:filter brightness-90"
