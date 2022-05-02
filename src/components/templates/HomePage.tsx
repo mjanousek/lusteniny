@@ -85,7 +85,7 @@ export function HomePage(props: HomePageData) {
                 Registruj svůj tým
               </h3>
               <p className="text-center sm:text-lg leading-relaxed text-gray-700 mb-8">
-                Svůj tým můžeš registrovat naapsáním komentáře s názvém týmu a počtem členů na
+                Svůj tým můžeš registrovat napsáním komentáře s názvem týmu a počtem členů na
                 facebookové události, nebo nám můžeš napsat email.
               </p>
 
