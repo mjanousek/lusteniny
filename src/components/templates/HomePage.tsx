@@ -100,7 +100,7 @@ export function HomePage(props: HomePageData) {
               </a>
 
               <a
-                href=" mailto:mjanousek92@gmail.com?subject=Lu%C5%A1t%C4%9Bniny%202022%20-%20Registrace%20t%C3%BDmu&body=Dobr%C3%BD%20den%2C%0D%0A%0D%0Acht%C4%9Bli%20bychom%20registrovat%20sv%C5%AFj%20t%C3%BDm%20na%20ud%C3%A1losti%20Lu%C5%A1t%C4%9Bniny%202022%20(11.06.2022).%0D%0A%0D%0AN%C3%A1zev%20t%C3%BDmu%3A%20_____%0D%0APo%C4%8Det%20%C4%8Dlen%C5%AF%3A%20_____ "
+                href=" mailto:info@lusteniny.eu?subject=Lu%C5%A1t%C4%9Bniny%202022%20-%20Registrace%20t%C3%BDmu&body=Dobr%C3%BD%20den%2C%0D%0A%0D%0Acht%C4%9Bli%20bychom%20registrovat%20sv%C5%AFj%20t%C3%BDm%20na%20ud%C3%A1losti%20Lu%C5%A1t%C4%9Bniny%202022%20(11.06.2022).%0D%0A%0D%0AN%C3%A1zev%20t%C3%BDmu%3A%20_____%0D%0APo%C4%8Det%20%C4%8Dlen%C5%AF%3A%20_____ "
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 bg-gradient-to-br from-green-500 to-green-600 shadow shadow-green-600/20 rounded-lg font-semibold text-white flex items-center gap-3 justify-center mb-4"
