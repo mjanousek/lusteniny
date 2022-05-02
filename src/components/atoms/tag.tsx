@@ -11,8 +11,8 @@ type Props = {
 
 export default function Tag(props: Props) {
   const color = props.color === "primary" 
-  ? "bg-green-600 text-white dark:text-gray-200"
-  : "bg-white text-green-600 dark:bg-gray-100"
+  ? "bg-green-600 text-white"
+  : "bg-white text-green-600"
 
   return (
     <span className={`${color} ${props.size === "regular" ? "text-sm px-2 py-1" : "text-md font-semibold px-4 py-2"} text-sm px-2 py-1 rounded-md`}>

@@ -58,7 +58,7 @@ export function Layout({
           </script>
         ))}
       </Helmet>
-      <div className="min-h-screen flex flex-col bg-indigo-50 dark:bg-gray-900">
+      <div className="min-h-screen flex flex-col bg-indigo-50 ">
         <Navbar facebookUrl={facebookUrl} messengerUrl={messengerUrl} isFixed={floatingNavbar} />
         <main className="flex-grow">{children}</main>
         <Footer

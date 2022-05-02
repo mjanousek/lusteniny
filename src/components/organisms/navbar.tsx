@@ -16,12 +16,12 @@ export default function Navbar({ facebookUrl, messengerUrl, isFixed }: Props) {
       className={`py-3 ${
         isFixed
           ? 'bg-black bg-opacity-20 absolute top-0 z-40 w-full text-gray-100 text-lg'
-          : 'bg-white  shadow-lg  text-gray-800 dark:bg-gray-800 dark:text-gray-200'
+          : 'bg-white  shadow-lg  text-gray-800 '
       }`}
     >
       <div className="container mx-auto flex flex-wrap px-2 md:px-5 flex-col md:flex-row items-center space-y-4 md:space-y-0 w-full">
         <Link to="/" className="flex title-font font-medium items-center mb-4 md:mb-0">
-          <Logo withName className="h-12 dark:filter brightness-90" />
+          <Logo withName className="h-12 " />
         </Link>
         <div className="md:ml-auto flex flex-wrap items-center  justify-center ">
           <div className="pt-0 space-x-4 md:space-x-8">

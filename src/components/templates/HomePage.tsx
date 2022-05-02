@@ -20,14 +20,14 @@ export function HomePage(props: HomePageData) {
     slidesToScroll: 1,
     prevArrow: (
       <div>
-        <div className="border-2 border-white h-12 w-12 flex justify-center items-center shadow-lg rounded-full text-white hover:bg-white hover:text-green-600 transition-all duration-300 cursor-pointer dark:border-gray-200 dark:text-gray-200">
+        <div className="border-2 border-white h-12 w-12 flex justify-center items-center shadow-lg rounded-full text-white hover:bg-white hover:text-green-600 transition-all duration-300 cursor-pointer">
           <FontAwesomeIcon icon="arrow-left" />
         </div>
       </div>
     ),
     nextArrow: (
       <div>
-        <div className="border-2 border-white h-12 w-12 flex justify-center items-center shadow-lg rounded-full text-white hover:bg-white hover:text-green-600 transition-all duration-300 cursor-pointer dark:border-gray-200 dark:text-gray-200">
+        <div className="border-2 border-white h-12 w-12 flex justify-center items-center shadow-lg rounded-full text-white hover:bg-white hover:text-green-600 transition-all duration-300 cursor-pointer">
           <FontAwesomeIcon icon="arrow-right" />
         </div>
       </div>
@@ -91,11 +91,11 @@ export function HomePage(props: HomePageData) {
           </div>
         </div>
         <div className="container mx-auto text-center transform flex justify-center mt-6">
-          <div className="shadow-lg rounded-full overflow-hidden border-2 border-white dark:border-gray-700">
+          <div className="shadow-lg rounded-full overflow-hidden border-2 border-white ">
             <GatsbyImage
               image={getImage(props.contact.image.childImageSharp)}
               alt="Luštěniny"
-              className="dark:filter brightness-75 h-full"
+              className="h-full"
               imgClassName="object-fit object-center filter brightness-90 h-full"
             />
           </div>

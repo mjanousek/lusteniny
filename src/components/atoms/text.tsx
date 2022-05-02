@@ -18,5 +18,5 @@ export default function Text(props: Props) {
 
   const color = props.color ? 'text-gray-200' : 'text-gray-800';
 
-  return <p className={`${size()} ${color} dark:text-gray-300`}>{props.children}</p>;
+  return <p className={`${size()} ${color} `}>{props.children}</p>;
 }

@@ -19,13 +19,13 @@ export default function Card(props: Props) {
       image={getImage(props.image.data)}
       alt={props.image.alt}
       className="transition-all duration-500 transform group-hover:scale-125 h-full"
-      imgClassName="rounded-t-lg dark:filter brightness-90"
+      imgClassName="rounded-t-lg"
     />
   );
 
   return (
     <div
-      className={`shadow-lg rounded-lg bg-white dark:bg-gray-800 flex flex-col relative ${
+      className={`shadow-lg rounded-lg bg-white lex flex-col relative ${
         props.isFullheight ? 'h-full' : ''
       }`}
     >

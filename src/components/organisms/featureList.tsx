@@ -14,9 +14,9 @@ export default function FeatureList(props: Props) {
       {props.features.map((feature) => (
         <div
           key={feature.title}
-          className="relative p-4 rounded-lg shadow-lg bg-white dark:bg-gray-800 shadow-md text-center"
+          className="relative p-4 rounded-lg shadow-lg bg-white text-center"
         >
-          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center h-20 w-20 rounded-full border-4 border-white bg-green-500 text-gray-100 shadow-lg dark:bg-green-600 dark:border-gray-700 dark:text-gray-200">
+          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center h-20 w-20 rounded-full border-4 border-white bg-green-500 text-gray-100 shadow-lg">
             <FontAwesomeIcon icon={feature.icon} size="2x" />
           </div>
           <div className="mt-9 mb-4">

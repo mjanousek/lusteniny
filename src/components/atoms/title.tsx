@@ -20,7 +20,7 @@ export default function Title(props: Props) {
 
   const color = props.color ? 'text-white' : 'text-black';
 
-  const className = `font-quicksand  tracking-tight ${fontSize()} ${color} dark:text-gray-200`;
+  const className = `font-quicksand  tracking-tight ${fontSize()} ${color} `;
   const Tag = (`h${props.level}`) as keyof JSX.IntrinsicElements;
 
   return <Tag className={className}>{props.children}</Tag>;

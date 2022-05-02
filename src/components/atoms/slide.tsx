@@ -14,7 +14,7 @@ type Props = {
 };
 
 export default function Slide(props: Props) {
-  const titleClassName = 'font-quicksand font-bold text-white text-4xl md:text-6xl lg:text-8xl   mb-4 dark:text-gray-100';
+  const titleClassName = 'font-quicksand font-bold text-white text-4xl md:text-6xl lg:text-8xl   mb-4';
 
   return (
     <div className="h-full w-full relative flex items-center">
@@ -34,7 +34,7 @@ export default function Slide(props: Props) {
             <p className="mt-2 mb-4 text-white lg:text-md dark-text-gray-100">{props.subtitle}</p>
           )}
 
-          <p className="text-lg text-gray-100 font-bold font-quicksand my-4 dark:text-gray-200">
+          <p className="text-lg text-gray-100 font-bold font-quicksand my-4 ">
             {props.description}
           </p>
           <Link to={props.link} className="mt-4">
