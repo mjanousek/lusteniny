@@ -5,10 +5,8 @@ import Slider from 'react-slick';
 
 import { Button, ExternalLink, Section, SectionHeader, Slide, Text, Title } from '../atoms';
 import { EventList, FeatureList } from '../organisms';
-import CNGroupLogo from '../atoms/sponsors/CngroupLogo';
-import ZivyZlinLogo from '../atoms/sponsors/ZivyZlinLogo';
-import { GatsbyImage } from 'gatsby-plugin-image';
-import { getImage } from 'gatsby-plugin-image';
+import CNGroupLogo from '../atoms/sponsors/cngroupLogo';
+import ZivyZlinLogo from '../atoms/sponsors/zivyZlinLogo';
 
 export function HomePage(props: HomePageData) {
   const settings = {
