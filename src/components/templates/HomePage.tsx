@@ -90,16 +90,6 @@ export function HomePage(props: HomePageData) {
             </div>
           </div>
         </div>
-        <div className="container mx-auto text-center transform flex justify-center mt-6">
-          <div className="shadow-lg rounded-full overflow-hidden border-2 border-white ">
-            <GatsbyImage
-              image={getImage(props.contact.image.childImageSharp)}
-              alt="Luštěniny"
-              className="h-full"
-              imgClassName="object-fit object-center filter brightness-90 h-full"
-            />
-          </div>
-        </div>
       </div>
 
       <Section>

@@ -1,47 +1,38 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
+const defaultTheme = require('tailwindcss/defaultTheme');
+const colors = require('tailwindcss/colors');
 
 module.exports = {
-  purge: ["./src/**/*.{js,jsx,ts,tsx}"],
-  darkMode: "media", // or 'media' or 'class'
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  darkMode: 'media', // or 'media' or 'class'
   theme: {
+    // colors: {
+    //   ...defaultTheme.colors,
+    //   green: colors.emerald,
+    // },
     fontFamily: {
       sans: [
-        "Inter",
-        "Quicksand",
-        "sans-serif",
-        " system-ui",
-        "-apple-system",
-        "Segoe UI",
-        "Roboto",
-        "Helvetica",
-        "Arial",
-        "sans-serif",
-        "Apple Color Emoji",
-        "Segoe UI Emoji",
+        'Quicksand',
+        'sans-serif',
+        ' system-ui',
+        '-apple-system',
+        'Segoe UI',
+        'Roboto',
+        'Helvetica',
+        'Arial',
+        'sans-serif',
+        'Apple Color Emoji',
+        'Segoe UI Emoji',
       ],
-      quicksand: [
-        "Quicksand",
-        "sans-serif",
-        " system-ui",
-        "-apple-system",
-        "Segoe UI",
-        "Roboto",
-        "Helvetica",
-        "Arial",
-        "sans-serif",
-        "Apple Color Emoji",
-        "Segoe UI Emoji",
-      ],
+    },
+    extend: {
+      colors: {
+        green: colors.emerald,
+      },
     },
   },
 
   variants: {
-    extend: {
-      // ...
-
-      filter: ["dark"],
-      scale: ["group-hover"]
-    },
+    extend: {},
   },
   plugins: [],
 };

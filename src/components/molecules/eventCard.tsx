@@ -1,11 +1,10 @@
-import { Link } from "gatsby";
-import { getImage, IGatsbyImageData } from "gatsby-plugin-image";
-import * as React from "react";
-import { Event } from "../../types/content";
+import { Link } from 'gatsby';
+import { getImage, IGatsbyImageData } from 'gatsby-plugin-image';
+import * as React from 'react';
+import { Event } from '../../types/content';
 
-import { Button, Tag, Text, Title } from "../atoms";
-import Card from "../atoms/card";
-
+import { Button, Tag, Text, Title } from '../atoms';
+import Card from '../atoms/card';
 
 export default function EventCard(props: Event) {
   const image = {
@@ -15,11 +14,11 @@ export default function EventCard(props: Event) {
   };
   const trimmedDescription =
     props.description.length > 200
-      ? props.description.substring(0, 200) + " ..."
+      ? props.description.substring(0, 200) + ' ...'
       : props.description;
 
   return (
-    <article>
+    <article className="h-full">
       <Card
         image={image}
         body={
@@ -31,7 +30,7 @@ export default function EventCard(props: Event) {
             </div>
             <div className="mb-4">
               <Tag size="regular" icon="calendar-check" color="primary">
-                {new Date(props.date).toLocaleDateString("cs-CZ")}
+                {new Date(props.date).toLocaleDateString('cs-CZ')}
               </Tag>
             </div>
             <Text size="normal">{trimmedDescription}</Text>

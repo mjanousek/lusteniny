@@ -18,8 +18,8 @@ export default function Card(props: Props) {
     <GatsbyImage
       image={getImage(props.image.data)}
       alt={props.image.alt}
-      className="transition-all duration-500 transform group-hover:scale-125 h-full"
-      imgClassName="rounded-t-lg"
+      className="h-full group-hover:scale-110 transition-all duration-500"
+      imgClassName="rounded-t-lg "
     />
   );
 
@@ -29,17 +29,16 @@ export default function Card(props: Props) {
         props.isFullheight ? 'h-full' : ''
       }`}
     >
-      {props.image
-        && (props.image.link ? (
-          <Link
-            to={props.image.link}
-            className="group overflow-hidden rounded-t-lg"
-          >
-            {image}
-          </Link>
-        ) : (
-          <>{image}</>
-        ))}
+      <div className="overflow-hidden">
+        {props.image &&
+          (props.image.link ? (
+            <Link to={props.image.link} className="group overflow-hidden rounded-t-lg">
+              {image}
+            </Link>
+          ) : (
+            <>{image}</>
+          ))}
+      </div>
       <div className="flex-grow flex flex-col rounded-lg">
         {props.body && <div className="flex-grow p-4">{props.body}</div>}
         {props.footer && <div className="">{props.footer}</div>}
