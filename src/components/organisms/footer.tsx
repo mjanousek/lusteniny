@@ -1,44 +1,31 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'gatsby';
 import * as React from 'react';
 
-import { ExternalLink, Logo } from '../atoms';
-
-type Props = {
-  facebookUrl: string;
-  messengerUrl: string;
-};
-
-export default function Footer({ facebookUrl, messengerUrl }: Props) {
-  return (
-    <footer className="mt-12 py-8 border-t border-gray-300 bg-white text-gray-800">
-      <div className="container px-5 mx-auto flex items-center sm:flex-row flex-col space-y-8 sm:space-y-0">
+export const Footer = () => (
+  <footer className="to-green-60 bg-gradient-to-b from-green-500 to-green-600 py-12">
+    <div className="container mx-auto px-[25px] text-center lg:px-[50px]">
+      <h2 className="mb-[20px] text-3xl font-bold text-white">Luštěniny</h2>
+      <nav className="mb-[30px] flex flex-col justify-center gap-y-2 text-xl sm:flex-row">
         <Link
+          className="flex h-full items-center justify-center rounded px-[25px] text-green-50 transition duration-300  hover:text-white focus:outline-none focus:ring-2 focus:ring-green-400"
           to="/"
-          className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
         >
-          <Logo withName className="h-12 "/>
+          Domů
         </Link>
-        <p className="text-sm sm:ml-4 sm:pl-4 sm:border-l-2 border-gray-300  sm:py-2 sm:mt-0 mt-4 space-x-2">
-          <span>© 2020 - 2021 Luštěniny </span>
-        </p>
-        <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start  space-x-8">
-          <ExternalLink
-            href={facebookUrl}
-            className="hover:text-green-600 transition-all duration-300"
-            title="Facebook - @lusteniny"
-          >
-            <FontAwesomeIcon icon={['fab', 'facebook-f']} size="lg" />
-          </ExternalLink>
-          <ExternalLink
-            href={messengerUrl}
-            className="hover:text-green-600 transition-all duration-300"
-            title="Messnger - @lusteniny"
-          >
-            <FontAwesomeIcon icon={['fab', 'facebook-messenger']} size="lg" />
-          </ExternalLink>
-        </span>
-      </div>
-    </footer>
-  );
-}
+        <Link
+          className="flex h-full items-center justify-center rounded px-[25px] text-green-50 transition duration-300  hover:text-white focus:outline-none focus:ring-2 focus:ring-green-400"
+          to="/archiv"
+        >
+          Archiv
+        </Link>
+        <Link
+          className="flex h-full items-center justify-center rounded px-[25px] text-green-50 transition duration-300  hover:text-white focus:outline-none focus:ring-2 focus:ring-green-400"
+          to="/aktuality/lusteniny-2022"
+        >
+          Luštěniny 2022
+        </Link>
+      </nav>
+      <p className="text-green-100">Copyright 2020 - {new Date().getFullYear()} Luštěniny</p>
+    </div>
+  </footer>
+);

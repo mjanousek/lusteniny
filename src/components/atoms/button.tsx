@@ -1,34 +1,56 @@
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
+import { IconName } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'gatsby';
 import * as React from 'react';
+import { classNames } from '../../utils';
 
-type Props = {
-  children?: React.ReactNode;
-  icon?: IconProp;
-  size?: 'large' | 'normal' | 'circle';
+type ButtonInternalLinkProps = {
+  variant: 'green' | 'blue';
+  to: string;
+  text: string;
+  icon: IconProp;
 };
 
-export default function Button(props: Props) {
-  const size = () => {
-    switch (props.size) {
-      case 'large':
-        return 'px-8 py-4 text-lg';
-      case 'circle':
-        return 'h-14 w-14';
-      default:
-        return 'px-6 py-3';
-    }
-  };
+export const ButtonInternalLink = ({ variant, to, text, icon }: ButtonInternalLinkProps) => (
+  <Link
+    to={to}
+    className="group mb-3 block  rounded-lg font-semibold text-white shadow shadow-green-800 focus:outline-none"
+  >
+    <div className="flex items-center justify-center gap-3 rounded-lg bg-green-600 px-[30px] py-[15px] transition duration-300 group-hover:bg-green-500 group-focus:bg-green-500 group-active:translate-y-[2px]">
+      <span>{text}</span>
+      <FontAwesomeIcon icon={icon} />
+    </div>
+  </Link>
+);
 
-  return (
-    <button
-      className={`${size()} border-4 border-white shadow-md rounded-full transition-all duration-200 text-base font-medium bg-green-600 text-gray-100 hover:bg-green-700 hover:text-white `}
+type ButtonExternalLinkProps = {
+  variant: 'green' | 'blue';
+  href: string;
+  text: string;
+  icon: IconProp;
+};
+
+export const ButtonExternalLink = ({ variant, href, text, icon }: ButtonExternalLinkProps) => (
+  <a
+    href={href}
+    target="_blank"
+    rel="noopener noreferrer external"
+    className={classNames(
+      'focus:outline-none" group mb-3 block rounded-lg font-semibold text-white shadow',
+      variant === 'green' && 'shadow-green-800',
+      variant === 'blue' && 'shadow-blue-800',
+    )}
+  >
+    <div
+      className={classNames(
+        'flex items-center justify-center gap-3 rounded-lg px-8 py-4 transition duration-300 group-active:translate-y-[2px]',
+        variant === 'green' && 'bg-green-600 group-hover:bg-green-500 group-focus:bg-green-500',
+        variant === 'blue' && 'bg-blue-600 group-hover:bg-blue-500 group-focus:bg-blue-500',
+      )}
     >
-      {props.children && <span>{props.children}</span>}
-      <FontAwesomeIcon
-        icon={props.icon}
-        className={props.children ? 'ml-2' : ''}
-      />
-    </button>
-  );
-}
+      <span>{text}</span>
+      <FontAwesomeIcon icon={icon} />
+    </div>
+  </a>
+);

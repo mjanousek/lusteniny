@@ -1,21 +1,20 @@
 module.exports = {
   siteMetadata: {
-    title: "Lusteniny",
-    siteUrl: "https://lusteniny.eu",
+    title: 'Lusteniny',
+    siteUrl: 'https://lusteniny.eu',
   },
   plugins: [
-    "gatsby-plugin-sass",
-    "gatsby-plugin-postcss",
-    "gatsby-plugin-image",
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
-    "gatsby-transformer-yaml",
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap",
+    'gatsby-plugin-postcss',
+    'gatsby-plugin-image',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    'gatsby-transformer-yaml',
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sitemap',
     {
-      resolve: "gatsby-plugin-google-analytics",
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: "UA-179555801-5",
+        trackingId: 'UA-179555801-5',
         head: true,
         anonymize: true,
         respectDNT: true,
@@ -25,9 +24,9 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: "src/content/images/Logo.png",
+        icon: 'src/content/images/Logo.png',
         name: `Luštěniny`,
         short_name: `Luštěniny`,
         start_url: `/`,
@@ -37,31 +36,24 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-robots-txt",
+      resolve: 'gatsby-plugin-robots-txt',
       options: {
-        policy: [{ userAgent: "*", allow: "/" }],
+        policy: [{ userAgent: '*', allow: '/' }],
       },
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "images",
-        path: "./src/content/",
+        name: 'images',
+        path: './src/content/',
       },
     },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          `Poppins\:400,500,600,700`,
-          `Quicksand\:400,500,600,700`,
-          `Inter\:400,500,600,700`,
-        ],
-        display: "swap",
+        fonts: [`Quicksand\:400,500,600,700`],
+        display: 'swap',
       },
     },
   ],
-  flags: {
-    DEV_SSR: false,
-  },
 };

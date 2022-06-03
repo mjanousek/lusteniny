@@ -1,53 +1,111 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Menu, Transition } from '@headlessui/react';
 import { Link } from 'gatsby';
 import * as React from 'react';
+import { Logo } from '../atoms';
+import { classNames } from '../../utils';
 
-import { ExternalLink, Logo } from '../atoms';
-
-type Props = {
-  facebookUrl: string;
-  messengerUrl: string;
-  isFixed?: boolean;
+export type Props = {
+  hasBackground?: boolean;
 };
 
-export default function Navbar({ facebookUrl, messengerUrl, isFixed }: Props) {
-  return (
-    <nav
-      className={`py-3 ${
-        isFixed
-          ? 'bg-black bg-opacity-20 absolute top-0 z-40 w-full text-gray-100 text-lg'
-          : 'bg-white  shadow-lg  text-gray-800 '
-      }`}
-    >
-      <div className="container mx-auto flex flex-wrap px-2 md:px-5 flex-col md:flex-row items-center space-y-4 md:space-y-0 w-full">
-        <Link to="/" className="flex title-font font-medium items-center mb-4 md:mb-0">
-          <Logo withName className="h-12 " />
+export const Navbar = ({ hasBackground }: Props) => (
+  <header className={classNames(hasBackground ? 'bg-green-600 shadow shadow-green-800' : '')}>
+    <nav className="relative z-40 flex items-stretch justify-between bg-transparent">
+      <Link
+        to="/"
+        className="flex items-center gap-3 px-[25px] py-[0px] text-2xl font-bold text-green-50 transition duration-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-green-400 sm:px-[50px] md:py-[25px]"
+      >
+        <Logo className="h-[30px]" />
+        Luštěniny
+      </Link>
+      <div className="hidden items-stretch text-xl text-white md:flex">
+        <Link
+          className="flex h-full items-center justify-center px-[25px] text-green-100 transition duration-300 hover:bg-green-500 hover:text-white  focus:outline-none focus:ring-2 focus:ring-green-400 sm:px-[50px]"
+          to="/"
+        >
+          Domů
         </Link>
-        <div className="md:ml-auto flex flex-wrap items-center  justify-center ">
-          <div className="pt-0 space-x-4 md:space-x-8">
-            <Link to="/" className="hover:text-green-600 transition-all duration-300">
-              Domů
-            </Link>
-            <Link to="/udalosti" className="hover:text-green-600 transition-all duration-300">
-              Události
-            </Link>
-            <ExternalLink
-              href={facebookUrl}
-              className="hover:text-green-600 transition-all duration-300"
-              title="Facebook - @lusteniny"
-            >
-              <FontAwesomeIcon icon={['fab', 'facebook-f']} size="lg" />
-            </ExternalLink>
-            <ExternalLink
-              href={messengerUrl}
-              className="hover:text-green-600 transition-all duration-300"
-              title="Messenger - @lusteniny"
-            >
-              <FontAwesomeIcon icon={['fab', 'facebook-messenger']} size="lg" />
-            </ExternalLink>
-          </div>
-        </div>
+        <Link
+          className="flex h-full items-center justify-center px-[25px] text-green-100 transition duration-300 hover:bg-green-500 hover:text-white  focus:outline-none focus:ring-2 focus:ring-green-400 sm:px-[50px]"
+          to="/archiv"
+        >
+          Archiv
+        </Link>
+        <Link
+          className="flex h-full items-center justify-center px-[25px] text-green-100 transition duration-300 hover:bg-green-500 hover:text-white  focus:outline-none focus:ring-2 focus:ring-green-400 sm:px-[50px]"
+          to="/aktuality/lusteniny-2022"
+        >
+          Luštěniny 2022
+        </Link>
       </div>
+
+      <Menu as="div" className=" flex items-center justify-center md:hidden">
+        {({ open }) => (
+          <>
+            <Menu.Button className="px-[25px] py-[25px] text-green-100 hover:text-white focus:text-white focus:outline-none">
+              <FontAwesomeIcon icon={open ? 'times' : 'bars'} />
+            </Menu.Button>
+
+            <Transition
+              as={React.Fragment}
+              enter="transition linear duration-150"
+              enterFrom="transform -translate-x-full"
+              enterTo="transform"
+              leave="transition linear duration-150"
+              leaveFrom="transform -translate-x-full"
+              leaveTo="transform"
+            >
+              <Menu.Items
+                className={classNames(
+                  'absolute left-0 right-0 top-full z-50 overflow-hidden whitespace-nowrap bg-green-600 text-center focus:outline-none',
+                  hasBackground ? 'bg-green-600 shadow shadow-green-800' : '',
+                )}
+              >
+                <Menu.Item>
+                  {({ active }) => (
+                    <Link
+                      className={classNames(
+                        'block px-6 py-3 text-green-50',
+                        active ? 'bg-green-50 text-green-800' : '',
+                      )}
+                      to="/"
+                    >
+                      Domů
+                    </Link>
+                  )}
+                </Menu.Item>
+                <Menu.Item>
+                  {({ active }) => (
+                    <Link
+                      className={classNames(
+                        'block px-6 py-3 text-green-50',
+                        active ? 'bg-green-50 text-green-800' : '',
+                      )}
+                      to="/archiv"
+                    >
+                      Archiv
+                    </Link>
+                  )}
+                </Menu.Item>
+                <Menu.Item>
+                  {({ active }) => (
+                    <Link
+                      className={classNames(
+                        'block px-6 py-3 text-green-50',
+                        active ? 'bg-green-50 text-green-800' : '',
+                      )}
+                      to="/aktuality/lusteniny-2022"
+                    >
+                      Luštěniny 2022
+                    </Link>
+                  )}
+                </Menu.Item>
+              </Menu.Items>
+            </Transition>
+          </>
+        )}
+      </Menu>
     </nav>
-  );
-}
+  </header>
+);
