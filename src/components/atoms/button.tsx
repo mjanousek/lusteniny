@@ -15,7 +15,7 @@ type ButtonInternalLinkProps = {
 export const ButtonInternalLink = ({ variant, to, text, icon }: ButtonInternalLinkProps) => (
   <Link
     to={to}
-    className="group mb-3 block  rounded-lg font-semibold text-white shadow shadow-green-800 focus:outline-none"
+    className="group mb-3 block rounded-lg text-lg font-semibold text-white shadow shadow-green-800/25 focus:outline-none"
   >
     <div className="flex items-center justify-center gap-3 rounded-lg bg-green-600 px-[30px] py-[15px] transition duration-300 group-hover:bg-green-500 group-focus:bg-green-500 group-active:translate-y-[2px]">
       <span>{text}</span>

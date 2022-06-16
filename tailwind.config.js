@@ -2,6 +2,7 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 const colors = require('tailwindcss/colors');
 
 module.exports = {
+  important: true,
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   darkMode: 'media', // or 'media' or 'class'
   theme: {
@@ -39,10 +40,6 @@ module.exports = {
           800: '#00346b',
           900: '#002a57',
         },
-      },
-      boxShadow: {
-        sm: '0px 2px 0px rgba(0, 0, 0, 0.3)',
-        DEFAULT: '0px 4px 0px rgba(0, 0, 0, 0.3)',
       },
     },
   },

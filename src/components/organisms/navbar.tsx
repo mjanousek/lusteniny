@@ -28,9 +28,9 @@ export const Navbar = ({ hasBackground }: Props) => (
         </Link>
         <Link
           className="flex h-full items-center justify-center px-[25px] text-green-100 transition duration-300 hover:bg-green-500 hover:text-white  focus:outline-none focus:ring-2 focus:ring-green-400 sm:px-[50px]"
-          to="/archiv"
+          to="/udalosti"
         >
-          Archiv
+          Události
         </Link>
         <Link
           className="flex h-full items-center justify-center px-[25px] text-green-100 transition duration-300 hover:bg-green-500 hover:text-white  focus:outline-none focus:ring-2 focus:ring-green-400 sm:px-[50px]"
@@ -82,22 +82,9 @@ export const Navbar = ({ hasBackground }: Props) => (
                         'block px-6 py-3 text-green-50',
                         active ? 'bg-green-50 text-green-800' : '',
                       )}
-                      to="/archiv"
+                      to="/udalosti"
                     >
-                      Archiv
-                    </Link>
-                  )}
-                </Menu.Item>
-                <Menu.Item>
-                  {({ active }) => (
-                    <Link
-                      className={classNames(
-                        'block px-6 py-3 text-green-50',
-                        active ? 'bg-green-50 text-green-800' : '',
-                      )}
-                      to="/aktuality/lusteniny-2022"
-                    >
-                      Luštěniny 2022
+                      Události
                     </Link>
                   )}
                 </Menu.Item>
