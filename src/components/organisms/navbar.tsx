@@ -10,8 +10,13 @@ export type Props = {
 };
 
 export const Navbar = ({ hasBackground }: Props) => (
-  <header className={classNames(hasBackground ? 'bg-green-600 shadow shadow-green-800' : '')}>
-    <nav className="relative z-40 flex items-stretch justify-between bg-transparent">
+  <header
+    className={classNames(
+      'relative z-40 ',
+      hasBackground ? 'bg-green-600 shadow shadow-green-800' : 'bg-green-600/90',
+    )}
+  >
+    <nav className="flex items-stretch justify-between bg-transparent">
       <Link
         to="/"
         className="flex items-center gap-3 px-[25px] py-[0px] text-2xl font-bold text-green-50 transition duration-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-green-400 sm:px-[50px] md:py-[25px]"
@@ -19,24 +24,24 @@ export const Navbar = ({ hasBackground }: Props) => (
         <Logo className="h-[30px]" />
         Luštěniny
       </Link>
-      <div className="hidden items-stretch text-xl text-white md:flex">
+      <div className="hidden items-stretch text-xl font-medium text-white md:flex">
         <Link
-          className="flex h-full items-center justify-center px-[25px] text-green-100 transition duration-300 hover:bg-green-500 hover:text-white  focus:outline-none focus:ring-2 focus:ring-green-400 sm:px-[50px]"
+          className="flex h-full items-center justify-center px-[25px] text-green-50 transition duration-300 hover:bg-green-500 hover:text-white  focus:outline-none focus:ring-2 focus:ring-green-400 sm:px-[50px]"
           to="/"
         >
           Domů
         </Link>
         <Link
-          className="flex h-full items-center justify-center px-[25px] text-green-100 transition duration-300 hover:bg-green-500 hover:text-white  focus:outline-none focus:ring-2 focus:ring-green-400 sm:px-[50px]"
+          className="flex h-full items-center justify-center px-[25px] text-green-50 transition duration-300 hover:bg-green-500 hover:text-white  focus:outline-none focus:ring-2 focus:ring-green-400 sm:px-[50px]"
           to="/udalosti"
         >
           Události
         </Link>
         <Link
-          className="flex h-full items-center justify-center px-[25px] text-green-100 transition duration-300 hover:bg-green-500 hover:text-white  focus:outline-none focus:ring-2 focus:ring-green-400 sm:px-[50px]"
-          to="/aktuality/lusteniny-2022"
+          className="flex h-full items-center justify-center px-[25px] text-green-50 transition duration-300 hover:bg-green-500 hover:text-white  focus:outline-none focus:ring-2 focus:ring-green-400 sm:px-[50px]"
+          to="/Kontakt"
         >
-          Luštěniny 2022
+          Kontakt
         </Link>
       </div>
 

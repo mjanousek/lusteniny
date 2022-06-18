@@ -20,7 +20,7 @@ export type PageData = {
 };
 
 export type EventPageData = PageData & {
-  date: Date;
+  date: string;
   galleryLink: string;
   winners: string[];
   cyphers: Cypher[];

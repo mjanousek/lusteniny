@@ -14,6 +14,8 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { useState } from 'react';
 import { classNames } from '../utils';
+import { ButtonExternalLink, Container, H1, H2, TimeTag } from '../components/atoms';
+import { CallToAction } from '../components/organisms/CallToAction';
 
 export function Event(props: EventPageQuery) {
   const event = props.data.file.childUdalostiYaml;
@@ -22,48 +24,97 @@ export function Event(props: EventPageQuery) {
 
   return (
     <div>
-      <Navbar hasBackground />
+      <Navbar />
       <main>
-        <section>
-          <div className="p-8">
+        {/* Main header */}
+        <section className="relative -mt-[82px] pb-24">
+          <div className="relative mb-12">
             <GatsbyImage
               image={getImage(event.image.childImageSharp)}
               alt={`${event.title}-${new Date(event.date).toLocaleDateString('cs')}`}
               objectPosition="center"
-              className="h-[30rem] w-full rounded-[16px] shadow shadow-gray-800"
+              className="aspect-[4/3] max-h-[20rem] w-full saturate-[125%] sm:max-h-[24rem] md:max-h-[28rem] lg:max-h-[32rem] xl:max-h-[36rem]"
             />
+            <svg
+              className="-translate-y-f absolute bottom-0 left-0 right-0 -mb-px w-full text-white"
+              viewBox="0 0 1922 97"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1921.5 96.4999H0.5V3.49995C382.084 -15.768 659.5 64.5 993 71.4999C1326.5 78.4999 1719.49 65.8273 1921.5 3.49995V96.4999Z"
+                fill="currentColor"
+                stroke="currentColor"
+              />
+            </svg>
           </div>
-          <div className="flex justify-center">
-            <div className="rounded-[16px]  bg-green-600 py-3 px-6 font-medium text-white">
-              {new Date(event.date).toLocaleDateString('cs')}
+
+          <Container className="max-w-7xl text-center">
+            <H1>{event.title}</H1>
+            <div className="mb-8 flex justify-center">
+              <TimeTag time={event.date} />
             </div>
-          </div>
-          <div className="p-8"></div>
+            <p className="mb-12 text-center leading-loose text-gray-800 sm:text-lg sm:leading-loose lg:text-xl lg:leading-loose">
+              {event.description}
+            </p>
+            <div className="flex justify-center">
+              <ButtonExternalLink
+                variant="green"
+                href={event.galleryLink}
+                text="Zobrazit fotogalerii"
+                icon={['fab', 'facebook']}
+              />
+            </div>
+          </Container>
         </section>
 
-        <section className="py-24">
-          <div className="container mx-auto px-4">{event.description}</div>
+        {/* Winners */}
+        <section>
+          <H2>Vítězné týmy</H2>
+          <div className="relative mt-32 xl:mt-40">
+            <svg
+              className="w-full"
+              viewBox="0 0 1913 155"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1913 154.999H-7C-7 154.999 577.574 -0.374917 960 0.500019C1337.03 1.36261 1913 154.999 1913 154.999Z"
+                fill="#F2F7FB"
+              />
+            </svg>
+            {event.winners.map((winner, index) => (
+              <ul
+                className={classNames(
+                  'absolute text-center',
+                  index === 0 ? 'left-1/2 bottom-[150%] -translate-x-1/2 sm:bottom-full' : '',
+                  index === 1
+                    ? 'left-[20%] bottom-full -translate-x-1/2 translate-y-1/3 lg:left-[25%] xl:left-[30%]'
+                    : '',
+                  index === 2
+                    ? 'left-[80%] bottom-full -translate-x-1/2 translate-y-1/3 lg:left-[75%] xl:left-[70%]'
+                    : '',
+                )}
+              >
+                <li>
+                  <span className="block pb-2 font-medium text-gray-700 sm:text-lg lg:pb-4 lg:text-xl xl:text-2xl">
+                    {winner}
+                  </span>
+                  <span className="mx-auto -mb-10 flex h-14 w-14 items-center justify-center rounded-full border-2 border-green-600 bg-green-100 text-3xl font-bold text-green-700 sm:h-20 sm:w-20">
+                    {index + 1}
+                  </span>
+                </li>
+              </ul>
+            ))}
+          </div>
         </section>
 
         {/* Cyphers */}
-        <section className="bg-blue-50">
-          <svg
-            className="w-full -translate-y-1 text-white"
-            viewBox="0 0 1919 140"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M1918.5 0C697.254 40.4576 255.671 70.4599 0 140V0H1918.5Z"
-              stroke="currentColor"
-              fill="currentColor"
-            />
-          </svg>
-
-          <div className="container mx-auto py-16 px-4 md:py-12 lg:py-8 xl:py-4">
+        <section className="bg-blue-50 pt-8">
+          <Container className="py-16 md:py-12 lg:py-8 xl:py-4">
             <header className="mx-auto mb-16 max-w-2xl text-center">
-              <h2 className="mb-4 text-5xl font-bold text-gray-900">Šifry a jejich řešení</h2>
-              <p className="text-lg font-medium text-gray-700">
+              <H2>Šifry a jejich řešení</H2>
+              <p className="font-medium text-gray-700 md:text-lg">
                 Všechny šifry, jejich řešení a nápovědy jsou vám k dispozici
               </p>
             </header>
@@ -182,7 +233,7 @@ export function Event(props: EventPageQuery) {
                 </div>
               ))}
             </div>
-          </div>
+          </Container>
           <svg
             className="w-full translate-y-1 text-white"
             viewBox="0 0 1927 149"
@@ -352,12 +403,10 @@ export function Event(props: EventPageQuery) {
         {/* Bonus information */}
         {event.bonusInformation ? (
           <section className="py-24">
-            <div className="container mx-auto max-w-7xl px-4">
+            <Container className="max-w-7xl">
               <header className="mx-auto mb-16 max-w-2xl text-center">
-                <h2 className="mb-4 text-5xl font-bold text-gray-900">
-                  Bonusové informace k šifám
-                </h2>
-                <p className="text-lg font-medium text-gray-700">
+                <H2>Bonusové informace k šifám</H2>
+                <p className="font-medium text-gray-700 md:text-lg">
                   Každá šifra obsahuje menší, či delší doplňující informaci, která se váže buď s
                   danou šifrou, nebo se stanovištěm šifry.
                 </p>
@@ -374,24 +423,21 @@ export function Event(props: EventPageQuery) {
                   </div>
                 </div>
               ))}
-            </div>
+            </Container>
           </section>
         ) : (
           <section className="py-24">
-            <div className="container mx-auto max-w-7xl px-4">
-              <header className="mx-auto mb-16 max-w-2xl text-center">
-                <h2 className="mb-4 text-5xl font-bold text-gray-900">
-                  Bonusové informace k šifám
-                </h2>
-                <p className="mb-8 text-lg font-medium text-gray-700">
-                  Tento ročník bohužel neobsahoval žádné bonusové informace k šifrám.
-                </p>
-                <FontAwesomeIcon icon={'question'} className="text-green-500" size="2x" />
-              </header>
-            </div>
+            <Container className=" mb-16 max-w-2xl text-center">
+              <H2>Bonusové informace k šifám</H2>
+              <p className="mb-8 font-medium text-gray-700 md:text-lg">
+                Tento ročník bohužel neobsahoval žádné bonusové informace k šifrám.
+              </p>
+              <FontAwesomeIcon icon={'question'} className="text-green-500" size="2x" />
+            </Container>
           </section>
         )}
       </main>
+      <CallToAction />
       <Footer />
     </div>
   );
