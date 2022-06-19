@@ -3,7 +3,7 @@ import { Dialog, Disclosure, Transition } from '@headlessui/react';
 import { graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import React, { Fragment } from 'react';
-import { Footer, Navbar } from '../components/organisms';
+import { Footer, Navbar, CallToAction } from '../components/organisms';
 
 import { Cypher, EventPageQuery } from '../types/content';
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
@@ -14,13 +14,10 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { useState } from 'react';
 import { classNames } from '../utils';
-import { ButtonExternalLink, Container, H1, H2, TimeTag } from '../components/atoms';
-import { CallToAction } from '../components/organisms/CallToAction';
+import { ButtonExternalLink } from '../components/atoms';
 
 export function Event(props: EventPageQuery) {
   const event = props.data.file.childUdalostiYaml;
-  const [activeCypher, setActiveCypher] = useState<Cypher>(event.cyphers[0]);
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <div>
@@ -30,7 +27,7 @@ export function Event(props: EventPageQuery) {
         <section className="relative -mt-[82px] pb-24">
           <div className="relative mb-12">
             <GatsbyImage
-              image={getImage(event.image.childImageSharp)}
+              image={getImage(event.image.childImageSharp) as any}
               alt={`${event.title}-${new Date(event.date).toLocaleDateString('cs')}`}
               objectPosition="center"
               className="aspect-[4/3] max-h-[20rem] w-full saturate-[125%] sm:max-h-[24rem] md:max-h-[28rem] lg:max-h-[32rem] xl:max-h-[36rem]"
@@ -49,10 +46,17 @@ export function Event(props: EventPageQuery) {
             </svg>
           </div>
 
-          <Container className="max-w-7xl text-center">
-            <H1>{event.title}</H1>
+          <div className="container mx-auto max-w-7xl px-4 text-center sm:px-8 md:px-12">
+            <h1 className="mb-6 text-3xl font-bold text-gray-900 sm:text-4xl md:text-5xl lg:text-6xl">
+              {event.title}
+            </h1>
             <div className="mb-8 flex justify-center">
-              <TimeTag time={event.date} />
+              <time
+                dateTime={new Date(event.date).toISOString()}
+                className="block rounded-[8px] bg-blue-100 px-[20px] py-[10px] text-sm font-semibold text-blue-500 sm:text-base"
+              >
+                {new Date(event.date).toLocaleDateString('cs')}{' '}
+              </time>
             </div>
             <p className="mb-12 text-center leading-loose text-gray-800 sm:text-lg sm:leading-loose lg:text-xl lg:leading-loose">
               {event.description}
@@ -65,12 +69,14 @@ export function Event(props: EventPageQuery) {
                 icon={['fab', 'facebook']}
               />
             </div>
-          </Container>
+          </div>
         </section>
 
         {/* Winners */}
         <section>
-          <H2>Vítězné týmy</H2>
+          <h2 className="mb-4 text-center text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl lg:text-5xl">
+            Vítězné týmy
+          </h2>
           <div className="relative mt-32 xl:mt-40">
             <svg
               className="w-full"
@@ -111,10 +117,12 @@ export function Event(props: EventPageQuery) {
 
         {/* Cyphers */}
         <section className="bg-blue-50 pt-8">
-          <Container className="py-16 md:py-12 lg:py-8 xl:py-4">
+          <div className="container mx-auto  px-4 py-16 sm:px-8 md:px-12 md:py-12 lg:py-8 xl:py-4">
             <header className="mx-auto mb-16 max-w-2xl text-center">
-              <H2>Šifry a jejich řešení</H2>
-              <p className="font-medium text-gray-700 md:text-lg">
+              <h2 className="mb-4 text-center text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl lg:text-5xl">
+                Šifry a jejich řešení
+              </h2>
+              <p className="mb-12 text-center font-medium leading-relaxed text-gray-700 sm:mb-20">
                 Všechny šifry, jejich řešení a nápovědy jsou vám k dispozici
               </p>
             </header>
@@ -137,20 +145,11 @@ export function Event(props: EventPageQuery) {
                       ))}
                     </div>
                   )}
-                  <button
-                    title="Zobrazit na celou obrazovku"
-                    className="absolute right-4 top-4 z-30 flex h-6 w-6 items-center justify-center rounded-[8px] text-gray-500 transition duration-300 hover:text-gray-800 focus:text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 focus:ring-offset-4"
-                    onClick={() => {
-                      setActiveCypher(cypher);
-                      setIsModalOpen(true);
-                    }}
-                  >
-                    <FontAwesomeIcon icon="maximize" className="text-xl " />
-                  </button>
+
                   <div className="relative">
                     {cypher.image && (
                       <GatsbyImage
-                        image={getImage(cypher.image.childImageSharp)}
+                        image={getImage(cypher.image.childImageSharp) as any}
                         alt={`${event.title} - Šifra ${cypher.title}`}
                       />
                     )}
@@ -175,7 +174,7 @@ export function Event(props: EventPageQuery) {
                         {cypher.images.map((image, index) => (
                           <SwiperSlide>
                             <GatsbyImage
-                              image={getImage(image.childImageSharp)}
+                              image={getImage(image.childImageSharp) as any}
                               alt={`${event.title} - Šifra ${cypher.title} (${index + 1})`}
                             />
                           </SwiperSlide>
@@ -184,7 +183,7 @@ export function Event(props: EventPageQuery) {
                     )}
                   </div>
                   <Disclosure>
-                    <Disclosure.Button className="flex w-full items-center justify-center gap-4 bg-green-500 px-[40px] py-[15px] font-semibold text-white transition hover:bg-green-600 focus:bg-green-600 focus:outline-none">
+                    <Disclosure.Button className="flex w-full items-center justify-center gap-4 bg-green-600/90 px-[40px] py-[15px] font-semibold text-white transition hover:bg-green-600 focus:bg-green-600 focus:outline-none">
                       Zobrazit nápovědu <FontAwesomeIcon icon="lightbulb" />
                     </Disclosure.Button>
 
@@ -206,7 +205,7 @@ export function Event(props: EventPageQuery) {
                     </Transition>
                   </Disclosure>
                   <Disclosure>
-                    <Disclosure.Button className="flex w-full items-center justify-center gap-4 bg-green-500 px-[40px] py-[15px] font-semibold text-white transition hover:bg-green-600 focus:bg-green-600 focus:outline-none">
+                    <Disclosure.Button className="flex w-full items-center justify-center gap-4 bg-green-600/90 px-[40px] py-[15px] font-semibold text-white transition hover:bg-green-600 focus:bg-green-600 focus:outline-none">
                       Zobrazit řešení <FontAwesomeIcon icon="lightbulb" />
                     </Disclosure.Button>
 
@@ -233,7 +232,7 @@ export function Event(props: EventPageQuery) {
                 </div>
               ))}
             </div>
-          </Container>
+          </div>
           <svg
             className="w-full translate-y-1 text-white"
             viewBox="0 0 1927 149"
@@ -248,165 +247,15 @@ export function Event(props: EventPageQuery) {
           </svg>
         </section>
 
-        {/* Active cypher modal */}
-        <Transition show={isModalOpen} as={Fragment}>
-          <Dialog as="div" className="relative z-50" onClose={() => setIsModalOpen(false)}>
-            <Transition.Child
-              as={Fragment}
-              enter="ease-out duration-300"
-              enterFrom="opacity-0"
-              enterTo="opacity-100"
-              leave="ease-in duration-200"
-              leaveFrom="opacity-100"
-              leaveTo="opacity-0"
-            >
-              <div className="fixed inset-0 bg-black bg-opacity-50" />
-            </Transition.Child>
-
-            <div className="fixed inset-0 overflow-y-auto">
-              <div className="flex min-h-full items-center justify-center p-4 text-center">
-                <Transition.Child
-                  as={Fragment}
-                  enter="ease-out duration-300"
-                  enterFrom="opacity-0 scale-95"
-                  enterTo="opacity-100 scale-100"
-                  leave="ease-in duration-200"
-                  leaveFrom="opacity-100 scale-100"
-                  leaveTo="opacity-0 scale-95"
-                >
-                  <Dialog.Panel className="w-full max-w-4xl transform overflow-hidden rounded-2xl bg-white text-left align-middle shadow-xl transition-all">
-                    <Dialog.Title
-                      as="h2"
-                      className="bg-gray-100 p-6 text-center text-2xl font-semibold text-gray-900"
-                    >
-                      {activeCypher.title}
-                    </Dialog.Title>
-                    {activeCypher.info && (
-                      <div className="space-y-3 p-6 ">
-                        {activeCypher.info.map((info) => (
-                          <p className="text-lg font-medium text-gray-800"> {info}</p>
-                        ))}
-                      </div>
-                    )}
-                    <button
-                      type="button"
-                      className="absolute right-4 top-4 flex h-8 w-8 items-center  justify-center gap-4 rounded-full border-2 border-gray-900 font-semibold text-gray-900 opacity-50 transition duration-300 hover:opacity-80 focus:opacity-80 focus:outline-none"
-                      onClick={() => setIsModalOpen(false)}
-                    >
-                      <FontAwesomeIcon icon="times" />
-                    </button>
-
-                    <div className="relative">
-                      {activeCypher.image && (
-                        <GatsbyImage
-                          image={getImage(activeCypher.image.childImageSharp)}
-                          alt={`${event.title} - Šifra ${activeCypher.title}`}
-                          className="w-full"
-                          objectFit="contain"
-                        />
-                      )}
-                      {activeCypher?.images && (
-                        <Swiper
-                          spaceBetween={0}
-                          slidesPerView={1}
-                          onSlideChange={() => console.log('slide change')}
-                          onSwiper={(swiper) => console.log(swiper)}
-                          modules={[Navigation, Pagination, A11y]}
-                          pagination={{
-                            clickable: false,
-                            bulletActiveClass: 'bg-green-600 opacity-100',
-                          }}
-                        >
-                          <SwiperPrevButton />
-                          <SwiperNextButton />
-                          {activeCypher.images.map((image, index) => (
-                            <SwiperSlide>
-                              <GatsbyImage
-                                image={getImage(image.childImageSharp)}
-                                alt={`${event.title} - Šifra ${activeCypher.title} (${index + 1})`}
-                                className="w-full"
-                                objectFit="contain"
-                              />
-                            </SwiperSlide>
-                          ))}
-                        </Swiper>
-                      )}
-                    </div>
-                    <div className="space-y-4 p-6">
-                      <div className="overflow-hidden rounded-[8px] border border-green-500 bg-green-50">
-                        <Disclosure>
-                          <Disclosure.Button className="flex w-full items-center justify-center gap-4 bg-green-500 px-[40px] py-[15px] font-semibold text-white transition hover:bg-green-600 focus:bg-green-600 focus:outline-none">
-                            Zobrazit nápovědu <FontAwesomeIcon icon="lightbulb" />
-                          </Disclosure.Button>
-
-                          <Transition
-                            enter="transition duration-300 ease-out"
-                            enterFrom="transform scale-95 opacity-0"
-                            enterTo="transform scale-300 opacity-100"
-                            leave="transition duration-75 ease-out"
-                            leaveFrom="transform scale-300 opacity-100"
-                            leaveTo="transform scale-95 opacity-0"
-                          >
-                            <Disclosure.Panel className="bg-white p-6 text-lg">
-                              <ol className="list-decimal space-y-2 pl-4">
-                                {activeCypher.hints.map((hint) => (
-                                  <li>{hint}</li>
-                                ))}
-                              </ol>
-                            </Disclosure.Panel>
-                          </Transition>
-                        </Disclosure>
-                      </div>
-                      <div className="overflow-hidden rounded-[8px] border border-green-500 bg-green-50">
-                        <Disclosure>
-                          <Disclosure.Button className="flex w-full items-center justify-center gap-4 bg-green-500 px-[40px] py-[15px] font-semibold text-white transition hover:bg-green-600 focus:bg-green-600 focus:outline-none">
-                            Zobrazit řešení <FontAwesomeIcon icon="lightbulb" />
-                          </Disclosure.Button>
-
-                          <Transition
-                            enter="transition duration-300 ease-out"
-                            enterFrom="transform scale-95 opacity-0"
-                            enterTo="transform scale-300 opacity-100"
-                            leave="transition duration-75 ease-out"
-                            leaveFrom="transform scale-300 opacity-100"
-                            leaveTo="transform scale-95 opacity-0"
-                          >
-                            <Disclosure.Panel className="bg-white p-6 text-lg">
-                              <ol className="mb-4 list-decimal space-y-2 pl-4">
-                                {activeCypher.steps.map((step) => (
-                                  <li>{step}</li>
-                                ))}
-                              </ol>
-                              <p className="rounded-[4px] border border-green-500 bg-green-50 p-2 text-center text-green-700 shadow-sm shadow-green-500/25">
-                                Řešení: <strong>{activeCypher.solution}</strong>
-                              </p>
-                            </Disclosure.Panel>
-                          </Transition>
-                        </Disclosure>
-                      </div>
-                    </div>
-
-                    <button
-                      type="button"
-                      className="flex w-full items-center justify-center gap-4 bg-gray-200 px-[40px] py-[15px] font-semibold text-gray-900 transition hover:bg-gray-300 focus:bg-gray-300 focus:outline-none"
-                      onClick={() => setIsModalOpen(false)}
-                    >
-                      Zavřít <FontAwesomeIcon icon="times" />
-                    </button>
-                  </Dialog.Panel>
-                </Transition.Child>
-              </div>
-            </div>
-          </Dialog>
-        </Transition>
-
         {/* Bonus information */}
         {event.bonusInformation ? (
           <section className="py-24">
-            <Container className="max-w-7xl">
+            <div className="container mx-auto max-w-7xl px-4  sm:px-8 md:px-12">
               <header className="mx-auto mb-16 max-w-2xl text-center">
-                <H2>Bonusové informace k šifám</H2>
-                <p className="font-medium text-gray-700 md:text-lg">
+                <h2 className="mb-4 text-center text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl lg:text-5xl">
+                  Bonusové informace k šifám
+                </h2>
+                <p className="mb-12 text-center font-medium leading-relaxed text-gray-700 sm:mb-20">
                   Každá šifra obsahuje menší, či delší doplňující informaci, která se váže buď s
                   danou šifrou, nebo se stanovištěm šifry.
                 </p>
@@ -423,17 +272,19 @@ export function Event(props: EventPageQuery) {
                   </div>
                 </div>
               ))}
-            </Container>
+            </div>
           </section>
         ) : (
           <section className="py-24">
-            <Container className=" mb-16 max-w-2xl text-center">
-              <H2>Bonusové informace k šifám</H2>
+            <div className="container mx-auto mb-16 max-w-7xl px-4 text-center sm:px-8 md:px-12 ">
+              <h2 className="mb-4 text-center text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl lg:text-5xl">
+                Bonusové informace k šifám
+              </h2>
               <p className="mb-8 font-medium text-gray-700 md:text-lg">
                 Tento ročník bohužel neobsahoval žádné bonusové informace k šifrám.
               </p>
               <FontAwesomeIcon icon={'question'} className="text-green-500" size="2x" />
-            </Container>
+            </div>
           </section>
         )}
       </main>

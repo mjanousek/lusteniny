@@ -1,13 +1,12 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import { ButtonExternalLink, Container } from '../atoms';
+import { ButtonExternalLink } from '../atoms';
 
 export const CallToAction = () => (
   <aside className="relative">
-    <Container className="relative z-10">
+    <div className="container mx-auto sm:relative sm:z-10 sm:px-8 md:px-12">
       <div className="relative mx-auto max-w-7xl">
         <div className="absolute -inset-1 rounded-[32px] bg-gradient-to-tr from-green-400 to-green-600 opacity-30 blur transition duration-500"></div>
-        <div className="relative grid gap-8 rounded-[32px] bg-gradient-to-br from-green-500 to-green-600 p-8 sm:p-12 md:p-14 lg:grid-cols-5 lg:p-16">
+        <div className="relative grid gap-8 bg-gradient-to-br from-green-500 to-green-600 p-8 pb-12 sm:rounded-[32px] sm:p-12 md:p-14 lg:grid-cols-5 lg:p-16">
           <div className="lg:col-span-3">
             <h2 className="mb-4 text-xl font-bold text-white sm:text-2xl md:text-3xl lg:text-4xl">
               Nechceš přijít o novinky ?
@@ -17,7 +16,10 @@ export const CallToAction = () => (
               luštěninám.
             </p>
           </div>
-          <div className="flex flex-col items-stretch justify-center gap-4 lg:col-span-2 lg:items-center">
+          <nav
+            aria-label="Sociální sítě"
+            className="mx-auto flex flex-col items-stretch justify-center gap-4 lg:col-span-2 lg:w-fit lg:items-stretch"
+          >
             <ButtonExternalLink
               href="https://www.facebook.com/lusteniny"
               text="Facebook @lusteniny"
@@ -30,10 +32,10 @@ export const CallToAction = () => (
               icon={['fab', 'instagram']}
               variant="instagram"
             />
-          </div>
+          </nav>
         </div>
       </div>
-    </Container>
+    </div>
     <svg
       viewBox="0 0 1920 86"
       xmlns="http://www.w3.org/2000/svg"

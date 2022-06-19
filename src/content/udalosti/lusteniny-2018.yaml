@@ -1,7 +1,7 @@
 title: Luštěniny I.
 description: Tady to vše začalo. Premiéra Luštěnin, spousta nejistoty a očekávání ze strany organizátorů. Na konci dne však bylo jasné, že toto rozhodně nebude jediný ročník. (Pouze v tomto ročníku byly šifry zaměřeny na IT)
 date: 2018-11-17
-image: ../images/Lusteniny-2018.jpg
+image: ../images/2018/Lusteniny-2018.jpg
 galleryLink: https://www.facebook.com/media/set/?vanity=CNGroupZL&set=a.1595718363863421
 winners:
   - Anonymní Abstinenti
@@ -9,14 +9,14 @@ winners:
   - Edhouse 42
 cyphers:
   - title: Úvodní Šifra
-    image: ../images/Lusteniny-2018-Uvodni-sifra.jpg
+    image: ../images/2018/Lusteniny-2018-Uvodni-sifra.jpg
     hints:
       - Caesarova šifra.
     steps:
       - Každé písmeno posuň o 13 míst v abecedě
     solution: I FAILED THE TURING TEST
   - title: Binary
-    image: ../images/Lusteniny-2018-Binary.jpg
+    image: ../images/2018/Lusteniny-2018-Binary.jpg
     hints:
       - Vybarvuj zleva doprava.
     steps:
@@ -26,7 +26,7 @@ cyphers:
       - Vznikne obrázek s nápisem ZLIN
     solution: ZLIN
   - title: C lang
-    image: ../images/Lusteniny-2018-CLang.jpg
+    image: ../images/2018/Lusteniny-2018-CLang.jpg
     hints:
       - Hledej chyby.
     steps:
@@ -36,7 +36,7 @@ cyphers:
       - 'Chyby na řádních: 2, 7, 9, 14, 15'
     solution: BINGO
   - title: Šifra č. 4
-    image: ../images/Lusteniny-2018-Brail.jpg
+    image: ../images/2018/Lusteniny-2018-Brail.jpg
     hints:
       - Brailovo písmo.
     steps:
@@ -45,7 +45,7 @@ cyphers:
       - Písmena čtená po řádcích
     solution: BINARY IS FUN !!
   - title: Šifra č. 5
-    image: ../images/Lusteniny-2018-Sifra5.jpg
+    image: ../images/2018/Lusteniny-2018-Sifra5.jpg
     hints:
       - Walk/kráčej/jdi.
     steps:
@@ -58,7 +58,7 @@ cyphers:
       - 'Písmena, na kterých se hráč ocitne po každé sekvenci kroků '
     solution: CNGROUP
   - title: QR Code
-    image: ../images/Lusteniny-2018-QRCode.jpg
+    image: ../images/2018/Lusteniny-2018-QRCode.jpg
     hints:
       - Sloupce.
     steps:
@@ -67,7 +67,7 @@ cyphers:
       - Písmena ve stejném pořadí, jako sloupce
     solution: THINK DIFFERENT AND THEN AGAIN (bez mezer)
   - title: Šifra č.7
-    image: ../images/Lusteniny-2018-Sifra7.jpg
+    image: ../images/2018/Lusteniny-2018-Sifra7.jpg
     hints:
       - Přiřaď města .
     steps:
@@ -77,7 +77,7 @@ cyphers:
       - Písmena z měst ve stejném pořadí, jako jsou jejich pojmy
     solution: HAPPINESS
   - title: Síť
-    image: ../images/Lusteniny-2018-Sít.jpg
+    image: ../images/2018/Lusteniny-2018-Sít.jpg
     hints:
       - Http stavové kódy .
     steps:

@@ -4,7 +4,7 @@ description: >
   To se nám naštěstí stalo osudné, v sobotní poledne nás čekala rekordní účast a naši organizátoři, kteří sami vtipkovali o běhací šifře, si sami dali lehký výklus.
   Zajímavostí tohoto ročníku bylo, že jsme zlomili naše deštivé prokletí a užili jsme si slunečný den.
 date: 2021-09-04
-image: ../images/Lusteniny-2021.jpg
+image: ../images/2021/Lusteniny-2021.jpg
 galleryLink: 'https://www.facebook.com/media/set?vanity=lusteniny&set=a.379746937110169'
 winners:
   - 'Nebuďte slušnej, řekněte jméno'
@@ -12,7 +12,7 @@ winners:
   - 'Abakus'
 cyphers:
   - title: Telegram do vězení č.4
-    image: ../images/Lusteniny-2021-Dopis-do-vezeni.jpg
+    image: ../images/2021/Lusteniny-2021-Dopis-do-vezeni.jpg
     hints:
       - Na délce záleží.
     steps:
@@ -23,7 +23,7 @@ cyphers:
     solution: bonton
 
   - title: Karty
-    image: ../images/Lusteniny-2021-Karty.jpg
+    image: ../images/2021/Lusteniny-2021-Karty.jpg
     hints:
       - Abeceda z Karet.
     steps:
@@ -35,7 +35,7 @@ cyphers:
     solution: zlinsky klenot
 
   - title: Cesta do pravěku
-    image: ../images/Lusteniny-2021-Cesta-do-praveku.jpg
+    image: ../images/2021/Lusteniny-2021-Cesta-do-praveku.jpg
     hints:
       - Jak velcí se zdají být dinosauři ve filmu?
     steps:
@@ -47,7 +47,7 @@ cyphers:
     solution: frystak
 
   - title: Schůzka
-    image: ../images/Lusteniny-2021-Schuzka.jpg
+    image: ../images/2021/Lusteniny-2021-Schuzka.jpg
     hints:
       - Historikové tvrdí, že Ceasar měl rád anagramy.
     steps:
@@ -59,7 +59,7 @@ cyphers:
     solution: metracek
 
   - title: Na dobrou noc
-    image: ../images/Lusteniny-2021-Na-dobrou-noc.jpg
+    image: ../images/2021/Lusteniny-2021-Na-dobrou-noc.jpg
     hints:
       - Slož z papíru pokrývku hlavy Večerníčka.
     steps:
@@ -68,7 +68,7 @@ cyphers:
     solution: bobek
 
   - title: Zátopek
-    image: ../images/Lusteniny-2021-Zatopek.jpg
+    image: ../images/2021/Lusteniny-2021-Zatopek.jpg
     hints:
       - Časy běhů jsou klíčem.
     steps:
@@ -78,7 +78,7 @@ cyphers:
     solution: luzanky
 
   - title: Stížnost na život
-    image: ../images/Lusteniny-2021-Stiznost-na-zivot.jpg
+    image: ../images/2021/Lusteniny-2021-Stiznost-na-zivot.jpg
     hints:
       - Počítačové staženiny.
     steps:
@@ -99,7 +99,7 @@ cyphers:
     solution: baron prasil
 
   - title: Filmový pás
-    image: ../images/Lusteniny-2021-Filmovy-pas.jpg
+    image: ../images/2021/Lusteniny-2021-Filmovy-pas.jpg
     hints:
       - Morse.
     steps:
@@ -110,7 +110,7 @@ cyphers:
     solution: smecka 2020
 
   - title: Šachovnice
-    image: ../images/Lusteniny-2021-Sachovnice.jpg
+    image: ../images/2021/Lusteniny-2021-Sachovnice.jpg
     hints:
       - I slepý by to vyluštil.
     steps:
@@ -121,7 +121,7 @@ cyphers:
     solution: kamera
 
   - title: Elektrický obvod
-    image: ../images/Lusteniny-2021-Elektricky-obvod.jpg
+    image: ../images/2021/Lusteniny-2021-Elektricky-obvod.jpg
     hints:
       - Jdi po proudu
     steps:

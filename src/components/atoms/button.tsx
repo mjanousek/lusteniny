@@ -1,12 +1,11 @@
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
-import { IconName } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'gatsby';
 import * as React from 'react';
 import { classNames } from '../../utils';
 
 type ButtonInternalLinkProps = {
-  variant: 'green' | 'blue' | 'instagram';
+  variant: 'green';
   to: string;
   text: string;
   icon: IconProp;
@@ -16,7 +15,7 @@ export const ButtonInternalLink = ({ variant, to, text, icon }: ButtonInternalLi
   <Link
     to={to}
     className={classNames(
-      'group relative flex items-stretch rounded-[8px] bg-gradient-to-r from-green-500 to-green-600 px-[30px] py-[15px] font-bold text-white shadow shadow-green-500/25 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 sm:px-[60px]',
+      'group relative flex items-stretch justify-center rounded-lg bg-gradient-to-r from-green-500 to-green-600 py-4 px-8 font-bold text-white focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2',
     )}
   >
     <div className="relative z-10 flex items-center justify-center gap-3">
@@ -28,7 +27,7 @@ export const ButtonInternalLink = ({ variant, to, text, icon }: ButtonInternalLi
 );
 
 type ButtonExternalLinkProps = {
-  variant: 'green' | 'blue';
+  variant: 'green' | 'blue' | 'instagram';
   href: string;
   text: string;
   icon: IconProp;

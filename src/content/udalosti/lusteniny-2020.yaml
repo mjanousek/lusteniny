@@ -1,7 +1,7 @@
 title: Luštěniny III.
 description: Třetí ročník Luštěnin. Náš standard deštivého počasí byl dodržen a hodnotíme tedy jako úspěšnou akci. Děkujeme vám všem, že jste přišli na naše již klasické upršené odpoledne.
 date: 2020-07-18
-image: ../images/Lusteniny-2020.png
+image: ../images/2020/Lusteniny-2020.png
 galleryLink: 'https://www.facebook.com/media/set/?vanity=lusteniny&set=a.140567267694805'
 winners:
   - 'Eště Nevim'
@@ -9,7 +9,7 @@ winners:
   - 'Chromý tým se Safronem'
 cyphers:
   - title: Filmové Klasiky
-    image: ../images/Lusteniny-2020-Filmove-klasiky.jpg
+    image: ../images/2020/Lusteniny-2020-Filmove-klasiky.jpg
     hints:
       - 'Počet herců na obrázku je důležitý. '
     steps:
@@ -19,7 +19,7 @@ cyphers:
       - Písmena přečtena popořadě od první hlášky.
     solution: ' klapky'
   - title: Míček
-    image: ../images/Lusteniny-2020-Micek.jpg
+    image: ../images/2020/Lusteniny-2020-Micek.jpg
     info:
       - Šifra míček byla zadána jako skutečný předmět. Zde na stránkach můžete
         naleznout pouze fotografie daného míčku. Pozor! Na fotkách se jedná o stejný
@@ -33,7 +33,7 @@ cyphers:
         slovo.
     solution: ' klapky'
   - title: Dopis
-    image: ../images/Lusteniny-2020-Dopis.jpg
+    image: ../images/2020/Lusteniny-2020-Dopis.jpg
     hints:
       - Při psaní je potřebné dobře volit slova.
     steps:
@@ -43,7 +43,7 @@ cyphers:
       - Žízeň → Smäd - S
     solution: 'MERS '
   - title: Jiný Pohled
-    image: ../images/Lusteniny-2020-Jiny-pohled-na-vec.jpg
+    image: ../images/2020/Lusteniny-2020-Jiny-pohled-na-vec.jpg
     hints:
       - Socha Masaryka, model starého Zlína na terase 21. budovy.
     steps:
@@ -53,7 +53,7 @@ cyphers:
       - Na Modelu starého Zlína se ovšem skrýva nápis “školy”
     solution: školy
   - title: Skládačka
-    image: ../images/Lusteniny-2020-Skladacka.jpg
+    image: ../images/2020/Lusteniny-2020-Skladacka.jpg
     hints:
       - Socha Masaryka, model starého Zlína na terase 21. budovy.
     steps:
@@ -65,7 +65,7 @@ cyphers:
       - Dosaď písmena za čísla z kódovací tabulky
     solution: Elmar Klos
   - title: Kruhy
-    image: ../images/Lusteniny-2020-Call-me-baby.jpg
+    image: ../images/2020/Lusteniny-2020-Call-me-baby.jpg
     hints:
       - Telefonní číslo.
     steps:
@@ -74,7 +74,7 @@ cyphers:
       - Číslo je na infolinku Památníku Tomáše Bati no a to je i zašifrovaná zpráva
     solution: PAMÁTNÍK TOMÁŠE BATI
   - title: Kamera, klapka, akce!
-    image: ../images/Lusteniny-2020-Kamera-klapka-akce.jpg
+    image: ../images/2020/Lusteniny-2020-Kamera-klapka-akce.jpg
     hints:
       - Najdi spojení.. ..tedy né. Najdi spojnici!
     steps:
@@ -82,7 +82,7 @@ cyphers:
       - Na klapkách se nachází zašifrovaná zpráva v Braillově písmu
     solution: velke kino
   - title: Rozsypaný čaj
-    image: ../images/Lusteniny-2020-Graphic.jpg
+    image: ../images/2020/Lusteniny-2020-Graphic.jpg
     hints:
       - 'Graphic anagram '
     steps:
@@ -92,7 +92,7 @@ cyphers:
         a získáme výslednou zprávu
     solution: FILMFEST
   - title: Mat nebo Pat
-    image: ../images/Lusteniny-2020-Mat-nebo-pat.jpg
+    image: ../images/2020/Lusteniny-2020-Mat-nebo-pat.jpg
     hints:
       - 'Bílý dá mat ve 3 tazích. '
     steps:
@@ -102,7 +102,7 @@ cyphers:
       - Vxg7
     solution: pes
   - title: Loga
-    image: ../images/Lusteniny-2020-Loga.jpg
+    image: ../images/2020/Lusteniny-2020-Loga.jpg
     hints:
       - 'Loga, zkratky, žádný zmatky, hlava mapa souřadnice, předposlední u radnice.'
     steps:
