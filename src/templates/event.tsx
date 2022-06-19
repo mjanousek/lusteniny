@@ -296,7 +296,7 @@ export function Event(props: EventPageQuery) {
                   </Disclosure>
                   <Disclosure>
                     <Disclosure.Button className="flex w-full items-center justify-center gap-4 bg-green-600/90 px-[40px] py-[15px] font-semibold text-white transition hover:bg-green-600 focus:bg-green-600 focus:outline-none">
-                      Zobrazit řešení <FontAwesomeIcon icon="lightbulb" />
+                      Zobrazit řešení <FontAwesomeIcon icon="list-check" />
                     </Disclosure.Button>
 
                     <Transition

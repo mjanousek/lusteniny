@@ -1,12 +1,9 @@
-import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Menu, Transition } from '@headlessui/react';
-import { graphql, Link } from 'gatsby';
-import { GatsbyImage, getImage, StaticImage } from 'gatsby-plugin-image';
+import { Link } from 'gatsby';
 import * as React from 'react';
 import { ButtonInternalLink, Logo } from '../components/atoms';
 import { Footer, CallToAction, Helmet } from '../components/organisms';
-import { Image } from '../types/content';
 import { classNames } from '../utils';
 
 export default function Page() {
