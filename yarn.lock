@@ -5832,6 +5832,15 @@ fs-extra@^10.1.0:
     jsonfile "^6.0.1"
     universalify "^2.0.0"
 
+fs-extra@^8.1.0:
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-8.1.0.tgz#49d43c45a88cd9677668cb7be1b46efdb8d2e1c0"
+  integrity sha512-yhlQgA6mnOJUKOsRUFsgJdQCvkKhcz8tlZG5HBQfReYZy46OwLcY+Zia0mtdHsOo9y/hP+CxMN0TU9QxoOtG4g==
+  dependencies:
+    graceful-fs "^4.2.0"
+    jsonfile "^4.0.0"
+    universalify "^0.1.0"
+
 fs-extra@^9.0.0:
   version "9.1.0"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-9.1.0.tgz#5954460c764a8da2094ba3554bf839e6b9a7c86d"
@@ -6016,10 +6025,10 @@ gatsby-parcel-config@^0.5.0:
     "@parcel/transformer-raw" "^2.3.2"
     "@parcel/transformer-react-refresh-wrap" "^2.3.2"
 
-gatsby-plugin-canonical-urls@^4.14.0:
-  version "4.14.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-canonical-urls/-/gatsby-plugin-canonical-urls-4.14.0.tgz#b978dbaf54bc9f2b192002aa5e0126b25e16c4b4"
-  integrity sha512-ab/x5t9G5jtpfRuxJqc3h6FlVqjvq/1m4vCrU/Vw4zbQLJU9WZDumRVE6s/k8dBlaFuhSNkCZAimy8noPs/LEQ==
+gatsby-plugin-canonical-urls@^4.16.0:
+  version "4.16.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-canonical-urls/-/gatsby-plugin-canonical-urls-4.16.0.tgz#daa6dadc13ed12396ccf634816d4b756b7b31de3"
+  integrity sha512-JrKnW+Jb/OcPJAGjaj7sTtSttcvRhvBvB5VGUCRGnmfIECxtD8igJwGGwTKh3CdR/XisNilcJXNciEF+tavtCA==
   dependencies:
     "@babel/runtime" "^7.15.4"
 
@@ -6036,6 +6045,22 @@ gatsby-plugin-google-fonts@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-google-fonts/-/gatsby-plugin-google-fonts-1.0.1.tgz#d71054f7bf207b9a8da227380369e18e6f4e0201"
   integrity sha512-p1NVkn27GUnDA5qHM+Z4cCcLCJIardzZXMon3640sT4xuL/AZJbsx3HEt2KY/5oZu0UXIkytkxzV2Da4rQeUIg==
+
+gatsby-plugin-google-gtag@^4.16.0:
+  version "4.16.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-gtag/-/gatsby-plugin-google-gtag-4.16.0.tgz#09cd2573ce5032eaf770910f6be2598ca1810a24"
+  integrity sha512-9F+rKY91FbGGi4DFYdV0F+scWoTOeQFJaS4Q0nIS4KTNPg/A2dyI/hTyFDfuwqZYbjtgFcqGfpm1cMgCkxBPeg==
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    minimatch "^3.1.2"
+
+gatsby-plugin-htaccess@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-htaccess/-/gatsby-plugin-htaccess-1.4.0.tgz#e7629cfca0e6cf12e714c6ad29162a12b0c60e89"
+  integrity sha512-CaUQ3SPkV8khTk2MvY58KJAGAQFLxrlSb9ysxB+BeOgdruI2F0hWsQQI5/A94VtZsdB/5CbJcZVNmCyDJ+SJqg==
+  dependencies:
+    fs-extra "^8.1.0"
+    lodash "^4.17.15"
 
 gatsby-plugin-image@^2.14.1:
   version "2.14.1"
@@ -6132,10 +6157,10 @@ gatsby-plugin-sharp@^4.14.1:
     svgo "1.3.2"
     uuid "3.4.0"
 
-gatsby-plugin-sitemap@^5.14.0:
-  version "5.14.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sitemap/-/gatsby-plugin-sitemap-5.14.0.tgz#62719d72e445b194ec6fe676688aac4ce4ca1de2"
-  integrity sha512-vY0mPlh+86+us4AE+oJbFyxY8j/DXaBvHryL1XPMdi0sFpabePCvHVw/+MdO2jzSFVwSixy5AEq2wtbeoXHR2Q==
+gatsby-plugin-sitemap@^5.16.0:
+  version "5.16.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sitemap/-/gatsby-plugin-sitemap-5.16.0.tgz#fdbbb1ac6dc55e84624f17cf53b51c0afbcd7e2a"
+  integrity sha512-3NCkctKMBtP+ySbtYt5Oablw/j5hdkv39aepP6FpoBG+stY1jVXVD0jlyKHZRGvlP2wpFdB7xVfJC7IChdYUFQ==
   dependencies:
     "@babel/runtime" "^7.15.4"
     common-tags "^1.8.2"
@@ -7521,6 +7546,13 @@ json5@^2.1.2, json5@^2.2.0, json5@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/json5/-/json5-2.2.1.tgz#655d50ed1e6f95ad1a3caababd2b0efda10b395c"
   integrity sha512-1hqLFMSrGHRHxav9q9gNjJ5EXznIxGVO09xQRrwplcS8qs28pZ8s8hupZAmqDwZUmVZ2Qb2jnyPOWcDH8m8dlA==
+
+jsonfile@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/jsonfile/-/jsonfile-4.0.0.tgz#8771aae0799b64076b76640fca058f9c10e33ecb"
+  integrity sha512-m6F1R3z8jjlf2imQHS2Qez5sjKWQzbuuhuJ/FKYFRZvPE3PuHcSMVZzfsLhGVOkfd20obL5SWEBew5ShlquNxg==
+  optionalDependencies:
+    graceful-fs "^4.1.6"
 
 jsonfile@^6.0.1:
   version "6.1.0"
@@ -11129,6 +11161,11 @@ unist-util-select@^1.5.0:
     css-selector-parser "^1.1.0"
     debug "^2.2.0"
     nth-check "^1.0.1"
+
+universalify@^0.1.0:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/universalify/-/universalify-0.1.2.tgz#b646f69be3942dabcecc9d6639c80dc105efaa66"
+  integrity sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg==
 
 universalify@^2.0.0:
   version "2.0.0"

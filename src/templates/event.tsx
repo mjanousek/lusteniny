@@ -3,7 +3,7 @@ import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { graphql, Link } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import React from 'react';
-import { Footer, CallToAction } from '../components/organisms';
+import { Footer, CallToAction, Helmet } from '../components/organisms';
 
 import { EventPageQuery } from '../types/content';
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
@@ -21,6 +21,7 @@ export function Event(props: EventPageQuery) {
 
   return (
     <>
+      <Helmet title={`${event.title} | Šifrovací hra ve Zlíně`} description={event.description} />
       <header className="relative z-50 bg-blue-50">
         <div className="container mx-auto flex items-center justify-between gap-8 px-4 sm:px-8 md:px-12 xl:justify-start">
           <div className="-ml-6 flex items-center gap-3 rounded px-6 py-6 text-2xl font-bold text-green-600 transition duration-300 hover:text-green-700 focus:outline-none focus:ring-2 focus:ring-green-400">

@@ -11,16 +11,20 @@ module.exports = {
     'gatsby-transformer-yaml',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sitemap',
+    'gatsby-plugin-htaccess',
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        trackingId: 'UA-179555801-5',
-        head: true,
-        anonymize: true,
-        respectDNT: true,
-        exclude: [],
-        sampleRate: 100,
-        siteSpeedSampleRate: 10,
+        siteUrl: 'https://lusteniny.eu',
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: ['G-75XS8VPMJN'],
+        pluginConfig: {
+          head: true,
+        },
       },
     },
     {
@@ -38,6 +42,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
+        host: 'lusteniny.eu',
+        sitemap: 'https://lusteniny.cz/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },

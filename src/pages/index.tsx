@@ -5,7 +5,7 @@ import { graphql, Link } from 'gatsby';
 import { GatsbyImage, getImage, StaticImage } from 'gatsby-plugin-image';
 import * as React from 'react';
 import { ButtonInternalLink, Logo } from '../components/atoms';
-import { Footer, CallToAction } from '../components/organisms';
+import { Footer, CallToAction, Helmet } from '../components/organisms';
 import { Image } from '../types/content';
 import { classNames } from '../utils';
 
@@ -36,6 +36,11 @@ export default function Page({ data }: Props) {
   }));
   return (
     <>
+      <Helmet
+        title="Luštěniny | Šifrovací hra ve Zlíně"
+        description="Luštěniny jsou tradiční šifrovací hra pořádána v centru Zlína, které se můžeš
+                zúčastnit jak v týmu, tak sám. Neváhej a přijd si k nám zaluštit."
+      />
       <header className="absolute top-0 left-0 right-0 z-50">
         <div className="container mx-auto flex items-center justify-between gap-8 px-4 sm:px-8 md:px-12 xl:justify-start">
           <div className="-ml-6 flex items-center gap-3 rounded px-6 py-6 text-2xl font-bold text-green-600 transition duration-300 hover:text-green-700 focus:outline-none focus:ring-2 focus:ring-green-400">
@@ -669,7 +674,7 @@ export default function Page({ data }: Props) {
               rádi zodpovíme. Nebo nás kontaktujte přímo.
             </p>
             <nav
-              aria-aria-label="Kontaktní odkazy"
+              aria-label="Kontaktní odkazy"
               className="mx-auto flex w-fit flex-col items-stretch space-y-4 md:text-lg"
             >
               <a
