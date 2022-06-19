@@ -6,19 +6,10 @@ export type SingleContentQuery<T> = {
   file: {
     childContentYaml: T;
   };
-  global: {
-    childContentYaml: GlobalData;
-  };
 };
 
 export type Image = {
   childImageSharp: IGatsbyImageData;
-};
-
-export type GlobalData = {
-  host: string;
-  facebookUrl: string;
-  messengerUrl: string;
 };
 
 export type PageData = {
@@ -28,82 +19,8 @@ export type PageData = {
   schema?: SchemaObject[];
 };
 
-export type PageSection = {
-  title: string;
-  description: string;
-};
-
-export type HomePageQuery = SingleContentQuery<HomePageData> & {
-  events: {
-    edges: {
-      node: {
-        fields: {
-          slug: string;
-        };
-        childUdalostiYaml: {
-          title: string;
-          description: string;
-          date: Date;
-          image: Image;
-        };
-      };
-    }[];
-  };
-};
-
-export type HomePageData = PageData & {
-  facebookUrl: string;
-  messengerUrl: string;
-  url: string;
-  hero: PageSection;
-  about: PageSection & {
-    features: Feature[];
-  };
-  contact: PageSection & {
-    image: Image;
-  };
-  archive: PageSection;
-  events: Event[];
-};
-
-export type Feature = {
-  icon: IconProp;
-  title: string;
-  description: string;
-};
-
-export type EventsPageQuery = SingleContentQuery<EventsPageData> & {
-  events: {
-    edges: {
-      node: {
-        fields: {
-          slug: string;
-        };
-        childUdalostiYaml: {
-          title: string;
-          description: string;
-          date: Date;
-          image: Image;
-        };
-      };
-    }[];
-  };
-};
-
-export type EventsPageData = PageData & {
-  events: Event[];
-};
-
-export type Event = {
-  title: string;
-  description: string;
-  date: Date;
-  image: Image;
-  slug: string;
-};
-
 export type EventPageData = PageData & {
-  date: Date;
+  date: string;
   galleryLink: string;
   winners: string[];
   cyphers: Cypher[];
@@ -113,6 +30,7 @@ export type EventPageData = PageData & {
 export type Cypher = {
   title: string;
   image?: Image;
+  images?: Image[];
   info?: string[];
   hints: string[];
   steps: string[];
@@ -121,7 +39,7 @@ export type Cypher = {
 
 export type BonusInformation = {
   title: string;
-  text: string[];
+  text: string;
 };
 
 export type EventPageQuery = {
@@ -134,10 +52,7 @@ export type EventPageQuery = {
       childUdalostiYaml: EventPageData;
       fields: {
         slug: string;
-      }
-    };
-    global: {
-      childContentYaml: GlobalData;
+      };
     };
   };
 };
