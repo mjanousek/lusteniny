@@ -11,7 +11,6 @@ module.exports = {
     'gatsby-transformer-yaml',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sitemap',
-    'gatsby-plugin-htaccess',
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
