@@ -3,7 +3,7 @@ import { ButtonExternalLink } from '../atoms';
 
 export const CallToAction = () => (
   <aside className="relative">
-    <div className="container mx-auto sm:relative sm:z-10 sm:px-8 md:px-12">
+    <div className="container relative z-10 mx-auto  sm:px-8 md:px-12">
       <div className="relative mx-auto max-w-7xl">
         <div className="absolute -inset-1 rounded-[32px] bg-gradient-to-tr from-green-400 to-green-600 opacity-30 blur transition duration-500"></div>
         <div className="relative grid gap-8 bg-gradient-to-br from-green-500 to-green-600 p-8 pb-12 sm:rounded-[32px] sm:p-12 md:p-14 lg:grid-cols-5 lg:p-16">
