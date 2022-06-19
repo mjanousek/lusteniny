@@ -41,7 +41,7 @@ export default function Page({ data }: Props) {
         description="Luštěniny jsou tradiční šifrovací hra pořádána v centru Zlína, které se můžeš
                 zúčastnit jak v týmu, tak sám. Neváhej a přijd si k nám zaluštit."
       />
-      <header className="absolute top-0 left-0 right-0 z-50">
+      <header className="top-0 left-0 right-0 z-50 bg-blue-50 lg:absolute lg:bg-transparent">
         <div className="container mx-auto flex items-center justify-between gap-8 px-4 sm:px-8 md:px-12 xl:justify-start">
           <div className="-ml-6 flex items-center gap-3 rounded px-6 py-6 text-2xl font-bold text-green-600 transition duration-300 hover:text-green-700 focus:outline-none focus:ring-2 focus:ring-green-400">
             <Logo className="h-[30px]" />
@@ -80,7 +80,14 @@ export default function Page({ data }: Props) {
           <Menu as="div" className=" relative flex items-center justify-center xl:hidden">
             {({ open }) => (
               <>
-                <Menu.Button className="relative z-[60] p-6 text-white focus:text-white focus:outline-none">
+                <Menu.Button
+                  className={classNames(
+                    'relative z-[60] px-6 py-5  focus:outline-none',
+                    open
+                      ? 'text-white focus:text-green-50'
+                      : 'rounded-lg text-gray-700 focus:text-gray-900 lg:bg-gray-50/20 lg:text-white lg:hover:bg-gray-700/20 lg:focus:text-green-50',
+                  )}
+                >
                   <FontAwesomeIcon icon={open ? 'times' : 'bars'} />
                 </Menu.Button>
 
@@ -380,7 +387,7 @@ export default function Page({ data }: Props) {
               </div>
             </div>
             <div className="order-0 relative flex justify-end lg:order-1 lg:col-span-2 lg:h-full">
-              <div className="relative">
+              <div className="relative hidden lg:block">
                 <svg
                   className="absolute right-8 top-0 h-full w-full text-green-100 md:right-16 lg:right-24"
                   viewBox="0 0 725 730"
@@ -417,8 +424,19 @@ export default function Page({ data }: Props) {
                 style={{ clipPath: 'polygon(14.33% 15%, 30% 0%, 100% 0, 100% 70%, 85.66% 85%)' }}
                 src="../content/images/Lusteniny.jpg"
                 alt=""
-                className="absolute right-0 top-0 aspect-square h-64 md:h-80 lg:inset-0 lg:h-full"
+                className="absolute right-0 top-0 hidden aspect-square h-64 md:h-80 lg:inset-0 lg:block lg:h-full"
               />
+              <div className="px-4 lg:hidden">
+                <div className="relative">
+                  <StaticImage
+                    src="../content/images/Lusteniny.jpg"
+                    alt=""
+                    className="relative z-10 h-64 rounded-lg md:h-80"
+                  />
+                  <div className="absolute inset-0 translate-x-4 translate-y-4 rounded-lg bg-green-100"></div>
+                  <div className="absolute inset-0 translate-x-1 translate-y-1 rounded-lg bg-green-300"></div>
+                </div>
+              </div>
             </div>
           </div>
 

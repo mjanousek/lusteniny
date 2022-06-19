@@ -64,7 +64,7 @@ export function Event(props: EventPageQuery) {
                 <Menu.Button
                   className={classNames(
                     'relative z-[60] p-6  focus:outline-none',
-                    open ? 'text-white focus:text-green-50' : 'text-gray-700 focus:text-white',
+                    open ? 'text-white focus:text-green-50' : 'text-gray-700 focus:text-gray-900',
                   )}
                 >
                   <FontAwesomeIcon icon={open ? 'times' : 'bars'} />
