@@ -1,6 +1,5 @@
-ErrorDocument 404 /404.html
-
-<IfModule mod_rewrite.c>
-  RewriteEngine On RewriteCond %{HTTPS} off [NC] RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
-  [L,R=301,QSA]
-</IfModule>
+ErrorDocument 404 /404.html 
+RewriteEngine On 
+RewriteCond %{HTTPS} !=on 
+RewriteRule ^
+https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
