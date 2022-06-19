@@ -1,11 +1,13 @@
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Menu, Transition } from '@headlessui/react';
 import { graphql, Link } from 'gatsby';
 import { GatsbyImage, getImage, StaticImage } from 'gatsby-plugin-image';
 import * as React from 'react';
-import { ButtonExternalLink, ButtonInternalLink, Logo } from '../components/atoms';
-import { Footer, Navbar, CallToAction } from '../components/organisms';
+import { ButtonInternalLink, Logo } from '../components/atoms';
+import { Footer, CallToAction } from '../components/organisms';
 import { Image } from '../types/content';
+import { classNames } from '../utils';
 
 type Props = {
   data: {
@@ -34,8 +36,8 @@ export default function Page({ data }: Props) {
   }));
   return (
     <>
-      <header className="absolute top-0 left-0 right-0 z-20">
-        <div className="container mx-auto flex items-center justify-start gap-8 px-4 sm:px-8 md:px-12">
+      <header className="absolute top-0 left-0 right-0 z-50">
+        <div className="container mx-auto flex items-center justify-between gap-8 px-4 sm:px-8 md:px-12 xl:justify-start">
           <div className="-ml-6 flex items-center gap-3 rounded px-6 py-6 text-2xl font-bold text-green-600 transition duration-300 hover:text-green-700 focus:outline-none focus:ring-2 focus:ring-green-400">
             <Logo className="h-[30px]" />
             Luštěniny
@@ -70,6 +72,84 @@ export default function Page({ data }: Props) {
               Kontakt
             </Link>
           </nav>
+          <Menu as="div" className=" relative flex items-center justify-center xl:hidden">
+            {({ open }) => (
+              <>
+                <Menu.Button className="relative z-[60] p-6 text-white focus:text-white focus:outline-none">
+                  <FontAwesomeIcon icon={open ? 'times' : 'bars'} />
+                </Menu.Button>
+
+                <Transition
+                  as={React.Fragment}
+                  enter="transition linear duration-300"
+                  enterFrom="transform scale-95 opacity-0"
+                  enterTo="transform"
+                  leave="transition linear duration-300"
+                  leaveFrom="transform"
+                  leaveTo="transform  scale-95 opacity-0"
+                >
+                  <Menu.Items
+                    className={classNames(
+                      'absolute right-0 top-0 z-50 overflow-hidden whitespace-nowrap rounded-lg bg-gradient-to-br from-green-500 to-green-600 pt-14 text-center font-medium shadow-xl shadow-green-600/25 focus:outline-none',
+                    )}
+                  >
+                    <Menu.Item>
+                      {({ active }) => (
+                        <Link
+                          className={classNames(
+                            'block px-6 py-3 text-green-50',
+                            active ? 'bg-green-600 text-green-50' : '',
+                          )}
+                          to="/"
+                        >
+                          Domů
+                        </Link>
+                      )}
+                    </Menu.Item>
+                    <Menu.Item>
+                      {({ active }) => (
+                        <Link
+                          className={classNames(
+                            'block px-6 py-3 text-green-50',
+                            active ? 'bg-green-600 text-green-50' : '',
+                          )}
+                          to="/#info"
+                        >
+                          O Luštěninách
+                        </Link>
+                      )}
+                    </Menu.Item>
+                    <Menu.Item>
+                      {({ active }) => (
+                        <Link
+                          className={classNames(
+                            'block px-6 py-3 text-green-50',
+                            active ? 'bg-green-600 text-green-50' : '',
+                          )}
+                          to="/#udalosti"
+                        >
+                          Události
+                        </Link>
+                      )}
+                    </Menu.Item>
+                    <Menu.Item>
+                      {({ active }) => (
+                        <Link
+                          className={classNames(
+                            'block px-6 py-3 text-green-50',
+                            active ? 'bg-green-600 text-green-50' : '',
+                          )}
+                          to="/#kontakt"
+                        >
+                          Kontakt
+                        </Link>
+                      )}
+                    </Menu.Item>
+                  </Menu.Items>
+                </Transition>
+              </>
+            )}
+          </Menu>
         </div>
       </header>
       <main className="bg-blue-50">
@@ -425,7 +505,7 @@ export default function Page({ data }: Props) {
         </section>
 
         {/* Features */}
-        <section className="bg- relative py-32" id="info">
+        <section className="relative py-32" id="info">
           <div className="container mx-auto px-4 sm:px-8 md:px-12">
             <h2 className="mb-12 text-center text-2xl font-medium text-gray-900 sm:mb-20 sm:text-3xl md:text-4xl ">
               Co tě bude čekat na <span className="font-bold text-green-500">Luštěninách</span>?
@@ -452,6 +532,72 @@ export default function Page({ data }: Props) {
             </div>
           </div>
         </section>
+
+        {/* Photos */}
+        <section
+          className="relative bg-gradient-to-b from-blue-50 via-gray-200 to-blue-50 py-8"
+          id="photos"
+        >
+          <div className="mx-auto px-4 sm:px-8 md:px-12 lg:px-16">
+            <div className="mx-auto flex max-w-lg flex-wrap lg:max-w-full lg:flex-nowrap lg:items-center">
+              <div className="w-full p-3 lg:w-1/4">
+                <StaticImage
+                  className="mx-auto rounded-lg object-cover shadow-lg shadow-blue-700/20"
+                  src="../content/images/IMG_1.jpg"
+                  alt=""
+                  objectFit="cover"
+                />
+              </div>
+              <div className="flex w-full flex-col lg:w-2/4">
+                <div className="flex items-end">
+                  <div className="w-2/3 p-3">
+                    <StaticImage
+                      className="rounded-lg object-cover shadow-lg shadow-blue-700/20"
+                      src="../content/images/IMG_2.jpg"
+                      alt=""
+                      objectFit="cover"
+                    />
+                  </div>
+                  <div className="w-1/3 p-3">
+                    <StaticImage
+                      className="h-48 rounded-lg object-cover shadow-lg shadow-blue-700/20 lg:h-48 xl:h-64"
+                      src="../content/images/IMG_3.jpg"
+                      alt=""
+                      objectFit="cover"
+                    />
+                  </div>
+                </div>
+                <div className="hidden items-start md:flex">
+                  <div className="w-1/3 p-3">
+                    <StaticImage
+                      className="h-48 rounded-lg object-cover shadow-lg shadow-blue-700/20 lg:h-36 xl:h-48"
+                      src="../content/images/IMG_4.jpeg"
+                      alt=""
+                      objectFit="cover"
+                    />
+                  </div>
+                  <div className="w-2/3 p-3">
+                    <StaticImage
+                      className="rounded-lg object-cover shadow-lg shadow-blue-700/20"
+                      src="../content/images/IMG_6.jpeg"
+                      alt=""
+                      objectFit="cover"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="w-full p-3 lg:w-1/4">
+                <StaticImage
+                  className="rounded-lg object-cover shadow-lg shadow-blue-700/20"
+                  src="../content/images/IMG_5.jpg"
+                  alt=""
+                  objectFit="cover"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Articles */}
         <section className="relative bg-blue-50 py-32" id="udalosti">
           <div className="container mx-auto px-4 sm:px-8 md:px-12">
@@ -463,12 +609,12 @@ export default function Page({ data }: Props) {
             </p>
             <div className="mx-auto grid max-w-6xl gap-16 lg:grid-cols-2">
               {events.map((event) => (
-                <article className="group flex flex-col rounded-xl bg-white shadow-xl transition duration-500 hover:shadow-2xl hover:shadow-black/40">
-                  <div className="relative">
+                <article className="flex flex-col rounded-xl bg-white shadow-xl transition duration-500 hover:shadow-2xl hover:shadow-black/40">
+                  <Link className="group relative block overflow-hidden" to={event.slug}>
                     <GatsbyImage
                       image={getImage(event.image.childImageSharp) as any}
                       alt={event.title}
-                      className="aspect-[3/2] rounded-t-xl"
+                      className="aspect-[3/2] rounded-t-xl transition duration-500 group-hover:scale-110"
                     />
                     <svg
                       className="absolute left-0 bottom-0 right-0 -mb-[2px] w-full text-center text-white"
@@ -483,9 +629,9 @@ export default function Page({ data }: Props) {
                         fill="currentColor"
                       />
                     </svg>
-                  </div>
+                  </Link>
 
-                  <div className="flex-grow px-4 pb-6 text-center sm:px-6 md:px-8 lg:px-10">
+                  <div className="group flex-grow px-4 pb-6 text-center sm:px-6 md:px-8 lg:px-10">
                     <time
                       dateTime={new Date(event.date).toISOString()}
                       className="mb-4 block text-sm font-semibold text-gray-500 transition duration-500 group-hover:text-gray-700"

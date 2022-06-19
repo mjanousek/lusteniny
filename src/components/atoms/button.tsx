@@ -52,8 +52,8 @@ export const ButtonExternalLink = ({ variant, href, text, icon }: ButtonExternal
     )}
   >
     <div className="relative z-10 flex items-center justify-center gap-3">
-      <span>{text}</span>
       <FontAwesomeIcon icon={icon} />
+      <span>{text}</span>
     </div>
     <div className="absolute inset-0 rounded-[8px] bg-black opacity-0 shadow-lg transition duration-300 group-hover:opacity-10"></div>
   </a>

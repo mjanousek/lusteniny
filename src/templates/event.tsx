@@ -1,11 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Dialog, Disclosure, Transition } from '@headlessui/react';
-import { graphql } from 'gatsby';
+import { Disclosure, Menu, Transition } from '@headlessui/react';
+import { graphql, Link } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import React, { Fragment } from 'react';
-import { Footer, Navbar, CallToAction } from '../components/organisms';
+import React from 'react';
+import { Footer, CallToAction } from '../components/organisms';
 
-import { Cypher, EventPageQuery } from '../types/content';
+import { EventPageQuery } from '../types/content';
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import { Navigation, Pagination, A11y } from 'swiper';
 
@@ -14,36 +14,149 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { useState } from 'react';
 import { classNames } from '../utils';
-import { ButtonExternalLink } from '../components/atoms';
+import { ButtonExternalLink, Logo } from '../components/atoms';
 
 export function Event(props: EventPageQuery) {
   const event = props.data.file.childUdalostiYaml;
 
   return (
-    <div>
-      <Navbar />
-      <main>
-        {/* Main header */}
-        <section className="relative -mt-[82px] pb-24">
-          <div className="relative mb-12">
-            <GatsbyImage
-              image={getImage(event.image.childImageSharp) as any}
-              alt={`${event.title}-${new Date(event.date).toLocaleDateString('cs')}`}
-              objectPosition="center"
-              className="aspect-[4/3] max-h-[20rem] w-full saturate-[125%] sm:max-h-[24rem] md:max-h-[28rem] lg:max-h-[32rem] xl:max-h-[36rem]"
-            />
-            <svg
-              className="-translate-y-f absolute bottom-0 left-0 right-0 -mb-px w-full text-white"
-              viewBox="0 0 1922 97"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+    <>
+      <header className="relative z-50 bg-blue-50">
+        <div className="container mx-auto flex items-center justify-between gap-8 px-4 sm:px-8 md:px-12 xl:justify-start">
+          <div className="-ml-6 flex items-center gap-3 rounded px-6 py-6 text-2xl font-bold text-green-600 transition duration-300 hover:text-green-700 focus:outline-none focus:ring-2 focus:ring-green-400">
+            <Logo className="h-[30px]" />
+            Luštěniny
+          </div>
+
+          <nav
+            aria-label="Hlavní navigace"
+            className="ml-auto hidden items-stretch gap-6 text-xl font-medium text-white xl:flex"
+          >
+            <Link
+              className="flex items-center gap-3 rounded px-6 py-8 text-lg font-semibold text-gray-600 transition duration-300 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-400"
+              to="/"
             >
-              <path
-                d="M1921.5 96.4999H0.5V3.49995C382.084 -15.768 659.5 64.5 993 71.4999C1326.5 78.4999 1719.49 65.8273 1921.5 3.49995V96.4999Z"
-                fill="currentColor"
-                stroke="currentColor"
-              />
-            </svg>
+              Domů
+            </Link>
+            <Link
+              className="flex items-center gap-3 rounded px-6 py-8 text-lg font-semibold text-gray-600 transition duration-300 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-400"
+              to="/#info"
+            >
+              O Luštěninách
+            </Link>
+            <Link
+              className="flex items-center gap-3 rounded px-6 py-8 text-lg font-semibold text-gray-600 transition duration-300 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-400"
+              to="/#udalosti"
+            >
+              Události
+            </Link>
+            <Link
+              className="flex items-center gap-3 rounded px-6 py-8 text-lg font-semibold text-gray-600 transition duration-300 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-400"
+              to="/#kontakt"
+            >
+              Kontakt
+            </Link>
+          </nav>
+          <Menu as="div" className="relative flex items-center justify-center xl:hidden">
+            {({ open }) => (
+              <>
+                <Menu.Button
+                  className={classNames(
+                    'relative z-[60] p-6  focus:outline-none',
+                    open ? 'text-white focus:text-green-50' : 'text-gray-700 focus:text-white',
+                  )}
+                >
+                  <FontAwesomeIcon icon={open ? 'times' : 'bars'} />
+                </Menu.Button>
+
+                <Transition
+                  as={React.Fragment}
+                  enter="transition linear duration-300"
+                  enterFrom="transform scale-95 opacity-0"
+                  enterTo="transform"
+                  leave="transition linear duration-300"
+                  leaveFrom="transform"
+                  leaveTo="transform  scale-95 opacity-0"
+                >
+                  <Menu.Items
+                    className={classNames(
+                      'absolute right-0 top-0 z-50 overflow-hidden whitespace-nowrap rounded-lg bg-gradient-to-br from-green-500 to-green-600 pt-14 text-center font-medium shadow-xl shadow-green-600/25 focus:outline-none',
+                    )}
+                  >
+                    <Menu.Item>
+                      {({ active }) => (
+                        <Link
+                          className={classNames(
+                            'block px-6 py-3 text-green-50',
+                            active ? 'bg-green-600 text-green-50' : '',
+                          )}
+                          to="/"
+                        >
+                          Domů
+                        </Link>
+                      )}
+                    </Menu.Item>
+                    <Menu.Item>
+                      {({ active }) => (
+                        <Link
+                          className={classNames(
+                            'block px-6 py-3 text-green-50',
+                            active ? 'bg-green-600 text-green-50' : '',
+                          )}
+                          to="/#info"
+                        >
+                          O Luštěninách
+                        </Link>
+                      )}
+                    </Menu.Item>
+                    <Menu.Item>
+                      {({ active }) => (
+                        <Link
+                          className={classNames(
+                            'block px-6 py-3 text-green-50',
+                            active ? 'bg-green-600 text-green-50' : '',
+                          )}
+                          to="/#udalosti"
+                        >
+                          Události
+                        </Link>
+                      )}
+                    </Menu.Item>
+                    <Menu.Item>
+                      {({ active }) => (
+                        <Link
+                          className={classNames(
+                            'block px-6 py-3 text-green-50',
+                            active ? 'bg-green-600 text-green-50' : '',
+                          )}
+                          to="/#kontakt"
+                        >
+                          Kontakt
+                        </Link>
+                      )}
+                    </Menu.Item>
+                  </Menu.Items>
+                </Transition>
+              </>
+            )}
+          </Menu>
+        </div>
+      </header>
+      <main className="bg-blue-50">
+        {/* Main header */}
+        <section className="relative bg-white pb-24">
+          <div className="relative  pt-12">
+            <div className="container relative z-20 mx-auto px-4 text-center sm:px-8 md:px-12">
+              <div className="relative mb-12">
+                <GatsbyImage
+                  image={getImage(event.image.childImageSharp) as any}
+                  alt={`${event.title}-${new Date(event.date).toLocaleDateString('cs')}`}
+                  objectPosition="center"
+                  className="aspect-[4/3] max-h-[20rem] w-full rounded-xl shadow-lg shadow-blue-800/25 saturate-[125%] sm:max-h-[24rem] md:max-h-[28rem] lg:max-h-[32rem] xl:max-h-[36rem]"
+                />
+              </div>
+            </div>
+            <div className="absolute left-0 right-0 top-0 h-1/2 bg-gradient-to-b from-blue-50 to-white"></div>
           </div>
 
           <div className="container mx-auto max-w-7xl px-4 text-center sm:px-8 md:px-12">
@@ -73,50 +186,26 @@ export function Event(props: EventPageQuery) {
         </section>
 
         {/* Winners */}
-        <section>
-          <h2 className="mb-4 text-center text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl lg:text-5xl">
-            Vítězné týmy
-          </h2>
-          <div className="relative mt-32 xl:mt-40">
-            <svg
-              className="w-full"
-              viewBox="0 0 1913 155"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1913 154.999H-7C-7 154.999 577.574 -0.374917 960 0.500019C1337.03 1.36261 1913 154.999 1913 154.999Z"
-                fill="#F2F7FB"
-              />
-            </svg>
-            {event.winners.map((winner, index) => (
-              <ul
-                className={classNames(
-                  'absolute text-center',
-                  index === 0 ? 'left-1/2 bottom-[150%] -translate-x-1/2 sm:bottom-full' : '',
-                  index === 1
-                    ? 'left-[20%] bottom-full -translate-x-1/2 translate-y-1/3 lg:left-[25%] xl:left-[30%]'
-                    : '',
-                  index === 2
-                    ? 'left-[80%] bottom-full -translate-x-1/2 translate-y-1/3 lg:left-[75%] xl:left-[70%]'
-                    : '',
-                )}
-              >
-                <li>
-                  <span className="block pb-2 font-medium text-gray-700 sm:text-lg lg:pb-4 lg:text-xl xl:text-2xl">
-                    {winner}
-                  </span>
-                  <span className="mx-auto -mb-10 flex h-14 w-14 items-center justify-center rounded-full border-2 border-green-600 bg-green-100 text-3xl font-bold text-green-700 sm:h-20 sm:w-20">
+        <section className="bg-white pt-12 pb-24">
+          <div className="container mx-auto  px-4 py-16 sm:px-8 md:px-12 md:py-12 lg:py-8 xl:py-4">
+            <h2 className="mb-16 text-center text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl lg:text-5xl">
+              Vítězné týmy
+            </h2>
+            <ol className="mx-auto grid max-w-5xl justify-center gap-16 md:grid-cols-3">
+              {event.winners.map((winner, index) => (
+                <li className="group flex flex-col items-center rounded-lg border-2 border-green-500 p-8 shadow shadow-green-500/20 transition duration-500  hover:shadow-lg hover:shadow-green-500/30">
+                  <div className="mb-6 -mt-14 flex h-12 w-12 items-center justify-center rounded-full border-2 border-green-500 bg-white text-xl font-bold text-green-600 sm:-mt-16 sm:h-16 sm:w-16 sm:text-3xl">
                     {index + 1}
-                  </span>
+                  </div>
+                  <div className="font-medium text-gray-900 sm:text-lg lg:text-xl">{winner}</div>
                 </li>
-              </ul>
-            ))}
+              ))}
+            </ol>
           </div>
         </section>
 
         {/* Cyphers */}
-        <section className="bg-blue-50 pt-8">
+        <section className="bg-blue-50 py-24">
           <div className="container mx-auto  px-4 py-16 sm:px-8 md:px-12 md:py-12 lg:py-8 xl:py-4">
             <header className="mx-auto mb-16 max-w-2xl text-center">
               <h2 className="mb-4 text-center text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl lg:text-5xl">
@@ -233,23 +322,11 @@ export function Event(props: EventPageQuery) {
               ))}
             </div>
           </div>
-          <svg
-            className="w-full translate-y-1 text-white"
-            viewBox="0 0 1927 149"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M1926 148H1C540.663 91.3705 924.32 124.594 1926 1V148Z"
-              stroke="currentColor"
-              fill="currentColor"
-            />
-          </svg>
         </section>
 
         {/* Bonus information */}
         {event.bonusInformation ? (
-          <section className="py-24">
+          <section className="bg-white py-24">
             <div className="container mx-auto max-w-7xl px-4  sm:px-8 md:px-12">
               <header className="mx-auto mb-16 max-w-2xl text-center">
                 <h2 className="mb-4 text-center text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl lg:text-5xl">
@@ -275,7 +352,7 @@ export function Event(props: EventPageQuery) {
             </div>
           </section>
         ) : (
-          <section className="py-24">
+          <section className="bg-white py-24">
             <div className="container mx-auto mb-16 max-w-7xl px-4 text-center sm:px-8 md:px-12 ">
               <h2 className="mb-4 text-center text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl lg:text-5xl">
                 Bonusové informace k šifám
@@ -290,7 +367,7 @@ export function Event(props: EventPageQuery) {
       </main>
       <CallToAction />
       <Footer />
-    </div>
+    </>
   );
 }
 
