@@ -547,8 +547,8 @@ export default function Page({ data }: Props) {
                   Jen vtipkujeme, tématem sice bude slavný zlínský atlet, ale pot na čele budete mít nejspíš jen z našich šifer. Nicméně se můžete těšit na další várku šifer a příjemně strávené sobotní odpoledne.
                 </p>
                 <p className="text-green-50  sm:text-lg font-semibold mb-4 leading-relaxed">
-                  Kdy a kde se potkáme? Sejdeme se v sobotu <strong>10. 6. 2022 v 14:00</strong>.
-                  <strong>Na místě, které ještě upřesníme</strong>.
+                  Kdy a kde se potkáme? Sejdeme se v sobotu <strong>10. 6. 2023 v 14:00</strong>.
+                  <strong>Ve Zlíně, na tržnici pod kaštany</strong>.
                 </p>
               </div>
               <form action="" className="bg-white rounded-lg p-8 shadow-lg text-center">
