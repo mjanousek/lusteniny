@@ -308,9 +308,11 @@ export function Event(props: EventPageQuery) {
                       leaveTo="transform scale-95 opacity-0"
                     >
                       <Disclosure.Panel className="bg-white p-6 text-lg">
-                        <ol className="mb-4 list-decimal space-y-2 pl-4">
+                        <ol className="mb-4 list-decimal space-y-2 pl-4 text-gray-400">
                           {cypher.steps.map((step) => (
-                            <li>{step}</li>
+                            <li>
+                              <span className="text-gray-800 font-normal">{step}</span>
+                            </li>
                           ))}
                         </ol>
                         <p className="rounded-[4px] border border-green-500 bg-green-50 p-2 text-center text-green-700 shadow-sm shadow-green-500/25">

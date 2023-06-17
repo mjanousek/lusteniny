@@ -175,7 +175,7 @@ export default function Page({ data }: Props) {
             <div className="mx-auto grid max-w-6xl gap-16 lg:grid-cols-2">
               {events.map((event) => (
                 <article className="flex flex-col rounded-xl bg-white shadow-xl transition duration-500 hover:shadow-2xl hover:shadow-black/40">
-                  <Link className="group relative block overflow-hidden" to={event.slug}>
+                  <Link className="group relative block overflow-hidden rounded-t-xl" to={event.slug}>
                     <GatsbyImage
                       image={getImage(event.image.childImageSharp) as any}
                       alt={event.title}
