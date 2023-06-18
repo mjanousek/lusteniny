@@ -460,18 +460,6 @@ export default function Page({ data }: Props) {
                     height={32}
                   />
                 </a>
-                <a
-                  href="https://www.zlin700.kulturazlin.cz/"
-                  target="_blank"
-                  rel="noopener noreferrer external"
-                  className="block w-1/2 rounded-lg p-4 transition duration-300 hover:scale-105 focus:scale-105 focus:outline-none md:w-1/3 lg:w-fit"
-                >
-                  <StaticImage
-                    src="../content/images/sponsors/700_zlin.png"
-                    alt="700 Let Zlína"
-                    height={50}
-                  />
-                </a>
 
                 <a
                   href="https://cngroup.cz/"
@@ -483,43 +471,6 @@ export default function Page({ data }: Props) {
                     src="../content/images/sponsors/cn_group.png"
                     alt="CN Group"
                     height={32}
-                  />
-                </a>
-
-                <a
-                  href="http://palkstav.cz/"
-                  target="_blank"
-                  rel="noopener noreferrer external"
-                  className="block w-1/2 rounded-lg p-4 transition duration-300 hover:scale-105 focus:scale-105 focus:outline-none md:w-1/3 lg:w-fit"
-                >
-                  <StaticImage
-                    src="../content/images/sponsors/palkstav.png"
-                    alt="Palkstav"
-                    height={40}
-                  />
-                </a>
-                <a
-                  href="https://bombusenergy.cz/"
-                  target="_blank"
-                  rel="noopener noreferrer external"
-                  className="block w-1/2 rounded-lg p-4 transition duration-300 hover:scale-105 focus:scale-105 focus:outline-none md:w-1/3 lg:w-fit"
-                >
-                  <StaticImage
-                    src="../content/images/sponsors/bombus.png"
-                    alt="Bombus"
-                    height={32}
-                  />
-                </a>
-                <a
-                  href="http://www.svetbublin.cz/"
-                  target="_blank"
-                  rel="noopener noreferrer external"
-                  className="block w-1/2 rounded-lg p-4 transition duration-300 hover:scale-105 focus:scale-105 focus:outline-none md:w-1/3 lg:w-fit"
-                >
-                  <StaticImage
-                    src="../content/images/sponsors/svet_bublin.png"
-                    alt="Svět bublin"
-                    height={40}
                   />
                 </a>
               </div>
