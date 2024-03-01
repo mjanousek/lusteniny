@@ -494,11 +494,6 @@ export default function Page({ data }: Props) {
                   opět bude konat v centru Zlína, i když Vás možná zavede na doposud nenavštívená
                   místa. Vše se včas dozvíte, ale teď si zarezervujte termín a těšte se s námi! 🙂
                 </p>
-                <p className="mb-4  font-medium leading-relaxed text-green-50 sm:text-lg">
-                  Jen vtipkujeme, tématem sice bude slavný zlínský atlet, ale pot na čele budete mít
-                  nejspíš jen z našich šifer. Nicméně se můžete těšit na další várku šifer a
-                  příjemně strávené sobotní odpoledne.
-                </p>
                 <p className="mb-4  font-semibold leading-relaxed text-green-50 sm:text-lg">
                   Kdy a kde se potkáme? Sejdeme se v sobotu <strong>8. 6. 2024 v 14:00</strong>.
                   <strong>Na místě, které se včas dozvíte</strong>.
