@@ -41,7 +41,7 @@ export default function Page({ data }: Props) {
         description="Luštěniny jsou tradiční šifrovací hra pořádána v centru Zlína, které se můžeš
                 zúčastnit jak v týmu, tak sám. Neváhej a přijd si k nám zaluštit."
       />
-      <header className="top-0 left-0 right-0 z-50 bg-blue-50 lg:absolute lg:bg-transparent">
+      <header className="left-0 right-0 top-0 z-50 bg-blue-50 lg:absolute lg:bg-transparent">
         <div className="container mx-auto flex items-center justify-between gap-8 px-4 sm:px-8 md:px-12 xl:justify-start">
           <div className="-ml-6 flex items-center gap-3 rounded px-6 py-6 text-2xl font-bold text-green-600 transition duration-300 hover:text-green-700 focus:outline-none focus:ring-2 focus:ring-green-400">
             <Logo className="h-[30px]" />
@@ -478,6 +478,69 @@ export default function Page({ data }: Props) {
           </div>
         </section>
 
+        <section className="relative z-20 bg-gradient-to-br from-green-500 to-green-600 py-16 shadow-lg shadow-green-600/20">
+          <div className="container mx-auto px-4">
+            <div className="grid gap-16 md:grid-cols-2">
+              <div>
+                <h2 className="mb-6 text-2xl font-bold text-white sm:text-3xl md:text-4xl">
+                  Luštěniny 2024
+                </h2>
+                <p className="mb-4 font-medium leading-relaxed text-green-50 sm:text-lg">
+                  A je to venku, tímto bychom rádi oficiálně oznámili, že <strong>7. ročník Luštěnin</strong> je
+                  venku.
+                </p>
+                <p className="mb-4  font-medium leading-relaxed text-green-50 sm:text-lg">
+                  Téma ani místo Vám ještě neprozradíme, ale můžete počítat s tím, že se šifrovačka
+                  opět bude konat v centru Zlína, i když Vás možná zavede na doposud nenavštívená
+                  místa. Vše se včas dozvíte, ale teď si zarezervujte termín a těšte se s námi! 🙂
+                </p>
+                <p className="mb-4  font-medium leading-relaxed text-green-50 sm:text-lg">
+                  Jen vtipkujeme, tématem sice bude slavný zlínský atlet, ale pot na čele budete mít
+                  nejspíš jen z našich šifer. Nicméně se můžete těšit na další várku šifer a
+                  příjemně strávené sobotní odpoledne.
+                </p>
+                <p className="mb-4  font-semibold leading-relaxed text-green-50 sm:text-lg">
+                  Kdy a kde se potkáme? Sejdeme se v sobotu <strong>8. 6. 2024 v 14:00</strong>.
+                  <strong>Na místě, které se včas dozvíte</strong>.
+                </p>
+              </div>
+              <form action="" className="rounded-lg bg-white p-8 text-center shadow-lg">
+                <h3 className="mb-6 text-xl font-semibold text-gray-900 sm:text-2xl md:text-2xl">
+                  Registruj svůj tým
+                </h3>
+                <p className="mb-8 text-center leading-relaxed text-gray-700 sm:text-lg">
+                  Svůj tým můžeš registrovat napsáním komentáře s názvem týmu a počtem členů na
+                  facebookové události, nebo nám můžeš napsat email.
+                </p>
+
+                <a
+                  href="https://www.facebook.com/events/2522505537954709/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mb-3 flex items-center justify-center gap-3 rounded-lg bg-gradient-to-r from-blue-500 to-blue-600 px-6 py-3 font-semibold text-white shadow shadow-blue-600/20"
+                >
+                  <span>Registrovat se na facebookové události</span>
+                  <FontAwesomeIcon icon={['fab', 'facebook-square']} />
+                </a>
+
+                <a
+                  href=" mailto:info@lusteniny.eu?subject=Registrace%20t%C3%BDmu%20na%20Lu%C5%A1t%C4%9Bniny%202024&body=Dobr%C3%BD%20den%2C%0D%0A%0D%0Acht%C4%9Bli%20bychom%20registrovat%20sv%C5%AFj%20t%C3%BDm%20na%20ud%C3%A1losti%20Lu%C5%A1t%C4%9Bniny%202024%20(08.06.2023).%0D%0A%0D%0AN%C3%A1zev%20t%C3%BDmu%3A%20_____%0D%0APo%C4%8Det%20%C4%8Dlen%C5%AF%3A%20_____%0D%0A "
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mb-4 flex items-center justify-center gap-3 rounded-lg bg-gradient-to-r from-green-500 to-green-600 px-6 py-3 font-semibold text-white shadow shadow-green-600/20"
+                >
+                  <span>Registrovat se emailem</span>
+                  <FontAwesomeIcon icon={'envelope'} />
+                </a>
+                <small className="text-sm text-gray-700">
+                  (Přihlášení lze provést i na místě, ale vzhledem k náročnosti příprav vás prosíme
+                  o předčasnou registraci )
+                </small>
+              </form>
+            </div>
+          </div>
+        </section>
+
         {/* Features */}
         <section className="relative py-32" id="info">
           <div className="container mx-auto px-4 sm:px-8 md:px-12">
@@ -584,14 +647,17 @@ export default function Page({ data }: Props) {
             <div className="mx-auto grid max-w-6xl gap-16 lg:grid-cols-2">
               {events.map((event) => (
                 <article className="flex flex-col rounded-xl bg-white shadow-xl transition duration-500 hover:shadow-2xl hover:shadow-black/40">
-                  <Link className="group relative block overflow-hidden rounded-t-xl" to={event.slug}>
+                  <Link
+                    className="group relative block overflow-hidden rounded-t-xl"
+                    to={event.slug}
+                  >
                     <GatsbyImage
                       image={getImage(event.image.childImageSharp) as any}
                       alt={event.title}
                       className="aspect-[3/2] rounded-t-xl transition duration-500 group-hover:scale-110"
                     />
                     <svg
-                      className="absolute left-0 bottom-0 right-0 -mb-[2px] w-full text-center text-white"
+                      className="absolute bottom-0 left-0 right-0 -mb-[2px] w-full text-center text-white"
                       viewBox="0 0 201 7"
                       preserveAspectRatio="none"
                       fill="none"
@@ -741,7 +807,7 @@ export const query = graphql`
   {
     events: allFile(
       filter: { relativeDirectory: { eq: "udalosti" } }
-      sort: {childrenUdalostiYaml: {date: DESC}}
+      sort: { childrenUdalostiYaml: { date: DESC } }
     ) {
       edges {
         node {
