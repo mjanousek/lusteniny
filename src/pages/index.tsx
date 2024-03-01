@@ -495,8 +495,8 @@ export default function Page({ data }: Props) {
                   místa. Vše se včas dozvíte, ale teď si zarezervujte termín a těšte se s námi! 🙂
                 </p>
                 <p className="mb-4  font-semibold leading-relaxed text-green-50 sm:text-lg">
-                  Kdy a kde se potkáme? Sejdeme se v sobotu <strong>8. 6. 2024 v 14:00</strong>.
-                  <strong>Na místě, které se včas dozvíte</strong>.
+                  Kdy a kde se potkáme? Sejdeme se v sobotu <strong>8. 6. 2024 v 14:00</strong>. <br />
+                  Na místě, které se včas dozvíte.
                 </p>
               </div>
               <form action="" className="rounded-lg bg-white p-8 text-center shadow-lg">
