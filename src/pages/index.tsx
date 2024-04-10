@@ -447,12 +447,40 @@ export default function Page({ data }: Props) {
               className="flex flex-col items-center gap-8 lg:items-start xl:flex-row xl:items-center"
             >
               <p className="flex-grow font-medium text-gray-700">S pomocí našich sponzorů:</p>
-              <div className="flex flex-wrap">
+              <div className="flex flex-wrap items-center">
+                <a
+                  href="https://vitar.cz/"
+                  target="_blank"
+                  rel="noopener noreferrer external"
+                  className="block w-1/2 rounded-lg px-4 py-4 lg:py-0 transition duration-300 hover:scale-105 focus:scale-105 focus:outline-none md:w-1/3 lg:w-fit"
+                >
+                  <StaticImage
+                    src="../content/images/sponsors/vitar.png"
+                    alt="Vitar"
+                    className='rounded-lg overflow-hidden'
+                    height={48}
+                  />
+                </a>
+
+                <a
+                  href="https://czechgames.com/cs/"
+                  target="_blank"
+                  rel="noopener noreferrer external"
+                  className="block w-1/2 rounded-lg px-4 py-4 lg:py-0 transition duration-300 hover:scale-105 focus:scale-105 focus:outline-none md:w-1/3 lg:w-fit"
+                >
+                  <StaticImage
+                    src="../content/images/sponsors/cge.png"
+                    alt="Czech games edition"
+                    className='rounded-lg overflow-hidden'
+                    height={48}
+                  />
+                </a>
+
                 <a
                   href="https://www.kulturazlin.cz/"
                   target="_blank"
                   rel="noopener noreferrer external"
-                  className="block w-1/2 rounded-lg p-4 transition duration-300 hover:scale-105 focus:scale-105 focus:outline-none md:w-1/3 lg:w-fit"
+                  className="block w-1/2 rounded-lg px-4 py-4 lg:py-0 transition duration-300 hover:scale-105 focus:scale-105 focus:outline-none md:w-1/3 lg:w-fit"
                 >
                   <StaticImage
                     src="../content/images/sponsors/zivy_zlin.png"
@@ -465,7 +493,7 @@ export default function Page({ data }: Props) {
                   href="https://cngroup.cz/"
                   target="_blank"
                   rel="noopener noreferrer external"
-                  className="block w-1/2 rounded-lg p-4 transition duration-300 hover:scale-105 focus:scale-105 focus:outline-none md:w-1/3 lg:w-fit"
+                  className="block w-1/2 rounded-lg px-4 py-4 lg:py-0 transition duration-300 hover:scale-105 focus:scale-105 focus:outline-none md:w-1/3 lg:w-fit"
                 >
                   <StaticImage
                     src="../content/images/sponsors/cn_group.png"
