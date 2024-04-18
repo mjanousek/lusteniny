@@ -161,7 +161,11 @@ export default function Page() {
               <h2 className="text-2xl font-semibold text-slate-800 sm:text-3xl md:text-4xl ">
                 Šifra
               </h2>
-              <StaticImage src="../../content/images/polstarova-bitva/pasta.png" alt="" />
+
+              <div className="flex gap-4">
+                <StaticImage src="../../content/images/polstarova-bitva/pasta.png" alt="" />
+                <StaticImage src="../../content/images/polstarova-bitva/brail.png" alt="" />
+              </div>
               <p className="text-center text-lg font-bold">Řešení: _ _ _ _ _ _ _ _</p>
             </div>
             <div className="mt-12 flex text-center text-sm font-bold shadow-sm">
