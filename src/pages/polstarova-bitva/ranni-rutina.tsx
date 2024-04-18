@@ -5,6 +5,7 @@ import React from 'react';
 import { ButtonInternalLink, Logo } from '../../components/atoms';
 import { classNames } from '../../utils';
 import { Footer } from '../../components/organisms';
+import { StaticImage } from 'gatsby-plugin-image';
 
 export default function Page() {
   return (
@@ -134,59 +135,39 @@ export default function Page() {
         <section className="relative py-16" id="info">
           <div className="container mx-auto max-w-6xl px-4 sm:px-8 md:px-12">
             <h1 className="mb-6 text-3xl font-bold text-slate-800 sm:text-4xl md:text-5xl lg:text-6xl">
-              Šifra č.2 - Pracovní den
+              Šifra č.1 - Ranní rutina
             </h1>
             <div className="mt-16 space-y-4">
               <h2 className="text-2xl font-semibold text-slate-800 sm:text-3xl md:text-4xl ">
                 Úvodní informace
               </h2>
               <p className="text-sm font-medium leading-relaxed text-gray-700 sm:text-base sm:leading-relaxed">
-                Kromě mapování objektů na písmena abecedy může text být zakódován i skrytím v
-                souvislém bloku textu. Tato technika, známá jako steganografie, umožňuje skrýt
-                zprávu v zdánlivě normálním textu, aniž by si toho většina čtenářů všimla.
+                Šifrovací soutěž je zábavná a vzdělávací aktivita, při které týmy soutěží v řešení
+                různých šifer a kódů. Cílem této soutěže je rozluštit co nejvíce šifer, které byly
+                zašifrovány pomocí různých technik. Mezi tyto techniky patří například mapování
+                různých objektů, čísel nebo symbolů na písmena abecedy.
               </p>
               <p className="text-sm font-medium leading-relaxed text-gray-700 sm:text-base sm:leading-relaxed">
-                Zpráva může být zakódována například pomocí prvních nebo posledních písmen vět,
-                řádků, slov nebo dokonce nějakých jiných skrytých vzorců. Tato šifra vyžaduje nejen
-                schopnost detekce skryté zprávy, ale také kreativní myšlení a důkladné zkoumání
-                textu.
+                Soutěžícím může být nápomocná kartička, která obsahuje specifické mapování,
+                například čísel na písmena abecedy, brailovo písmo, binární kód a podobně. Tato
+                kartička může sloužit jako klíč k rozluštění některých šifer.
+              </p>
+              <p className="text-sm font-medium leading-relaxed text-gray-700 sm:text-base sm:leading-relaxed">
+                Je-li toto vaše první zkušenost se šifrovací soutěží, nebojte se! I vám přikládáme
+                tuto kartičku a drobně napovídáme, že byste ji mohli potřebovat :)
               </p>
             </div>
             <div className="mt-16 space-y-8">
               <h2 className="text-2xl font-semibold text-slate-800 sm:text-3xl md:text-4xl ">
                 Šifra
               </h2>
-              <div className="space-y-3 font-medium italic text-slate-900">
-                <p>Dobrý den,</p>
-                <p>za základě vašeho dotazu Vám zasíláme podstatné informace o naší společnosti:</p>
-                <p>
-                  “Náš tým v marketingové firmě se neustále snaží inovovat a přinášet nové nápady.
-                  Aktivní spolupráce mezi odděleními je klíčová pro úspěch našich projektů. Rozsáhlá
-                  analýza trhu nám poskytuje cenné informace pro naše strategické plánování. Každý
-                  člen týmu má svůj podíl na tvorbě kreativních kampaní. Organizace a plánování jsou
-                  základem pro efektivní využití našich zdrojů. Lze se spolehnout na to, že každý z
-                  nás nese odpovědnost za svůj úkol. Energie a nadšení, které do práce vkládáme, se
-                  odráží ve výsledcích naší práce. Pravidelná setkávání a brainstorming pomáhají
-                  vytvářet inovativní řešení. Společně tvoříme dynamické prostředí, kde se
-                  inspirujeme a podporujeme. Inovace jsou pro nás stálou motivací ke zdokonalování
-                  našich služeb. Efektivní komunikace a spolupráce jsou klíčové pro dosažení našich
-                  marketingových cílů.”
-                </p>
-                <p>Přejeme Vám hezký den a těšíme se na budoucí spolupráci S pozdravem</p>
-                <p>Marie Nováková</p>
-              </div>
-              <p className="text-center text-lg font-bold">Řešení: _ _ _ _ _ _ _ _ _ _ _</p>
+              <StaticImage src="../../content/images/polstarova-bitva/pasta.png" alt="" />
+              <p className="text-center text-lg font-bold">Řešení: _ _ _ _ _ _ _ _</p>
             </div>
             <div className="mt-12 flex text-center text-sm font-bold shadow-sm">
               <Link
-                className="block w-full rounded-l-lg border border-slate-300 bg-white px-4 py-4"
-                to="/polstarova-bitva/ranni-rutina"
-              >
-                Předchozí šifra
-              </Link>
-              <Link
-                className="block w-full rounded-r-lg border-slate-300 bg-green-500 px-4 py-4 text-white"
-                to="/polstarova-bitva/na-dobrou-noc"
+                className="block w-full rounded-lg border-slate-300 bg-green-500 px-4 py-4 text-white"
+                to="/polstarova-bitva/pracovni-den"
               >
                 Další šifra
               </Link>

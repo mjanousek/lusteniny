@@ -382,7 +382,7 @@ export default function Page({ data }: Props) {
           </div>
         </section>
 
-        <section className="relative z-20 bg-gradient-to-br from-green-500 to-green-600 py-16 shadow-lg shadow-green-600/20">
+        <section className="relative z-20 bg-gradient-to-br from-green-500 to-green-600 py-16 shadow-lg shadow-green-600/20"  id="info">
           <div className="container mx-auto px-4">
             <div className="grid gap-16 md:grid-cols-2">
               <div>
@@ -441,7 +441,7 @@ export default function Page({ data }: Props) {
         </section>
 
         {/* Features */}
-        <section className="relative py-32" id="info">
+        <section className="relative py-32">
           <div className="container mx-auto px-4 sm:px-8 md:px-12">
             <h2 className="mb-12 text-center text-2xl font-medium text-gray-900 sm:mb-20 sm:text-3xl md:text-4xl ">
               Co tě bude čekat na <span className="font-bold text-green-500">Luštěninách</span>?
