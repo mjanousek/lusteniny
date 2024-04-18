@@ -8,7 +8,7 @@ type ButtonInternalLinkProps = {
   variant: 'green';
   to: string;
   text: string;
-  icon: IconProp;
+  icon?: IconProp;
 };
 
 export const ButtonInternalLink = ({ variant, to, text, icon }: ButtonInternalLinkProps) => (
@@ -20,7 +20,7 @@ export const ButtonInternalLink = ({ variant, to, text, icon }: ButtonInternalLi
   >
     <div className="relative z-10 flex items-center justify-center gap-3">
       <span>{text}</span>
-      <FontAwesomeIcon icon={icon} />
+      {icon && <FontAwesomeIcon icon={icon} />}
     </div>
     <div className="absolute inset-0 rounded-[8px] bg-black opacity-0 shadow-lg shadow-green-500/25 transition duration-300 group-hover:opacity-10"></div>
   </Link>
