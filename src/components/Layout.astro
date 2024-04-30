@@ -1,0 +1,27 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  imageUrl?: string;
+  hasAlternativeHeader?: boolean;
+}
+
+import "@fontsource-variable/quicksand";
+import "../styles/index.css";
+import CallToActionSection from "./sections/CallToActionSection.astro";
+import Head from "./organisms/Head.astro";
+import Footer from "./organisms/Footer.astro";
+import { Header } from "./atoms";
+---
+
+<html lang="cs">
+  <Head {...Astro.props} />
+  <body class="bg-blue-50">
+    <Header client:load isAlternative={Astro.props.hasAlternativeHeader} />
+    <main class="bg-blue-50">
+      <slot />
+      <CallToActionSection />
+    </main>
+    <Footer />
+  </body>
+</html>

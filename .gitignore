@@ -1,5 +1,5 @@
 node_modules/
 .cache/
-public
+dist
 .yarn
 .DS_Store

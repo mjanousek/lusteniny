@@ -1,0 +1,15 @@
+RewriteEngine on
+
+# presmerovani www na non-www
+
+RewriteCond %{HTTP*HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.\_)$ https://%1/$1 [R=301,L]
+
+# presmerovani http na https
+
+RewriteCond %{HTTPS} !=on [NC]
+RewriteRule ^(.\*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# 404 page
+
+ErrorDocument 404 /404.html

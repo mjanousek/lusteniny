@@ -1,26 +1,19 @@
-# Lušteniny
-This project uses [GatsbyJS](https://www.gatsbyjs.com/).
+# Luštěniny
 
-## ❓ About 
-Cypher game in Zlín  
-Check out [Luštěniny.eu](https://www.lusteniny.eu)
+Resources:
 
-## 🚀 Quick Start
-- Setup Environment
-  - Node.JS
-  - NPM
-  - VSCode (recommended)
-    - ESLint
-    - Babel Javascript
-- `cd` to `/`
-- Run locally `npm run develop`
-- Create & view build `npm run build` `npm run serve`
-- Lint check&fix `npm run lint:fix`
-
-## Learn More
-- [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-- [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-- [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-- [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-- [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-- [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+- [Astro](https://astro.build/)
+- [React](https://react.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [FontSource](https://fontsource.org/)
+- [Swiper Carousel](https://swiperjs.com/)
+- [Azure functions](https://learn.microsoft.com/en-us/azure/azure-functions/functions-get-started?pivots=programming-language-csharp)
+- [Github Actions](https://github.com/features/actions)
+- [Trunk based development](https://trunkbaseddevelopment.com/)
+- [Headless UI](https://headlessui.com/)
+- [Icons](https://primereact.org/icons/)
+- [Favicon Generator](https://realfavicongenerator.net/)
+- [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview)
+- [WAVE Web Accessibility Evaluation Tools](https://wave.webaim.org/)
+- [Eslint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
