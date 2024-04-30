@@ -70,6 +70,7 @@ export const Header = ({ isAlternative }: Props) => (
                   ? "text-white focus:text-green-50"
                   : "rounded-lg text-gray-700 focus:text-gray-900 ",
               )}
+              title={open ?'Zavřít menu' : 'Otevřít menu'}
             >
               <Icon icon={open ? "xmark" : "bars"} className="h-5" />
             </Menu.Button>
