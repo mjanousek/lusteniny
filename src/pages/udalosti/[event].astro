@@ -1,0 +1,27 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../components/Layout.astro";
+import WinnersSection from "../../components/sections/event/WinnersSection.astro";
+import IntroSection from "../../components/sections/event/IntroSection.astro";
+import BonusInformationSection from "../../components/sections/event/BonusInformationSection.astro";
+import CyphersSection from "../../components/sections/event/CyphersSection.astro";
+
+export async function getStaticPaths() {
+  const blogEntries = await getCollection("events");
+  return blogEntries.map((entry) => ({
+    params: { event: entry.id },
+    props: { entry },
+  }));
+}
+const event = Astro.props.entry.data;
+---
+
+<Layout
+  title={`${event.title} | Luštěniny | Šifrovací hra ve Zlíně `}
+  description={event.description}
+>
+  <IntroSection {...event} />
+  <WinnersSection winners={event.winners} />
+  <CyphersSection cyphers={event.cyphers} />
+  <BonusInformationSection bonusInformation={event.bonusInformation} />
+</Layout>

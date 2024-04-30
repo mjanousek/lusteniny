@@ -36,5 +36,4 @@ jobs:
           server: 248147.w47.wedos.net
           username: w248147_github
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: public/
-      
+          local-dir: dist/

@@ -1,0 +1,35 @@
+/* The integration's default injected base.css file */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  @apply text-green-600 h-full top-0 mt-0 right-0 px-6  transition duration-300 hover:text-green-600 !important;
+}
+
+.swiper-button-next {
+  @apply right-0 !important;
+}
+
+.swiper-button-prev {
+  @apply left-0 !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  @apply font-extrabold text-3xl !important;
+}
+
+.swiper-pagination-bullet {
+  @apply transition duration-300 !important;
+}
+
+.swiper-pagination-bullet.active {
+  @apply bg-green-600 opacity-100 !important;
+}

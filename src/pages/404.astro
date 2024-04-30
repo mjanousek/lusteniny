@@ -1,0 +1,35 @@
+---
+import Layout from "../components/Layout.astro";
+import { ButtonInternalLink } from "../components/atoms/button";
+
+const metaTags = {
+  title: "Stránka nenalezena | Luštěniny | Šifrovací hra ve Zlíně",
+  description:
+    "Luštěniny jsou tradiční šifrovací hra pořádána v centru Zlína, které se můžeš zúčastnit jak v týmu, tak sám. Neváhej a přijd si k nám zaluštit.",
+};
+---
+
+<Layout {...metaTags}>
+  <section
+    class="relative pt-32 pb-64 bg-white"
+    id="udalosti"
+  >
+    <div class="container mx-auto px-4 sm:px-8 md:px-12">
+      <h1
+        class="mb-4 text-center text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
+      >
+        Stránka nenalezena
+      </h1>
+      <p class="mb-8 text-center font-medium leading-relaxed text-gray-700">
+        Omlouváme se, ale tato stránka nebyla nalezena
+      </p>
+      <div class="flex justify-center">
+        <ButtonInternalLink
+          to="/"
+          text="Zpět na úvodní stránku"
+          variant="green"
+        />
+      </div>
+    </div>
+  </section>
+</Layout>

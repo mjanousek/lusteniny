@@ -1,1 +1,3 @@
-export const classNames = (...args: any[]) => args.filter(Boolean).join(' ');
+export const classNames = (...args: any[]) => {
+  return args.filter(Boolean).join(" ");
+};

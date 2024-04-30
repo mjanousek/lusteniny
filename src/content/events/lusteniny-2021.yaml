@@ -1,0 +1,178 @@
+title: Luštěniny IV.
+description: >
+  Filmové luštěniny, náš 4 ročník. Z počátku nás pronásledovala nervozita z nízkého počtu účastníku, a tedy počet připravených materiálů byl nižší než minulé ročníky. 
+  To se nám naštěstí stalo osudné, v sobotní poledne nás čekala rekordní účast a naši organizátoři, kteří sami vtipkovali o běhací šifře, si sami dali lehký výklus.
+  Zajímavostí tohoto ročníku bylo, že jsme zlomili naše deštivé prokletí a užili jsme si slunečný den.
+date: 2021-09-04
+image: ../../images/2021/Lusteniny-2021.jpg
+galleryLink: "https://www.facebook.com/media/set?vanity=lusteniny&set=a.379746937110169"
+winners:
+  - "Nebuďte slušnej, řekněte jméno"
+  - "Oslík a kočičky"
+  - "Abakus"
+cyphers:
+  - title: Telegram do vězení č.4
+    image: ../../images/2021/Lusteniny-2021-Dopis-do-vezeni.jpg
+    hints:
+      - Na délce záleží.
+    steps:
+      - Slovo do 4 znaků představuje tečku.
+      - Delší slova, 5 a více znaků, představují čárku.
+      - Podtržená číslice 4 v názvu šifry pak představovala první nápovědu :)
+      - Jedná se tedy o Morseovku, pomocí které dostanete výsledek bonton
+    solution: bonton
+
+  - title: Karty
+    image: ../../images/2021/Lusteniny-2021-Karty.jpg
+    hints:
+      - Abeceda z Karet.
+    steps:
+      - Abeceda obsahuje 26 písmen (A-Z) bez diakritiky. Karetní sada obsahuje 52 karet (bez žolíků)
+      - Každá karta má svou hodnotu (1-26) v rámci své barvy, řazení je Srdce - Káry - Kříže - Piky
+      - Např. Srdcový kluk = Křízový kluk = 11
+      - Např. Kárová sedma = Piková Sedma = 20
+      - Hodnotu převedu na písmeno které náleží hodnotě
+    solution: zlinsky klenot
+
+  - title: Cesta do pravěku
+    image: ../../images/2021/Lusteniny-2021-Cesta-do-praveku.jpg
+    hints:
+      - Jak velcí se zdají být dinosauři ve filmu?
+    steps:
+      - Šifra představuje scénu z natáčení Cesty do pravěku. Ve skutečnosti nebyli natáčeni přímo dinosauři, ale figurky, které se zdály být tím větší, čím blíže byly umístěny ke kameře. Stejným způsobem je zakódována šifra.
+      - Dinosaury je nejprve nutné umístit na jejich značky.
+      - Písmena jsou zakódována v domě stojícím na pravé straně scény od A umístěného na první čárce zespodu.
+      - Pro dekódování písmene dinosaura je nutné vést čáru z kamery na dům, která se dotýká daného dinosaura. Tj. reprezentuje velikost dinosaura ve filmu ve srovnání s budovou.
+      - Na následujícím obrázku je vidět první dinosaur, který “vrhá stín” na 6. čárku tj, na 6. písmeno v abecedě, tedy F. Na dalším obrázku je řešení pro 2. dinosaura.
+    solution: frystak
+
+  - title: Schůzka
+    image: ../../images/2021/Lusteniny-2021-Schuzka.jpg
+    hints:
+      - Historikové tvrdí, že Ceasar měl rád anagramy.
+    steps:
+      - Text je zašifrovaný obyčejnou Caesarovou šifrou (posun o 3).
+      - Druhá část šifry je nalezení anagramů a jim odpovídajícím místům na mapě
+      - Beth a Eliz - Elizabeth’s (met)
+      - Iced Donut - Deduction Street (rá)
+      - Don Farring - Farringdon (ček)
+    solution: metracek
+
+  - title: Na dobrou noc
+    image: ../../images/2021/Lusteniny-2021-Na-dobrou-noc.jpg
+    hints:
+      - Slož z papíru pokrývku hlavy Večerníčka.
+    steps:
+      - Nejdříve se z papíru musí složit čepice
+      - Po správném složení jde na čepici přečíst nápis "Řešením je menší z dvojice králíků ze známého večerníčku"
+    solution: bobek
+
+  - title: Zátopek
+    image: ../../images/2021/Lusteniny-2021-Zatopek.jpg
+    hints:
+      - Časy běhů jsou klíčem.
+    steps:
+      - Časy běhů jsou klíčem šifry.
+      - Jednotlivé čísla udávají pořadí písmen v textu, které tvoří zašifrovanou zprávu.
+      - Tj. čísla 14, 6 (čas na 5 km), 29, 17 (čas na 10 km) 2, 23, 3 (čas na maraton) nám dají písmena L, U, Ž, Á, N, K, Y
+    solution: luzanky
+
+  - title: Stížnost na život
+    image: ../../images/2021/Lusteniny-2021-Stiznost-na-zivot.jpg
+    hints:
+      - Počítačové staženiny.
+    steps:
+      - Některá slova v zadaném textu všem milovníkům počítačů připomínají běžné kancelářské funkce zmíněného stroje. K
+      - Každá moderní sekretářka však pro ulehčení práce používá jejich klávesové zkratky, na Windows typicky CTRL + první písmeno z anglického slova.
+      - Postupně tedy dostáváme
+      - tlustý = tučné písmo - CTRL + B (bold)
+      - všechno = označit všechno - CTRL + A (all)
+      - pravou = zarovnat text doprava - CTRL + R (right)
+      - otevřel = otevřít soubor - CTRL + O (open)
+      - novém = nový soubor - CTRL + N (new)
+      - tisknout = tisk - CTRL + P (print)
+      - pravé = zarovnat text doprava - CTRL + R (right)
+      - V še = označit všechno - CTRL + A (all)
+      - uložených = uložit soubor - CTRL + S (save)
+      - skláněl = kurzíva - CTRL + I (italics)
+      - levou = zarovnat text doleva - CTRL + L (left)
+    solution: baron prasil
+
+  - title: Filmový pás
+    image: ../../images/2021/Lusteniny-2021-Filmovy-pas.jpg
+    hints:
+      - Morse.
+    steps:
+      - V dírkách filmového pásu je ukryta morseovka
+      - Na šifru je vhodné dívat se tak, že si papír otočíme o 90° tak aby začátek filmu (prázdné políčko) byl vlevo.
+      - Pokud je vyplněna horní část obdélníčku jedná se o tečku
+      - Zároveň jsou obdélníčky před i po klíči šifry vyplněny na střídačku tečkou a čárkou
+    solution: smecka 2020
+
+  - title: Šachovnice
+    image: ../../images/2021/Lusteniny-2021-Sachovnice.jpg
+    hints:
+      - I slepý by to vyluštil.
+    steps:
+      - Přesuň figurky na šachovnici
+      - Rozděl si šachovnici na pole 2x3
+      - Označ všechny čtverečky kde se nacházely nebo stále nacházejí figurky.
+      - Braillovo písmo převeď na písmena abecedy
+    solution: kamera
+
+  - title: Elektrický obvod
+    image: ../../images/2021/Lusteniny-2021-Elektricky-obvod.jpg
+    hints:
+      - Jdi po proudu
+    steps:
+      - Jdi po proudu a projdi ty smyčky, které obsahují odpory
+      - Každý odpor má na sobě barevné pruhy, jejichž pořadí udává potenciometr (který je však graficky škrtlý, tudíž do řešení nepatří)
+      - U každého odporu projdi barvy (podle směru proudu) a binárně si zapiš, zda tam barva je (1) či není (0) -> modrá-zelená-žlutá-oranžová-červená
+      - Binární hodnoty každého odporu převeď na desetinné hodnoty a ty následně převeď na abecedu (například 00101 = 5 = E)
+      - Pro úplné zjištění tajenky přidej k odporům s voltmetrem (sériově) a ampérmetrem (paralelně) odpovídající písmena V a A
+      - Po složení písmen dostaneš výsledek HRAD MALENOVICE
+    solution: hrad malenovice
+bonusInformation:
+  - title: Telegram do vězení č.4
+    text: |
+      Ateliéry Bonton Zlín, zkráceně ABZ, byla filmová produkční společnost spravující největší archiv českých hraných filmů.
+      Společnost dnes s názvem Bonton a.s. má ve správě okolo 1500 českých hraných a dokumentárních filmů vyrobených v letech 1965-1991. Mezi ně patří i animované filmy jako Pat a Mat, Bob a Bobek nebo Spejbl a Hurvínek.
+  - title: Karty
+    text: >
+      Zlínský klenot je polohraný dokumentární film o obnově mimořádného architektonického díla - Památníku Tomáše Bati.
+      Snímek se zaměřuje na osud a proměny památníku, od násilné ideové přestavby na Dům umění, až po současnou rekonstrukci, která budově navrátila její původní vzhled a účel.
+      Dokument Zlínský klenot si můžete pustit ze záznamu v archivu České televize.
+  - title: Cesta do pravěku
+    text: |
+      Film Cesta do pravěku režiséra Karla Zemana ukazuje prehistorická stadia vzniku Země, flory a fauny. Nález pravěké zkameněliny je pro čtyři zvídavé kluky výzvou k výpravě do dávné minulosti. Na malé pramičce postupně proplouvají dobou ledovou přes třetihory a druhohory až na samý počátek života na planetě Zemi, přičemž zažijí nejrůznější, mnohdy i nebezpečná dobrodružství.
+      Některé exteriéry se natáčely na přehradě Fryšták asi 4 km nad soutokem Fryštáckého potoka s řekou Dřevnicí a proto se objevil také v naší šifře.
+  - title: Schůzka
+    text: >
+      Metráček je český film natočený v roce 1971. Děj se odehrává okolo plnoštíhlé dívky Jitky, která zrovna nevyniká ve vybíjené, ale uplatní se ve vrhu koulí. Film se natáčel v Příboře, Rožnově pod Radhoštěm, ale scény ze školy a tělocvičny byly prý natočené i ve Vizovicích kousek od Zlína.
+  - title: Na dobrou noc
+    text: >
+      První série Boba a Bobka vznikla v roce 1978. Na televizních obrazovkách se poprvé objevili v roce 1979. Podobu jim dal kreslíř Vladimír Jiránek, hlas jim propůjčil Josef Dvořák. K jejich prvním dobrodružstvím, která podle scénářů Jaroslava Pacovského a Jiřího Šebánka, natočil režisér Václav Bedřich, rychle přibývala dobrodružství další.
+      Původní seriál z produkce Československé televize má 39 dílů, v letech 2003-2005 realizovaný Bob a Bobek na cestách má dílů 52, ovšem ty již byly vyrobeny společností Ateliéry Bonton Zlín a.s.
+  - title: Kruhy
+    text: |
+      Budova od architekta Františka Lýdie Gahury, otevřená v roce 1933, rok po smrti Tomáše Bati, je nejhodnotnější památkou zlínského konstruktivismu a vrcholem fenoménu tzv. baťovské architektury. 
+      Na první pohled je idea památníku jednoduchá: prázdný hranol umístěný ve viditelné poloze nad městem, v ose stoupajícího parkového prostoru, tvořený několika moduly zlínského skeletu o rozměrech 6,15 * 6,15 m a opláštěný pouze katedrálním sklem; uvnitř osudný letoun Junkers F 13, ve kterém Tomáš Baťa v roce 1932 zahynul krátce po startu z nedalekých Otrokovic při plánované letecké pracovní cestě do švýcarského Möhlinu. 
+      Jeho mimořádnost spočívá v tom, že do něj architekt Gahura vtělil přímo vlastnosti Tomáše Bati - velkorysost, jasnost, vzlet, optimismus, prostotu, pravdivost a poctivost - a vyjádřil je stavbou samotnou.
+  - title: Zátopek
+    text: |
+      Zpustlý fotbalový stadion za Lužánkami v Brně se přenesl v čase i prostoru pro natáčení filmu Zátopek o fenomenálním běžci dlouhých tratí Emilu Zátopkovi.
+      Nejdříve se brněnský stadion proměnil ve stadion v Berlíně v roce 1946, následně na londýnský stadion Wembley, který hostil v roce 1948 olympiádu a nakonec na stadion z olympijských Helsinek v roce 1952.
+  - title: Stížnost na život
+    text: >
+      Baron Prášil je český napůl animovaný napůl hraný film zlínského režiséra Karla Zemana z roku 1961 s Milošem Kopeckým v hlavní roli.
+      Jde o fantasy komedii, která byla inspirována knihou „Podivuhodné cesty po vodě i souši, polní tažení a veselá dobrodružství Barona Prášila, jak je vypravuje při víně v kruhu přátel“ od G. A. Bürgera. Film se vyznačuje velkým množstvím filmových triků a zajímavých výtvarných řešení, režisér se inspiroval rytinami francouzského rytce a ilustrátora Gustava Dorého.
+  - title: Filmový pás
+    text: |
+      Smečka (v anglickém překladu The Pack) 2020 je hraný česko-lotyšsko-slovenský koprodukční film z prostředí hokeje náctiletých. Společně se scenáristkou Irenou Kocí se na scénáři podílel sám režisér filmu Tomáš Polenský.
+      Snímek debutujícího režiséra Tomáše Polenského, absolventa Vyšší odborné školy filmové ve Zlíně, FAMU a Univerzity Tomáše Bati, který vznikl ve společnosti 8Heads Productions v koprodukci s lotyšskou produkční společností Ego Media a slovenskou Furia Film, zavede diváky do fiktivního hokejového klubu Vlci a do prostředí mládežnického sportu, kde jsou dospívající chlapci vychováváni podle zákona síly.
+      V průběhu vývoje byl film jako první majoritní český projekt vybrán pro koprodukční trh Asian Project Market, který se každoročně koná v rámci prestižního mezinárodního filmového festivalu v jihokorejském Busanu.
+  - title: Elektrický obvod
+    text: |
+      Hrad Malenovice se nachází ve zlínské místní části Malenovice. Leží na západním výběžku Tlusté hory. V hradu se mimo jiné nacházejí archeologické a národopisné expozice Muzea jihovýchodní Moravy a je zpřístupněna hradní věž. V zoologické expozici je vystavena jediná veřejně přístupná kostra slona v České republice.
+      Od roku 1964 je chráněn jako kulturní památka. Hrad byl založen v 2. polovině 14. století (1356) moravským markrabětem Janem Jindřichem v gotickém stylu, v 1. polovině 16. století nechal rytíř Václav Tetour z Tetova hrad přestavět do renesanční podoby. V roce 1693 koupil zámek hrabě František Karel z Lichtenštejna-Kastelkornu a upravil jej na zámecké sídlo v barokním duchu. Posledními majiteli byli v letech 1804-1945 Šternberkové.
+      Hrad je od roku 1953 majetkem krajského muzea a veřejnosti je přístupný od roku 1957.

@@ -1,0 +1,63 @@
+---
+import { Image } from "astro:assets";
+import { Logo } from "../atoms";
+import kudyZnudyImage from "../../images/kudyznudy.jpg";
+
+const links = [
+  {
+    title: "Domů",
+    href: "/",
+  },
+  {
+    title: "O Luštěninách",
+    href: "/#info",
+  },
+  {
+    title: "Události",
+    href: "/#udalosti",
+  },
+  {
+    title: "Kontakt",
+    href: "/#kontakt",
+  },
+];
+---
+
+<footer class="bg-blue-50" id="footer" aria-labelledby="footer-heading">
+  <div
+    class="container mx-auto flex flex-col items-center justify-between gap-12 px-4 pb-12 pt-24 text-center md:flex-row md:text-left"
+  >
+    <h2 class="flex items-center gap-4" id="footer-heading">
+      <Logo className="h-10" />
+      <span class="text-lg font-bold text-gray-700">Luštěniny</span>
+    </h2>
+    <nav
+      aria-label="Patička - Navigace"
+      class="flex flex-col gap-x-12 gap-y-6 xl:border-l-2 xl:border-slate-300 xl:pl-12 font-semibold uppercase text-gray-500 xl:flex-row"
+    >
+      {
+        links.map((link) => (
+          <a
+            href={link.href}
+            class="transition duration-300 hover:text-gray-700 focus:text-gray-700"
+          >
+            {link.title}
+          </a>
+        ))
+      }
+    </nav>
+    <div class="flex-grow"></div>
+    <a
+      href="https://www.kudyznudy.cz/?utm_source=kzn&utm_medium=partneri_kzn&utm_campaign=banner"
+      target="_blank"
+      rel="noopener noreferrer external"
+      title="kudyznudy.cs"
+    >
+      <Image
+        src={kudyZnudyImage}
+        alt="Kudyznudy.cz - nejlepší začátek výletu"
+        class="h-18 rounded-lg shadow-sm object-contain"
+      />
+    </a>
+  </div>
+</footer>
