@@ -3,3 +3,5 @@ node_modules/
 dist
 .yarn
 .DS_Store
+
+.astro/types.d.ts
