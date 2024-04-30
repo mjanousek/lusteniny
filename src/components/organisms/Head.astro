@@ -10,6 +10,7 @@ const socialImageURL = new URL(Astro.props.image ?? '/meta-image.jpg', Astro.url
 ---
 
 <head>
+  <html lang="cs" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta charset="utf-8" />
 
@@ -20,8 +21,9 @@ const socialImageURL = new URL(Astro.props.image ?? '/meta-image.jpg', Astro.url
   <meta name="title" content={Astro.props.title} />
   <meta name="description" content={Astro.props.description} />
 
-  <meta name="copyright" content={`Luštěniny střelnice 2021 - ${new Date().getFullYear()}`} />
-  <meta name="author" content="Luštěniny střelnice" />
+  <meta name="copyright" content={`Luštěniny 2020 - ${new Date().getFullYear()}`} />
+  <meta name="author" content="Luštěniny" />
+  <meta name="rating" content="14 years" />
 
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
