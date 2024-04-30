@@ -15,7 +15,11 @@ import { Header } from "./organisms";
 ---
 
 <html lang="cs">
-  <Head {...Astro.props} />
+  <Head
+    title={Astro.props.title}
+    description={Astro.props.description}
+    image={Astro.props.imageUrl}
+  />
   <body class="bg-blue-50">
     <Header client:load isAlternative={Astro.props.hasAlternativeHeader} />
     <main class="bg-blue-50">
