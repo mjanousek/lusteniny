@@ -9,11 +9,7 @@ type Props = {
 
 export const Header = ({ isAlternative }: Props) => (
   <header
-    className={classNames(
-      "bg-blue-50",
-      isAlternative &&
-        "left-0 right-0 top-0 z-50 xl:absolute xl:bg-transparent",
-    )}
+    className={classNames("bg-blue-50", isAlternative && "left-0 right-0 top-0 z-50 xl:absolute xl:bg-transparent")}
   >
     <div
       className={classNames(
@@ -28,10 +24,7 @@ export const Header = ({ isAlternative }: Props) => (
         <Logo className="h-[30px]" />
         Luštěniny
       </a>
-      <nav
-        aria-label="Hlavní navigace"
-        className="hidden items-stretch gap-6 text-xl font-medium text-white xl:flex"
-      >
+      <nav aria-label="Hlavní navigace" className="hidden items-stretch gap-6 text-xl font-medium text-white xl:flex">
         <a
           className="flex items-center gap-3 rounded px-6 py-8 text-lg font-semibold text-gray-600 transition duration-300 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-400"
           href="/"
@@ -57,20 +50,15 @@ export const Header = ({ isAlternative }: Props) => (
           Kontakt
         </a>
       </nav>
-      <Menu
-        as="div"
-        className=" relative flex items-center justify-center xl:hidden"
-      >
+      <Menu as="div" className=" relative flex items-center justify-center xl:hidden">
         {({ open }) => (
           <>
             <Menu.Button
               className={classNames(
                 "relative z-[60] px-6 py-5  focus:outline-none",
-                open
-                  ? "text-white focus:text-green-50"
-                  : "rounded-lg text-gray-700 focus:text-gray-900 ",
+                open ? "text-white focus:text-green-50" : "rounded-lg text-gray-700 focus:text-gray-900 ",
               )}
-              title={open ?'Zavřít menu' : 'Otevřít menu'}
+              title={open ? "Zavřít menu" : "Otevřít menu"}
             >
               <Icon icon={open ? "xmark" : "bars"} className="h-5" />
             </Menu.Button>

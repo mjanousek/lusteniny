@@ -22,18 +22,12 @@ const { cyphers } = Astro.props;
 ---
 
 <section class="bg-blue-50 py-24">
-  <div
-    class="container mx-auto px-4 py-16 sm:px-8 md:px-12 md:py-12 lg:py-8 xl:py-4"
-  >
+  <div class="container mx-auto px-4 py-16 sm:px-8 md:px-12 md:py-12 lg:py-8 xl:py-4">
     <header class="mx-auto mb-16 max-w-2xl text-center">
-      <h2
-        class="mb-4 text-center text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl lg:text-5xl"
-      >
+      <h2 class="mb-4 text-center text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl lg:text-5xl">
         Šifry a jejich řešení
       </h2>
-      <p
-        class="mb-12 text-center font-medium leading-relaxed text-gray-700 sm:mb-20"
-      >
+      <p class="mb-12 text-center font-medium leading-relaxed text-gray-700 sm:mb-20">
         Všechny šifry, jejich řešení a nápovědy jsou vám k dispozici
       </p>
     </header>
@@ -41,13 +35,7 @@ const { cyphers } = Astro.props;
       {
         cyphers.map((cypher, cypherIndex) => (
           <div class="relative h-fit overflow-hidden rounded-[16px] bg-white shadow">
-            <h3
-              class={classNames(
-                cypher.info
-                  ? "p-6 text-center text-2xl font-semibold text-gray-900"
-                  : "sr-only"
-              )}
-            >
+            <h3 class={classNames(cypher.info ? "p-6 text-center text-2xl font-semibold text-gray-900" : "sr-only")}>
               {cypher.title}
             </h3>
             {cypher.info && (
@@ -59,18 +47,13 @@ const { cyphers } = Astro.props;
             )}
 
             <div class="relative">
-              {cypher.image && (
-                <Image src={cypher.image} alt={`Šifra ${cypher.title}`} />
-              )}
+              {cypher.image && <Image src={cypher.image} alt={`Šifra ${cypher.title}`} />}
               {cypher.images && (
                 <div class="swiper">
                   <div class="swiper-wrapper">
                     {cypher.images.map((image, index) => (
                       <div class="swiper-slide">
-                        <Image
-                          src={image}
-                          alt={`Šifra ${cypher.title} (${index + 1})`}
-                        />
+                        <Image src={image} alt={`Šifra ${cypher.title} (${index + 1})`} />
                       </div>
                     ))}
                   </div>
@@ -121,7 +104,7 @@ const { cyphers } = Astro.props;
 
 <script>
   import Swiper from "swiper";
-  import { Navigation, Pagination, A11y } from "swiper/modules";
+  import { A11y, Navigation, Pagination } from "swiper/modules";
   const swiper = new Swiper(".swiper", {
     modules: [Navigation, Pagination, A11y],
     spaceBetween: 0,

@@ -8,18 +8,14 @@ interface Props {
 
 import "@fontsource-variable/quicksand";
 import "../styles/index.css";
-import CallToActionSection from "./sections/CallToActionSection.astro";
-import Head from "./organisms/Head.astro";
-import Footer from "./organisms/Footer.astro";
 import { Header } from "./organisms";
+import Footer from "./organisms/Footer.astro";
+import Head from "./organisms/Head.astro";
+import CallToActionSection from "./sections/CallToActionSection.astro";
 ---
 
 <html lang="cs">
-  <Head
-    title={Astro.props.title}
-    description={Astro.props.description}
-    image={Astro.props.imageUrl}
-  />
+  <Head title={Astro.props.title} description={Astro.props.description} image={Astro.props.imageUrl} />
   <body class="bg-blue-50">
     <Header client:load isAlternative={Astro.props.hasAlternativeHeader} />
     <main class="bg-blue-50">

@@ -8,12 +8,7 @@ type ButtonInternalLinkProps = {
   icon?: IconType;
 };
 
-export const ButtonInternalLink = ({
-  variant,
-  to,
-  text,
-  icon,
-}: ButtonInternalLinkProps) => (
+export const ButtonInternalLink = ({ variant, to, text, icon }: ButtonInternalLinkProps) => (
   <a
     href={to}
     className={classNames(
@@ -35,12 +30,7 @@ type ButtonExternalLinkProps = {
   icon: IconType;
 };
 
-export const ButtonExternalLink = ({
-  variant,
-  href,
-  text,
-  icon,
-}: ButtonExternalLinkProps) => (
+export const ButtonExternalLink = ({ variant, href, text, icon }: ButtonExternalLinkProps) => (
   <a
     href={href}
     target="_blank"

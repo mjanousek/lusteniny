@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
-import { Logo } from "../atoms";
 import kudyZnudyImage from "../../images/kudyznudy.jpg";
+import { Logo } from "../atoms";
 
 const links = [
   {
@@ -37,10 +37,7 @@ const links = [
     >
       {
         links.map((link) => (
-          <a
-            href={link.href}
-            class="transition duration-300 hover:text-gray-700 focus:text-gray-700"
-          >
+          <a href={link.href} class="transition duration-300 hover:text-gray-700 focus:text-gray-700">
             {link.title}
           </a>
         ))

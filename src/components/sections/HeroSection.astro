@@ -196,29 +196,18 @@ const sponsors = [
     <div
       class="xl:order-0 mx:auto container relative z-30 order-1 flex h-full flex-col justify-center px-4 py-12 sm:px-8 md:px-12 xl:col-span-3 xl:ml-auto lg:max-w-3xl xl:max-w-4xl"
     >
-      <h1
-        class="mb-5 text-2xl font-semibold text-gray-900 sm:text-3xl md:text-4xl lg:text-5xl"
-      >
+      <h1 class="mb-5 text-2xl font-semibold text-gray-900 sm:text-3xl md:text-4xl lg:text-5xl">
         <span class="font-bold text-green-600">Šifrovací hra</span> v centru Zlína
       </h1>
-      <p
-        class="mb-6 max-w-xl font-medium leading-loose text-gray-700 md:text-lg"
-      >
-        Luštěniny jsou tradiční šifrovací hra pořádána v centru Zlína, které se
-        můžeš zúčastnit jak v týmu, tak sám. <br /> Neváhej a přijd si k nám zaluštit.
+      <p class="mb-6 max-w-xl font-medium leading-loose text-gray-700 md:text-lg">
+        Luštěniny jsou tradiční šifrovací hra pořádána v centru Zlína, které se můžeš zúčastnit jak v týmu, tak sám. <br
+        /> Neváhej a přijd si k nám zaluštit.
       </p>
       <div class="block justify-start md:flex">
-        <ButtonInternalLink
-          to="/#info"
-          text="Více informací"
-          icon="arrow-right"
-          variant="green"
-        />
+        <ButtonInternalLink to="/#info" text="Více informací" icon="arrow-right" variant="green" />
       </div>
     </div>
-    <div
-      class="order-0 relative flex justify-end xl:order-1 xl:col-span-2 xl:h-full"
-    >
+    <div class="order-0 relative flex justify-end xl:order-1 xl:col-span-2 xl:h-full">
       <div class="relative hidden xl:block">
         <svg
           class="absolute right-8 top-0 h-full w-full text-green-100 md:right-16 lg:right-24"
@@ -253,13 +242,10 @@ const sponsors = [
           />
         </div>
       </div>
-      <div
-        class="absolute right-0 top-0 hidden aspect-square h-64 md:h-80 lg:inset-0 xl:block lg:h-full"
-      >
+      <div class="absolute right-0 top-0 hidden aspect-square h-64 md:h-80 lg:inset-0 xl:block lg:h-full">
         <Image
           style={{
-            clipPath:
-              "polygon(14.33% 15%, 30% 0%, 100% 0, 100% 70%, 85.66% 85%)",
+            clipPath: "polygon(14.33% 15%, 30% 0%, 100% 0, 100% 70%, 85.66% 85%)",
           }}
           src={lusteninyImage}
           alt=""
@@ -275,14 +261,8 @@ const sponsors = [
             class="relative z-10 h-64 rounded-lg md:h-80 object-cover"
             loading="eager"
           />
-          <div
-            class="absolute inset-0 translate-x-4 translate-y-4 rounded-lg bg-green-100"
-          >
-          </div>
-          <div
-            class="absolute inset-0 translate-x-1 translate-y-1 rounded-lg bg-green-300"
-          >
-          </div>
+          <div class="absolute inset-0 translate-x-4 translate-y-4 rounded-lg bg-green-100"></div>
+          <div class="absolute inset-0 translate-x-1 translate-y-1 rounded-lg bg-green-300"></div>
         </div>
       </div>
     </div>
@@ -294,9 +274,7 @@ const sponsors = [
       aria-label="S pomocí našich sponzorů"
       class="flex flex-col items-center gap-8 lg:items-start xl:flex-row xl:items-center"
     >
-      <p class="flex-grow font-medium text-gray-700">
-        S pomocí našich sponzorů:
-      </p>
+      <p class="flex-grow font-medium text-gray-700">S pomocí našich sponzorů:</p>
       <div class="flex flex-wrap items-center justify-center">
         {
           sponsors.map((sponsor) => (

@@ -1,4 +1,4 @@
-import { z, defineCollection } from "astro:content";
+import { defineCollection, z } from "astro:content";
 
 const events = defineCollection({
   type: "data", // v2.5.0 and later
@@ -21,9 +21,7 @@ const events = defineCollection({
           solution: z.string(),
         }),
       ),
-      bonusInformation: z
-        .array(z.object({ title: z.string(), text: z.string() }))
-        .optional(),
+      bonusInformation: z.array(z.object({ title: z.string(), text: z.string() })).optional(),
     }),
 });
 
