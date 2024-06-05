@@ -5,6 +5,7 @@ import { ButtonInternalLink } from "../atoms";
 import lusteninyImage from "../../images/Lusteniny.jpg";
 import cgeImage from "../../images/sponsors/cge.png";
 import cnImage from "../../images/sponsors/cn_group.png";
+import papirflyImage from "../../images/sponsors/papirfly.png";
 import vitarImage from "../../images/sponsors/vitar.png";
 import zivyZlinImage from "../../images/sponsors/zivy_zlin.png";
 
@@ -14,6 +15,12 @@ const sponsors = [
     title: "Živý Zlín",
     link: "https://www.kulturazlin.cz/",
     height: 40,
+  },
+  {
+    image: papirflyImage,
+    title: "Papirfly",
+    link: "https://www.papirfly.com/",
+    height: 32,
   },
   {
     image: cgeImage,
@@ -38,7 +45,7 @@ const sponsors = [
 
 <section class="relative flex min-h-screen flex-col">
   <svg
-    class="absolute inset-0 text-blue-400 opacity-5"
+    class="absolute inset-0 text-blue-400 opacity-5 pointer-events-none"
     viewBox="0 0 1920 1081"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
