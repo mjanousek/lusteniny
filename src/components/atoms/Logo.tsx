@@ -49,7 +49,7 @@ export function Logo({ withName, className }: Props) {
                 stop-color="#000000"
               />
             </g>
-            <g clip-path="url(#clipPath1059)">
+            <g clipPath="url(#clipPath1059)">
               <g id="g1055">
                 <g transform="translate(-50.313 -13.802)">
                   <g transform="translate(5.34e-4,1.166e-4)"></g>
@@ -116,7 +116,7 @@ export function Logo({ withName, className }: Props) {
                 stop-color="#000000"
               />
             </g>
-            <g clip-path="url(#clipPath1059)">
+            <g clipPath="url(#clipPath1059)">
               <g id="g1055">
                 <g transform="translate(-50.313 -13.802)">
                   <g transform="translate(5.34e-4,1.166e-4)"></g>
