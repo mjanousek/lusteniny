@@ -1,0 +1,185 @@
+title: Luštěniny VII.
+description: >
+  Šichta v baťovském svitu je za námi! Děkujeme všem 27 odvážným týmům o zhruba 90 účastních, letos byla úroveň šifer opravdu obtížná
+  Luštěniny se tentokrát nesly na téma 130 let od založení firmy Baťa a naše trasa vedla právě areálem svit, kde tato firma fungovala
+  Chtěli bychom poděkovat našim sponzorům za podporu a ceny pro vítěze. Bez vás bychom se neobešli 😉
+date: 2024-06-08
+image: ../../images/2024/Lusteniny2024.jpg
+galleryLink: "https://www.facebook.com/lusteniny/posts/pfbid02b1wVNQp5KCmbFVVfcvsgLmb6ygnjoSWLAHVoHujVqbUNvwuqEAtrGVdDZ7oJYL6hl"
+winners:
+  - "Ňuf sem ňuf tam a malé ňuf"
+  - "Abakus"
+  - "Svědkové Baronovi"
+cyphers:
+  - title: Popelka
+    info:
+      - Zadáním šifry byl váček obsahující celkem 5 druhů fazolí.
+      - fazole barevná- 4x
+      - fazole bílá - 9x
+      - fazole černá - 12x
+      - fazole červená - 14x
+      - fazole barevná velká (švábí) - 1x
+    hints:
+      - Počet fazolí odpovídá písmenům.
+    steps:
+      - Prvním krokem je spočítat počet jednotlivých kusů fazole stejného druhu
+      - Teď už jen zbývá přiřadit počet jednotlivým písmenům v abecedě, a to následně
+      - 4 ->D
+      - 9 -> I
+      - 12 ->L
+      - 14 ->N
+      - 1 ->A
+    solution: DÍLNA
+
+  - title: Vyprávění od dědy
+    image: ../../images/2024/Lusteniny2024-Vypraveni.jpg
+    hints:
+      - Nakresli si půdorys. Všiml sis, že kanceláří je 26?
+    steps:
+      - Je potřeba si nakreslit půdorys budovy a zakreslit kanceláře.
+      - Posledním krokem je, si všimnout, že v budově je 26 kanceláří a lze je tedy označit písmeny.
+    solution: ROHATEC
+
+  - title: Objekty
+    images:
+      - ../../images/2024/Lusteniny2024_Objekty-1.jpg
+      - ../../images/2024/Lusteniny2024_Objekty-2.jpg
+    hints:
+      - Poznej stavbu a vyber písmeno z názvu.
+    steps:
+      - "V šifře se nachází obrysy, či náčrty slavných staveb ze Zlína"
+      - "Pokud stavby poznáte, ať už od oka, nebo s pomocí nápovědy na druhé straně, dostanete tyto budovy:"
+      - "Vila Jana Antonína Bati"
+      - "Obchodní Dům"
+      - "Pamatník Tomáše Bati"
+      - "Baťův mrakodrap"
+      - "Vila Tomáše Bati"
+      - "Gahurův prospekt"
+      - "14|15 Baťův institut"
+      - "Pak už jen stačí z názvu budovy vybrat písmeno dle čísla nad obrysem"
+      - "Vila Jana Antonína Bati - 6/23, bereme šesté písmeno, tedy J"
+      - "Opakujeme pro další budovy a vyjde nám výsledek."
+    solution: JUNKERS
+
+  - title: Prodejny Baťa
+    image: ../../images/2024/Lusteniny2024_Prodejny-Bata.jpg
+    hints:
+      - Spojnice.
+    steps:
+      - "Pobočky založené v každém roce zaneseme do mapy, uděláme spojnice, což nám dá písmo."
+      - "Příklad: (New York, Santiago de Chile, Dakar) -> písmo D"
+    solution: DEVET
+
+  - title: Stehy
+    image: ../../images/2024/Lusteniny2024_Stehy.jpg
+    hints:
+      - Měřítko
+    steps:
+      - "11 čar/10 dílků v části “Nastavení stroje - měřítko stehu” má význam měřítka."
+      - "Za pomoci měřítka lze změřit vzdálenost mezi jednotlivými vzorky stehů."
+      - "Vzdálenosti nám dávají čísla: 9, 14, 4, 9, 5, které dají po převodu na písmena řešení"
+    solution: INDIE
+
+  - title: Tihle za to můžou
+    image: ../../images/2024/Lusteniny2024_Tihle-za-to-muzou.jpg
+    hints:
+      - Několik šifer v jednom, lušti postupně a dubánci ti pomůžou, ale v opačném pořadí
+      - Poslední je Braille
+    steps:
+      - Převeďte morseovku na čísla (binární kód) - tečka je nula a čárka je jednička
+      - Převeďte binární kód na čísla v desítkové soustavě
+      - Čísla v desítkové soustavě převeďte na Braillovy znaky
+      - Tečky v Braillově písmě jsme očíslovali zleva doprava a shora dolů, kdy první tečka vlevo nahoře je 1. Poslední vpravo dole je 6.
+      - Tedy písmeno K = ⠅ by bylo 15 (tečka na pozici 1 a 5)
+      - Nyní nám v Braillově písmu vyšel výsledek který jen pomocí přiložené pomocné kartičky přečteme a vyjde nám řešení.
+    solution: KARFIK
+
+  - title: Sladké tečky Marie Baťové
+    images:
+      - ../../images/2024/Lusteniny2024-Kucharka-1.jpg
+      - ../../images/2024/Lusteniny2024-Kucharka-2.jpg
+      - ../../images/2024/Lusteniny2024-Kucharka-3.jpg
+    hints:
+      - A co to sypání?
+    steps:
+      - "Kuchařka obsahuje recepty na každý den v týdnu. Dnes-v den konání Luštěnin, tj. v sobotu-je na řadě kakaový koláč. Každý tým jeden takový kousek koláče i dostal. Recept obsahuje soupis ingrediencí a jejich množství. Čísla se následně musí přiřadit k písmenům v abecedě:"
+      - "21 dkg polohrubé mouky -> 21. písmeno v abecedě. Aby písmena byla sestavena ve správném pořadí, je třeba postupovat podle receptu - 1. máslo, 2. cukr, 3. skořice atd."
+      - "Pokud takto postupujeme, sestavíme následující:  "
+      - "E"
+      - "S"
+      - "F"
+      - "A"
+      - "U"
+      - "C"
+      - "S"
+      - "Tento výsledek ale nedává smysl - je třeba udělat poslední krok. Že by byl koláč pro tým jen k jídlu? Není tomu tak. Je nutné provést posun písmen v abecedě o počet kusů kuliček-zdobení, tj. 8. Tím získáme správnou odpověď:"
+      - "E -> M"
+      - "S -> A"
+      - "F -> N"
+      - "A -> I"
+      - "U -> C"
+      - "C -> K"
+      - "S -> A"
+    solution: "MÁNIČKA"
+
+  - title: Docházka
+    image: ../../images/2024/Lusteniny2024_Dochazka.jpg
+    hints:
+      - Ve který den se kdo potkává s Baťou nejvíce?
+    steps:
+      - Každý den se rámec pracovní doby pracovníků překrývá s Tomášem Baťou
+      - Je potřeba zjistit, ve který den se kdo potkává s Baťou nejvíce
+      - Např.
+      - První den se s Baťou nejvíce potkává Iva Zátopková (8 hodin 9 minut)
+      - Druhý den …..
+      - Tímto způsobem si seřadíme jména
+      - Iva Zátopková (8:09)
+      - Martin Němeček (8:18)
+      - Veronika Olšanská (8:14)
+      - Václav Šindelář (8:18)
+      - Kateřina Adámková (8:34)
+      - Tomáš Coufal (8:40)
+      - Erik Vrána (7:59)
+      - Poté zjistíme, zda se s ním osoba vidí více dopoledne nebo odpoledne, pokud dopoledne, bereme první písmeno z křestního jména, pokud odpoledne, bereme písmeno z příjmení.
+    solution: INOVACE
+
+bonusInformation:
+  - title: Popelka
+    text: |
+      Je tomu již 130 let, co se zrodila první vlaštovka velkého impéria. Roku 1894 založili tři sourozenci Tomáš, Antonín a Anna Baťovi obuvnickou firmu, kterou měl později znát celý svět. První dílna se nacházela v domě „U Stuchlíků“ na zlínském náměstí Míru. 
+      Tam začali s výrobou tradičních a jednoduchých valašských papučí. Firma v tuto chvíli zaměstnávala přímo v dílně 10 lidí a přibližně 40 dalších domáckých dělníků. Již po prvním roce existence ale dlužila firma dodavatelům přibližně 8 000 zlatých a stála doslova na pokraji bankrotu. 
+      Avšak kdo se nevzdá, zvítězí!
+  - title: Vyprávění od dědy
+    text: |
+      Baťův kanál neboli průplav Otrokovice-Rohatec je historická vodní cesta vybudovaná v letech 1934–1938 v délce 52 km. V roce 1901 vznikla legislativní úprava na propojení Moravy s Odrou a vznik Dunajsko-oderského průplavu. Projekt překazila válka. Když Tomášovi Baťovi v roce 1930 továrnu v Otrokovicích odplavila povodeň, prosazoval úpravu koryta a ještě v 1931 začal s budováním kanálu.
+      V roce 1932 Tomáš Baťa tragicky zahynul. Projekt byl dokončen pod vedením Jana Antonína Bati. První voda kanálovým úsekem protekla v roce 1937.
+  - title: Objekty
+    text: |
+      Tomáš Baťa byl průkopníkem letectví v Československé republice. Letadlo značky Junkers (Model F 13) byl jeho osobním letounem. Toto letadlo se také stalo jeho osudným. 
+      Dne 12. července 1932 došlo na firemním letišti v Otrokovicích k vážné letecké nehodě. Jejími oběťmi se stali dva zakladatelé zlínského letectví: továrník Tomáš Baťa a šéfpilot Jindřich Brouček.
+      Replika letounu Junkers F 13 je k vidění v budově Památníku Tomáše Bati ve Zlíně.
+  - title: Prodejny Baťa
+    text: |
+      Pod pojmem Baťovy ceny rozumíme ceny zakončené devítkou. Principem této iluze je vnímání ceny prostřednictvím chápání významnosti pozice číslic, respektive počtem cifer číslic. Cena 99 Kč vypadá lépe než 100 Kč, protože první číslice má jen jednu cifru a to jednotky, zatímco druhá číslice má už cifry dvě. 
+      Číslo 100 se tak zdá opticky výrazně větší přestože je mezi nimi rozdíl pouze jedné koruny.
+  - title: Stehy
+    text: |
+      Na území dnešní Indie začalo podnikání firmy Baťa v roce 1926 otevřením prvních vlastních prodejen. Koncem roku 1931 byla zřízena sesterská společnost a nedlouho poté započala výroba obuvi v továrně v Konnagaru. 
+      Významným centrem baťovské výroby se stal roku 1936 Batanagar. V dalších letech přibylo několik nových továren. Prodejní síť se rozšířila z 20 míst v roce 1939 na 738 v roce 1951. Mezi rokem 1985 a 1995 byly otevřeny dvě moderní továrny na obuv.
+  - title: Tihle za to můžou
+    text: |
+      Vladimír Karfík
+      Narodil se 26. října 1901 ve slovinské Idriji.
+      V letech 1919-1924 studoval na Fakultě architektury a pozemního stavitelství ČVUT v Praze, v letech 1925-1926 absolvoval studijní praxi u Le Corbusiera v Paříži a 1928–1929 praxi u Franka Lloyda Wrighta v jeho americkém studiu Taliesin.
+      V roce 1930 se vrátil do Československa a stal se vedoucím projektového oddělení Baťových závodů ve Zlíně, kde působil až do roku 1946. V letech 1946-71 učil architekturu na Slovenské vysoké škole technické v Bratislavě.
+      V letech 1978-82 působil jako hostující profesor a vedoucí oddělení architektury na University of Malta. Roku 1982 se vrátil do Československa a usadil se v Brně. Za svou architektonickou i pedagogickou činnost byl mnohokrát vyznamenán.
+      Zemřel 6. června 1996 a pochovaný je v Bystřici pod Hostýnem.
+
+  - title: Sladké tečky Marie Baťové
+    text: |
+      Marie Baťová se stala manželkou Tomáše Bati 15. dubna 1912. Jejich manželství je popisováno jako harmonické a láskyplné. I když Marie neměla zprvu oficiální postavení ve firmě, o její chod se aktivně zajímala a zapojovala se. Její radostí však bylo i vaření a pečení. Dodnes se dochovaly Mariiny ručně psané recepty- přes 400 receptů ve třech jazycích. 
+      Obsahují mimo jiné ale drobné poznámky ze osobního života. Mezi nimi i to, jak Baťu Marie ráda přezdívala „Tomo“ a on ji oslovoval „Máničko“.
+  - title: Docházka
+    text: |
+      Po 1. světové válce vymyslel Tomáš plán, jak se přizpůsobit poválečným ekonomickým potížím, a snížil ceny obuvi o 50 %. Dělníci souhlasili se snížením mezd o 40 % a Baťa jim na oplátku dodával jídlo, oblečení a další nezbytnosti za poloviční cenu. Tento odvážný krok se osvědčil a Baťovy obchody zaplavili zákazníci.
+      Baťa značně předběhl svou dobu vytvořením „samosprávných dílen a oddělení“, v nichž zaměstnanci mohli přispívat svými nápady a ovlivnit svůj vlastní výdělek úsilím o vyšší ziskovost oddělení. Byly založeny nové společnosti ve Francii, Rakousku, Rumunsku, Švédsku, Švýcarsku, Egyptě, Belgii, Finsku, Lucembursku, Maďarsku, Itálii, Indonésii, Singapuru a Indii.
