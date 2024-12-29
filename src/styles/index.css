@@ -10,7 +10,7 @@ body {
 
 .swiper-button-next,
 .swiper-button-prev {
-  @apply text-green-600 h-full top-0 mt-0 right-0 px-6  transition duration-300 hover:text-green-600 !important;
+  @apply right-0 top-0 mt-0 h-full px-6 text-green-600  transition duration-300 hover:text-green-600 !important;
 }
 
 .swiper-button-next {
@@ -23,7 +23,7 @@ body {
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  @apply font-extrabold text-3xl !important;
+  @apply text-3xl font-extrabold !important;
 }
 
 .swiper-pagination-bullet {

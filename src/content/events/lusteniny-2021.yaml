@@ -5,11 +5,11 @@ description: >
   Zajímavostí tohoto ročníku bylo, že jsme zlomili naše deštivé prokletí a užili jsme si slunečný den.
 date: 2021-09-04
 image: ../../images/2021/Lusteniny-2021.jpg
-galleryLink: "https://www.facebook.com/lusteniny/photos_albums"
+galleryLink: 'https://www.facebook.com/lusteniny/photos_albums'
 winners:
-  - "Nebuďte slušnej, řekněte jméno"
-  - "Oslík a kočičky"
-  - "Abakus"
+  - 'Nebuďte slušnej, řekněte jméno'
+  - 'Oslík a kočičky'
+  - 'Abakus'
 cyphers:
   - title: Telegram do vězení č.4
     image: ../../images/2021/Lusteniny-2021-Dopis-do-vezeni.jpg

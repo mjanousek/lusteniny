@@ -1,13 +1,13 @@
-import react from "@astrojs/react";
-import tailwind from "@astrojs/tailwind";
-import robotsTxt from "astro-robots-txt";
-import { defineConfig } from "astro/config";
+import react from '@astrojs/react';
+import tailwind from '@astrojs/tailwind';
+import robotsTxt from 'astro-robots-txt';
+import { defineConfig } from 'astro/config';
 
-import sitemap from "@astrojs/sitemap";
+import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://lusteniny.eu",
+  site: 'https://lusteniny.eu',
   integrations: [
     tailwind({
       // Disable injecting a basic `base.css` import on every page.

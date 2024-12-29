@@ -4,24 +4,24 @@ type Props = {
 };
 
 export type IconType =
-  | "route"
-  | "marker"
-  | "child"
-  | "phone"
-  | "award"
-  | "pencil"
-  | "mail"
-  | "messenger"
-  | "facebook"
-  | "instagram"
-  | "arrow-right"
-  | "lightbulb"
-  | "list-check"
-  | "bars"
-  | "xmark";
+  | 'route'
+  | 'marker'
+  | 'child'
+  | 'phone'
+  | 'award'
+  | 'pencil'
+  | 'mail'
+  | 'messenger'
+  | 'facebook'
+  | 'instagram'
+  | 'arrow-right'
+  | 'lightbulb'
+  | 'list-check'
+  | 'bars'
+  | 'xmark';
 
 export const Icon = ({ icon, className }: Props) => {
-  if (icon === "route")
+  if (icon === 'route')
     return (
       <svg aria-hidden="true" viewBox="0 0 512 512" className={className}>
         <path
@@ -31,7 +31,7 @@ export const Icon = ({ icon, className }: Props) => {
       </svg>
     );
 
-  if (icon === "marker")
+  if (icon === 'marker')
     return (
       <svg aria-hidden="true" viewBox="0 0 512 512" className={className}>
         <path
@@ -41,7 +41,7 @@ export const Icon = ({ icon, className }: Props) => {
       </svg>
     );
 
-  if (icon === "pencil")
+  if (icon === 'pencil')
     return (
       <svg aria-hidden="true" viewBox="0 0 512 512" className={className}>
         <path
@@ -51,7 +51,7 @@ export const Icon = ({ icon, className }: Props) => {
       </svg>
     );
 
-  if (icon === "child")
+  if (icon === 'child')
     return (
       <svg aria-hidden="true" viewBox="0 0 320 512" className={className}>
         <path
@@ -61,7 +61,7 @@ export const Icon = ({ icon, className }: Props) => {
       </svg>
     );
 
-  if (icon === "phone")
+  if (icon === 'phone')
     return (
       <svg aria-hidden="true" viewBox="0 0 384 512" className={className}>
         <path
@@ -71,7 +71,7 @@ export const Icon = ({ icon, className }: Props) => {
       </svg>
     );
 
-  if (icon === "award")
+  if (icon === 'award')
     return (
       <svg aria-hidden="true" viewBox="0 0 576 512" className={className}>
         <path
@@ -81,7 +81,7 @@ export const Icon = ({ icon, className }: Props) => {
       </svg>
     );
 
-  if (icon === "mail")
+  if (icon === 'mail')
     return (
       <svg aria-hidden="true" viewBox="0 0 512 512" className={className}>
         <path
@@ -91,7 +91,7 @@ export const Icon = ({ icon, className }: Props) => {
       </svg>
     );
 
-  if (icon === "messenger")
+  if (icon === 'messenger')
     return (
       <svg aria-hidden="true" viewBox="0 0 512 512" className={className}>
         <path
@@ -101,7 +101,7 @@ export const Icon = ({ icon, className }: Props) => {
       </svg>
     );
 
-  if (icon === "facebook")
+  if (icon === 'facebook')
     return (
       <svg aria-hidden="true" viewBox="0 0 512 512" className={className}>
         <path
@@ -111,7 +111,7 @@ export const Icon = ({ icon, className }: Props) => {
       </svg>
     );
 
-  if (icon === "instagram")
+  if (icon === 'instagram')
     return (
       <svg aria-hidden="true" viewBox="0 0 448 512" className={className}>
         <path
@@ -121,7 +121,7 @@ export const Icon = ({ icon, className }: Props) => {
       </svg>
     );
 
-  if (icon === "arrow-right")
+  if (icon === 'arrow-right')
     return (
       <svg aria-hidden="true" viewBox="0 0 512 512" className={className}>
         <path
@@ -131,7 +131,7 @@ export const Icon = ({ icon, className }: Props) => {
       </svg>
     );
 
-  if (icon === "lightbulb")
+  if (icon === 'lightbulb')
     return (
       <svg aria-hidden="true" viewBox="0 0 384 512" className={className}>
         <path
@@ -141,7 +141,7 @@ export const Icon = ({ icon, className }: Props) => {
       </svg>
     );
 
-  if (icon === "list-check")
+  if (icon === 'list-check')
     return (
       <svg aria-hidden="true" viewBox="0 0 512 512" className={className}>
         <path
@@ -151,7 +151,7 @@ export const Icon = ({ icon, className }: Props) => {
       </svg>
     );
 
-  if (icon === "bars")
+  if (icon === 'bars')
     return (
       <svg aria-hidden="true" viewBox="0 0 448 512" className={className}>
         <path
@@ -161,7 +161,7 @@ export const Icon = ({ icon, className }: Props) => {
       </svg>
     );
 
-  if (icon === "xmark")
+  if (icon === 'xmark')
     return (
       <svg aria-hidden="true" viewBox="0 0 384 512" className={className}>
         <path

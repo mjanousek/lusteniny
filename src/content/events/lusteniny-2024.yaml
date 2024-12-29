@@ -5,11 +5,11 @@ description: >
   Chtěli bychom poděkovat našim sponzorům za podporu a ceny pro vítěze. Bez vás bychom se neobešli 😉
 date: 2024-06-08
 image: ../../images/2024/Lusteniny2024.jpg
-galleryLink: "https://www.facebook.com/lusteniny/photos_albums"
+galleryLink: 'https://www.facebook.com/lusteniny/photos_albums'
 winners:
-  - "Ňuf sem ňuf tam a malé ňuf"
-  - "Abakus"
-  - "Svědkové Baronovi"
+  - 'Ňuf sem ňuf tam a malé ňuf'
+  - 'Abakus'
+  - 'Svědkové Baronovi'
 cyphers:
   - title: Popelka
     info:
@@ -47,18 +47,18 @@ cyphers:
     hints:
       - Poznej stavbu a vyber písmeno z názvu.
     steps:
-      - "V šifře se nachází obrysy, či náčrty slavných staveb ze Zlína"
-      - "Pokud stavby poznáte, ať už od oka, nebo s pomocí nápovědy na druhé straně, dostanete tyto budovy:"
-      - "Vila Jana Antonína Bati"
-      - "Obchodní Dům"
-      - "Pamatník Tomáše Bati"
-      - "Baťův mrakodrap"
-      - "Vila Tomáše Bati"
-      - "Gahurův prospekt"
-      - "14|15 Baťův institut"
-      - "Pak už jen stačí z názvu budovy vybrat písmeno dle čísla nad obrysem"
-      - "Vila Jana Antonína Bati - 6/23, bereme šesté písmeno, tedy J"
-      - "Opakujeme pro další budovy a vyjde nám výsledek."
+      - 'V šifře se nachází obrysy, či náčrty slavných staveb ze Zlína'
+      - 'Pokud stavby poznáte, ať už od oka, nebo s pomocí nápovědy na druhé straně, dostanete tyto budovy:'
+      - 'Vila Jana Antonína Bati'
+      - 'Obchodní Dům'
+      - 'Pamatník Tomáše Bati'
+      - 'Baťův mrakodrap'
+      - 'Vila Tomáše Bati'
+      - 'Gahurův prospekt'
+      - '14|15 Baťův institut'
+      - 'Pak už jen stačí z názvu budovy vybrat písmeno dle čísla nad obrysem'
+      - 'Vila Jana Antonína Bati - 6/23, bereme šesté písmeno, tedy J'
+      - 'Opakujeme pro další budovy a vyjde nám výsledek.'
     solution: JUNKERS
 
   - title: Prodejny Baťa
@@ -66,8 +66,8 @@ cyphers:
     hints:
       - Spojnice.
     steps:
-      - "Pobočky založené v každém roce zaneseme do mapy, uděláme spojnice, což nám dá písmo."
-      - "Příklad: (New York, Santiago de Chile, Dakar) -> písmo D"
+      - 'Pobočky založené v každém roce zaneseme do mapy, uděláme spojnice, což nám dá písmo.'
+      - 'Příklad: (New York, Santiago de Chile, Dakar) -> písmo D'
     solution: DEVET
 
   - title: Stehy
@@ -75,9 +75,9 @@ cyphers:
     hints:
       - Měřítko
     steps:
-      - "11 čar/10 dílků v části “Nastavení stroje - měřítko stehu” má význam měřítka."
-      - "Za pomoci měřítka lze změřit vzdálenost mezi jednotlivými vzorky stehů."
-      - "Vzdálenosti nám dávají čísla: 9, 14, 4, 9, 5, které dají po převodu na písmena řešení"
+      - '11 čar/10 dílků v části “Nastavení stroje - měřítko stehu” má význam měřítka.'
+      - 'Za pomoci měřítka lze změřit vzdálenost mezi jednotlivými vzorky stehů.'
+      - 'Vzdálenosti nám dávají čísla: 9, 14, 4, 9, 5, které dají po převodu na písmena řešení'
     solution: INDIE
 
   - title: Tihle za to můžou
@@ -102,25 +102,25 @@ cyphers:
     hints:
       - A co to sypání?
     steps:
-      - "Kuchařka obsahuje recepty na každý den v týdnu. Dnes-v den konání Luštěnin, tj. v sobotu-je na řadě kakaový koláč. Každý tým jeden takový kousek koláče i dostal. Recept obsahuje soupis ingrediencí a jejich množství. Čísla se následně musí přiřadit k písmenům v abecedě:"
-      - "21 dkg polohrubé mouky -> 21. písmeno v abecedě. Aby písmena byla sestavena ve správném pořadí, je třeba postupovat podle receptu - 1. máslo, 2. cukr, 3. skořice atd."
-      - "Pokud takto postupujeme, sestavíme následující:  "
-      - "E"
-      - "S"
-      - "F"
-      - "A"
-      - "U"
-      - "C"
-      - "S"
-      - "Tento výsledek ale nedává smysl - je třeba udělat poslední krok. Že by byl koláč pro tým jen k jídlu? Není tomu tak. Je nutné provést posun písmen v abecedě o počet kusů kuliček-zdobení, tj. 8. Tím získáme správnou odpověď:"
-      - "E -> M"
-      - "S -> A"
-      - "F -> N"
-      - "A -> I"
-      - "U -> C"
-      - "C -> K"
-      - "S -> A"
-    solution: "MÁNIČKA"
+      - 'Kuchařka obsahuje recepty na každý den v týdnu. Dnes-v den konání Luštěnin, tj. v sobotu-je na řadě kakaový koláč. Každý tým jeden takový kousek koláče i dostal. Recept obsahuje soupis ingrediencí a jejich množství. Čísla se následně musí přiřadit k písmenům v abecedě:'
+      - '21 dkg polohrubé mouky -> 21. písmeno v abecedě. Aby písmena byla sestavena ve správném pořadí, je třeba postupovat podle receptu - 1. máslo, 2. cukr, 3. skořice atd.'
+      - 'Pokud takto postupujeme, sestavíme následující:  '
+      - 'E'
+      - 'S'
+      - 'F'
+      - 'A'
+      - 'U'
+      - 'C'
+      - 'S'
+      - 'Tento výsledek ale nedává smysl - je třeba udělat poslední krok. Že by byl koláč pro tým jen k jídlu? Není tomu tak. Je nutné provést posun písmen v abecedě o počet kusů kuliček-zdobení, tj. 8. Tím získáme správnou odpověď:'
+      - 'E -> M'
+      - 'S -> A'
+      - 'F -> N'
+      - 'A -> I'
+      - 'U -> C'
+      - 'C -> K'
+      - 'S -> A'
+    solution: 'MÁNIČKA'
 
   - title: Docházka
     image: ../../images/2024/Lusteniny2024_Dochazka.jpg
