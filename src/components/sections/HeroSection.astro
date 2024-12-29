@@ -1,51 +1,24 @@
 ---
-import { Image } from "astro:assets";
-import { ButtonInternalLink } from "../atoms";
+import { Image } from 'astro:assets';
+import { ButtonInternalLink } from '../atoms';
 
-import lusteninyImage from "../../images/Lusteniny.jpg";
-import cgeImage from "../../images/sponsors/cge.png";
-import cnImage from "../../images/sponsors/cn_group.png";
-import papirflyImage from "../../images/sponsors/papirfly.png";
-import vitarImage from "../../images/sponsors/vitar.png";
-import zivyZlinImage from "../../images/sponsors/zivy_zlin.png";
+import lusteninyImage from '../../images/Lusteniny.jpg';
+import zivyZlinImage from '../../images/sponsors/zivy_zlin.png';
 
 const sponsors = [
   {
     image: zivyZlinImage,
-    title: "Živý Zlín",
-    link: "https://www.kulturazlin.cz/",
+    title: 'Živý Zlín',
+    link: 'https://www.kulturazlin.cz/',
     height: 40,
-  },
-  {
-    image: papirflyImage,
-    title: "Papirfly",
-    link: "https://www.papirfly.com/",
-    height: 32,
-  },
-  {
-    image: cgeImage,
-    title: "Czech Games Edition",
-    link: "https://czechgames.com/cs/",
-    height: 48,
-  },
-  {
-    image: vitarImage,
-    title: "Viter",
-    link: "https://vitar.cz/",
-    height: 48,
-  },
-  {
-    image: cnImage,
-    title: "CN Group",
-    link: "https://cngroup.cz/",
-    height: 36,
   },
 ];
 ---
 
 <section class="relative flex min-h-screen flex-col">
+  <!-- Waves -->
   <svg
-    class="absolute inset-0 text-blue-400 opacity-5 pointer-events-none"
+    class="pointer-events-none absolute inset-0 text-blue-400 opacity-5"
     viewBox="0 0 1920 1081"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -199,9 +172,10 @@ const sponsors = [
     </defs>
   </svg>
 
+  <!-- Main content -->
   <div class="grid flex-grow items-center xl:grid-cols-5">
     <div
-      class="xl:order-0 mx:auto container relative z-30 order-1 flex h-full flex-col justify-center px-4 py-12 sm:px-8 md:px-12 xl:col-span-3 xl:ml-auto lg:max-w-3xl xl:max-w-4xl"
+      class="xl:order-0 mx:auto container relative z-30 order-1 flex h-full flex-col justify-center px-4 py-12 sm:px-8 md:px-12 lg:max-w-3xl xl:col-span-3 xl:ml-auto xl:max-w-4xl"
     >
       <h1 class="mb-5 text-2xl font-semibold text-gray-900 sm:text-3xl md:text-4xl lg:text-5xl">
         <span class="font-bold text-green-600">Šifrovací hra</span> v centru Zlína
@@ -214,6 +188,8 @@ const sponsors = [
         <ButtonInternalLink to="/#info" text="Více informací" icon="arrow-right" variant="green" />
       </div>
     </div>
+
+    <!-- Image and graphics -->
     <div class="order-0 relative flex justify-end xl:order-1 xl:col-span-2 xl:h-full">
       <div class="relative hidden xl:block">
         <svg
@@ -241,22 +217,22 @@ const sponsors = [
 
         <div class="aspect-square h-64 md:h-80 lg:h-full">
           <Image
-            style={{ clipPath: "circle(50.0% at 50% 50%)" }}
+            style={{ clipPath: 'circle(50.0% at 50% 50%)' }}
             src={lusteninyImage}
             alt=""
-            class="ml-auto aspect-square object-cover w-full h-full"
+            class="ml-auto aspect-square h-full w-full object-cover"
             loading="eager"
           />
         </div>
       </div>
-      <div class="absolute right-0 top-0 hidden aspect-square h-64 md:h-80 lg:inset-0 xl:block lg:h-full">
+      <div class="absolute right-0 top-0 hidden aspect-square h-64 md:h-80 lg:inset-0 lg:h-full xl:block">
         <Image
           style={{
-            clipPath: "polygon(14.33% 15%, 30% 0%, 100% 0, 100% 70%, 85.66% 85%)",
+            clipPath: 'polygon(14.33% 15%, 30% 0%, 100% 0, 100% 70%, 85.66% 85%)',
           }}
           src={lusteninyImage}
           alt=""
-          class="w-full h-full object-cover"
+          class="h-full w-full object-cover"
           loading="eager"
         />
       </div>
@@ -265,7 +241,7 @@ const sponsors = [
           <Image
             src={lusteninyImage}
             alt=""
-            class="relative z-10 h-64 rounded-lg md:h-80 object-cover"
+            class="relative z-10 h-64 rounded-lg object-cover md:h-80"
             loading="eager"
           />
           <div class="absolute inset-0 translate-x-4 translate-y-4 rounded-lg bg-green-100"></div>
@@ -275,7 +251,7 @@ const sponsors = [
     </div>
   </div>
 
-  {/* Sponsors */}
+  <!-- Sponosrs -->
   <div class="md:py-18 container mx-auto px-4 py-12 sm:px-8 md:px-12 xl:py-24">
     <nav
       aria-label="S pomocí našich sponzorů"
@@ -290,12 +266,12 @@ const sponsors = [
               target="_blank"
               title={sponsor.title}
               rel="noopener noreferrer external"
-              class="block  rounded-lg px-4 py-4 lg:py-0 transition duration-300 hover:scale-105 focus:scale-105 focus:outline-none"
+              class="block  rounded-lg px-4 py-4 transition duration-300 hover:scale-105 focus:scale-105 focus:outline-none lg:py-0"
             >
               <Image
                 src={sponsor.image}
                 alt={sponsor.title}
-                class="rounded-lg overflow-hidden"
+                class="overflow-hidden rounded-lg"
                 height={sponsor.height}
                 loading="eager"
               />

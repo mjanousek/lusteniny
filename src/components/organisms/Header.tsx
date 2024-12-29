@@ -1,7 +1,7 @@
-import { Menu, Transition } from "@headlessui/react";
-import React from "react";
-import { classNames } from "../../utils";
-import { Icon, Logo } from "../atoms";
+import { Menu, Transition } from '@headlessui/react';
+import React from 'react';
+import { classNames } from '../../utils';
+import { Icon, Logo } from '../atoms';
 
 type Props = {
   isAlternative?: boolean;
@@ -9,12 +9,12 @@ type Props = {
 
 export const Header = ({ isAlternative }: Props) => (
   <header
-    className={classNames("bg-blue-50", isAlternative && "left-0 right-0 top-0 z-50 xl:absolute xl:bg-transparent")}
+    className={classNames('bg-blue-50', isAlternative && 'left-0 right-0 top-0 z-50 xl:absolute xl:bg-transparent')}
   >
     <div
       className={classNames(
-        "xl:container mx-auto flex items-center justify-between gap-8 px-4 sm:px-8 md:px-12",
-        isAlternative ? "xl:justify-start" : "",
+        'mx-auto flex items-center justify-between gap-8 px-4 xl:container sm:px-8 md:px-12',
+        isAlternative ? 'xl:justify-start' : '',
       )}
     >
       <a
@@ -55,12 +55,12 @@ export const Header = ({ isAlternative }: Props) => (
           <>
             <Menu.Button
               className={classNames(
-                "relative z-[60] px-6 py-5  focus:outline-none",
-                open ? "text-white focus:text-green-50" : "rounded-lg text-gray-700 focus:text-gray-900 ",
+                'relative z-[60] px-6 py-5  focus:outline-none',
+                open ? 'text-white focus:text-green-50' : 'rounded-lg text-gray-700 focus:text-gray-900 ',
               )}
-              title={open ? "Zavřít menu" : "Otevřít menu"}
+              title={open ? 'Zavřít menu' : 'Otevřít menu'}
             >
-              <Icon icon={open ? "xmark" : "bars"} className="h-5" />
+              <Icon icon={open ? 'xmark' : 'bars'} className="h-5" />
             </Menu.Button>
 
             <Transition
@@ -74,15 +74,15 @@ export const Header = ({ isAlternative }: Props) => (
             >
               <Menu.Items
                 className={classNames(
-                  "absolute right-0 top-0 z-50 overflow-hidden whitespace-nowrap rounded-lg bg-gradient-to-br from-green-500 to-green-600 pt-14 text-center font-medium shadow-xl shadow-green-600/25 focus:outline-none",
+                  'absolute right-0 top-0 z-50 overflow-hidden whitespace-nowrap rounded-lg bg-gradient-to-br from-green-500 to-green-600 pt-14 text-center font-medium shadow-xl shadow-green-600/25 focus:outline-none',
                 )}
               >
                 <Menu.Item>
                   {({ active }) => (
                     <a
                       className={classNames(
-                        "block px-6 py-3 text-green-50",
-                        active ? "bg-green-600 text-green-50" : "",
+                        'block px-6 py-3 text-green-50',
+                        active ? 'bg-green-600 text-green-50' : '',
                       )}
                       href="/"
                     >
@@ -94,8 +94,8 @@ export const Header = ({ isAlternative }: Props) => (
                   {({ active }) => (
                     <a
                       className={classNames(
-                        "block px-6 py-3 text-green-50",
-                        active ? "bg-green-600 text-green-50" : "",
+                        'block px-6 py-3 text-green-50',
+                        active ? 'bg-green-600 text-green-50' : '',
                       )}
                       href="/#info"
                     >
@@ -107,8 +107,8 @@ export const Header = ({ isAlternative }: Props) => (
                   {({ active }) => (
                     <a
                       className={classNames(
-                        "block px-6 py-3 text-green-50",
-                        active ? "bg-green-600 text-green-50" : "",
+                        'block px-6 py-3 text-green-50',
+                        active ? 'bg-green-600 text-green-50' : '',
                       )}
                       href="/#udalosti"
                     >
@@ -120,8 +120,8 @@ export const Header = ({ isAlternative }: Props) => (
                   {({ active }) => (
                     <a
                       className={classNames(
-                        "block px-6 py-3 text-green-50",
-                        active ? "bg-green-600 text-green-50" : "",
+                        'block px-6 py-3 text-green-50',
+                        active ? 'bg-green-600 text-green-50' : '',
                       )}
                       href="/#kontakt"
                     >

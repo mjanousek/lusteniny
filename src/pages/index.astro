@@ -1,20 +1,17 @@
 ---
-import Layout from "../components/Layout.astro";
-import ContactSection from "../components/sections/ContactSection.astro";
-import EventsSection from "../components/sections/EventsSection.astro";
-import FeaturesSection from "../components/sections/FeaturesSection.astro";
-import HeroSection from "../components/sections/HeroSection.astro";
-import PhotosSection from "../components/sections/PhotosSection.astro";
-
-const metaTags = {
-  title: "Luštěniny | Šifrovací hra ve Zlíně",
-  description:
-    "Luštěniny jsou tradiční šifrovací hra pořádána v centru Zlína, které se můžeš zúčastnit jak v týmu, tak sám. Neváhej a přijd si k nám zaluštit.",
-};
+import Layout from '../components/Layout.astro';
+import AnnouncementSection from '../components/sections/AnnouncementSection.astro';
+import ContactSection from '../components/sections/ContactSection.astro';
+import EventsSection from '../components/sections/EventsSection.astro';
+import FeaturesSection from '../components/sections/FeaturesSection.astro';
+import HeroSection from '../components/sections/HeroSection.astro';
+import PhotosSection from '../components/sections/PhotosSection.astro';
+import { settings } from '../settings';
 ---
 
-<Layout {...metaTags} hasAlternativeHeader>
+<Layout {...settings} hasAlternativeHeader>
   <HeroSection />
+  <AnnouncementSection />
   <FeaturesSection />
   <PhotosSection />
   <EventsSection />

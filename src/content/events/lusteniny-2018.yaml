@@ -2,7 +2,7 @@ title: Luštěniny I.
 description: Tady to vše začalo. Premiéra Luštěnin, spousta nejistoty a očekávání ze strany organizátorů. Na konci dne však bylo jasné, že toto rozhodně nebude jediný ročník. (Pouze v tomto ročníku byly šifry zaměřeny na IT)
 date: 2018-11-17
 image: ../../images/2018/Lusteniny-2018.jpg
-galleryLink: "https://www.facebook.com/lusteniny/photos_albums"
+galleryLink: 'https://www.facebook.com/lusteniny/photos_albums'
 winners:
   - Anonymní Abstinenti
   - Fordi
@@ -21,8 +21,8 @@ cyphers:
       - Vybarvuj zleva doprava.
     steps:
       - Pokud do kulicky vchazi pouze jedna barva, pak vybarvi kuličku stejnou barvou
-      - "Pokud do kuličky vchází dvě kuličky stejné barvy, pak vybarvi kuličku opačnou
-        barvou "
+      - 'Pokud do kuličky vchází dvě kuličky stejné barvy, pak vybarvi kuličku opačnou
+        barvou '
       - Vznikne obrázek s nápisem ZLIN
     solution: ZLIN
   - title: C lang
@@ -33,7 +33,7 @@ cyphers:
       - Najdi syntaktické chyby v kódu
       - Písmena odpovídající řádkům s chybami (je nutné písmena přeskládat a čísla
         odpovídají pořadí písmen v abecedě)
-      - "Chyby na řádních: 2, 7, 9, 14, 15"
+      - 'Chyby na řádních: 2, 7, 9, 14, 15'
     solution: BINGO
   - title: Šifra č. 4
     image: ../../images/2018/Lusteniny-2018-Brail.jpg
@@ -51,11 +51,11 @@ cyphers:
     steps:
       - WSAD odpovídá klávesám na klávesnici, které se používají ve hrách k chůzi
         4 směry (W - pohyb nahoru, S - pohyb dolů, A - vlevo, D - vpravo
-      - "Tabulka představuje pole, po kterém se pohybuje hráč (kulička udává jeho
-        první pozici) "
+      - 'Tabulka představuje pole, po kterém se pohybuje hráč (kulička udává jeho
+        první pozici) '
       - Každý řádek odpovídá sekvenci kroků, kterou musí hráč provést, a pak se
         ocitne na písmenu, které zapíše
-      - "Písmena, na kterých se hráč ocitne po každé sekvenci kroků "
+      - 'Písmena, na kterých se hráč ocitne po každé sekvenci kroků '
     solution: CNGROUP
   - title: QR Code
     image: ../../images/2018/Lusteniny-2018-QRCode.jpg
@@ -83,7 +83,7 @@ cyphers:
     steps:
       - Zkratky představují chybové hlášky Http protokolu
       - Najdi kódy jednotlivých hlášek
-      - "Sečti čísla v http kódu (př.: 404 -> 4 + 0 + 4 = 8)"
+      - 'Sečti čísla v http kódu (př.: 404 -> 4 + 0 + 4 = 8)'
       - Číslo udává pořadí písmene v abecedě
       - Písmena ve stejném pořadí, jako http stavové kódy (čtverečky výše)
     solution: BOHEMIA

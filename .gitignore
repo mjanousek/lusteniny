@@ -1,7 +1,21 @@
-node_modules/
-.cache/
-dist
-.yarn
-.DS_Store
+# build output
+dist/
+# generated types
+.astro/
 
-.astro/types.d.ts
+# dependencies
+node_modules/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+
+# environment variables
+.env
+.env.production
+
+# macOS-specific files
+.DS_Store

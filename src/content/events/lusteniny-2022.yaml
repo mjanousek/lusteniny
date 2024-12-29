@@ -6,11 +6,11 @@ description: >
   Také se ukázalo, že klíčem k vítězství může být kvalitní mobilita pro přesen mezi stanovišti, elektrická koloběžka tentokrát určitě přišla vhod.
 date: 2022-06-11
 image: ../../images/2022/Lusteniny-2022.jpg
-galleryLink: "https://www.facebook.com/lusteniny/photos_albums"
+galleryLink: 'https://www.facebook.com/lusteniny/photos_albums'
 winners:
-  - "Kokosy na tripu"
-  - "Svědkové Baronovi"
-  - "Batmen"
+  - 'Kokosy na tripu'
+  - 'Svědkové Baronovi'
+  - 'Batmen'
 cyphers:
   - title: Přímky
     image: ../../images/2022/Lusteniny2022-Primky.jpg
@@ -19,8 +19,8 @@ cyphers:
     steps:
       - Přímky se navzájem rozdělují na úsečky (segmenty). Některé jsou delší a některé jsou kratší.
       - Každá přímka reprezentuje jedno písmeno ve výsledném řešení, přičemž číslo na začátku udává pořadí písmene.
-      - "Delší úsečky reprezentují čárky a kratší reprezentují tečky v Morseově abecedě. Například 1. přímka je rozdělena na čtyři úsečky: dlouhou, dlouhou, krátkou a krátkou (― ― • •), což v morseově abecedě značí písmeno “Z”."
-      - "Všechny přímky pak reprezentují následující písmena:"
+      - 'Delší úsečky reprezentují čárky a kratší reprezentují tečky v Morseově abecedě. Například 1. přímka je rozdělena na čtyři úsečky: dlouhou, dlouhou, krátkou a krátkou (― ― • •), což v morseově abecedě značí písmeno “Z”.'
+      - 'Všechny přímky pak reprezentují následující písmena:'
       - (― ― • •)  ->  Z
       - (• ― • •)  ->  L
       - (• •)  ->  I
@@ -40,7 +40,7 @@ cyphers:
       - Na mapě se nachází různé typy míst, ale nás zajímají pouze vrcholy. Ostatní můžete hned vyškrtnout.
       - Z místa, které je označené znakem “X” lze vidět pouze některé vrcholy, protože některé vrcholy jsou zakryty. (Části mapy, které nelze vidět, jsou vyznačeny šrafováním.)
       - Vypsáním písmen pouze z viditelných vrcholů a seřazením podle nadmořské výšky dostanete výsledek.
-      - "Výsledek je tedy: BRETON"
+      - 'Výsledek je tedy: BRETON'
     solution: BRETON
   - title: Zmínka o Zlíně
     image: ../../images/2022/Lusteniny2022-Zminka.jpg
@@ -59,7 +59,7 @@ cyphers:
       - 12 L
       - 5 E
       - 13 M
-      - "Výsledek je tedy: FRITZVILEM"
+      - 'Výsledek je tedy: FRITZVILEM'
     solution: FRITZVILEM
   - title: Obrázky
     image: ../../images/2022/Lusteniny2022-Obrazky.jpg
@@ -69,30 +69,30 @@ cyphers:
       - Vybrat homononyma z obrázků
       - Rozdělit na obdélníky 3x2
       - Přečíst Braillovo písmo
-      - "Výsledek je: REJCKA"
+      - 'Výsledek je: REJCKA'
     solution: REJCKA
   - title: Víno
     image: ../../images/2022/Lusteniny2022-Vino.jpg
     hints:
       - Musíš mít tu správnou hladinu. :)
     steps:
-      - "Na etiketě se nachází 4 různě barevná čísla."
-      - "Pokud je v láhvi správná hladina tekutiny tak, aby hladina protínala číslo a dva body stejné barvy, protíná také některá písmena."
-      - "Pro číslo 1 a modrou barvu jsou to písmena: MRA,"
-      - "pro číslo 2 a červenou barvu jsou to písmena: KO,"
-      - "pro číslo 3 a zelenou barvu jsou to písmena: DR"
-      - "a pro číslo č a žlutou barvu jsou to písmena: AP."
-      - "Výsledek je tedy: MRAKODRAP"
+      - 'Na etiketě se nachází 4 různě barevná čísla.'
+      - 'Pokud je v láhvi správná hladina tekutiny tak, aby hladina protínala číslo a dva body stejné barvy, protíná také některá písmena.'
+      - 'Pro číslo 1 a modrou barvu jsou to písmena: MRA,'
+      - 'pro číslo 2 a červenou barvu jsou to písmena: KO,'
+      - 'pro číslo 3 a zelenou barvu jsou to písmena: DR'
+      - 'a pro číslo č a žlutou barvu jsou to písmena: AP.'
+      - 'Výsledek je tedy: MRAKODRAP'
     solution: MRAKODRAP
   - title: Karlův rodokmen
     image: ../../images/2022/Lusteniny2022-Rodokmen.jpg
     hints:
       - Ne Gertruda, ale sestra.
     steps:
-      - "Najít Karla"
-      - "Podle textu určit jeho příbuzné a seřadit podle abecedy (Antonín, Bronislav, Cecílie, Dana, Evžen, František a Gertruda)"
-      - "Číslo v obrázku udává pořadí písmene v typu rodinného stavu vzhledem ke Karlovi (ne jména). Příklad: Antonín (Karlův synovec) je první v abecedním pořadí, v obrázku u něj vidíme 4, to znamená, že bereme čtvrté písmeno ze slova synovec - tedy “o”."
-      - "Složením všech takto získaných písmen dostáváme výsledek: OTRUBNA"
+      - 'Najít Karla'
+      - 'Podle textu určit jeho příbuzné a seřadit podle abecedy (Antonín, Bronislav, Cecílie, Dana, Evžen, František a Gertruda)'
+      - 'Číslo v obrázku udává pořadí písmene v typu rodinného stavu vzhledem ke Karlovi (ne jména). Příklad: Antonín (Karlův synovec) je první v abecedním pořadí, v obrázku u něj vidíme 4, to znamená, že bereme čtvrté písmeno ze slova synovec - tedy “o”.'
+      - 'Složením všech takto získaných písmen dostáváme výsledek: OTRUBNA'
     solution: OTRUBNA
   - title: Od “jednadvacítky” k baťovým domkům
     images:
@@ -101,24 +101,24 @@ cyphers:
     hints:
       - Rodina vždy žije v jednom domě. Slož ho!
     steps:
-      - "Všechna příjmení v seznamu pracovníků jsou unikátní až na příslušníky rodin: Kalíků, Holemářů, Chytků, Dobešů a Smejkalů"
-      - "Z těchto rodin pracují v 21. budově vždy 3 členové. Když spojíme patra, kde pracují jednotliví členové, získáme 3. patrovou budovu - jejich domek. Například pro rodinu Kalíků jsou to patra 13, 9 a 8. Po spojení těchto pater získáme následující domek:"
-      - "Domek každé rodiny zobrazuje jedno písmeno. Například u rodiny Kalíků se jedná o “S”."
-      - "Řešením je slovo vytvořené spojením všech těchto písmen: SOKOL"
+      - 'Všechna příjmení v seznamu pracovníků jsou unikátní až na příslušníky rodin: Kalíků, Holemářů, Chytků, Dobešů a Smejkalů'
+      - 'Z těchto rodin pracují v 21. budově vždy 3 členové. Když spojíme patra, kde pracují jednotliví členové, získáme 3. patrovou budovu - jejich domek. Například pro rodinu Kalíků jsou to patra 13, 9 a 8. Po spojení těchto pater získáme následující domek:'
+      - 'Domek každé rodiny zobrazuje jedno písmeno. Například u rodiny Kalíků se jedná o “S”.'
+      - 'Řešením je slovo vytvořené spojením všech těchto písmen: SOKOL'
     solution: SOKOL
   - title: Slepá Skvrna
     image: ../../images/2022/Lusteniny2022-Slepa-Skvrna.jpg
     hints:
       - Najdi to, co ti tvá slepá skvrna skrývá.
     steps:
-      - "Každý z nás má na sítnici svého oka slepou skvrnu, kterou běžně nevnímá, ovšem při zavření jednoho oka ji lze “najít”."
-      - "Zavřeme si tedy pravé oko a podíváme se na zelenou tečku v oku, pohybem papíru nalezneme takovou vzdálenost od něj, kdy nám modrá tečka zmizí."
-      - "Při zachování stejné vzdálenosti se pak díváme na tečky stejné barvy jako oko a zapisujeme si tečky a čísla, která nám zmizí."
-      - "To samé zopakujeme pro druhé oko."
-      - "Výsledná čísla sečteme pro každé oko zvlášť."
-      - "Součet pro levé oko nám dá 18 a pro pravé 94."
-      - "Výsledek je tedy: 1894."
-    solution: "1894"
+      - 'Každý z nás má na sítnici svého oka slepou skvrnu, kterou běžně nevnímá, ovšem při zavření jednoho oka ji lze “najít”.'
+      - 'Zavřeme si tedy pravé oko a podíváme se na zelenou tečku v oku, pohybem papíru nalezneme takovou vzdálenost od něj, kdy nám modrá tečka zmizí.'
+      - 'Při zachování stejné vzdálenosti se pak díváme na tečky stejné barvy jako oko a zapisujeme si tečky a čísla, která nám zmizí.'
+      - 'To samé zopakujeme pro druhé oko.'
+      - 'Výsledná čísla sečteme pro každé oko zvlášť.'
+      - 'Součet pro levé oko nám dá 18 a pro pravé 94.'
+      - 'Výsledek je tedy: 1894.'
+    solution: '1894'
   - title: Historie
     images:
       - ../../images/2022/Lusteniny2022-Historie-3.jpg
@@ -127,20 +127,20 @@ cyphers:
     hints:
       - Dosaďte odpovědi z historických fotografií do rovnic.
     steps:
-      - "Jako prerekvizita pro tuto šifru je správné zodpovězení otázek z historických fotografií. Odpovědi jsou následující:"
-      - "O kolik věžiček více měl zlínský zámek zobrazený na dobové fotografii oproti nynější podobě? Odpověď: 4"
-      - "Kolik nadzemních úrovní podlahy najdeme v novém altánu v Parku Komenského? Odpověď: 2"
-      - "V jakém roce 21. století byl do parku umístěn pamětní kámen připomínající přesun starého zlínského hřbitova? Odpověď: 15"
-      - "Kolik sloupů bylo přistaveno pod balkonem radnice oproti dobové fotografii? Odpověď: 6"
-      - "Kolika pruhová silnice byla vybudována před Vilou Tomáše Bati a rozdělila tak její rozsáhlou zahradu na 2 díly? Odpověď: 4"
-      - "Jakým dvojciferným číslem je označena budova, která nyní stojí na místě bývalého vyhřívaného koupaliště Baťák? Odpověď: 15"
-      - "Kolik budov nyní stojí na vyznačeném místě namísto komplexu škol na dobové fotografii? Odpověď: 2"
-      - "V kolika sloupcích jsou vysázeny aktuálně stojící lípy vysázené před zlínským hotelem na 100. výročí vzniku československé republiky? Odpověď: 7"
-      - "Při revitalizaci Gahurova prospektu vznikly travnaté plochy  různých tvarů rozděleny chodníky. Jedna travnatá část má více vrcholů než ostatní. Kolik vrcholů to je? Odpověď: 5"
-      - "Nejprve je nutné do rovnic dosadit odpovědi z otázek na zadních stranách historických fotografií."
-      - "Po vyřešení rovnic dostáváme čísla: 12, 21, 19, 20, 5, 14, 9, 14, 25."
-      - "Tyto čísla udávají pořadí písmen v abecedě."
-      - "Výsledek je tedy: LUSTENINY"
+      - 'Jako prerekvizita pro tuto šifru je správné zodpovězení otázek z historických fotografií. Odpovědi jsou následující:'
+      - 'O kolik věžiček více měl zlínský zámek zobrazený na dobové fotografii oproti nynější podobě? Odpověď: 4'
+      - 'Kolik nadzemních úrovní podlahy najdeme v novém altánu v Parku Komenského? Odpověď: 2'
+      - 'V jakém roce 21. století byl do parku umístěn pamětní kámen připomínající přesun starého zlínského hřbitova? Odpověď: 15'
+      - 'Kolik sloupů bylo přistaveno pod balkonem radnice oproti dobové fotografii? Odpověď: 6'
+      - 'Kolika pruhová silnice byla vybudována před Vilou Tomáše Bati a rozdělila tak její rozsáhlou zahradu na 2 díly? Odpověď: 4'
+      - 'Jakým dvojciferným číslem je označena budova, která nyní stojí na místě bývalého vyhřívaného koupaliště Baťák? Odpověď: 15'
+      - 'Kolik budov nyní stojí na vyznačeném místě namísto komplexu škol na dobové fotografii? Odpověď: 2'
+      - 'V kolika sloupcích jsou vysázeny aktuálně stojící lípy vysázené před zlínským hotelem na 100. výročí vzniku československé republiky? Odpověď: 7'
+      - 'Při revitalizaci Gahurova prospektu vznikly travnaté plochy  různých tvarů rozděleny chodníky. Jedna travnatá část má více vrcholů než ostatní. Kolik vrcholů to je? Odpověď: 5'
+      - 'Nejprve je nutné do rovnic dosadit odpovědi z otázek na zadních stranách historických fotografií.'
+      - 'Po vyřešení rovnic dostáváme čísla: 12, 21, 19, 20, 5, 14, 9, 14, 25.'
+      - 'Tyto čísla udávají pořadí písmen v abecedě.'
+      - 'Výsledek je tedy: LUSTENINY'
     solution: LUSTENINY
 
 bonusInformation:

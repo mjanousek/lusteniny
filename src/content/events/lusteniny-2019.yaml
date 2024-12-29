@@ -3,11 +3,11 @@ description: Druhý ročník luštěnin přivedl na svět naši aplikaci pro Lu�
 slug: /udalosti/lusteniny-2019
 date: 2019-06-22
 image: ../../images/2019/Lusteniny-2019.jpg
-galleryLink: "https://www.facebook.com/lusteniny/photos_albums"
+galleryLink: 'https://www.facebook.com/lusteniny/photos_albums'
 winners:
-  - "Párek "
-  - "Edhouse 42"
-  - "No Game No Life "
+  - 'Párek '
+  - 'Edhouse 42'
+  - 'No Game No Life '
 cyphers:
   - title: Noty
     image: ../../images/2019/Lusteniny-2019-Noty.jpg
@@ -19,7 +19,7 @@ cyphers:
   - title: Stříbrné Plátno
     image: ../../images/2019/Lusteniny-2019-Stribrne-platno.jpg
     hints:
-      - "Slož mě! "
+      - 'Slož mě! '
       - Co se promítalo na stříbrné plátno? No přece filmy! A ve Zlíně se spoustu
         z nich natáčelo. Zkus je tedy najít
       - Přečti písmena na vrcholech krychle.
@@ -38,8 +38,8 @@ cyphers:
     steps:
       - Najdi nejkratší/nejlevnější Hamiltonovskou cestu z bodu 4 do bodu 3 (=ceste,
         která projdem každým uzlem grafu právě jednou).
-      - " Čísla 1-6 představují jednotlivé vrcholy grafu "
-      - "Ostatní čísla v tabulce zastupují délky/ceny hran. "
+      - ' Čísla 1-6 představují jednotlivé vrcholy grafu '
+      - 'Ostatní čísla v tabulce zastupují délky/ceny hran. '
       - Vyjdi z bodu 4 - najdi nejlevnější cestu do dalšího bodu
       - Pokračuj dál tak, aby žádný bod nebyl navštíven znovu a aby bod 3 byl poslední
       - Napiš ceny použítých cest popořadě a nahraď je písmeny z abecedy
@@ -62,7 +62,7 @@ cyphers:
   - title: DSZO
     image: ../../images/2019/Lusteniny-2019-DSZO.jpg
     hints:
-      - "(Tato šifra nemá nápovědu)"
+      - '(Tato šifra nemá nápovědu)'
     steps:
       - Vyhledej linky pro 2 zadané skupiny zastávek
       - Označ linku, která zastavuje na všech zastávkách.
@@ -99,7 +99,7 @@ cyphers:
       - Najdi sloupec s písmenem klíče v prvním řádku
       - Jednotlivá čísla ve výrazech určují, která číslice z letopočtu má být do
         výrazu dosazena.
-      - "Výsledná čísla nahraď písmeny z kódovací tabulky "
+      - 'Výsledná čísla nahraď písmeny z kódovací tabulky '
       - 2-4 1876 8-6 = 2 B
       - 1+2+3 1894 1+8+9= 18 R
       - 1+2+4 1905 1+9+5 = 15 O
@@ -130,17 +130,17 @@ cyphers:
     steps:
       - Nakresli kolem zvířat olympijské kruhy tak, aby všechna zvířata byla obsažena
         v některém z kruhů
-      - "Kruhy reprezentují kontinenty: Afrika, Amerika, Evropa, Asie, Austrálie
-        a Oceánie "
+      - 'Kruhy reprezentují kontinenty: Afrika, Amerika, Evropa, Asie, Austrálie
+        a Oceánie '
       - V každém kruhu najdi počet zvířaat které se nevyskytují na daném kontinentu
       - Čísla udávají pořadí písmene z daného kontinentu
     solution: Vafle
   - title: Muffin
     info:
-      - "Tato šifra měla zadání v podobě upečeného muffinu, bohužel se žádný muffin
-        ani foto nedochovalo, proto je toto zadání v této upravené formě. "
-      - "Zpráva v muffinu: R B 2Z 3R 6M B Na muffinu: 7 růžových, 1 bílá, 4 zelené,
-        3 modré"
+      - 'Tato šifra měla zadání v podobě upečeného muffinu, bohužel se žádný muffin
+        ani foto nedochovalo, proto je toto zadání v této upravené formě. '
+      - 'Zpráva v muffinu: R B 2Z 3R 6M B Na muffinu: 7 růžových, 1 bílá, 4 zelené,
+        3 modré'
     hints:
       - Krása se skrývá uvnitř.
       - Barvy.
@@ -148,8 +148,8 @@ cyphers:
     steps:
       - Nakresli kolem zvířat olympijské kruhy tak, aby všechna zvířata byla obsažena
         v některém z kruhů
-      - "Kruhy reprezentují kontinenty: Afrika, Amerika, Evropa, Asie, Austrálie
-        a Oceánie "
+      - 'Kruhy reprezentují kontinenty: Afrika, Amerika, Evropa, Asie, Austrálie
+        a Oceánie '
       - V každém kruhu najdi počet zvířaat které se nevyskytují na daném kontinentu
       - Čísla udávají pořadí písmene z daného kontinentu
     solution: Vafle

@@ -5,41 +5,41 @@ description: >
   Děkujeme všem zúčastněným, blahopřejeme vítězům a těšíme se na vás příští rok! 👋
 date: 2023-06-10
 image: ../../images/2023/Lusteniny2023.jpg
-galleryLink: "https://www.facebook.com/lusteniny/photos_albums"
+galleryLink: 'https://www.facebook.com/lusteniny/photos_albums'
 winners:
-  - "Svědkové Baronovi"
-  - "La Kukaračita"
-  - "Strigy"
+  - 'Svědkové Baronovi'
+  - 'La Kukaračita'
+  - 'Strigy'
 cyphers:
   - title: Startovní číslo
     image: ../../images/2023/Lusteniny2023-Startovni-Cislo.jpg
     hints:
       - Vyřeš příklad v každém čísle. Řešením je 3 písmenné slovo.
     steps:
-      - "Je nutné vyřešit příklad v každém číslo. Každý tento příklad nám pak dá číslo, které odpovídá pořadí písmene v abecedě."
-      - "9 - 6 = 3 -> C"
-      - "0 + 9 = 9 -> I"
-      - "3 × 4 = 3 -> L"
-      - "Výsledek je tedy: CIL, nebo chcete-li přesněji “Cíl”"
+      - 'Je nutné vyřešit příklad v každém číslo. Každý tento příklad nám pak dá číslo, které odpovídá pořadí písmene v abecedě.'
+      - '9 - 6 = 3 -> C'
+      - '0 + 9 = 9 -> I'
+      - '3 × 4 = 3 -> L'
+      - 'Výsledek je tedy: CIL, nebo chcete-li přesněji “Cíl”'
     solution: CIL
   - title: Co kdyby Emil běhal Orienťák?
     image: ../../images/2023/Lusteniny2023-Orientak.jpg
     hints:
       - Soustřeď se na vrstevnice.
     steps:
-      - "Na mapě je vyznačeno 26 vrstevnic, které reprezentují písmena v abecedě"
-      - "První vrstevnice -> A"
-      - "Pokud projdeme trasu najdeme postupně tato písmena:"
-      - "S"
-      - "A"
-      - "T"
-      - "U"
-      - "P"
-      - "E"
-      - "K"
-      - "K"
-      - "A"
-      - "A tedy výsledek je: SATUPEKKA"
+      - 'Na mapě je vyznačeno 26 vrstevnic, které reprezentují písmena v abecedě'
+      - 'První vrstevnice -> A'
+      - 'Pokud projdeme trasu najdeme postupně tato písmena:'
+      - 'S'
+      - 'A'
+      - 'T'
+      - 'U'
+      - 'P'
+      - 'E'
+      - 'K'
+      - 'K'
+      - 'A'
+      - 'A tedy výsledek je: SATUPEKKA'
     solution: SATUPEKKA
 
   - title: Emilova tretra
@@ -49,22 +49,22 @@ cyphers:
     hints:
       - Provlékej
     steps:
-      - "Každý řádek šifruje jedno písmeno."
-      - "Jednotlivá čísla představují dírky v botě, kterými je potřeba provléct šňůrku. Podtržená čísla značí, že se šňůrka provléká shora dolů a nepodtržená opačně."
-      - "Šňůrka pak vykreslí na botě písmeno."
-      - "Například podle prvního řádku provlečeme šňůrku následovně a dostaneme písmeno “P”:"
-      - "Jednotlivé řádky pak symbolizují písmena: “P”, “R”, “I”, “D”, “E” a “J”"
-      - "Výsledek je tedy: PŘIDEJ"
+      - 'Každý řádek šifruje jedno písmeno.'
+      - 'Jednotlivá čísla představují dírky v botě, kterými je potřeba provléct šňůrku. Podtržená čísla značí, že se šňůrka provléká shora dolů a nepodtržená opačně.'
+      - 'Šňůrka pak vykreslí na botě písmeno.'
+      - 'Například podle prvního řádku provlečeme šňůrku následovně a dostaneme písmeno “P”:'
+      - 'Jednotlivé řádky pak symbolizují písmena: “P”, “R”, “I”, “D”, “E” a “J”'
+      - 'Výsledek je tedy: PŘIDEJ'
     solution: PŘIDEJ
   - title: Helsinky 1952
     image: ../../images/2023/Lusteniny2023-Helsinky1952.jpg
     hints:
       - Poskládej mě jako harmoniku. Jak? Možná pomůže brožura o Emilovi. :)
     steps:
-      - "Nad stadionem jsou pověšeny vlajky, které symbolizují pořadí běžců maratonu, který se v daném roce udál."
-      - "Ovšem ne všechny vlajky tam mají být. Pokud přehneme papír tak, aby byly vidět pouze vlajky, které odpovídají prvním 10 běžcům tohoto maratonu, dostaneme zašifrovanou zprávu. Pořadí těchto běžců lze nalézt v brožurce, kterou jste dostali na startu. :)"
-      - "Správné přeložení má vypadat následovně (Začerněné části mají být přeložený tak, aby nešly vidět.)"
-      - "Výsledek je tedy: TŘETÍ ZLATO"
+      - 'Nad stadionem jsou pověšeny vlajky, které symbolizují pořadí běžců maratonu, který se v daném roce udál.'
+      - 'Ovšem ne všechny vlajky tam mají být. Pokud přehneme papír tak, aby byly vidět pouze vlajky, které odpovídají prvním 10 běžcům tohoto maratonu, dostaneme zašifrovanou zprávu. Pořadí těchto běžců lze nalézt v brožurce, kterou jste dostali na startu. :)'
+      - 'Správné přeložení má vypadat následovně (Začerněné části mají být přeložený tak, aby nešly vidět.)'
+      - 'Výsledek je tedy: TŘETÍ ZLATO'
     solution: REJCKA
 
   - title: Jméno
@@ -72,9 +72,9 @@ cyphers:
     hints:
       - Spočítej části.
     steps:
-      - "Počet dílků v písmenu odpovídá pořadí v abecedě písmena z řešení."
-      - "Například první písmeno je rozděleno na 18 dílků a symbolizuje tedy písmeno “R”."
-      - "Výsledek je tedy: Ron Clarke"
+      - 'Počet dílků v písmenu odpovídá pořadí v abecedě písmena z řešení.'
+      - 'Například první písmeno je rozděleno na 18 dílků a symbolizuje tedy písmeno “R”.'
+      - 'Výsledek je tedy: Ron Clarke'
     solution: RON CLARKE
 
   - title: Tréninkový plán
@@ -82,19 +82,19 @@ cyphers:
     hints:
       - “tu tu tu tůůů tůůů tůůů tu tu tu”
     steps:
-      - "Klíčem k šifře je Morseova abeceda."
-      - "Nahrazením oranžových buněk tabulky za čárky (-) a modrých buněk za tečky (.) dostanete v každém řádku tabulky jedno písmeno morseovy abecedy."
-      - "Jednotlivé řádky tedy vypadají takto:"
-      - "--- = O"
-      - ".-.. = L"
-      - "-.-- = Y"
-      - "-- = M"
-      - ".--. = P"
-      - ".. = I"
-      - ".- = A"
-      - "-.. = D"
-      - ".- = A"
-      - "Výsledek je tedy: OLYMPIÁDA"
+      - 'Klíčem k šifře je Morseova abeceda.'
+      - 'Nahrazením oranžových buněk tabulky za čárky (-) a modrých buněk za tečky (.) dostanete v každém řádku tabulky jedno písmeno morseovy abecedy.'
+      - 'Jednotlivé řádky tedy vypadají takto:'
+      - '--- = O'
+      - '.-.. = L'
+      - '-.-- = Y'
+      - '-- = M'
+      - '.--. = P'
+      - '.. = I'
+      - '.- = A'
+      - '-.. = D'
+      - '.- = A'
+      - 'Výsledek je tedy: OLYMPIÁDA'
     solution: OLYMPIÁDA
 
   - title: Rozhovor s Danou
@@ -102,28 +102,28 @@ cyphers:
     hints:
       - Hledej v textu písmena podle čísel.
     steps:
-      - "Časy běhů jsou klíčem šifry."
-      - "Jednotlivé čísla postupně udávají písmen v textu, které tvoří zašifrovanou zprávu."
-      - "Tj. čísla: 29 a 17 (čas na 10 km) udávají 29. a 46. (29 + 17) písmeno v textu = K a O,"
-      - "následně čísla 2, 23 a 3 (čas na maraton) udávají 48. (46 + 2), 71. (48 + 23) a 74.  (71 + 3) písmeno = S, T a E."
-      - "Výsledek je tedy: KOŠTĚ, nebo chcete-li přesněji “Koste”"
-    solution: "KOŠTĚ"
+      - 'Časy běhů jsou klíčem šifry.'
+      - 'Jednotlivé čísla postupně udávají písmen v textu, které tvoří zašifrovanou zprávu.'
+      - 'Tj. čísla: 29 a 17 (čas na 10 km) udávají 29. a 46. (29 + 17) písmeno v textu = K a O,'
+      - 'následně čísla 2, 23 a 3 (čas na maraton) udávají 48. (46 + 2), 71. (48 + 23) a 74.  (71 + 3) písmeno = S, T a E.'
+      - 'Výsledek je tedy: KOŠTĚ, nebo chcete-li přesněji “Koste”'
+    solution: 'KOŠTĚ'
 
   - title: Emilův první závod
     image: ../../images/2023/Lusteniny2023-Emiluv-prvni-zavod.jpg
     hints:
       - Je první, nebo ne?
     steps:
-      - "Přestože tabulka obsahuje velké množství dat, podstatné je pouze to, zda Emil je na mezičase první nebo ne."
-      - "Pokud ano, představuje buňka tabulky binární hodnotu 1. Pokud ne, představuje buňka binární hodnotu 0."
-      - "Každé kolo závodu (každý řádek tabulky) pak představuje jedno písmeno zakódované binárním kódem."
-      - "V jednotlivých řádcích dostáváme:"
-      - "1. kolo: 10110 = V"
-      - "2. kolo: 01111 = O"
-      - "3. kolo: 01010 = J"
-      - "4. kolo: 00001 = A"
-      - "5. kolo: 01011  = K"
-      - "Výsledek je tedy: VOJÁK."
+      - 'Přestože tabulka obsahuje velké množství dat, podstatné je pouze to, zda Emil je na mezičase první nebo ne.'
+      - 'Pokud ano, představuje buňka tabulky binární hodnotu 1. Pokud ne, představuje buňka binární hodnotu 0.'
+      - 'Každé kolo závodu (každý řádek tabulky) pak představuje jedno písmeno zakódované binárním kódem.'
+      - 'V jednotlivých řádcích dostáváme:'
+      - '1. kolo: 10110 = V'
+      - '2. kolo: 01111 = O'
+      - '3. kolo: 01010 = J'
+      - '4. kolo: 00001 = A'
+      - '5. kolo: 01011  = K'
+      - 'Výsledek je tedy: VOJÁK.'
     solution: VOJÁK
 
 bonusInformation:
