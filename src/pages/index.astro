@@ -1,19 +1,19 @@
 ---
 import Layout from '../components/Layout.astro';
 import AnnouncementSection from '../components/sections/AnnouncementSection.astro';
-import ContactSection from '../components/sections/ContactSection.astro';
-import EventsSection from '../components/sections/EventsSection.astro';
-import FeaturesSection from '../components/sections/FeaturesSection.astro';
+import CallToActionSection from '../components/sections/CallToActionSection.astro';
 import HeroSection from '../components/sections/HeroSection.astro';
-import PhotosSection from '../components/sections/PhotosSection.astro';
+import InfoSection from '../components/sections/InfoSection.astro';
+import RulesSection from '../components/sections/RulesSection.astro';
+import SponsorsSection from '../components/sections/SponsorsSection.astro';
 import { settings } from '../settings';
 ---
 
-<Layout {...settings} hasAlternativeHeader>
+<Layout {...settings}>
   <HeroSection />
+  <SponsorsSection />
   <AnnouncementSection />
-  <FeaturesSection />
-  <PhotosSection />
-  <EventsSection />
-  <ContactSection />
+  <InfoSection />
+  <CallToActionSection />
+  <RulesSection />
 </Layout>

@@ -1,10 +1,10 @@
 ---
-import { Image } from "astro:assets";
-import { classNames } from "../../../utils";
-import { Icon } from "../../atoms";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import { Image } from 'astro:assets';
+import { classNames } from '../../../utils';
+import { Icon } from '../../atoms';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 export type Props = {
   cyphers: {
@@ -24,10 +24,10 @@ const { cyphers } = Astro.props;
 <section class="bg-blue-50 py-24">
   <div class="container mx-auto px-4 py-16 sm:px-8 md:px-12 md:py-12 lg:py-8 xl:py-4">
     <header class="mx-auto mb-16 max-w-2xl text-center">
-      <h2 class="mb-4 text-center text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl lg:text-5xl">
+      <h2 class="mb-4 text-center text-2xl font-bold text-slate-900 sm:text-3xl md:text-4xl lg:text-5xl">
         Šifry a jejich řešení
       </h2>
-      <p class="mb-12 text-center font-medium leading-relaxed text-gray-700 sm:mb-20">
+      <p class="mb-12 text-center font-medium leading-relaxed text-slate-700 sm:mb-20">
         Všechny šifry, jejich řešení a nápovědy jsou vám k dispozici
       </p>
     </header>
@@ -35,13 +35,13 @@ const { cyphers } = Astro.props;
       {
         cyphers.map((cypher, cypherIndex) => (
           <div class="relative h-fit overflow-hidden rounded-[16px] bg-white shadow">
-            <h3 class={classNames(cypher.info ? "p-6 text-center text-2xl font-semibold text-gray-900" : "sr-only")}>
+            <h3 class={classNames(cypher.info ? 'p-6 text-center text-2xl font-semibold text-slate-900' : 'sr-only')}>
               {cypher.title}
             </h3>
             {cypher.info && (
               <div class="space-y-3 px-6 pb-6">
                 {cypher.info.map((info) => (
-                  <p class="font-medium text-gray-800"> {info}</p>
+                  <p class="font-medium text-slate-800"> {info}</p>
                 ))}
               </div>
             )}
@@ -65,11 +65,11 @@ const { cyphers } = Astro.props;
               )}
             </div>
             <details>
-              <summary class="flex w-full items-center justify-center gap-4 bg-green-600/90 px-[40px] py-[15px] font-semibold text-white transition hover:bg-green-600 focus:bg-green-600 focus:outline-none cursor-pointer">
+              <summary class="flex w-full cursor-pointer items-center justify-center gap-4 bg-green-600/90 px-[40px] py-[15px] font-semibold text-white transition hover:bg-green-600 focus:bg-green-600 focus:outline-none">
                 <span>Zobrazit nápovědu</span>
                 <Icon icon="lightbulb" className="h-5" />
               </summary>
-              <div class="text-lg p-6">
+              <div class="p-6 text-lg">
                 <ol class="list-decimal space-y-2 pl-4">
                   {cypher.hints.map((hint) => (
                     <li>{hint}</li>
@@ -78,15 +78,15 @@ const { cyphers } = Astro.props;
               </div>
             </details>
             <details>
-              <summary class="flex w-full items-center justify-center gap-4 bg-green-600/90 px-[40px] py-[15px] font-semibold text-white transition hover:bg-green-600 focus:bg-green-600 focus:outline-none cursor-pointer">
+              <summary class="flex w-full cursor-pointer items-center justify-center gap-4 bg-green-600/90 px-[40px] py-[15px] font-semibold text-white transition hover:bg-green-600 focus:bg-green-600 focus:outline-none">
                 <span>Zobrazit řešení</span>
                 <Icon icon="list-check" className="h-5" />
               </summary>
-              <div class="text-lg p-6">
-                <ol class="mb-4 list-decimal space-y-2 pl-4 text-gray-400">
+              <div class="p-6 text-lg">
+                <ol class="mb-4 list-decimal space-y-2 pl-4 text-slate-400">
                   {cypher.steps.map((step) => (
                     <li>
-                      <span class="text-gray-800 font-normal">{step}</span>
+                      <span class="font-normal text-slate-800">{step}</span>
                     </li>
                   ))}
                 </ol>
@@ -103,20 +103,20 @@ const { cyphers } = Astro.props;
 </section>
 
 <script>
-  import Swiper from "swiper";
-  import { A11y, Navigation, Pagination } from "swiper/modules";
-  const swiper = new Swiper(".swiper", {
+  import Swiper from 'swiper';
+  import { A11y, Navigation, Pagination } from 'swiper/modules';
+  const swiper = new Swiper('.swiper', {
     modules: [Navigation, Pagination, A11y],
     spaceBetween: 0,
     slidesPerView: 1,
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
     pagination: {
       clickable: false,
-      el: ".swiper-pagination",
-      bulletActiveClass: "active",
+      el: '.swiper-pagination',
+      bulletActiveClass: 'active',
     },
   });
 </script>

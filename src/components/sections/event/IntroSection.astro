@@ -1,6 +1,6 @@
 ---
-import { Image } from "astro:assets";
-import { ButtonExternalLink } from "../../atoms";
+import { Image } from 'astro:assets';
+import { ButtonExternalLink } from '../../atoms';
 
 export type Props = {
   title: string;
@@ -19,8 +19,8 @@ const { title, description, date, galleryLink, image } = Astro.props;
       <div class="relative mb-12">
         <Image
           src={image}
-          alt={`${title}-${new Date(date).toLocaleDateString("cs")}`}
-          class="max-h-[20rem] w-full rounded-xl shadow-lg shadow-blue-800/25 saturate-[125%] sm:max-h-[24rem] md:max-h-[28rem] lg:max-h-[32rem] xl:max-h-[36rem] object-cover aspect-[4/3]"
+          alt={`${title}-${new Date(date).toLocaleDateString('cs')}`}
+          class="aspect-[4/3] max-h-[20rem] w-full rounded-xl object-cover shadow-lg shadow-blue-800/25 saturate-[125%] sm:max-h-[24rem] md:max-h-[28rem] lg:max-h-[32rem] xl:max-h-[36rem]"
         />
       </div>
     </div>
@@ -28,7 +28,7 @@ const { title, description, date, galleryLink, image } = Astro.props;
   </div>
 
   <div class="container mx-auto max-w-7xl px-4 text-center sm:px-8 md:px-12">
-    <h1 class="mb-6 text-3xl font-bold text-gray-900 sm:text-4xl md:text-5xl lg:text-6xl">
+    <h1 class="mb-6 text-3xl font-bold text-slate-900 sm:text-4xl md:text-5xl lg:text-6xl">
       {title}
     </h1>
     <div class="mb-8 flex justify-center">
@@ -36,10 +36,10 @@ const { title, description, date, galleryLink, image } = Astro.props;
         datetime={new Date(date).toISOString()}
         class="block rounded-[8px] bg-blue-100 px-[20px] py-[10px] text-sm font-semibold text-blue-500 sm:text-base"
       >
-        {new Date(date).toLocaleDateString("cs")}{" "}
+        {new Date(date).toLocaleDateString('cs')}{' '}
       </time>
     </div>
-    <p class="mb-12 text-center leading-loose text-gray-800 sm:text-lg sm:leading-loose lg:text-xl lg:leading-loose">
+    <p class="mb-12 text-center leading-loose text-slate-800 sm:text-lg sm:leading-loose lg:text-xl lg:leading-loose">
       {description}
     </p>
     <div class="flex justify-center">

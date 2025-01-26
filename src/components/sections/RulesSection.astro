@@ -1,0 +1,150 @@
+---
+import { Image } from 'astro:assets';
+import tailwindColors from 'tailwindcss/colors';
+import Pattern from '../../components/atoms/Pattern.astro';
+import img from '../../images/IMG_6.png';
+
+const steps = [
+  {
+    title: 'Odhalení startovacího místa',
+    description: [
+      'Několik dní před startem šifrovačky odhalíme startovní místo. V den události se dostavte na toto místo.',
+      'Můžete zde také provést registraci svého týmu, pokud jste tak již neučinili.',
+    ],
+  },
+  {
+    title: 'Vyzvednutí šifrovací složky',
+    description: [
+      'Po dorazení na startovní místo si vyzvedněte složku pro luštění.',
+      'Najdete v ní psací potřeby, volné papíry, kontaktní informace, nápovědu a návod na práci s aplikací, včetně přihlašovacích údajů.',
+    ],
+  },
+  {
+    title: 'Úvodní proslov organizátorů',
+    description: [
+      'Před startem nás čeká krátký úvod or organizátorů, v rychlosti projdeme pravidla a průběh hry a specifické věci pro daný ročník, bude zde prostor i na dotazy.',
+    ],
+  },
+  {
+    title: 'Zahájení šifrovačky',
+    description: [
+      'Startovní místo je zároveň místem první šifry, kterou si ihned po startu vyzvednete od organizátorů.',
+      ' Budete-li mít v průběhu hry dotaz, neváhejte se zeptat nejbližšího organizátora.',
+    ],
+  },
+  {
+    title: 'Odevzdání hotové šifry',
+    description: [
+      'Pokud jste našli to správné řešení, zadejte ho prosím do aplikace. Ve složkách je návod k její obsluze, případně místní organizátor také rád pomůže.',
+      'Hru lze řešit i zcela bez aplikace, v tomto případě se obratťe na organizátory.',
+    ],
+  },
+  {
+    title: 'Jde se na další stanoviště',
+    description: [
+      'Po vyřešení šifry vám aplikace (nebo organizátor) ukáže místo dalšího stanoviště a zároveň se vám odemkne další šifra k řešení.',
+      'Pro zadání si však budete muset dojít (nebo snad dojet?) za organizátorem na stanoviště.',
+    ],
+  },
+  {
+    title: 'Nejde to vyřešit?',
+    description: [
+      'Nejde-li vám šifra vyřešit, můžete si vzít nápovědu (tak vás ale bude stát body). Nebo lze šifru zcela přeskočit a přejít tak na další.',
+      'Upozořnujeme však, že cílem hry není projít všechny šifry, a jejich obtížnost se postupně zvyšuje.',
+    ],
+  },
+  {
+    title: 'Doma mi hoří sporák ?!',
+    description: [
+      'Pokud dojde k situaci kvůli níž budete potřebovat odstoupit od hry, dejte nám to prosím vědět, ať už prostřednictvím aplikace, osobně organizátorovi, nebo telefonicky.',
+      'Rádi bychom na nikoho v průběhu hry nezapomenuli, a tímto nám pomůžete držet si přehled.',
+    ],
+  },
+  {
+    title: 'Bodování šifer',
+    description: [
+      'Za každou úspěšně vyřešenou šifru obdržíte 10 bodů, pokud jste si zároveň vybrali i nápovědu, obdržíte pouze 5 bodů.',
+      'V případě přeskočení šifry dostaváte 0 bodů, a to i v případě, že si vezmete nápovědu. Nelze tedy jít do záporných čísel.',
+    ],
+  },
+  {
+    title: 'Pořadí vítězů',
+    description: [
+      'Pořadí vítězů je určeno počtem získaných bodů. V případě, že nastane shoda v počtech bodů, bude rozhodujícím faktorem čas - jedná se o celkový čas vyřešení šifrovačky.',
+    ],
+  },
+  {
+    title: 'Závěrečné vyhlášení',
+    description: [
+      'Včasně před koncem vám aplikace odhalí místo vyhlašení vítězů, případně se opět můžete informovat u organizátora.',
+      'Na vyhlášení naleznete drobné občerstvení, řešení šifer předáme ceny vítězům a můžeme se společně pobavit o šifrách.',
+    ],
+  },
+  {
+    title: 'Zpětné hodnocení',
+    description: [
+      'Během závěrečného vyhlášení můžete zanechat na určeném místě vaše hodnocení daného ročníku. Můžete nám ho předat také osobně, nebo elektronicky.',
+      'Moc za něj budeme rádi, snažíme se z něj vycházet při připravování dalších ročníků.',
+    ],
+  },
+];
+---
+
+<section class="relative py-32" id="pravidla">
+  <Pattern
+    class="absolute left-0 top-[50%] -translate-y-1/2"
+    backgroundColor={tailwindColors.slate[100]}
+    lineColor={tailwindColors.slate[300]}
+    spotColor={tailwindColors.slate[100]}
+    width={1440}
+    height={992}
+    id="steps-1"
+  />
+  <div class="container relative mx-auto px-4 sm:px-8 md:px-12">
+    <div class="-mx-4 mb-16 flex flex-wrap items-center">
+      <div class="mb-16 w-full px-4 md:mb-0 md:w-1/2">
+        <span
+          class="mb-6 inline-block rounded-full bg-green-500 px-3.5 py-px text-xs uppercase leading-5 tracking-wide text-white"
+        >
+          Pravidla
+        </span>
+        <h2
+          class="mb-6 text-3xl font-bold leading-[1.1] text-slate-800 md:text-4xl md:leading-[1.1] lg:text-5xl lg:leading-[1.1]"
+        >
+          Jak to probíhá
+        </h2>
+        <p class="max-w-4xl text-xl leading-loose text-slate-600">
+          Luštěniny jsou zábavná šifrovací akce, kde si procvičíš logické myšlení a užiješ si příjemnou atmosféru. Akce
+          je vhodná pro všechny, včetně dětí. Podívej se, co tě čeká!
+        </p>
+      </div>
+      <div class="w-full px-4 md:w-1/2">
+        <div class="rounded-7xl relative mx-auto max-w-max overflow-hidden md:mr-0">
+          <Image src={img} alt="" class="max-w-lg rounded-2xl object-cover" fit="cover" />
+        </div>
+      </div>
+    </div>
+    <div class="-mx-4 flex flex-wrap text-center md:text-left">
+      {
+        steps.map((step, index) => (
+          <div class="mb-12 w-full px-4 md:w-1/2 xl:w-1/3">
+            <div
+              class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-r from-green-500 to-green-500 text-xl font-semibold text-white"
+              data-config-id="auto-txt-4-2"
+            >
+              {index + 1}
+            </div>
+            <h3 class="mb-2 text-xl font-bold text-slate-700" data-config-id="auto-txt-5-2">
+              {step.title}
+            </h3>
+            <div class="space-y-3 text-slate-600">
+              {step.description.map((d) => (
+                <p>{d}</p>
+              ))}
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

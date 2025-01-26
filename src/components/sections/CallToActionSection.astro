@@ -1,52 +1,46 @@
 ---
-import { ButtonExternalLink } from "../atoms";
+import tailwindColors from 'tailwindcss/colors';
+import { Button } from '../atoms/NewButton';
+import PatternRectangle from '../atoms/PatternRectangle.astro';
 ---
 
-<aside class="relative bg-white">
-  <div class="container relative z-10 mx-auto sm:px-8 md:px-12">
-    <div class="relative mx-auto max-w-7xl">
+<section class="relative bg-white py-8" id="udalosti">
+  <div class="absolute left-0 top-1/2 h-1/2 w-full bg-slate-100"></div>
+  <div class="container relative z-10 mx-auto px-4">
+    <div class="relative mx-auto">
       <div
-        class="absolute -inset-1 rounded-[32px] bg-gradient-to-tr from-green-400 to-green-600 opacity-30 blur transition duration-500"
+        class="relative flex justify-between gap-8 overflow-hidden rounded-lg bg-gradient-to-br from-slate-800 to-slate-800 p-8 pb-12 shadow-xl sm:p-12 md:p-14 lg:p-16"
       >
-      </div>
-      <div
-        class="relative grid gap-8 bg-gradient-to-br from-green-500 to-green-600 p-8 pb-12 sm:rounded-[32px] sm:p-12 md:p-14 lg:grid-cols-5 lg:p-16"
-      >
-        <div class="lg:col-span-3">
-          <h2 class="mb-4 text-xl font-bold text-white sm:text-2xl md:text-3xl lg:text-4xl">
-            Nechceš přijít o novinky ?
+        <div
+          class="pointer-events-none absolute left-0 top-0 flex h-full w-full items-center justify-center overflow-hidden"
+        >
+          <PatternRectangle
+            class=""
+            backgroundColor={tailwindColors.slate[800]}
+            lineColor={tailwindColors.slate[700]}
+            spotColor={tailwindColors.slate[800]}
+            id="cta"
+          />
+        </div>
+        <div class="relative lg:col-span-3">
+          <h2 class="mb-4 text-xl font-bold text-white sm:text-2xl md:text-3xl lg:text-5xl lg:leading-tight">
+            Zajímá tě, jak vypadaly <br /> přechozí ročníky ?
           </h2>
-          <p
-            class="max-w-lg text-sm font-medium leading-relaxed text-green-50 sm:text-base sm:leading-relaxed md:text-lg md:leading-relaxed lg:text-xl lg:leading-relaxed"
-          >
-            Sleduj nás na facebooku nebo instagramu a nepřijdeš o nejnovější informace k luštěninám.
+          <p class="text-xl font-light leading-relaxed text-gray-300">
+            Projdi si archiv událostí na webu a sleduj nás na sociálních sítích.
           </p>
         </div>
-        <nav
-          aria-label="Sociální sítě"
-          class="mx-auto flex flex-col items-stretch justify-center gap-4 lg:col-span-2 lg:w-fit lg:items-stretch"
-        >
-          <ButtonExternalLink
-            href="https://www.facebook.com/lusteniny"
-            text="Facebook @lusteniny"
-            icon="facebook"
-            variant="blue"
-          />
-          <ButtonExternalLink
-            href="https://www.instagram.com/lusteninyzlin"
-            text="Instagram @lusteninyzlin"
+        <nav aria-label="Události a sociální sítě" class="flex items-center gap-3 lg:col-span-2">
+          <Button to="/udalosti" text="Archiv událostí" />
+          <Button externalHref="https://www.facebook.com/lusteniny" text="Facebook" color="blue" icon="facebook" />
+          <Button
+            externalHref="https://www.instagram.com/lusteninyzlin"
+            text="Instagram"
+            color="pink-gradient"
             icon="instagram"
-            variant="instagram"
           />
         </nav>
       </div>
     </div>
   </div>
-  <svg
-    viewBox="0 0 1920 86"
-    xmlns="http://www.w3.org/2000/svg"
-    class="absolute left-0 bottom-0 m-0 -mb-1 w-full text-blue-50"
-  >
-    <path d="M1920 0C1216.18 87.0898 796.828 87.0991 0 0V86H1920V0Z" fill="currentColor"></path>
-  </svg>
-</aside>
+</section>

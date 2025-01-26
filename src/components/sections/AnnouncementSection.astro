@@ -1,62 +1,90 @@
 ---
+import { Image } from 'astro:assets';
+import tailwindColors from 'tailwindcss/colors';
+import { Button } from '../../components/atoms/NewButton';
+import Wave from '../../components/atoms/Wave.astro';
+import LogoAlt from '../../images/Logo-Alt.png';
 import { Icon } from '../atoms';
+import Heading from '../atoms/Heading.astro';
+import Pattern from '../atoms/Pattern.astro';
+import Subtitle from '../atoms/Subtitle.astro';
+
+const items = [
+  'KDY - Sejdeme se v sobotu 7.6.2025 ve 14:00.',
+  'KDE - Tohle ještě upřesníme 🙂',
+  'UKONČENÍ - V 18:00 na místě, které zjistíte v průběhu hry. ',
+];
 ---
 
-<section
-  class="relative z-20 bg-gradient-to-br from-green-500 to-green-600 py-16 shadow-lg shadow-green-600/20"
-  id="info"
->
-  <div class="container mx-auto px-4">
-    <div class="grid gap-16 md:grid-cols-2">
-      <div>
-        <h2 class="mb-6 text-2xl font-bold text-white sm:text-3xl md:text-4xl">Luštěniny 2025</h2>
-        <p class="mb-4 font-medium leading-relaxed text-green-50 sm:text-lg">
-          A je to venku, tímto bychom rádi oficiálně oznámili, že <strong>8. ročník Luštěnin</strong> ohlášen!
+<Wave class="h-92 -mb-px w-full rotate-180 text-slate-800" />
+<section class="relative mx-auto overflow-hidden bg-slate-800" id="aktuality">
+  <Pattern
+    class="absolute left-0 top-[50%] -translate-y-1/2"
+    backgroundColor={tailwindColors.slate[800]}
+    lineColor={tailwindColors.slate[700]}
+    spotColor={tailwindColors.slate[800]}
+    width={1440}
+    height={992}
+    id="announecement"
+  />
+  <div class="container mx-auto px-4 py-24">
+    <div class="relative grid grid-cols-2 items-center gap-8">
+      <div class="space-y-6">
+        <div class="space-y-3">
+          <Subtitle variant="dark" text="Aktuality" />
+          <Heading level={2} variant="dark" text="Luštěniny 2025 jsou zde!" />
+        </div>
+        <p class="max-w-2xl text-xl leading-relaxed text-slate-300">
+          A je to venku, tímto bychom rádi oficiálně oznámili, že 8. ročník Luštěnin ohlášen! Tématem letošních Luštěnin
+          bude Zlínská architektura 🏡!
         </p>
-        <p class="mb-4 font-medium leading-relaxed text-green-50 sm:text-lg">
-          Téma Luštěnin bude <strong>Zlínská architektura</strong> 🏡!
-        </p>
-        <p class="mb-1 font-semibold leading-relaxed text-green-50 sm:text-lg">
-          Kdy a kde se potkáme? <br />
-        </p>
-        <ul class="mb-1 list-disc pl-5 leading-relaxed text-green-50 sm:text-lg">
-          <li>KDY? Sejdeme se v sobotu 7.6.2025 ve 14:00.</li>
-          <li>KDE? Tohle ještě upřesníme 🙂</li>
-          <li>UKONČENÍ: Sraz a vyhlášení vítězů bude v 18:00 na místě, které zjistíte v průběhu hry.</li>
+        <ul class="space-y-4 text-lg font-semibold text-slate-300">
+          {
+            items.map((item) => (
+              <li class="flex items-center gap-3">
+                <div class="relative">
+                  <div class="absolute left-1/2 top-1/2 h-5 w-5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white" />
+                  <Icon icon="check-circle" className="relative h-6 w-6 text-green-600" />
+                </div>
+                <span>{item}</span>
+              </li>
+            ))
+          }
         </ul>
-        <p class="mb-4 font-semibold leading-relaxed text-green-50 sm:text-lg">
-          Sraz a vyhlášení vítězů bude v 18:00 na místě, které zjistíte v průběhu hry.
-        </p>
       </div>
-      <form action="" class="rounded-lg bg-white p-8 text-center shadow-lg">
-        <h3 class="mb-6 text-xl font-semibold text-gray-900 sm:text-2xl md:text-2xl">Registruj svůj tým</h3>
-        <p class="mb-8 text-center leading-relaxed text-gray-700 sm:text-lg">
-          Svůj tým můžeš registrovat napsáním komentáře s názvem týmu a počtem členů na facebookové události, nebo nám
-          můžeš napsat email.
-        </p>
-
-        <a
-          href=" mailto:info@lusteniny.eu?subject=Registrace%20t%C3%BDmu%20na%20Lu%C5%A1t%C4%9Bniny%202025&body=Dobr%C3%BD%20den%2C%0D%0A%0D%0Acht%C4%9Bli%20bychom%20registrovat%20sv%C5%AFj%20t%C3%BDm%20na%20ud%C3%A1losti%20Lu%C5%A1t%C4%9Bniny%202025%20(07.06.2025).%0D%0A%0D%0AN%C3%A1zev%20t%C3%BDmu%3A%20_____%0D%0APo%C4%8Det%20%C4%8Dlen%C5%AF%3A%20_____ "
-          target="_blank"
-          rel="noopener noreferrer"
-          class="mb-3 flex items-center justify-center gap-3 rounded-lg bg-gradient-to-r from-green-500 to-green-600 px-6 py-3 font-semibold text-white shadow shadow-green-600/20"
+      <div class="">
+        <div
+          class="relative flex flex-col items-center justify-center rounded-2xl bg-white px-16 py-12 text-center shadow-2xl shadow-black/40"
         >
-          <span>Registrovat se emailem</span>
-          <Icon icon="mail" className="h-5" />
-        </a>
-        <a
-          href="https://www.facebook.com/events/1130264062005151/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="mb-4 flex items-center justify-center gap-3 rounded-lg bg-gradient-to-r from-blue-500 to-blue-600 px-6 py-3 font-semibold text-white shadow shadow-blue-600/20"
-        >
-          <span>Registrovat se na facebookové události</span>
-          <Icon icon="facebook" className="h-5" />
-        </a>
-        <small class="text-sm text-gray-700">
-          (Přihlášení lze provést i na místě, ale vzhledem k náročnosti příprav vás prosíme o předčasnou registraci )
-        </small>
-      </form>
+          <Image
+            src={LogoAlt}
+            alt=""
+            class="absolute left-1/2 top-0 h-14 w-14 -translate-x-1/2 -translate-y-1/2 rounded-xl shadow-lg shadow-green-800/20"
+          />
+          <Heading level={3} variant="light" text="Registruj svůj tým!" />
+          <p class="mb-5 text-lg leading-relaxed text-slate-600">
+            Svůj tým můžeš registrovat napsáním komentáře s názvem týmu a počtem členů na facebookové události, nebo nám
+            můžeš napsat email.
+          </p>
+          <div class="mb-4 flex flex-col items-center justify-center space-y-2.5">
+            <Button
+              text="Registrovat se emailem"
+              icon="mail"
+              externalHref="mailto:info@lusteniny.eu?subject=Registrace%20t%C3%BDmu%20na%20Lu%C5%A1t%C4%9Bniny%202025&body=Dobr%C3%BD%20den%2C%0D%0A%0D%0Acht%C4%9Bli%20bychom%20registrovat%20sv%C5%AFj%20t%C3%BDm%20na%20ud%C3%A1losti%20Lu%C5%A1t%C4%9Bniny%202025%20(07.06.2025).%0D%0A%0D%0AN%C3%A1zev%20t%C3%BDmu%3A%20_____%0D%0APo%C4%8Det%20%C4%8Dlen%C5%AF%3A%20_____"
+            />
+            <Button
+              text="Registrovat se facebookem"
+              icon="facebook"
+              color="blue"
+              externalHref="https://www.facebook.com/events/1130264062005151/"
+            />
+          </div>
+          <p class="mx-auto max-w-md text-sm text-slate-500">
+            Přihlášení lze provést i na místě, ale vzhledem k náročnosti příprav vás prosíme o předčasnou registraci
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
+<Wave class="h-92 -mb-px w-full bg-white text-slate-800" />

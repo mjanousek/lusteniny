@@ -26,25 +26,25 @@ export const Header = ({ isAlternative }: Props) => (
       </a>
       <nav aria-label="Hlavní navigace" className="hidden items-stretch gap-6 text-xl font-medium text-white xl:flex">
         <a
-          className="flex items-center gap-3 rounded px-6 py-8 text-lg font-semibold text-gray-600 transition duration-300 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-400"
+          className="flex items-center gap-3 rounded px-6 py-8 text-lg font-semibold text-slate-600 transition duration-300 hover:text-slate-900 focus:outline-none focus:ring-2 focus:ring-green-400"
           href="/"
         >
           Domů
         </a>
         <a
-          className="flex items-center gap-3 rounded px-6 py-8 text-lg font-semibold text-gray-600 transition duration-300 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-400"
+          className="flex items-center gap-3 rounded px-6 py-8 text-lg font-semibold text-slate-600 transition duration-300 hover:text-slate-900 focus:outline-none focus:ring-2 focus:ring-green-400"
           href="/#info"
         >
           O Luštěninách
         </a>
         <a
-          className="flex items-center gap-3 rounded px-6 py-8 text-lg font-semibold text-gray-600 transition duration-300 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-400"
+          className="flex items-center gap-3 rounded px-6 py-8 text-lg font-semibold text-slate-600 transition duration-300 hover:text-slate-900 focus:outline-none focus:ring-2 focus:ring-green-400"
           href="/#udalosti"
         >
           Události
         </a>
         <a
-          className="flex items-center gap-3 rounded px-6 py-8 text-lg font-semibold text-gray-600 transition duration-300 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-400"
+          className="flex items-center gap-3 rounded px-6 py-8 text-lg font-semibold text-slate-600 transition duration-300 hover:text-slate-900 focus:outline-none focus:ring-2 focus:ring-green-400"
           href="/#kontakt"
         >
           Kontakt
@@ -56,7 +56,7 @@ export const Header = ({ isAlternative }: Props) => (
             <Menu.Button
               className={classNames(
                 'relative z-[60] px-6 py-5  focus:outline-none',
-                open ? 'text-white focus:text-green-50' : 'rounded-lg text-gray-700 focus:text-gray-900 ',
+                open ? 'text-white focus:text-green-50' : 'rounded-lg text-slate-700 focus:text-slate-900 ',
               )}
               title={open ? 'Zavřít menu' : 'Otevřít menu'}
             >
