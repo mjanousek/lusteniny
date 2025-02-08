@@ -3,7 +3,7 @@ import { Icon, type IconType } from './Icon';
 
 type Props = {
   text: string;
-  size?: 'regular' | 'large';
+  size?: 'small' | 'regular' | 'large';
   icon?: IconType;
   color?: 'green' | 'blue' | 'pink-gradient';
 } & ({ onClick: () => void } | { to: string } | { externalHref: string } | { type: 'submit' });
@@ -14,7 +14,8 @@ export const Button = (props: Props) => {
 
   const className = classNames(
     'rounded-lg text-green-50 hover:text-white shadow hover:shadow-lg',
-    'group relative block overflow-hidden font-medium duration-700',
+    'group/button relative block overflow-hidden font-medium duration-700',
+    size === 'small' && 'px-5 py-2.5 tracking-wide text-sm',
     size === 'regular' && 'px-7 py-3.5 tracking-wide',
     size === 'large' && 'px-8 py-4 text-lg tracking-wider',
     color === 'green' && 'bg-gradient-to-r from-green-600 to-green-700 shadow-green-800/30',
@@ -24,7 +25,7 @@ export const Button = (props: Props) => {
 
   const bubbleClassName = classNames(
     'pointer-events-none absolute right-[70%] top-[50%] aspect-square w-[150%]  rounded-full bg-black/10',
-    'transition-all duration-700 group-hover:-top-[100%] group-hover:-right-[20%]',
+    'transition-all duration-700 group-hover/button:-top-[100%] group-hover/button:-right-[20%]',
   );
 
   if ('to' in props)
@@ -35,7 +36,7 @@ export const Button = (props: Props) => {
           <span>{props.text}</span>
           {props.icon && (
             <span>
-              <Icon icon={props.icon} className="h-4 transition duration-500 group-hover:translate-x-1.5"></Icon>
+              <Icon icon={props.icon} className="h-4 transition duration-500 group-hover/button:translate-x-1.5"></Icon>
             </span>
           )}
         </span>
@@ -50,7 +51,7 @@ export const Button = (props: Props) => {
           <span>{props.text}</span>
           {props.icon && (
             <span>
-              <Icon icon={props.icon} className="h-4 transition duration-500 group-hover:translate-x-1.5"></Icon>
+              <Icon icon={props.icon} className="h-4 transition duration-500 group-hover/button:translate-x-1.5"></Icon>
             </span>
           )}
         </span>
