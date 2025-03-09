@@ -1,25 +1,53 @@
 ---
+import Heading from '@components/atoms/Heading.astro';
+import Pattern from '@components/atoms/Pattern.astro';
+import Wave from '@components/atoms/Wave.astro';
+import tailwindColors from 'tailwindcss/colors';
+
 export type Props = {
   winners: string[];
 };
 ---
 
-<section class="bg-white pb-24 pt-12">
-  <div class="container mx-auto px-4 py-16 sm:px-8 md:px-12 md:py-12 lg:py-8 xl:py-4">
-    <h2 class="mb-16 text-center text-2xl font-bold text-slate-900 sm:text-3xl md:text-4xl lg:text-5xl">
-      Vítězné týmy
-    </h2>
-    <ol class="mx-auto grid max-w-5xl justify-center gap-16 md:grid-cols-3">
-      {
-        Astro.props.winners.map((winner, index) => (
-          <li class="group flex flex-col items-center rounded-lg border-2 border-green-500 p-8 shadow shadow-green-500/20 transition duration-500  hover:shadow-lg hover:shadow-green-500/30">
-            <div class="-mt-14 mb-6 flex h-12 w-12 items-center justify-center rounded-full border-2 border-green-500 bg-white text-xl font-bold text-green-600 sm:-mt-16 sm:h-16 sm:w-16 sm:text-3xl">
-              {index + 1}
-            </div>
-            <div class="font-medium text-slate-900 sm:text-lg lg:text-xl">{winner}</div>
-          </li>
-        ))
-      }
+<Wave class="-mb-px mt-6 w-full rotate-180 text-slate-800 md:mt-8 lg:mt-10 xl:mt-12" />
+<section class="relative mx-auto overflow-hidden bg-slate-800" id="vitezove">
+  <Pattern
+    class="absolute left-0 top-[50%] -translate-y-1/2"
+    backgroundColor={tailwindColors.slate[800]}
+    lineColor={tailwindColors.slate[700]}
+    spotColor={tailwindColors.slate[800]}
+    width={1440}
+    height={992}
+    id="announecement"
+  />
+  <div class="container relative mx-auto space-y-12 px-4 py-12 text-center">
+    <Heading level={2} text="Vítězné týmy" variant="dark" />
+    <ol class="mx-auto grid max-w-6xl justify-center gap-x-8 gap-y-6 md:grid-cols-3">
+      <div
+        class="order-1 flex flex-col items-center justify-center gap-4 rounded-lg bg-gradient-to-b from-green-500 to-green-600 px-8 py-6 font-medium text-slate-100 shadow shadow-green-800/30 md:order-2"
+      >
+        <div class="text-lg">
+          {Astro.props.winners[0]}
+        </div>
+        <div class="text-3xl font-bold">1.</div>
+      </div>
+      <div
+        class="order-2 flex flex-col items-center justify-center gap-4 rounded-lg bg-gradient-to-b from-green-500 to-green-700 px-8 py-6 font-medium text-slate-200 shadow shadow-green-800/30 md:order-1"
+      >
+        <div class="text-lg">
+          {Astro.props.winners[1]}
+        </div>
+        <div class="text-3xl font-bold">2.</div>
+      </div>
+      <div
+        class="order-3 flex flex-col items-center justify-center gap-4 rounded-lg bg-gradient-to-b from-green-600 to-green-800 px-8 py-6 font-medium text-slate-200 shadow shadow-green-800/30"
+      >
+        <div class="text-lg">
+          {Astro.props.winners[2]}
+        </div>
+        <div class="text-3xl font-bold">3.</div>
+      </div>
     </ol>
   </div>
 </section>
+<Wave class="-mt-px mb-6 w-full text-slate-800 md:mb-8 lg:mb-10 xl:mb-12" />

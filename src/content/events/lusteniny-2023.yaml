@@ -5,41 +5,166 @@ description: >
   Děkujeme všem zúčastněným, blahopřejeme vítězům a těšíme se na vás příští rok! 👋
 date: 2023-06-10
 image: ../../images/2023/Lusteniny2023.jpg
-galleryLink: 'https://www.facebook.com/lusteniny/photos_albums'
+images:
+  - src/images/2023/photos/Photo_1.JPG
+  - src/images/2023/photos/Photo_10.JPG
+  - src/images/2023/photos/Photo_100.jpg
+  - src/images/2023/photos/Photo_101.jpg
+  - src/images/2023/photos/Photo_102.jpg
+  - src/images/2023/photos/Photo_103.jpg
+  - src/images/2023/photos/Photo_104.jpg
+  - src/images/2023/photos/Photo_105.jpg
+  - src/images/2023/photos/Photo_106.jpg
+  - src/images/2023/photos/Photo_107.jpg
+  - src/images/2023/photos/Photo_108.jpg
+  - src/images/2023/photos/Photo_109.jpg
+  - src/images/2023/photos/Photo_11.JPG
+  - src/images/2023/photos/Photo_110.jpg
+  - src/images/2023/photos/Photo_111.jpg
+  - src/images/2023/photos/Photo_112.jpg
+  - src/images/2023/photos/Photo_113.jpg
+  - src/images/2023/photos/Photo_114.jpg
+  - src/images/2023/photos/Photo_115.jpg
+  - src/images/2023/photos/Photo_116.jpg
+  - src/images/2023/photos/Photo_117.jpg
+  - src/images/2023/photos/Photo_118.jpg
+  - src/images/2023/photos/Photo_119.jpg
+  - src/images/2023/photos/Photo_12.JPG
+  - src/images/2023/photos/Photo_120.jpg
+  - src/images/2023/photos/Photo_121.jpg
+  - src/images/2023/photos/Photo_122.jpg
+  - src/images/2023/photos/Photo_123.jpg
+  - src/images/2023/photos/Photo_124.jpg
+  - src/images/2023/photos/Photo_13.JPG
+  - src/images/2023/photos/Photo_14.JPG
+  - src/images/2023/photos/Photo_15.JPG
+  - src/images/2023/photos/Photo_16.JPG
+  - src/images/2023/photos/Photo_17.JPG
+  - src/images/2023/photos/Photo_18.JPG
+  - src/images/2023/photos/Photo_19.JPG
+  - src/images/2023/photos/Photo_2.JPG
+  - src/images/2023/photos/Photo_20.JPG
+  - src/images/2023/photos/Photo_21.JPG
+  - src/images/2023/photos/Photo_22.JPG
+  - src/images/2023/photos/Photo_23.JPG
+  - src/images/2023/photos/Photo_24.JPG
+  - src/images/2023/photos/Photo_25.JPG
+  - src/images/2023/photos/Photo_26.JPG
+  - src/images/2023/photos/Photo_27.JPG
+  - src/images/2023/photos/Photo_28.JPG
+  - src/images/2023/photos/Photo_29.JPG
+  - src/images/2023/photos/Photo_3.JPG
+  - src/images/2023/photos/Photo_30.JPG
+  - src/images/2023/photos/Photo_31.JPG
+  - src/images/2023/photos/Photo_32.JPG
+  - src/images/2023/photos/Photo_33.JPG
+  - src/images/2023/photos/Photo_34.JPG
+  - src/images/2023/photos/Photo_35.JPG
+  - src/images/2023/photos/Photo_36.JPG
+  - src/images/2023/photos/Photo_37.JPG
+  - src/images/2023/photos/Photo_38.JPG
+  - src/images/2023/photos/Photo_39.JPG
+  - src/images/2023/photos/Photo_4.JPG
+  - src/images/2023/photos/Photo_40.JPG
+  - src/images/2023/photos/Photo_41.JPG
+  - src/images/2023/photos/Photo_42.JPG
+  - src/images/2023/photos/Photo_43.JPG
+  - src/images/2023/photos/Photo_44.JPG
+  - src/images/2023/photos/Photo_45.JPG
+  - src/images/2023/photos/Photo_46.JPG
+  - src/images/2023/photos/Photo_47.JPG
+  - src/images/2023/photos/Photo_48.JPG
+  - src/images/2023/photos/Photo_49.JPG
+  - src/images/2023/photos/Photo_5.JPG
+  - src/images/2023/photos/Photo_50.JPG
+  - src/images/2023/photos/Photo_51.JPG
+  - src/images/2023/photos/Photo_52.JPG
+  - src/images/2023/photos/Photo_53.JPG
+  - src/images/2023/photos/Photo_54.JPG
+  - src/images/2023/photos/Photo_55.JPG
+  - src/images/2023/photos/Photo_56.JPG
+  - src/images/2023/photos/Photo_57.JPG
+  - src/images/2023/photos/Photo_58.JPG
+  - src/images/2023/photos/Photo_59.JPG
+  - src/images/2023/photos/Photo_6.JPG
+  - src/images/2023/photos/Photo_60.JPG
+  - src/images/2023/photos/Photo_61.JPG
+  - src/images/2023/photos/Photo_62.jpeg
+  - src/images/2023/photos/Photo_63.jpeg
+  - src/images/2023/photos/Photo_64.jpeg
+  - src/images/2023/photos/Photo_65.jpeg
+  - src/images/2023/photos/Photo_66.jpeg
+  - src/images/2023/photos/Photo_67.jpeg
+  - src/images/2023/photos/Photo_68.jpeg
+  - src/images/2023/photos/Photo_69.jpeg
+  - src/images/2023/photos/Photo_7.JPG
+  - src/images/2023/photos/Photo_70.jpeg
+  - src/images/2023/photos/Photo_71.jpeg
+  - src/images/2023/photos/Photo_72.jpeg
+  - src/images/2023/photos/Photo_73.jpeg
+  - src/images/2023/photos/Photo_74.jpeg
+  - src/images/2023/photos/Photo_75.JPG
+  - src/images/2023/photos/Photo_76.JPG
+  - src/images/2023/photos/Photo_77.JPG
+  - src/images/2023/photos/Photo_78.JPG
+  - src/images/2023/photos/Photo_79.JPG
+  - src/images/2023/photos/Photo_8.JPG
+  - src/images/2023/photos/Photo_80.JPG
+  - src/images/2023/photos/Photo_81.JPG
+  - src/images/2023/photos/Photo_82.JPG
+  - src/images/2023/photos/Photo_83.JPG
+  - src/images/2023/photos/Photo_84.JPG
+  - src/images/2023/photos/Photo_85.JPG
+  - src/images/2023/photos/Photo_86.JPG
+  - src/images/2023/photos/Photo_87.JPG
+  - src/images/2023/photos/Photo_88.jpg
+  - src/images/2023/photos/Photo_89.jpg
+  - src/images/2023/photos/Photo_9.JPG
+  - src/images/2023/photos/Photo_90.jpg
+  - src/images/2023/photos/Photo_91.jpg
+  - src/images/2023/photos/Photo_92.jpg
+  - src/images/2023/photos/Photo_93.jpg
+  - src/images/2023/photos/Photo_94.jpg
+  - src/images/2023/photos/Photo_95.jpg
+  - src/images/2023/photos/Photo_96.jpg
+  - src/images/2023/photos/Photo_97.jpg
+  - src/images/2023/photos/Photo_98.jpg
+  - src/images/2023/photos/Photo_99.jpg
+galleryLink: "https://www.facebook.com/lusteniny/photos_albums"
 winners:
-  - 'Svědkové Baronovi'
-  - 'La Kukaračita'
-  - 'Strigy'
+  - "Svědkové Baronovi"
+  - "La Kukaračita"
+  - "Strigy"
 cyphers:
   - title: Startovní číslo
     image: ../../images/2023/Lusteniny2023-Startovni-Cislo.jpg
     hints:
       - Vyřeš příklad v každém čísle. Řešením je 3 písmenné slovo.
     steps:
-      - 'Je nutné vyřešit příklad v každém číslo. Každý tento příklad nám pak dá číslo, které odpovídá pořadí písmene v abecedě.'
-      - '9 - 6 = 3 -> C'
-      - '0 + 9 = 9 -> I'
-      - '3 × 4 = 3 -> L'
-      - 'Výsledek je tedy: CIL, nebo chcete-li přesněji “Cíl”'
+      - "Je nutné vyřešit příklad v každém číslo. Každý tento příklad nám pak dá číslo, které odpovídá pořadí písmene v abecedě."
+      - "9 - 6 = 3 -> C"
+      - "0 + 9 = 9 -> I"
+      - "3 × 4 = 3 -> L"
+      - "Výsledek je tedy: CIL, nebo chcete-li přesněji “Cíl”"
     solution: CIL
   - title: Co kdyby Emil běhal Orienťák?
     image: ../../images/2023/Lusteniny2023-Orientak.jpg
     hints:
       - Soustřeď se na vrstevnice.
     steps:
-      - 'Na mapě je vyznačeno 26 vrstevnic, které reprezentují písmena v abecedě'
-      - 'První vrstevnice -> A'
-      - 'Pokud projdeme trasu najdeme postupně tato písmena:'
-      - 'S'
-      - 'A'
-      - 'T'
-      - 'U'
-      - 'P'
-      - 'E'
-      - 'K'
-      - 'K'
-      - 'A'
-      - 'A tedy výsledek je: SATUPEKKA'
+      - "Na mapě je vyznačeno 26 vrstevnic, které reprezentují písmena v abecedě"
+      - "První vrstevnice -> A"
+      - "Pokud projdeme trasu najdeme postupně tato písmena:"
+      - "S"
+      - "A"
+      - "T"
+      - "U"
+      - "P"
+      - "E"
+      - "K"
+      - "K"
+      - "A"
+      - "A tedy výsledek je: SATUPEKKA"
     solution: SATUPEKKA
 
   - title: Emilova tretra
@@ -49,22 +174,22 @@ cyphers:
     hints:
       - Provlékej
     steps:
-      - 'Každý řádek šifruje jedno písmeno.'
-      - 'Jednotlivá čísla představují dírky v botě, kterými je potřeba provléct šňůrku. Podtržená čísla značí, že se šňůrka provléká shora dolů a nepodtržená opačně.'
-      - 'Šňůrka pak vykreslí na botě písmeno.'
-      - 'Například podle prvního řádku provlečeme šňůrku následovně a dostaneme písmeno “P”:'
-      - 'Jednotlivé řádky pak symbolizují písmena: “P”, “R”, “I”, “D”, “E” a “J”'
-      - 'Výsledek je tedy: PŘIDEJ'
+      - "Každý řádek šifruje jedno písmeno."
+      - "Jednotlivá čísla představují dírky v botě, kterými je potřeba provléct šňůrku. Podtržená čísla značí, že se šňůrka provléká shora dolů a nepodtržená opačně."
+      - "Šňůrka pak vykreslí na botě písmeno."
+      - "Například podle prvního řádku provlečeme šňůrku následovně a dostaneme písmeno “P”:"
+      - "Jednotlivé řádky pak symbolizují písmena: “P”, “R”, “I”, “D”, “E” a “J”"
+      - "Výsledek je tedy: PŘIDEJ"
     solution: PŘIDEJ
   - title: Helsinky 1952
     image: ../../images/2023/Lusteniny2023-Helsinky1952.jpg
     hints:
       - Poskládej mě jako harmoniku. Jak? Možná pomůže brožura o Emilovi. :)
     steps:
-      - 'Nad stadionem jsou pověšeny vlajky, které symbolizují pořadí běžců maratonu, který se v daném roce udál.'
-      - 'Ovšem ne všechny vlajky tam mají být. Pokud přehneme papír tak, aby byly vidět pouze vlajky, které odpovídají prvním 10 běžcům tohoto maratonu, dostaneme zašifrovanou zprávu. Pořadí těchto běžců lze nalézt v brožurce, kterou jste dostali na startu. :)'
-      - 'Správné přeložení má vypadat následovně (Začerněné části mají být přeložený tak, aby nešly vidět.)'
-      - 'Výsledek je tedy: TŘETÍ ZLATO'
+      - "Nad stadionem jsou pověšeny vlajky, které symbolizují pořadí běžců maratonu, který se v daném roce udál."
+      - "Ovšem ne všechny vlajky tam mají být. Pokud přehneme papír tak, aby byly vidět pouze vlajky, které odpovídají prvním 10 běžcům tohoto maratonu, dostaneme zašifrovanou zprávu. Pořadí těchto běžců lze nalézt v brožurce, kterou jste dostali na startu. :)"
+      - "Správné přeložení má vypadat následovně (Začerněné části mají být přeložený tak, aby nešly vidět.)"
+      - "Výsledek je tedy: TŘETÍ ZLATO"
     solution: REJCKA
 
   - title: Jméno
@@ -72,9 +197,9 @@ cyphers:
     hints:
       - Spočítej části.
     steps:
-      - 'Počet dílků v písmenu odpovídá pořadí v abecedě písmena z řešení.'
-      - 'Například první písmeno je rozděleno na 18 dílků a symbolizuje tedy písmeno “R”.'
-      - 'Výsledek je tedy: Ron Clarke'
+      - "Počet dílků v písmenu odpovídá pořadí v abecedě písmena z řešení."
+      - "Například první písmeno je rozděleno na 18 dílků a symbolizuje tedy písmeno “R”."
+      - "Výsledek je tedy: Ron Clarke"
     solution: RON CLARKE
 
   - title: Tréninkový plán
@@ -82,19 +207,19 @@ cyphers:
     hints:
       - “tu tu tu tůůů tůůů tůůů tu tu tu”
     steps:
-      - 'Klíčem k šifře je Morseova abeceda.'
-      - 'Nahrazením oranžových buněk tabulky za čárky (-) a modrých buněk za tečky (.) dostanete v každém řádku tabulky jedno písmeno morseovy abecedy.'
-      - 'Jednotlivé řádky tedy vypadají takto:'
-      - '--- = O'
-      - '.-.. = L'
-      - '-.-- = Y'
-      - '-- = M'
-      - '.--. = P'
-      - '.. = I'
-      - '.- = A'
-      - '-.. = D'
-      - '.- = A'
-      - 'Výsledek je tedy: OLYMPIÁDA'
+      - "Klíčem k šifře je Morseova abeceda."
+      - "Nahrazením oranžových buněk tabulky za čárky (-) a modrých buněk za tečky (.) dostanete v každém řádku tabulky jedno písmeno morseovy abecedy."
+      - "Jednotlivé řádky tedy vypadají takto:"
+      - "--- = O"
+      - ".-.. = L"
+      - "-.-- = Y"
+      - "-- = M"
+      - ".--. = P"
+      - ".. = I"
+      - ".- = A"
+      - "-.. = D"
+      - ".- = A"
+      - "Výsledek je tedy: OLYMPIÁDA"
     solution: OLYMPIÁDA
 
   - title: Rozhovor s Danou
@@ -102,28 +227,28 @@ cyphers:
     hints:
       - Hledej v textu písmena podle čísel.
     steps:
-      - 'Časy běhů jsou klíčem šifry.'
-      - 'Jednotlivé čísla postupně udávají písmen v textu, které tvoří zašifrovanou zprávu.'
-      - 'Tj. čísla: 29 a 17 (čas na 10 km) udávají 29. a 46. (29 + 17) písmeno v textu = K a O,'
-      - 'následně čísla 2, 23 a 3 (čas na maraton) udávají 48. (46 + 2), 71. (48 + 23) a 74.  (71 + 3) písmeno = S, T a E.'
-      - 'Výsledek je tedy: KOŠTĚ, nebo chcete-li přesněji “Koste”'
-    solution: 'KOŠTĚ'
+      - "Časy běhů jsou klíčem šifry."
+      - "Jednotlivé čísla postupně udávají písmen v textu, které tvoří zašifrovanou zprávu."
+      - "Tj. čísla: 29 a 17 (čas na 10 km) udávají 29. a 46. (29 + 17) písmeno v textu = K a O,"
+      - "následně čísla 2, 23 a 3 (čas na maraton) udávají 48. (46 + 2), 71. (48 + 23) a 74.  (71 + 3) písmeno = S, T a E."
+      - "Výsledek je tedy: KOŠTĚ, nebo chcete-li přesněji “Koste”"
+    solution: "KOŠTĚ"
 
   - title: Emilův první závod
     image: ../../images/2023/Lusteniny2023-Emiluv-prvni-zavod.jpg
     hints:
       - Je první, nebo ne?
     steps:
-      - 'Přestože tabulka obsahuje velké množství dat, podstatné je pouze to, zda Emil je na mezičase první nebo ne.'
-      - 'Pokud ano, představuje buňka tabulky binární hodnotu 1. Pokud ne, představuje buňka binární hodnotu 0.'
-      - 'Každé kolo závodu (každý řádek tabulky) pak představuje jedno písmeno zakódované binárním kódem.'
-      - 'V jednotlivých řádcích dostáváme:'
-      - '1. kolo: 10110 = V'
-      - '2. kolo: 01111 = O'
-      - '3. kolo: 01010 = J'
-      - '4. kolo: 00001 = A'
-      - '5. kolo: 01011  = K'
-      - 'Výsledek je tedy: VOJÁK.'
+      - "Přestože tabulka obsahuje velké množství dat, podstatné je pouze to, zda Emil je na mezičase první nebo ne."
+      - "Pokud ano, představuje buňka tabulky binární hodnotu 1. Pokud ne, představuje buňka binární hodnotu 0."
+      - "Každé kolo závodu (každý řádek tabulky) pak představuje jedno písmeno zakódované binárním kódem."
+      - "V jednotlivých řádcích dostáváme:"
+      - "1. kolo: 10110 = V"
+      - "2. kolo: 01111 = O"
+      - "3. kolo: 01010 = J"
+      - "4. kolo: 00001 = A"
+      - "5. kolo: 01011  = K"
+      - "Výsledek je tedy: VOJÁK."
     solution: VOJÁK
 
 bonusInformation:

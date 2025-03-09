@@ -1,0 +1,102 @@
+---
+import { Icon, type IconType } from '@components/atoms/Icon';
+import Pattern from '@components/atoms/Pattern.astro';
+import img from '@images/Zlin.jpg';
+import { Image } from 'astro:assets';
+import tailwindColors from 'tailwindcss/colors';
+
+const features: Feature[] = [
+  {
+    icon: 'route',
+    title: 'Krátká procházka Zlínem',
+    description:
+      'Čeká na tebe krátká procházka Zlínem lemovaná stanovišti s šiframi a tvým úkolem bude, jich vyluštit co nejvíc.',
+  },
+  {
+    icon: 'marker',
+    title: 'Stanoviště s šiframi',
+    description:
+      'Na každém stanovišti na tebe bude čekat jeden z organizátorů, který ti předá zadání a případně pomůže s čím bude potřeba.',
+  },
+  {
+    icon: 'pencil',
+    title: 'Připravené pomůcky',
+    description:
+      'Před zahájením dostaneš vše potřebné k luštění, včetně propisek, papírů a praktického taháku na šifry.',
+  },
+  {
+    icon: 'child',
+    title: 'Šifry i pro děti',
+    description:
+      'Můžeš s sebou vzít i děti, protože pro ně budou připravené jednodušší šifry, aby si akci užily stejně jako dospělí.',
+  },
+  {
+    icon: 'phone',
+    title: 'Řešení šifer v telefonu',
+    description:
+      'Pro účastníky šifrovačky bude připravena webová aplikace, kde bude například možnost šifru odevzat a získat místo dalšího stanoviště.',
+  },
+  {
+    icon: 'award',
+    title: 'Vyhlášení vítězů',
+    description:
+      'Na konci události tě bude čekat vyhlášení vítězů, předání cen a nějaký ten networking včetně občerstvení.',
+  },
+];
+
+type Feature = {
+  icon: IconType;
+  title: string;
+  description: string;
+};
+---
+
+<section class="relative bg-white py-32" id="informace">
+  <Pattern
+    class="absolute left-0 top-[50%] -translate-y-1/2"
+    backgroundColor={tailwindColors.white}
+    lineColor={tailwindColors.slate[200]}
+    spotColor={tailwindColors.white}
+    width={1440}
+    height={992}
+    id="info"
+  />
+  <div class="container relative mx-auto px-4 sm:px-8 md:px-12">
+    <div class="-mx-4 mb-16 flex flex-wrap items-center">
+      <div class="mb-16 w-full px-4 md:mb-0 md:w-1/2">
+        <span
+          class="mb-6 inline-block rounded-full bg-green-600 px-3.5 py-px text-xs font-medium uppercase leading-5 tracking-wide text-white"
+        >
+          Informace
+        </span>
+        <h2
+          class="mb-6 text-3xl font-bold leading-[1.1] text-slate-800 md:text-4xl md:leading-[1.1] lg:text-5xl lg:leading-[1.1]"
+        >
+          Co tě bude čekat na Luštěninách?
+        </h2>
+        <p class="max-w-4xl text-xl leading-relaxed text-slate-600">
+          Luštěniny jsou zábavná šifrovací akce, kde si procvičíš logické myšlení a užiješ si příjemnou atmosféru. Akce
+          je vhodná pro všechny, včetně dětí. Podívej se, co tě čeká!
+        </p>
+      </div>
+      <div class="w-full px-4 md:w-1/2">
+        <div class="rounded-7xl relative mx-auto max-w-max overflow-hidden md:mr-0">
+          <Image src={img} alt="" class="max-w-lg rounded-2xl object-cover" fit="cover" />
+        </div>
+      </div>
+    </div>
+    <div class="relative z-20 grid items-start gap-8 md:grid-cols-3 md:gap-16">
+      {
+        features.map((feature, index) => (
+          <div class="flex flex-col items-start justify-center">
+            <div class="mb-4 flex size-14 items-center justify-center rounded-md bg-green-500 text-white shadow-sm">
+              <Icon icon={feature.icon} className="h-6" />
+            </div>
+            <h3 class="mb-2 text-2xl font-semibold text-slate-700">{feature.title}</h3>
+            <p class="text-lg leading-relaxed text-slate-600">{feature.description}</p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

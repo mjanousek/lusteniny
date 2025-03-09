@@ -5,11 +5,91 @@ description: >
   Chtěli bychom poděkovat našim sponzorům za podporu a ceny pro vítěze. Bez vás bychom se neobešli 😉
 date: 2024-06-08
 image: ../../images/2024/Lusteniny2024.jpg
-galleryLink: 'https://www.facebook.com/lusteniny/photos_albums'
+images:
+  - src/images/2024/Photos/Photo_1.jpeg
+  - src/images/2024/Photos/Photo_2.jpeg
+  - src/images/2024/Photos/Photo_3.jpeg
+  - src/images/2024/Photos/Photo_4.jpeg
+  - src/images/2024/Photos/Photo_5.jpeg
+  - src/images/2024/Photos/Photo_6.jpeg
+  - src/images/2024/Photos/Photo_7.jpeg
+  - src/images/2024/Photos/Photo_8.jpeg
+  - src/images/2024/Photos/Photo_9.jpeg
+  - src/images/2024/Photos/Photo_10.jpeg
+  - src/images/2024/Photos/Photo_11.jpeg
+  - src/images/2024/Photos/Photo_12.jpeg
+  - src/images/2024/Photos/Photo_13.jpeg
+  - src/images/2024/Photos/Photo_14.jpeg
+  - src/images/2024/Photos/Photo_15.jpeg
+  - src/images/2024/Photos/Photo_16.jpeg
+  - src/images/2024/Photos/Photo_17.jpeg
+  - src/images/2024/Photos/Photo_18.jpeg
+  - src/images/2024/Photos/Photo_19.jpg
+  - src/images/2024/Photos/Photo_20.jpg
+  - src/images/2024/Photos/Photo_21.jpg
+  - src/images/2024/Photos/Photo_22.jpg
+  - src/images/2024/Photos/Photo_23.jpg
+  - src/images/2024/Photos/Photo_24.jpg
+  - src/images/2024/Photos/Photo_25.jpg
+  - src/images/2024/Photos/Photo_26.jpg
+  - src/images/2024/Photos/Photo_27.jpg
+  - src/images/2024/Photos/Photo_28.jpeg
+  - src/images/2024/Photos/Photo_29.jpeg
+  - src/images/2024/Photos/Photo_30.jpeg
+  - src/images/2024/Photos/Photo_31.jpeg
+  - src/images/2024/Photos/Photo_32.jpeg
+  - src/images/2024/Photos/Photo_33.jpeg
+  - src/images/2024/Photos/Photo_34.jpeg
+  - src/images/2024/Photos/Photo_35.jpeg
+  - src/images/2024/Photos/Photo_36.jpeg
+  - src/images/2024/Photos/Photo_37.jpeg
+  - src/images/2024/Photos/Photo_38.jpeg
+  - src/images/2024/Photos/Photo_39.jpeg
+  - src/images/2024/Photos/Photo_40.jpeg
+  - src/images/2024/Photos/Photo_41.jpeg
+  - src/images/2024/Photos/Photo_42.jpeg
+  - src/images/2024/Photos/Photo_43.jpeg
+  - src/images/2024/Photos/Photo_44.jpeg
+  - src/images/2024/Photos/Photo_45.jpeg
+  - src/images/2024/Photos/Photo_46.JPG
+  - src/images/2024/Photos/Photo_47.JPG
+  - src/images/2024/Photos/Photo_48.JPG
+  - src/images/2024/Photos/Photo_49.JPG
+  - src/images/2024/Photos/Photo_50.JPG
+  - src/images/2024/Photos/Photo_51.JPG
+  - src/images/2024/Photos/Photo_52.JPG
+  - src/images/2024/Photos/Photo_53.JPG
+  - src/images/2024/Photos/Photo_54.JPG
+  - src/images/2024/Photos/Photo_55.JPG
+  - src/images/2024/Photos/Photo_56.JPG
+  - src/images/2024/Photos/Photo_57.JPG
+  - src/images/2024/Photos/Photo_58.JPG
+  - src/images/2024/Photos/Photo_59.JPG
+  - src/images/2024/Photos/Photo_60.JPG
+  - src/images/2024/Photos/Photo_61.JPG
+  - src/images/2024/Photos/Photo_62.JPG
+  - src/images/2024/Photos/Photo_63.JPG
+  - src/images/2024/Photos/Photo_64.JPG
+  - src/images/2024/Photos/Photo_65.JPG
+  - src/images/2024/Photos/Photo_66.JPG
+  - src/images/2024/Photos/Photo_67.JPG
+  - src/images/2024/Photos/Photo_68.JPG
+  - src/images/2024/Photos/Photo_69.JPG
+  - src/images/2024/Photos/Photo_70.JPG
+  - src/images/2024/Photos/Photo_71.JPG
+  - src/images/2024/Photos/Photo_72.JPG
+  - src/images/2024/Photos/Photo_73.JPG
+  - src/images/2024/Photos/Photo_74.JPG
+  - src/images/2024/Photos/Photo_75.JPG
+  - src/images/2024/Photos/Photo_76.JPG
+  - src/images/2024/Photos/Photo_77.JPG
+  - src/images/2024/Photos/Photo_78.JPG
+  - src/images/2024/Photos/Photo_79.JPG
+galleryLink: "https://www.facebook.com/lusteniny/photos_albums"
 winners:
-  - 'Ňuf sem ňuf tam a malé ňuf'
-  - 'Abakus'
-  - 'Svědkové Baronovi'
+  - "Ňuf sem ňuf tam a malé ňuf"
+  - "Abakus"
+  - "Svědkové Baronovi"
 cyphers:
   - title: Popelka
     info:
@@ -47,18 +127,18 @@ cyphers:
     hints:
       - Poznej stavbu a vyber písmeno z názvu.
     steps:
-      - 'V šifře se nachází obrysy, či náčrty slavných staveb ze Zlína'
-      - 'Pokud stavby poznáte, ať už od oka, nebo s pomocí nápovědy na druhé straně, dostanete tyto budovy:'
-      - 'Vila Jana Antonína Bati'
-      - 'Obchodní Dům'
-      - 'Pamatník Tomáše Bati'
-      - 'Baťův mrakodrap'
-      - 'Vila Tomáše Bati'
-      - 'Gahurův prospekt'
-      - '14|15 Baťův institut'
-      - 'Pak už jen stačí z názvu budovy vybrat písmeno dle čísla nad obrysem'
-      - 'Vila Jana Antonína Bati - 6/23, bereme šesté písmeno, tedy J'
-      - 'Opakujeme pro další budovy a vyjde nám výsledek.'
+      - "V šifře se nachází obrysy, či náčrty slavných staveb ze Zlína"
+      - "Pokud stavby poznáte, ať už od oka, nebo s pomocí nápovědy na druhé straně, dostanete tyto budovy:"
+      - "Vila Jana Antonína Bati"
+      - "Obchodní Dům"
+      - "Pamatník Tomáše Bati"
+      - "Baťův mrakodrap"
+      - "Vila Tomáše Bati"
+      - "Gahurův prospekt"
+      - "14|15 Baťův institut"
+      - "Pak už jen stačí z názvu budovy vybrat písmeno dle čísla nad obrysem"
+      - "Vila Jana Antonína Bati - 6/23, bereme šesté písmeno, tedy J"
+      - "Opakujeme pro další budovy a vyjde nám výsledek."
     solution: JUNKERS
 
   - title: Prodejny Baťa
@@ -66,8 +146,8 @@ cyphers:
     hints:
       - Spojnice.
     steps:
-      - 'Pobočky založené v každém roce zaneseme do mapy, uděláme spojnice, což nám dá písmo.'
-      - 'Příklad: (New York, Santiago de Chile, Dakar) -> písmo D'
+      - "Pobočky založené v každém roce zaneseme do mapy, uděláme spojnice, což nám dá písmo."
+      - "Příklad: (New York, Santiago de Chile, Dakar) -> písmo D"
     solution: DEVET
 
   - title: Stehy
@@ -75,9 +155,9 @@ cyphers:
     hints:
       - Měřítko
     steps:
-      - '11 čar/10 dílků v části “Nastavení stroje - měřítko stehu” má význam měřítka.'
-      - 'Za pomoci měřítka lze změřit vzdálenost mezi jednotlivými vzorky stehů.'
-      - 'Vzdálenosti nám dávají čísla: 9, 14, 4, 9, 5, které dají po převodu na písmena řešení'
+      - "11 čar/10 dílků v části “Nastavení stroje - měřítko stehu” má význam měřítka."
+      - "Za pomoci měřítka lze změřit vzdálenost mezi jednotlivými vzorky stehů."
+      - "Vzdálenosti nám dávají čísla: 9, 14, 4, 9, 5, které dají po převodu na písmena řešení"
     solution: INDIE
 
   - title: Tihle za to můžou
@@ -102,25 +182,25 @@ cyphers:
     hints:
       - A co to sypání?
     steps:
-      - 'Kuchařka obsahuje recepty na každý den v týdnu. Dnes-v den konání Luštěnin, tj. v sobotu-je na řadě kakaový koláč. Každý tým jeden takový kousek koláče i dostal. Recept obsahuje soupis ingrediencí a jejich množství. Čísla se následně musí přiřadit k písmenům v abecedě:'
-      - '21 dkg polohrubé mouky -> 21. písmeno v abecedě. Aby písmena byla sestavena ve správném pořadí, je třeba postupovat podle receptu - 1. máslo, 2. cukr, 3. skořice atd.'
-      - 'Pokud takto postupujeme, sestavíme následující:  '
-      - 'E'
-      - 'S'
-      - 'F'
-      - 'A'
-      - 'U'
-      - 'C'
-      - 'S'
-      - 'Tento výsledek ale nedává smysl - je třeba udělat poslední krok. Že by byl koláč pro tým jen k jídlu? Není tomu tak. Je nutné provést posun písmen v abecedě o počet kusů kuliček-zdobení, tj. 8. Tím získáme správnou odpověď:'
-      - 'E -> M'
-      - 'S -> A'
-      - 'F -> N'
-      - 'A -> I'
-      - 'U -> C'
-      - 'C -> K'
-      - 'S -> A'
-    solution: 'MÁNIČKA'
+      - "Kuchařka obsahuje recepty na každý den v týdnu. Dnes-v den konání Luštěnin, tj. v sobotu-je na řadě kakaový koláč. Každý tým jeden takový kousek koláče i dostal. Recept obsahuje soupis ingrediencí a jejich množství. Čísla se následně musí přiřadit k písmenům v abecedě:"
+      - "21 dkg polohrubé mouky -> 21. písmeno v abecedě. Aby písmena byla sestavena ve správném pořadí, je třeba postupovat podle receptu - 1. máslo, 2. cukr, 3. skořice atd."
+      - "Pokud takto postupujeme, sestavíme následující:  "
+      - "E"
+      - "S"
+      - "F"
+      - "A"
+      - "U"
+      - "C"
+      - "S"
+      - "Tento výsledek ale nedává smysl - je třeba udělat poslední krok. Že by byl koláč pro tým jen k jídlu? Není tomu tak. Je nutné provést posun písmen v abecedě o počet kusů kuliček-zdobení, tj. 8. Tím získáme správnou odpověď:"
+      - "E -> M"
+      - "S -> A"
+      - "F -> N"
+      - "A -> I"
+      - "U -> C"
+      - "C -> K"
+      - "S -> A"
+    solution: "MÁNIČKA"
 
   - title: Docházka
     image: ../../images/2024/Lusteniny2024_Dochazka.jpg

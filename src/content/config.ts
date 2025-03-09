@@ -8,6 +8,7 @@ const events = defineCollection({
       description: z.string(),
       date: z.date(),
       image: image(),
+      images: z.array(image()),
       galleryLink: z.string(),
       winners: z.array(z.string()),
       cyphers: z.array(

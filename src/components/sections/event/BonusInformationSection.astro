@@ -1,4 +1,6 @@
 ---
+import Heading from '@components/atoms/Heading.astro';
+
 export type Props = {
   bonusInformation?: {
     title: string;
@@ -9,43 +11,36 @@ export type Props = {
 const { bonusInformation } = Astro.props;
 ---
 
-{
-  bonusInformation ? (
-    <section class="bg-white py-24">
-      <div class="container mx-auto max-w-7xl px-4  sm:px-8 md:px-12">
-        <header class="mx-auto mb-16 max-w-2xl text-center">
-          <h2 class="mb-4 text-center text-2xl font-bold text-slate-900 sm:text-3xl md:text-4xl lg:text-5xl">
-            Bonusové informace k šifám
-          </h2>
+<section class="pt-12 md:pt-16 lg:pt-20 xl:pt-24">
+  <div class="container mx-auto max-w-7xl px-4 sm:px-8 md:px-12">
+    <header class="mx-auto mb-16 max-w-2xl space-y-6 text-center">
+      <Heading level={2} text="Bonusové informace k šifám" variant="light" />
+      {
+        bonusInformation ? (
           <p class="mb-12 text-center font-medium leading-relaxed text-slate-700 sm:mb-20">
             Každá šifra obsahuje menší, či delší doplňující informaci, která se váže buď s danou šifrou, nebo se
             stanovištěm šifry.
           </p>
-        </header>
-        {bonusInformation.map((bonusInformation) => (
-          <div class="mb-12">
-            <h3 class="mb-3 text-2xl font-semibold">{bonusInformation.title}</h3>
-            <div class="space-y-2">
-              {bonusInformation.text.split('\n').map((line) => (
-                <p class="whitespace-pre-wrap text-sm leading-loose text-slate-700 transition hover:text-slate-800 sm:text-base sm:leading-relaxed">
-                  {line}
-                </p>
-              ))}
-            </div>
+        ) : (
+          <p class="mb-8 font-medium text-slate-700 md:text-lg">
+            Tento ročník bohužel neobsahoval žádné bonusové informace k šifrám.
+          </p>
+        )
+      }
+    </header>
+    {
+      bonusInformation?.map((bonusInformation) => (
+        <div class="mb-12">
+          <h3 class="mb-3 text-2xl font-semibold">{bonusInformation.title}</h3>
+          <div class="space-y-2">
+            {bonusInformation.text.split('\n').map((line) => (
+              <p class="whitespace-pre-wrap text-sm leading-loose text-slate-700 transition hover:text-slate-800 sm:text-base sm:leading-relaxed">
+                {line}
+              </p>
+            ))}
           </div>
-        ))}
-      </div>
-    </section>
-  ) : (
-    <section class="bg-white py-24">
-      <div class="container mx-auto mb-16 max-w-7xl px-4 text-center sm:px-8 md:px-12 ">
-        <h2 class="mb-4 text-center text-2xl font-bold text-slate-900 sm:text-3xl md:text-4xl lg:text-5xl">
-          Bonusové informace k šifám
-        </h2>
-        <p class="mb-8 font-medium text-slate-700 md:text-lg">
-          Tento ročník bohužel neobsahoval žádné bonusové informace k šifrám.
-        </p>
-      </div>
-    </section>
-  )
-}
+        </div>
+      ))
+    }
+  </div>
+</section>

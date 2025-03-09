@@ -2,22 +2,47 @@ title: Luštěniny III.
 description: Třetí ročník Luštěnin. Náš standard deštivého počasí byl dodržen a hodnotíme tedy jako úspěšnou akci. Děkujeme vám všem, že jste přišli na naše již klasické upršené odpoledne.
 date: 2020-07-18
 image: ../../images/2020/Lusteniny-2020.png
-galleryLink: 'https://www.facebook.com/lusteniny/photos_albums'
+images:
+  - src/images/2020/photos/Photo_1.jpg
+  - src/images/2020/photos/Photo_2.jpg
+  - src/images/2020/photos/Photo_3.jpg
+  - src/images/2020/photos/Photo_4.jpg
+  - src/images/2020/photos/Photo_5.jpg
+  - src/images/2020/photos/Photo_6.jpg
+  - src/images/2020/photos/Photo_7.jpg
+  - src/images/2020/photos/Photo_8.jpg
+  - src/images/2020/photos/Photo_9.jpg
+  - src/images/2020/photos/Photo_10.jpg
+  - src/images/2020/photos/Photo_11.jpg
+  - src/images/2020/photos/Photo_12.jpg
+  - src/images/2020/photos/Photo_13.jpg
+  - src/images/2020/photos/Photo_14.jpg
+  - src/images/2020/photos/Photo_15.jpg
+  - src/images/2020/photos/Photo_16.jpg
+  - src/images/2020/photos/Photo_17.jpg
+  - src/images/2020/photos/Photo_18.jpg
+  - src/images/2020/photos/Photo_19.jpg
+  - src/images/2020/photos/Photo_20.jpg
+  - src/images/2020/photos/Photo_21.jpg
+  - src/images/2020/photos/Photo_22.jpg
+  - src/images/2020/photos/Photo_23.jpg
+  - src/images/2020/photos/Photo_24.jpg
+galleryLink: "https://www.facebook.com/lusteniny/photos_albums"
 winners:
-  - 'Eště Nevim'
-  - 'Edhouse 42'
-  - 'Chromý tým se Safronem'
+  - "Eště Nevim"
+  - "Edhouse 42"
+  - "Chromý tým se Safronem"
 cyphers:
   - title: Filmové Klasiky
     image: ../../images/2020/Lusteniny-2020-Filmove-klasiky.jpg
     hints:
-      - 'Počet herců na obrázku je důležitý. '
+      - "Počet herců na obrázku je důležitý. "
     steps:
       - Přiřadit hlášky z filmů k jednotlivým obrázkům.
       - Počet lidí na obrázku udává pozici písmene v přiřazené hlášce a toto písmeno
         je částí zašifrované zprávy.
       - Písmena přečtena popořadě od první hlášky.
-    solution: ' klapky'
+    solution: " klapky"
   - title: Míček
     image: ../../images/2020/Lusteniny-2020-Micek.jpg
     info:
@@ -25,13 +50,13 @@ cyphers:
         naleznout pouze fotografie daného míčku. Pozor! Na fotkách se jedná o stejný
         míček.
     hints:
-      - 'Otvory jako korálky na šňůrce. Teď už jen zjistit, který je který. '
+      - "Otvory jako korálky na šňůrce. Teď už jen zjistit, který je který. "
     steps:
       - Podle písmen daných na míčku, přiřaď písmena abecedy i k ostatním otvorům.
       - Zapiš si písmena, kterými prochází šňůrka, v pořadí daném šňůrkou.
       - Teď už stačí jen zjistit, které písmeno je první, aby heslo dávalo smysluplné
         slovo.
-    solution: ' klapky'
+    solution: " klapky"
   - title: Dopis
     image: ../../images/2020/Lusteniny-2020-Dopis.jpg
     hints:
@@ -41,7 +66,7 @@ cyphers:
       - Tramvaj → Električka - E
       - Nádobí → Riad - R
       - Žízeň → Smäd - S
-    solution: 'MERS '
+    solution: "MERS "
   - title: Jiný Pohled
     image: ../../images/2020/Lusteniny-2020-Jiny-pohled-na-vec.jpg
     hints:
@@ -57,7 +82,7 @@ cyphers:
     hints:
       - Socha Masaryka, model starého Zlína na terase 21. budovy.
     steps:
-      - 'Otoč a vynásob '
+      - "Otoč a vynásob "
       - Otoč jednotlivé čtverce ve směru hodinových ručiček tak, aby červená čára
         vytvořila spojený obrazec
       - Číslo ve čtvercích vynásobené počtem otočení ve směru hodinových ručiček
@@ -84,7 +109,7 @@ cyphers:
   - title: Rozsypaný čaj
     image: ../../images/2020/Lusteniny-2020-Graphic.jpg
     hints:
-      - 'Graphic anagram '
+      - "Graphic anagram "
     steps:
       - Jedná se o přesmyčku - záměnnou každé dvojice po sobě jdoucích znaků (první
         s druhým, třetí se čtvrtým, atd.) získáme pravý název šifry - “Graphic anagram”
@@ -94,7 +119,7 @@ cyphers:
   - title: Mat nebo Pat
     image: ../../images/2020/Lusteniny-2020-Mat-nebo-pat.jpg
     hints:
-      - 'Bílý dá mat ve 3 tazích. '
+      - "Bílý dá mat ve 3 tazích. "
     steps:
       - Vc8+ Dxc8
       - Dxg7+ Vxg7 (Nejlepší tah. Pokud černý hraje Ve8, hra končí dalším tahem
@@ -104,14 +129,14 @@ cyphers:
   - title: Loga
     image: ../../images/2020/Lusteniny-2020-Loga.jpg
     hints:
-      - 'Loga, zkratky, žádný zmatky, hlava mapa souřadnice, předposlední u radnice.'
+      - "Loga, zkratky, žádný zmatky, hlava mapa souřadnice, předposlední u radnice."
     steps:
       - Nejprve je potřeba napsat první písmeno firmy pro daná loga.
-      - 'Dvojice čísel udávají souřadnice log, která tvoří zprávu: '
-      - '[2,4] -> Drupal -> písmeno D'
-      - '[1,1] -> Starbucks -> písmeno S'
-      - '[5,1] -> Zlín -> písmeno Z'
-      - '[5,2] -> O2 -> písmeno O'
+      - "Dvojice čísel udávají souřadnice log, která tvoří zprávu: "
+      - "[2,4] -> Drupal -> písmeno D"
+      - "[1,1] -> Starbucks -> písmeno S"
+      - "[5,1] -> Zlín -> písmeno Z"
+      - "[5,2] -> O2 -> písmeno O"
     solution: DSZO
 bonusInformation:
   - title: Filmové klasiky
