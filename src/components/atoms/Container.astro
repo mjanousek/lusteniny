@@ -1,0 +1,9 @@
+---
+interface Props {
+  extraClass?: string;
+}
+---
+
+<div class:list={['container relative mx-auto px-4 sm:px-8 md:px-12', Astro.props.extraClass]}>
+  <slot />
+</div>

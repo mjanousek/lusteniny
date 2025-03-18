@@ -1,0 +1,141 @@
+---
+import Container from '@components/atoms/Container.astro';
+import Pattern from '@components/atoms/Pattern.astro';
+import Section from '@components/atoms/Section.astro';
+import SectionHeader from '@components/molecules/SectionHeader.astro';
+import img from '@images/IMG_6.png';
+import { Image } from 'astro:assets';
+import tailwindColors from 'tailwindcss/colors';
+
+const steps = [
+  {
+    title: 'Odhalení startovacího místa',
+    description: [
+      'Několik dní před startem šifrovačky odhalíme startovní místo. V den události se dostavte na toto místo.',
+      'Můžete zde také provést registraci svého týmu, pokud jste tak již neučinili.',
+    ],
+  },
+  {
+    title: 'Vyzvednutí šifrovací složky',
+    description: [
+      'Po dorazení na startovní místo si vyzvedněte složku pro luštění.',
+      'Najdete v ní psací potřeby, volné papíry, kontaktní informace, nápovědu a návod na práci s aplikací, včetně přihlašovacích údajů.',
+    ],
+  },
+  {
+    title: 'Úvodní proslov organizátorů',
+    description: [
+      'Před startem nás čeká krátký úvod or organizátorů, v rychlosti projdeme pravidla a průběh hry a specifické věci pro daný ročník, bude zde prostor i na dotazy.',
+    ],
+  },
+  {
+    title: 'Zahájení šifrovačky',
+    description: [
+      'Startovní místo je zároveň místem první šifry, kterou si ihned po startu vyzvednete od organizátorů.',
+      ' Budete-li mít v průběhu hry dotaz, neváhejte se zeptat nejbližšího organizátora.',
+    ],
+  },
+  {
+    title: 'Odevzdání hotové šifry',
+    description: [
+      'Pokud jste našli to správné řešení, zadejte ho prosím do aplikace. Ve složkách je návod k její obsluze, případně místní organizátor také rád pomůže.',
+      'Hru lze řešit i zcela bez aplikace, v tomto případě se obratťe na organizátory.',
+    ],
+  },
+  {
+    title: 'Jde se na další stanoviště',
+    description: [
+      'Po vyřešení šifry vám aplikace (nebo organizátor) ukáže místo dalšího stanoviště a zároveň se vám odemkne další šifra k řešení.',
+      'Pro zadání si však budete muset dojít (nebo snad dojet?) za organizátorem na stanoviště.',
+    ],
+  },
+  {
+    title: 'Nejde to vyřešit?',
+    description: [
+      'Nejde-li vám šifra vyřešit, můžete si vzít nápovědu (tak vás ale bude stát body). Nebo lze šifru zcela přeskočit a přejít tak na další.',
+      'Upozořnujeme však, že cílem hry není projít všechny šifry, a jejich obtížnost se postupně zvyšuje.',
+    ],
+  },
+  {
+    title: 'Doma mi hoří sporák ?!',
+    description: [
+      'Pokud dojde k situaci kvůli níž budete potřebovat odstoupit od hry, dejte nám to prosím vědět, ať už prostřednictvím aplikace, osobně organizátorovi, nebo telefonicky.',
+      'Rádi bychom na nikoho v průběhu hry nezapomenuli, a tímto nám pomůžete držet si přehled.',
+    ],
+  },
+  {
+    title: 'Bodování šifer',
+    description: [
+      'Za každou úspěšně vyřešenou šifru obdržíte 10 bodů, pokud jste si zároveň vybrali i nápovědu, obdržíte pouze 5 bodů.',
+      'V případě přeskočení šifry dostaváte 0 bodů, a to i v případě, že si vezmete nápovědu. Nelze tedy jít do záporných čísel.',
+    ],
+  },
+  {
+    title: 'Pořadí vítězů',
+    description: [
+      'Pořadí vítězů je určeno počtem získaných bodů. V případě, že nastane shoda v počtech bodů, bude rozhodujícím faktorem čas - jedná se o celkový čas vyřešení šifrovačky.',
+    ],
+  },
+  {
+    title: 'Závěrečné vyhlášení',
+    description: [
+      'Včasně před koncem vám aplikace odhalí místo vyhlašení vítězů, případně se opět můžete informovat u organizátora.',
+      'Na vyhlášení naleznete drobné občerstvení, řešení šifer předáme ceny vítězům a můžeme se společně pobavit o šifrách.',
+    ],
+  },
+  {
+    title: 'Zpětné hodnocení',
+    description: [
+      'Během závěrečného vyhlášení můžete zanechat na určeném místě vaše hodnocení daného ročníku. Můžete nám ho předat také osobně, nebo elektronicky.',
+      'Moc za něj budeme rádi, snažíme se z něj vycházet při připravování dalších ročníků.',
+    ],
+  },
+];
+---
+
+<Section id="pravidla">
+  <Pattern
+    class="absolute left-0 top-[50%] -translate-y-1/2"
+    backgroundColor={tailwindColors.slate[100]}
+    lineColor={tailwindColors.slate[300]}
+    spotColor={tailwindColors.slate[100]}
+    width={1440}
+    height={992}
+    id="steps-1"
+  />
+  <Container extraClass="space-y-12">
+    <div class="grid gap-12 md:grid-cols-2">
+      <SectionHeader
+        title="Jak to probíhá"
+        subtitle="Pravidla"
+        text="Luštěniny jsou zábavná šifrovací akce, kde si procvičíš logické myšlení a užiješ si příjemnou atmosféru. Akce je vhodná pro všechny, včetně dětí. Podívej se, co tě čeká!"
+        variant="light"
+        extraClass="w-full"
+      />
+      <div class="mb-8 w-full md:mb-16">
+        <Image src={img} alt="" class="ml-auto w-full rounded-2xl object-cover md:max-w-lg" fit="cover" />
+      </div>
+    </div>
+    <ul class="grid gap-x-8 gap-y-10 md:grid-cols-2 md:gap-10 xl:grid-cols-3 xl:gap-12">
+      {
+        steps.map((step, index) => (
+          <li class="space-y-2">
+            <div class="flex items-center gap-3">
+              <div class="inline-flex size-8 items-center justify-center rounded-full bg-gradient-to-r from-green-500 to-green-500 font-semibold text-white sm:-ml-1 sm:size-10 sm:text-lg md:ml-0 md:size-12 md:text-xl">
+                {index + 1}
+              </div>
+              <h3 class="text-lg font-bold text-slate-700 md:text-xl" data-config-id="auto-txt-5-2">
+                {step.title}
+              </h3>
+            </div>
+            <div class="space-y-3 pl-11 text-sm leading-relaxed text-slate-600 sm:pl-12 sm:text-base sm:leading-relaxed xl:pl-14">
+              {step.description.map((d) => (
+                <p>{d}</p>
+              ))}
+            </div>
+          </li>
+        ))
+      }
+    </ul>
+  </Container>
+</Section>

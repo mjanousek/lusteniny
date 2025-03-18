@@ -33,3 +33,15 @@ body {
 .swiper-pagination-bullet.active {
   @apply bg-green-600 opacity-100 !important;
 }
+
+.lg-backdrop {
+  @apply bg-black/90 !important;
+}
+
+.lg-thumb-item {
+  @apply border-transparent !important;
+}
+
+.lg-thumb-item.active {
+  @apply border-green-500 !important;
+}

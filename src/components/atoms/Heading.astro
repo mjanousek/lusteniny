@@ -1,0 +1,43 @@
+---
+import { classNames } from '../../utils';
+
+interface Props {
+  level: 1 | 2 | 3;
+  variant: 'light' | 'dark';
+  text: string;
+}
+---
+
+{
+  Astro.props.level === 1 && (
+    <h1
+      class={classNames(
+        'text-4xl font-bold leading-[1.25] tracking-wide md:text-5xl md:leading-[1.25] lg:text-6xl lg:leading-[1.25]',
+        Astro.props.variant === 'light' ? '' : 'text-slate-200',
+      )}
+    >
+      {Astro.props.text}
+    </h1>
+  )
+}
+
+{
+  Astro.props.level === 2 && (
+    <h2
+      class={classNames(
+        'text-3xl font-bold leading-[1.25] tracking-wide md:text-4xl md:leading-[1.25] lg:text-5xl lg:leading-[1.25]',
+        Astro.props.variant === 'light' ? '' : 'text-slate-200',
+      )}
+    >
+      {Astro.props.text}
+    </h2>
+  )
+}
+
+{
+  Astro.props.level === 3 && (
+    <h3 class={classNames('mb-4 text-3xl font-semibold', Astro.props.variant === 'light' ? '' : 'text-slate-200')}>
+      {Astro.props.text}
+    </h3>
+  )
+}

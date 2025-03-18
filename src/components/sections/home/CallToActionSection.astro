@@ -1,0 +1,49 @@
+---
+import { Button } from '@components/atoms/NewButton';
+import PatternRectangle from '@components/atoms/PatternRectangle.astro';
+import Section from '@components/atoms/Section.astro';
+import tailwindColors from 'tailwindcss/colors';
+---
+
+<Section extraClass="bg-white" id="udalosti">
+  <div class="absolute left-0 top-1/2 h-1/2 w-full bg-slate-100"></div>
+  <div class="relative z-10 mx-auto lg:container lg:px-4">
+    <div class="relative mx-auto">
+      <div
+        class="relative flex flex-wrap justify-between gap-8 overflow-hidden bg-gradient-to-br from-slate-800 to-slate-800 p-8 pb-12 shadow-xl sm:p-12 md:p-14 lg:rounded-lg lg:p-16"
+      >
+        <div
+          class="pointer-events-none absolute left-0 top-0 flex h-full w-full items-center justify-center overflow-hidden"
+        >
+          <PatternRectangle
+            class=""
+            backgroundColor={tailwindColors.slate[800]}
+            lineColor={tailwindColors.slate[700]}
+            spotColor={tailwindColors.slate[800]}
+            id="cta"
+          />
+        </div>
+        <div class="relative space-y-4 md:space-y-5 lg:col-span-3 lg:space-y-6">
+          <h2
+            class="text-3xl font-bold leading-[1.25] tracking-wide text-slate-50 md:text-4xl md:leading-[1.25] lg:text-5xl lg:leading-[1.25]"
+          >
+            Zajímá tě, jak vypadaly <br /> přechozí ročníky ?
+          </h2>
+          <p class="text-xl font-light leading-relaxed text-gray-300">
+            Projdi si archiv událostí na webu a sleduj nás na sociálních sítích.
+          </p>
+        </div>
+        <nav aria-label="Události a sociální sítě" class="flex flex-wrap items-center gap-3 lg:col-span-2">
+          <Button to="/udalosti" text="Archiv událostí" />
+          <Button externalHref="https://www.facebook.com/lusteniny" text="Facebook" color="blue" icon="facebook" />
+          <Button
+            externalHref="https://www.instagram.com/lusteninyzlin"
+            text="Instagram"
+            color="pink-gradient"
+            icon="instagram"
+          />
+        </nav>
+      </div>
+    </div>
+  </div>
+</Section>

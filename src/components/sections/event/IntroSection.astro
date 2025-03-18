@@ -1,6 +1,10 @@
 ---
-import { Image } from "astro:assets";
-import { ButtonExternalLink } from "../../atoms";
+import Container from '@components/atoms/Container.astro';
+import { getImage, Image } from 'astro:assets';
+import { classNames } from 'src/utils';
+import 'lightgallery/css/lg-thumbnail.css';
+import 'lightgallery/css/lg-transitions.css';
+import 'lightgallery/css/lightgallery.css';
 
 export type Props = {
   title: string;
@@ -8,42 +12,78 @@ export type Props = {
   date: Date;
   galleryLink: string;
   image: ImageMetadata;
+  images: ImageMetadata[];
 };
 
-const { title, description, date, galleryLink, image } = Astro.props;
+const { title, description, date, galleryLink, image, images } = Astro.props;
+
+const gallery = await Promise.all(
+  images.map(async (photo, i) => ({
+    original: photo,
+    lightGalleryImage: (
+      await getImage({
+        src: photo,
+        width: 1640,
+      })
+    ).src,
+    alt: `${title} - ${i}`,
+    title: `${title} - ${i}`,
+  })),
+);
 ---
 
-<section class="relative bg-white pb-24">
-  <div class="relative pt-12">
-    <div class="container relative z-20 mx-auto px-4 text-center sm:px-8 md:px-12">
-      <div class="relative mb-12">
-        <Image
-          src={image}
-          alt={`${title}-${new Date(date).toLocaleDateString("cs")}`}
-          class="max-h-[20rem] w-full rounded-xl shadow-lg shadow-blue-800/25 saturate-[125%] sm:max-h-[24rem] md:max-h-[28rem] lg:max-h-[32rem] xl:max-h-[36rem] object-cover aspect-[4/3]"
-        />
-      </div>
-    </div>
-    <div class="absolute left-0 right-0 top-0 h-1/2 bg-gradient-to-b from-blue-50 to-white"></div>
-  </div>
-
-  <div class="container mx-auto max-w-7xl px-4 text-center sm:px-8 md:px-12">
-    <h1 class="mb-6 text-3xl font-bold text-gray-900 sm:text-4xl md:text-5xl lg:text-6xl">
-      {title}
-    </h1>
-    <div class="mb-8 flex justify-center">
+<section class="relative space-y-16 text-center">
+  <Container>
+    <header class="mb-8 space-y-6">
       <time
         datetime={new Date(date).toISOString()}
-        class="block rounded-[8px] bg-blue-100 px-[20px] py-[10px] text-sm font-semibold text-blue-500 sm:text-base"
+        class={classNames(
+          'blockshadow-sm w-fit mx-auto',
+          'rounded-full bg-green-700 bg-gradient-to-b  px-4 py-1 font-medium uppercase leading-5 tracking-wide text-white',
+        )}
       >
-        {new Date(date).toLocaleDateString("cs")}{" "}
+        {new Date(date).toLocaleDateString('cs')}{' '}
       </time>
-    </div>
-    <p class="mb-12 text-center leading-loose text-gray-800 sm:text-lg sm:leading-loose lg:text-xl lg:leading-loose">
+      <h1 class="text-3xl font-bold text-slate-900 sm:text-4xl md:text-5xl lg:text-6xl">
+        {title}
+      </h1>
+    </header>
+    <p class="mx-auto mb-16 max-w-5xl text-center leading-loose text-slate-800 sm:text-lg sm:leading-loose">
       {description}
     </p>
-    <div class="flex justify-center">
-      <ButtonExternalLink variant="green" href={galleryLink} text="Zobrazit fotogalerii" icon="facebook" />
+    <Image
+      src={image}
+      width={1200}
+      alt={`${title}-${new Date(date).toLocaleDateString('cs')}`}
+      class="mb-4 aspect-[4/3] max-h-[22rem] w-full rounded-lg object-cover shadow-sm shadow-blue-800/25 saturate-[125%] sm:max-h-[24rem] md:max-h-[28rem] lg:max-h-[32rem] xl:max-h-[36rem]"
+      loading="eager"
+    />
+    <div class="grid grid-cols-6 gap-2 sm:grid-cols-7 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-12" id="lightgallery">
+      {
+        gallery.map((image) => (
+          <a href={image.lightGalleryImage} title={image.title}>
+            <Image
+              width={240}
+              src={image.original}
+              alt={image.alt}
+              class="aspect-square rounded object-cover shadow-sm md:rounded lg:rounded-md"
+            />
+          </a>
+        ))
+      }
     </div>
-  </div>
+  </Container>
 </section>
+
+<script>
+  import lightGallery from 'lightgallery';
+  import lgThumbnail from 'lightgallery/plugins/thumbnail';
+
+  var gallery = document.getElementById('lightgallery');
+  if (gallery) {
+    lightGallery(gallery, {
+      plugins: [lgThumbnail],
+      speed: 300,
+    });
+  }
+</script>

@@ -11,16 +11,14 @@ import '../styles/index.css';
 import { Header } from './organisms';
 import Footer from './organisms/Footer.astro';
 import Head from './organisms/Head.astro';
-import CallToActionSection from './sections/CallToActionSection.astro';
 ---
 
 <html lang="cs">
   <Head {...Astro.props} />
-  <body class="bg-blue-50">
-    <Header client:load isAlternative={Astro.props.hasAlternativeHeader} />
-    <main class="bg-blue-50">
+  <body class="bg-slate-100">
+    <Header client:load />
+    <main class="overflow-hidden py-12 md:py-16 lg:py-20 xl:py-24">
       <slot />
-      <CallToActionSection />
     </main>
     <Footer />
   </body>
