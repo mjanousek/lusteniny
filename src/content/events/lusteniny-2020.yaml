@@ -3,30 +3,30 @@ description: Třetí ročník Luštěnin. Náš standard deštivého počasí by
 date: 2020-07-18
 image: ../../images/2020/Lusteniny-2020.png
 images:
-  - src/images/2020/photos/Photo_1.jpg
-  - src/images/2020/photos/Photo_2.jpg
-  - src/images/2020/photos/Photo_3.jpg
-  - src/images/2020/photos/Photo_4.jpg
-  - src/images/2020/photos/Photo_5.jpg
-  - src/images/2020/photos/Photo_6.jpg
-  - src/images/2020/photos/Photo_7.jpg
-  - src/images/2020/photos/Photo_8.jpg
-  - src/images/2020/photos/Photo_9.jpg
-  - src/images/2020/photos/Photo_10.jpg
-  - src/images/2020/photos/Photo_11.jpg
-  - src/images/2020/photos/Photo_12.jpg
-  - src/images/2020/photos/Photo_13.jpg
-  - src/images/2020/photos/Photo_14.jpg
-  - src/images/2020/photos/Photo_15.jpg
-  - src/images/2020/photos/Photo_16.jpg
-  - src/images/2020/photos/Photo_17.jpg
-  - src/images/2020/photos/Photo_18.jpg
-  - src/images/2020/photos/Photo_19.jpg
-  - src/images/2020/photos/Photo_20.jpg
-  - src/images/2020/photos/Photo_21.jpg
-  - src/images/2020/photos/Photo_22.jpg
-  - src/images/2020/photos/Photo_23.jpg
-  - src/images/2020/photos/Photo_24.jpg
+  - src/images/2020/Photos/Photo_1.jpg
+  - src/images/2020/Photos/Photo_2.jpg
+  - src/images/2020/Photos/Photo_3.jpg
+  - src/images/2020/Photos/Photo_4.jpg
+  - src/images/2020/Photos/Photo_5.jpg
+  - src/images/2020/Photos/Photo_6.jpg
+  - src/images/2020/Photos/Photo_7.jpg
+  - src/images/2020/Photos/Photo_8.jpg
+  - src/images/2020/Photos/Photo_9.jpg
+  - src/images/2020/Photos/Photo_10.jpg
+  - src/images/2020/Photos/Photo_11.jpg
+  - src/images/2020/Photos/Photo_12.jpg
+  - src/images/2020/Photos/Photo_13.jpg
+  - src/images/2020/Photos/Photo_14.jpg
+  - src/images/2020/Photos/Photo_15.jpg
+  - src/images/2020/Photos/Photo_16.jpg
+  - src/images/2020/Photos/Photo_17.jpg
+  - src/images/2020/Photos/Photo_18.jpg
+  - src/images/2020/Photos/Photo_19.jpg
+  - src/images/2020/Photos/Photo_20.jpg
+  - src/images/2020/Photos/Photo_21.jpg
+  - src/images/2020/Photos/Photo_22.jpg
+  - src/images/2020/Photos/Photo_23.jpg
+  - src/images/2020/Photos/Photo_24.jpg
 galleryLink: "https://www.facebook.com/lusteniny/photos_albums"
 winners:
   - "Eště Nevim"
