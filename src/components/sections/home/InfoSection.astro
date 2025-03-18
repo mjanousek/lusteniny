@@ -1,4 +1,5 @@
 ---
+import Heading from '@components/atoms/Heading.astro';
 import { Icon, type IconType } from '@components/atoms/Icon';
 import Pattern from '@components/atoms/Pattern.astro';
 import img from '@images/Zlin.jpg';
@@ -51,7 +52,7 @@ type Feature = {
 };
 ---
 
-<section class="relative bg-white py-32" id="informace">
+<section class="relative bg-white py-12 md:py-16 lg:py-20 xl:py-24" id="informace">
   <Pattern
     class="absolute left-0 top-[50%] -translate-y-1/2"
     backgroundColor={tailwindColors.white}
@@ -63,18 +64,14 @@ type Feature = {
   />
   <div class="container relative mx-auto px-4 sm:px-8 md:px-12">
     <div class="-mx-4 mb-16 flex flex-wrap items-center">
-      <div class="mb-16 w-full px-4 md:mb-0 md:w-1/2">
+      <div class="mb-16 w-full space-y-6 px-4 md:mb-0 md:w-1/2">
         <span
-          class="mb-6 inline-block rounded-full bg-green-600 px-3.5 py-px text-xs font-medium uppercase leading-5 tracking-wide text-white"
+          class="inline-block rounded-full bg-green-600 px-3.5 py-px text-xs font-medium uppercase leading-5 tracking-wide text-white"
         >
           Informace
         </span>
-        <h2
-          class="mb-6 text-3xl font-bold leading-[1.1] text-slate-800 md:text-4xl md:leading-[1.1] lg:text-5xl lg:leading-[1.1]"
-        >
-          Co tě bude čekat na Luštěninách?
-        </h2>
-        <p class="max-w-4xl text-xl leading-relaxed text-slate-600">
+        <Heading level={2} text="Co tě bude čekat na Luštěninách?" variant="light" />
+        <p class="max-w-4xl text-lg leading-relaxed text-slate-600 lg:text-xl lg:leading-relaxed">
           Luštěniny jsou zábavná šifrovací akce, kde si procvičíš logické myšlení a užiješ si příjemnou atmosféru. Akce
           je vhodná pro všechny, včetně dětí. Podívej se, co tě čeká!
         </p>

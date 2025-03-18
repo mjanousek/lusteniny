@@ -16,75 +16,75 @@ const items = [
 ];
 ---
 
-<Wave class="h-92 -mb-px w-full rotate-180 text-slate-800" />
-<section class="relative mx-auto overflow-hidden bg-slate-800" id="aktuality">
-  <Pattern
-    class="absolute left-0 top-[50%] -translate-y-1/2"
-    backgroundColor={tailwindColors.slate[800]}
-    lineColor={tailwindColors.slate[700]}
-    spotColor={tailwindColors.slate[800]}
-    width={1440}
-    height={992}
-    id="announecement"
-  />
-  <div class="container mx-auto px-4 py-24">
-    <div class="relative grid grid-cols-2 items-center gap-8">
-      <div class="space-y-6">
-        <div class="space-y-3">
+<div class="bg-gradient-to-b from-slate-100 to-white py-12 md:py-16 lg:py-20 xl:py-24">
+  <Wave class="h-92 -mb-px w-full rotate-180 text-slate-800" />
+  <section class="relative mx-auto overflow-hidden bg-slate-800" id="aktuality">
+    <Pattern
+      class="absolute left-0 top-[50%] -translate-y-1/2"
+      backgroundColor={tailwindColors.slate[800]}
+      lineColor={tailwindColors.slate[700]}
+      spotColor={tailwindColors.slate[800]}
+      width={1440}
+      height={992}
+      id="announecement"
+    />
+    <div class="container mx-auto px-4 py-24">
+      <div class="relative grid items-center gap-x-8 gap-y-20 lg:grid-cols-2">
+        <div class="space-y-6">
           <Subtitle variant="dark" text="Aktuality" />
           <Heading level={2} variant="dark" text="Luštěniny 2025 jsou zde!" />
+          <p class="max-w-2xl text-lg leading-relaxed text-slate-300 lg:text-xl lg:leading-relaxed">
+            A je to venku, tímto bychom rádi oficiálně oznámili, že 8. ročník Luštěnin ohlášen! Tématem letošních
+            Luštěnin bude Zlínská architektura 🏡!
+          </p>
+          <ul class="space-y-4 text-sm font-semibold text-slate-300 sm:text-base md:text-lg lg:text-xl">
+            {
+              items.map((item) => (
+                <li class="flex items-center gap-3">
+                  <div class="relative">
+                    <div class="absolute left-1/2 top-1/2 h-5 w-5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white" />
+                    <Icon icon="check-circle" className="relative h-6 w-6 text-green-600" />
+                  </div>
+                  <span>{item}</span>
+                </li>
+              ))
+            }
+          </ul>
         </div>
-        <p class="max-w-2xl text-xl leading-relaxed text-slate-300">
-          A je to venku, tímto bychom rádi oficiálně oznámili, že 8. ročník Luštěnin ohlášen! Tématem letošních Luštěnin
-          bude Zlínská architektura 🏡!
-        </p>
-        <ul class="space-y-4 text-lg font-semibold text-slate-300">
-          {
-            items.map((item) => (
-              <li class="flex items-center gap-3">
-                <div class="relative">
-                  <div class="absolute left-1/2 top-1/2 h-5 w-5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white" />
-                  <Icon icon="check-circle" className="relative h-6 w-6 text-green-600" />
-                </div>
-                <span>{item}</span>
-              </li>
-            ))
-          }
-        </ul>
-      </div>
-      <div class="">
-        <div
-          class="relative flex flex-col items-center justify-center rounded-2xl bg-white px-16 py-12 text-center shadow-2xl shadow-black/40"
-        >
-          <Image
-            src={LogoAlt}
-            alt=""
-            class="absolute left-1/2 top-0 h-14 w-14 -translate-x-1/2 -translate-y-1/2 rounded-xl shadow-lg shadow-green-800/20"
-          />
-          <Heading level={3} variant="light" text="Registruj svůj tým!" />
-          <p class="mb-5 text-lg leading-relaxed text-slate-600">
-            Svůj tým můžeš registrovat napsáním komentáře s názvem týmu a počtem členů na facebookové události, nebo nám
-            můžeš napsat email.
-          </p>
-          <div class="mb-4 flex flex-col items-center justify-center space-y-2.5">
-            <Button
-              text="Registrovat se emailem"
-              icon="mail"
-              externalHref="mailto:info@lusteniny.eu?subject=Registrace%20t%C3%BDmu%20na%20Lu%C5%A1t%C4%9Bniny%202025&body=Dobr%C3%BD%20den%2C%0D%0A%0D%0Acht%C4%9Bli%20bychom%20registrovat%20sv%C5%AFj%20t%C3%BDm%20na%20ud%C3%A1losti%20Lu%C5%A1t%C4%9Bniny%202025%20(07.06.2025).%0D%0A%0D%0AN%C3%A1zev%20t%C3%BDmu%3A%20_____%0D%0APo%C4%8Det%20%C4%8Dlen%C5%AF%3A%20_____"
+        <div class="-mx-2 md:mx-0">
+          <div
+            class="relative flex flex-col items-center justify-center rounded-2xl bg-white px-6 py-12 text-center shadow-2xl shadow-black/40 sm:px-8 md:px-12 lg:px-16"
+          >
+            <Image
+              src={LogoAlt}
+              alt=""
+              class="absolute left-1/2 top-0 h-14 w-14 -translate-x-1/2 -translate-y-1/2 rounded-xl shadow-lg shadow-green-800/20"
             />
-            <Button
-              text="Registrovat se facebookem"
-              icon="facebook"
-              color="blue"
-              externalHref="https://www.facebook.com/events/1130264062005151/"
-            />
+            <Heading level={3} variant="light" text="Registruj svůj tým!" />
+            <p class="mb-5 text-lg leading-relaxed text-slate-600">
+              Svůj tým můžeš registrovat napsáním komentáře s názvem týmu a počtem členů na facebookové události, nebo
+              nám můžeš napsat email.
+            </p>
+            <div class="mb-4 flex flex-col items-center justify-center space-y-2.5">
+              <Button
+                text="Registrovat se emailem"
+                icon="mail"
+                externalHref="mailto:info@lusteniny.eu?subject=Registrace%20t%C3%BDmu%20na%20Lu%C5%A1t%C4%9Bniny%202025&body=Dobr%C3%BD%20den%2C%0D%0A%0D%0Acht%C4%9Bli%20bychom%20registrovat%20sv%C5%AFj%20t%C3%BDm%20na%20ud%C3%A1losti%20Lu%C5%A1t%C4%9Bniny%202025%20(07.06.2025).%0D%0A%0D%0AN%C3%A1zev%20t%C3%BDmu%3A%20_____%0D%0APo%C4%8Det%20%C4%8Dlen%C5%AF%3A%20_____"
+              />
+              <Button
+                text="Registrovat se facebookem"
+                icon="facebook"
+                color="blue"
+                externalHref="https://www.facebook.com/events/1130264062005151/"
+              />
+            </div>
+            <p class="mx-auto max-w-md text-sm text-slate-500">
+              Přihlášení lze provést i na místě, ale vzhledem k náročnosti příprav vás prosíme o předčasnou registraci
+            </p>
           </div>
-          <p class="mx-auto max-w-md text-sm text-slate-500">
-            Přihlášení lze provést i na místě, ale vzhledem k náročnosti příprav vás prosíme o předčasnou registraci
-          </p>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<Wave class="h-92 -mb-px w-full bg-white text-slate-800" />
+  </section>
+  <Wave class="h-92 -mb-px w-full bg-white text-slate-800" />
+</div>

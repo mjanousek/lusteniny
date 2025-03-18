@@ -42,7 +42,7 @@ const sponsors = [
 ];
 ---
 
-<section class="container relative mx-auto overflow-hidden px-4 py-32">
+<section class="container relative mx-auto overflow-hidden px-4 py-12 md:py-16 lg:py-20 xl:py-24">
   <div class="pointer-events-none absolute left-0 top-0 flex h-full w-full items-center justify-center overflow-hidden">
     <PatternRectangle
       class=""
@@ -53,8 +53,10 @@ const sponsors = [
     />
   </div>
   <div class="relative">
-    <h2 class="mb-12 text-center text-xl font-medium tracking-wide text-slate-500">S pomocí našich sponzorů:</h2>
-    <nav aria-label="Sponzoři" title="Sponzoři" class="flex items-center justify-center gap-8">
+    <h2 class="mb-8 text-center text-xl font-medium tracking-wide text-slate-500 md:mb-12">
+      S pomocí našich sponzorů:
+    </h2>
+    <nav aria-label="Sponzoři" title="Sponzoři" class="flex flex-wrap items-center justify-center gap-8">
       {
         sponsors.map((sponsor) => (
           <a
@@ -62,12 +64,12 @@ const sponsors = [
             target="_blank"
             title={sponsor.title}
             rel="noopener noreferrer external"
-            class="block rounded-lg px-4 py-4 transition duration-300 hover:scale-105 focus:scale-105 focus:outline-none lg:py-0"
+            class="block rounded-lg p-2 transition duration-300 hover:scale-105 focus:scale-105 focus:outline-none sm:p-3 md:p-4 lg:py-0"
           >
             <Image
               src={sponsor.image}
               alt={sponsor.title}
-              class="overflow-hidden rounded-lg"
+              class="h-6 w-fit overflow-hidden rounded-lg object-contain sm:h-7 md:h-auto "
               height={sponsor.height}
               loading="eager"
             />
