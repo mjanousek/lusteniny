@@ -3,23 +3,23 @@ description: Tady to vše začalo. Premiéra Luštěnin, spousta nejistoty a oč
 date: 2018-11-17
 image: ../../images/2018/Lusteniny-2018.jpg
 images:
-  - src/images/2018/photos/Photo_1.jpg
-  - src/images/2018/photos/Photo_2.jpg
-  - src/images/2018/photos/Photo_3.jpg
-  - src/images/2018/photos/Photo_4.jpg
-  - src/images/2018/photos/Photo_5.jpg
-  - src/images/2018/photos/Photo_6.jpg
-  - src/images/2018/photos/Photo_7.jpg
-  - src/images/2018/photos/Photo_8.jpg
-  - src/images/2018/photos/Photo_9.jpg
-  - src/images/2018/photos/Photo_10.jpg
-  - src/images/2018/photos/Photo_11.jpg
-  - src/images/2018/photos/Photo_12.jpg
-  - src/images/2018/photos/Photo_13.jpg
-  - src/images/2018/photos/Photo_14.jpg
-  - src/images/2018/photos/Photo_15.jpg
-  - src/images/2018/photos/Photo_16.jpg
-  - src/images/2018/photos/Photo_17.jpg
+  - src/images/2018/Photos/Photo_1.jpg
+  - src/images/2018/Photos/Photo_2.jpg
+  - src/images/2018/Photos/Photo_3.jpg
+  - src/images/2018/Photos/Photo_4.jpg
+  - src/images/2018/Photos/Photo_5.jpg
+  - src/images/2018/Photos/Photo_6.jpg
+  - src/images/2018/Photos/Photo_7.jpg
+  - src/images/2018/Photos/Photo_8.jpg
+  - src/images/2018/Photos/Photo_9.jpg
+  - src/images/2018/Photos/Photo_10.jpg
+  - src/images/2018/Photos/Photo_11.jpg
+  - src/images/2018/Photos/Photo_12.jpg
+  - src/images/2018/Photos/Photo_13.jpg
+  - src/images/2018/Photos/Photo_14.jpg
+  - src/images/2018/Photos/Photo_15.jpg
+  - src/images/2018/Photos/Photo_16.jpg
+  - src/images/2018/Photos/Photo_17.jpg
 galleryLink: "https://www.facebook.com/lusteniny/photos_albums"
 winners:
   - Anonymní Abstinenti
