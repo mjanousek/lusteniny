@@ -1,0 +1,9 @@
+---
+interface Props {
+  id: string;
+}
+---
+
+<section class="relative py-12 first-of-type:pt-0 last-of-type:pb-0 md:py-16 lg:py-20 xl:py-24" id={Astro.props.id}>
+  <slot />
+</section>
