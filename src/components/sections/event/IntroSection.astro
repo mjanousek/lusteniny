@@ -53,8 +53,10 @@ const gallery = await Promise.all(
     </p>
     <Image
       src={image}
+      width={1200}
       alt={`${title}-${new Date(date).toLocaleDateString('cs')}`}
       class="mb-4 aspect-[4/3] max-h-[22rem] w-full rounded-lg object-cover shadow-sm shadow-blue-800/25 saturate-[125%] sm:max-h-[24rem] md:max-h-[28rem] lg:max-h-[32rem] xl:max-h-[36rem]"
+      loading="eager"
     />
     <div class="grid grid-cols-6 gap-2 sm:grid-cols-7 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-12" id="lightgallery">
       {

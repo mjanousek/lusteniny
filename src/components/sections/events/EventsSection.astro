@@ -15,7 +15,7 @@ events.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
     <Heading level={1} variant="light" text="Archiv událostí" />
     <div class="grid gap-12 text-left md:grid-cols-2 md:gap-14 lg:gap-16 xl:grid-cols-3">
       {
-        events.map((event) => (
+        events.map((event, i) => (
           <article class="group overflow-hidden ">
             <a
               class="block overflow-hidden rounded-xl border border-slate-400 shadow-sm"
@@ -26,7 +26,7 @@ events.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
                 src={event.data.image}
                 alt={event.data.title}
                 class="aspect-[3/2] object-cover transition duration-500 group-hover:scale-110"
-                loading="lazy"
+                loading={i === 0 ? 'eager' : 'lazy'}
               />
             </a>
             <div class="relative pb-4 pt-6">
@@ -39,9 +39,9 @@ events.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
               >
                 {new Date(event.data.date).toLocaleDateString('cs')}{' '}
               </time>
-              <h3 class="mb-2 text-lg font-extrabold text-slate-900 transition duration-500 group-hover:text-black md:mb-3 md:text-xl lg:text-2xl">
+              <h2 class="mb-2 text-lg font-extrabold text-slate-900 transition duration-500 group-hover:text-black md:mb-3 md:text-xl lg:text-2xl">
                 {event.data.title}
-              </h3>
+              </h2>
               <p class="mb-4 line-clamp-4 text-left text-sm leading-relaxed text-slate-600 transition duration-500 group-hover:text-slate-900 md:text-base md:leading-relaxed">
                 {event.data.description}
               </p>

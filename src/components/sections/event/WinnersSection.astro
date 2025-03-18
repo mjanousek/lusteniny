@@ -23,30 +23,30 @@ export type Props = {
   <div class="container relative mx-auto space-y-12 px-4 py-12 text-center">
     <Heading level={2} text="Vítězné týmy" variant="dark" />
     <ol class="mx-auto grid max-w-6xl justify-center gap-x-8 gap-y-6 md:grid-cols-3">
-      <div
+      <li
         class="order-1 flex flex-col items-center justify-center gap-4 rounded-lg bg-gradient-to-b from-green-500 to-green-600 px-8 py-6 font-medium text-slate-100 shadow shadow-green-800/30 md:order-2"
       >
         <div class="text-lg">
           {Astro.props.winners[0]}
         </div>
         <div class="text-3xl font-bold">1.</div>
-      </div>
-      <div
+      </li>
+      <li
         class="order-2 flex flex-col items-center justify-center gap-4 rounded-lg bg-gradient-to-b from-green-500 to-green-700 px-8 py-6 font-medium text-slate-200 shadow shadow-green-800/30 md:order-1"
       >
         <div class="text-lg">
           {Astro.props.winners[1]}
         </div>
         <div class="text-3xl font-bold">2.</div>
-      </div>
-      <div
+      </li>
+      <li
         class="order-3 flex flex-col items-center justify-center gap-4 rounded-lg bg-gradient-to-b from-green-600 to-green-800 px-8 py-6 font-medium text-slate-200 shadow shadow-green-800/30"
       >
         <div class="text-lg">
           {Astro.props.winners[2]}
         </div>
         <div class="text-3xl font-bold">3.</div>
-      </div>
+      </li>
     </ol>
   </div>
 </section>

@@ -1,7 +1,9 @@
 ---
+import Container from '@components/atoms/Container.astro';
 import Dots from '@components/atoms/Dots.astro';
 import { Button } from '@components/atoms/NewButton';
 import Pattern from '@components/atoms/Pattern.astro';
+import Section from '@components/atoms/Section.astro';
 import Subtitle from '@components/atoms/Subtitle.astro';
 import WavesCircle from '@components/atoms/WavesCircle.astro';
 import HeroImage from '@images/Lusteniny.jpg';
@@ -9,38 +11,45 @@ import { Image } from 'astro:assets';
 import tailwindColors from 'tailwindcss/colors';
 ---
 
-<section class="container relative mx-auto px-4 pb-8 md:pb-16 lg:pb-24 xl:pb-32">
-  <Pattern
-    class="absolute left-0 top-[50%] -translate-y-1/2"
-    backgroundColor={tailwindColors.slate[100]}
-    lineColor={tailwindColors.slate[300]}
-    spotColor={tailwindColors.slate[100]}
-    width={1440}
-    height={992}
-    id="hero"
-  />
-  <div class="relative grid items-center gap-16 md:grid-cols-2">
-    <div class="">
-      <Subtitle variant="light" text="Luštěniny" />
-      <h1
-        class="mb-6 text-4xl font-bold leading-[1.25] tracking-wide text-slate-900 md:text-5xl md:leading-[1.25] lg:text-6xl lg:leading-[1.25]"
-      >
-        Šifrovací hra <br /> v centru Zlína
-      </h1>
-      <p
-        class="mb-8 max-w-2xl text-lg font-medium leading-normal tracking-wide text-slate-600 md:text-xl md:leading-normal lg:text-2xl lg:leading-normal"
-      >
-        Luštěniny jsou tradiční šifrovací hra pořádána v centru Zlína, které se můžeš zúčastnit jak v týmu, tak sám.
-        Neváhej a přijd si k nám zaluštit.
-      </p>
-      <div class="flex flex-wrap">
-        <Button to="/#informace" text="Více informací" size="large" icon="arrow-right" />
+<Section id="uvod">
+  <Container extraClass="md:pt-12">
+    <Pattern
+      class="absolute left-0 top-[50%] -translate-y-1/2"
+      backgroundColor={tailwindColors.slate[100]}
+      lineColor={tailwindColors.slate[300]}
+      spotColor={tailwindColors.slate[100]}
+      width={1440}
+      height={992}
+      id="hero"
+    />
+    <div class="relative grid items-center gap-16 lg:grid-cols-2">
+      <div class="">
+        <Subtitle variant="light" text="Luštěniny" />
+        <h1
+          class="mb-6 text-4xl font-bold leading-[1.25] tracking-wide text-slate-900 md:text-5xl md:leading-[1.25] lg:text-6xl lg:leading-[1.25]"
+        >
+          Šifrovací hra <br /> v centru Zlína
+        </h1>
+        <p
+          class="mb-8 max-w-2xl text-lg font-medium leading-normal tracking-wide text-slate-600 md:text-xl md:leading-normal lg:text-2xl lg:leading-normal"
+        >
+          Luštěniny jsou tradiční šifrovací hra pořádána v centru Zlína, které se můžeš zúčastnit jak v týmu, tak sám.
+          Neváhej a přijd si k nám zaluštit.
+        </p>
+        <div class="flex flex-wrap">
+          <Button to="/#informace" text="Více informací" size="large" icon="arrow-right" />
+        </div>
+      </div>
+      <div class="relative mx-auto max-w-max lg:mr-0 lg:pl-12">
+        <WavesCircle class="absolute -left-16 -top-12 z-10 size-28 text-green-500 lg:-left-8 lg:size-32 lg:w-auto" />
+        <Dots class="absolute -bottom-8 -right-4 z-10 size-24 text-green-500 lg:-right-7 lg:size-28 lg:w-auto" />
+        <Image
+          src={HeroImage}
+          loading="eager"
+          alt=""
+          class="relative aspect-[3/2] rounded-[1.5rem] object-cover shadow-xl"
+        />
       </div>
     </div>
-    <div class="relative mx-auto max-w-max md:mr-0 md:pl-12">
-      <WavesCircle class="absolute -left-16 -top-12 z-10 size-28 text-green-500 md:-left-8 md:size-32 md:w-auto" />
-      <Dots class="absolute -bottom-8 -right-4 z-10 size-24 text-green-500 md:-right-7 md:size-28 md:w-auto" />
-      <Image src={HeroImage} alt="" class="relative aspect-[3/2] rounded-[1.5rem] object-cover shadow-xl" />
-    </div>
-  </div>
-</section>
+  </Container>
+</Section>
