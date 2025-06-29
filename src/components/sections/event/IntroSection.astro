@@ -32,7 +32,7 @@ const gallery = await Promise.all(
 );
 ---
 
-<section class="relative space-y-16 text-center">
+<section class="relative space-y-1 text-center">
   <Container>
     <header class="mb-8 space-y-6">
       <time
@@ -48,12 +48,12 @@ const gallery = await Promise.all(
         {title}
       </h1>
     </header>
-    <p class="mx-auto mb-16 max-w-5xl text-center leading-loose text-slate-800 sm:text-lg sm:leading-loose">
-      {description}
-    </p>
+    <div class="mx-auto mb-16 max-w-6xl space-y-2 leading-loose text-slate-800 sm:text-lg sm:leading-loose">
+      {description.split('\n').map((line, index) => <p>{line}</p>)}
+    </div>
     <Image
       src={image}
-      width={1200}
+      width={2800}
       alt={`${title}-${new Date(date).toLocaleDateString('cs')}`}
       class="mb-4 aspect-[4/3] max-h-[22rem] w-full rounded-lg object-cover shadow-sm shadow-blue-800/25 saturate-[125%] sm:max-h-[24rem] md:max-h-[28rem] lg:max-h-[32rem] xl:max-h-[36rem]"
       loading="eager"

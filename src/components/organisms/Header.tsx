@@ -48,7 +48,7 @@ export const Header = () => {
               ))}
             </div>
             <div className="hidden lg:block">
-              <Button to="/#aktuality" text="Luštěniny 2025" />
+              <Button to="/udalosti/lusteniny-2025" text="Luštěniny 2025" />
             </div>
             <Menu.Button
               className="flex h-11 w-11 items-center justify-center rounded-full bg-slate-300 text-slate-700 md:h-12 md:w-12 lg:hidden"
@@ -81,7 +81,7 @@ export const Header = () => {
                     </a>
                   </Menu.Item>
                 ))}
-                <Button to="/#aktuality" text="Luštěniny 2025" />
+                <Button to="/udalosti/lusteniny-2025" text="Luštěniny 2025" />
               </nav>
             </Menu.Items>
           </Transition>
