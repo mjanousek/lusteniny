@@ -20,7 +20,7 @@
     "@headlessui/tailwindcss": "^0.2.0",
     "@types/react": "^18.2.73",
     "@types/react-dom": "^18.2.23",
-    "astro": "^5.1.1",
+    "astro": "^5.15.7",
     "astro-robots-txt": "^1.0.0",
     "astro-seo-schema": "^5.0.0",
     "lightgallery": "^2.8.3",
