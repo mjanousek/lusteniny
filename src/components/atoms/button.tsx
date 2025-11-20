@@ -8,18 +8,18 @@ type ButtonInternalLinkProps = {
   icon?: IconType;
 };
 
-export const ButtonInternalLink = ({ variant, to, text, icon }: ButtonInternalLinkProps) => (
+export const ButtonInternalLink = ({ to, text, icon }: ButtonInternalLinkProps) => (
   <a
     href={to}
     className={classNames(
-      "group relative flex items-stretch justify-center rounded-lg bg-gradient-to-r from-green-500 to-green-600 px-8 py-4 font-bold text-white focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:outline-none",
+      "bg-linear-to-r group relative flex items-stretch justify-center rounded-lg from-green-500 to-green-600 px-8 py-4 font-bold text-white focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2",
     )}
   >
     <div className="relative z-10 flex items-center justify-center gap-3">
       <span>{text}</span>
       {icon && <Icon icon={icon} className="h-5" />}
     </div>
-    <div className="absolute inset-0 rounded-[8px] bg-black opacity-0 shadow-lg shadow-green-500/25 transition duration-300 group-hover:opacity-10"></div>
+    <div className="absolute inset-0 rounded-lg bg-black opacity-0 shadow-lg shadow-green-500/25 transition duration-300 group-hover:opacity-10"></div>
   </a>
 );
 
@@ -36,11 +36,11 @@ export const ButtonExternalLink = ({ variant, href, text, icon }: ButtonExternal
     target="_blank"
     rel="noopener noreferrer external"
     className={classNames(
-      "group relative flex items-stretch rounded-[8px] px-[30px] py-[15px] font-bold focus:ring-2 focus:ring-offset-2 focus:outline-none sm:px-[60px]",
-      variant === "green" ? "bg-gradient-to-r from-green-500 to-green-600 text-white focus:ring-green-500" : "",
-      variant === "blue" ? "bg-gradient-to-r from-blue-500 to-blue-600 text-white focus:ring-blue-500" : "",
+      "group relative flex items-stretch rounded-lg px-[30px] py-[15px] font-bold focus:outline-none focus:ring-2 focus:ring-offset-2 sm:px-[60px]",
+      variant === "green" ? "bg-linear-to-r from-green-500 to-green-600 text-white focus:ring-green-500" : "",
+      variant === "blue" ? "bg-linear-to-r from-blue-500 to-blue-600 text-white focus:ring-blue-500" : "",
       variant === "instagram"
-        ? "bg-gradient-to-r from-red-600 via-pink-600 to-purple-600 text-white focus:ring-purple-500"
+        ? "bg-linear-to-r from-red-600 via-pink-600 to-purple-600 text-white focus:ring-purple-500"
         : "",
     )}
   >
@@ -48,6 +48,6 @@ export const ButtonExternalLink = ({ variant, href, text, icon }: ButtonExternal
       <Icon icon={icon} className="h-5" />
       <span>{text}</span>
     </div>
-    <div className="absolute inset-0 rounded-[8px] bg-black opacity-0 transition duration-300 group-hover:opacity-10"></div>
+    <div className="absolute inset-0 rounded-lg bg-black opacity-0 transition duration-300 group-hover:opacity-10"></div>
   </a>
 );

@@ -1,4 +1,4 @@
-import { Menu, Transition } from "@headlessui/react";
+import { Menu, MenuButton, MenuItem, MenuItems, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 import { classNames } from "../../utils";
 import { Icon, Logo } from "../atoms";
@@ -50,12 +50,12 @@ export const Header = () => {
             <div className="hidden lg:block">
               <Button to="/#aktuality" text="Luštěniny 2026" />
             </div>
-            <Menu.Button
+            <MenuButton
               className="flex h-11 w-11 items-center justify-center rounded-full bg-slate-300 text-slate-700 md:h-12 md:w-12 lg:hidden"
               title={open ? "Zavřít menu" : "Otevřít menu"}
             >
               <Icon icon={open ? "xmark" : "bars"} className="h-5" />
-            </Menu.Button>
+            </MenuButton>
           </div>
           <Transition
             as={Fragment}
@@ -66,29 +66,29 @@ export const Header = () => {
             leaveFrom="transform opacity-100"
             leaveTo="transform opacity-0 -translate-y-full"
           >
-            <Menu.Items
+            <MenuItems
               as="div"
-              className="absolute top-full left-0 z-40 flex max-h-screen w-full flex-col overflow-hidden"
+              className="absolute left-0 top-full z-40 flex max-h-screen w-full flex-col overflow-hidden"
             >
-              <nav className="flex w-full flex-grow flex-col items-center justify-between gap-6 border-b bg-white py-8 text-center text-lg font-medium text-slate-600 shadow-xl">
+              <nav className="flex w-full grow flex-col items-center justify-between gap-6 border-b bg-white py-8 text-center text-lg font-medium text-slate-600 shadow-xl">
                 {links.map((link) => (
-                  <Menu.Item key={link.title}>
+                  <MenuItem key={link.title}>
                     <a
                       href={link.href}
                       className="hover:text-primary-400 w-full rounded-sm py-2 transition duration-300"
                     >
                       {link.title}
                     </a>
-                  </Menu.Item>
+                  </MenuItem>
                 ))}
                 <Button to="/udalosti/lusteniny-2025" text="Luštěniny 2025" />
               </nav>
-            </Menu.Items>
+            </MenuItems>
           </Transition>
 
           <div
             className={classNames(
-              "pointer-events-none absolute top-full left-0 z-30 h-[calc(100vh-100%)] w-full bg-black/50 transition duration-300 ease-in",
+              "pointer-events-none absolute left-0 top-full z-30 h-[calc(100vh-100%)] w-full bg-black/50 transition duration-300 ease-in",
               open ? "opacity-100" : "opacity-0",
             )}
           ></div>

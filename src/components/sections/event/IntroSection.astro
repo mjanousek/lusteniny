@@ -15,7 +15,7 @@ export type Props = {
   images: ImageMetadata[];
 };
 
-const { title, description, date, galleryLink, image, images } = Astro.props;
+const { title, description, date, image, images } = Astro.props;
 
 const gallery = await Promise.all(
   images.map(async (photo, i) => ({
@@ -28,7 +28,7 @@ const gallery = await Promise.all(
     ).src,
     alt: `${title} - ${i}`,
     title: `${title} - ${i}`,
-  })),
+  }))
 );
 ---
 
@@ -39,7 +39,7 @@ const gallery = await Promise.all(
         datetime={new Date(date).toISOString()}
         class={classNames(
           "block shadow-sm w-fit mx-auto",
-          "rounded-full bg-green-700 bg-gradient-to-b  px-4 py-1 font-medium uppercase leading-5 tracking-wide text-white",
+          "rounded-full bg-green-700 bg-linear-to-b  px-4 py-1 font-medium uppercase leading-5 tracking-wide text-white"
         )}
       >
         {new Date(date).toLocaleDateString("cs")}{" "}
@@ -49,13 +49,13 @@ const gallery = await Promise.all(
       </h1>
     </header>
     <div class="mx-auto mb-16 max-w-6xl space-y-2 leading-loose text-slate-800 sm:text-lg sm:leading-loose">
-      {description.split("\n").map((line, index) => <p>{line}</p>)}
+      {description.split("\n").map((line) => <p>{line}</p>)}
     </div>
     <Image
       src={image}
       width={2800}
       alt={`${title}-${new Date(date).toLocaleDateString("cs")}`}
-      class="mb-4 aspect-[4/3] max-h-[22rem] w-full rounded-lg object-cover shadow-sm shadow-blue-800/25 saturate-[125%] sm:max-h-[24rem] md:max-h-[28rem] lg:max-h-[32rem] xl:max-h-[36rem]"
+      class="mb-4 aspect-4/3 max-h-88 w-full rounded-lg object-cover shadow-sm shadow-blue-800/25 saturate-125 sm:max-h-96 md:max-h-112 lg:max-h-128 xl:max-h-144"
       loading="eager"
     />
     <div class="grid grid-cols-6 gap-2 sm:grid-cols-7 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-12" id="lightgallery">
