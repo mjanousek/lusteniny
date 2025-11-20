@@ -12,7 +12,7 @@ interface Props {
   Astro.props.level === 1 && (
     <h1
       class={classNames(
-        "text-4xl leading-[1.25] font-bold tracking-wide md:text-5xl md:leading-[1.25] lg:text-6xl lg:leading-[1.25]",
+        "text-4xl leading-tight font-bold tracking-wide md:text-5xl md:leading-tight lg:text-6xl lg:leading-tight",
         Astro.props.variant === "light" ? "" : "text-slate-200",
       )}
     >
@@ -25,7 +25,7 @@ interface Props {
   Astro.props.level === 2 && (
     <h2
       class={classNames(
-        "text-3xl leading-[1.25] font-bold tracking-wide md:text-4xl md:leading-[1.25] lg:text-5xl lg:leading-[1.25]",
+        "text-3xl leading-tight font-bold tracking-wide md:text-4xl md:leading-tight lg:text-5xl lg:leading-tight",
         Astro.props.variant === "light" ? "" : "text-slate-200",
       )}
     >
