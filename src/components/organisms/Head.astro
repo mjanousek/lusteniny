@@ -1,10 +1,10 @@
 ---
-import { Schema } from 'astro-seo-schema';
-import { getImage } from 'astro:assets';
-import faviconSrc from '../../images/favicon.png';
-import faviconSvgSrc from '../../images/favicon.svg';
-import metaImageSrc from '../../images/meta-image.jpg';
-import { settings } from '../../settings';
+import { Schema } from "astro-seo-schema";
+import { getImage } from "astro:assets";
+import faviconSrc from "../../images/favicon.png";
+import faviconSvgSrc from "../../images/favicon.svg";
+import metaImageSrc from "../../images/meta-image.jpg";
+import { settings } from "../../settings";
 
 export type Props = {
   title: string;
@@ -20,9 +20,9 @@ const appleTouchIcon = await getImage({
   src: faviconSrc,
   width: 180,
   height: 180,
-  format: 'png',
+  format: "png",
 });
-const faviconSvg = await getImage({ src: faviconSvgSrc, format: 'svg' });
+const faviconSvg = await getImage({ src: faviconSvgSrc, format: "svg" });
 
 const title = Astro.props.title ?? settings.title;
 const description = Astro.props.description ?? settings.description;
@@ -50,8 +50,8 @@ const socialImageURL = new URL(metaImage.src, Astro.url);
   <link rel="manifest" href="/manifest.json" />
 
   <!-- Theme -->
-  <meta name="msapplication-TileColor" content={settings.color['bg-blue-50']} />
-  <meta name="theme-color" content={settings.color['bg-blue-50']} />
+  <meta name="msapplication-TileColor" content={settings.color["bg-blue-50"]} />
+  <meta name="theme-color" content={settings.color["bg-blue-50"]} />
 
   <!-- Sitemap & Canonical -->
   <link rel="canonical" href={canonicalURL} data-baseprotocol="https:" />
@@ -76,12 +76,12 @@ const socialImageURL = new URL(metaImage.src, Astro.url);
   <!-- Schema JSON -->
   <Schema
     item={{
-      '@context': 'https://schema.org',
-      '@type': 'LocalBusiness',
-      name: 'Luštěniny Střelnice',
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      name: "Luštěniny Střelnice",
       image: socialImageURL.toString(),
-      '@id': 'https://lusteniny.eu/',
-      url: 'https://lusteniny.eu/',
+      "@id": "https://lusteniny.eu/",
+      url: "https://lusteniny.eu/",
     }}
   />
 

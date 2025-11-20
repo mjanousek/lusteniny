@@ -1,18 +1,18 @@
 ---
-import Heading from '@components/atoms/Heading.astro';
-import Pattern from '@components/atoms/Pattern.astro';
-import Wave from '@components/atoms/Wave.astro';
-import tailwindColors from 'tailwindcss/colors';
+import Heading from "@components/atoms/Heading.astro";
+import Pattern from "@components/atoms/Pattern.astro";
+import Wave from "@components/atoms/Wave.astro";
+import tailwindColors from "tailwindcss/colors";
 
 export type Props = {
   winners: string[];
 };
 ---
 
-<Wave class="-mb-px mt-6 w-full rotate-180 text-slate-800 md:mt-8 lg:mt-10 xl:mt-12" />
+<Wave class="mt-6 -mb-px w-full rotate-180 text-slate-800 md:mt-8 lg:mt-10 xl:mt-12" />
 <section class="relative mx-auto overflow-hidden bg-slate-800" id="vitezove">
   <Pattern
-    class="absolute left-0 top-[50%] -translate-y-1/2"
+    class="absolute top-[50%] left-0 -translate-y-1/2"
     backgroundColor={tailwindColors.slate[800]}
     lineColor={tailwindColors.slate[700]}
     spotColor={tailwindColors.slate[800]}
@@ -20,7 +20,7 @@ export type Props = {
     height={992}
     id="announecement"
   />
-  <div class="container relative mx-auto space-y-12 px-4 py-12 text-center">
+  <div class="relative container mx-auto space-y-12 px-4 py-12 text-center">
     <Heading level={2} text="Vítězné týmy" variant="dark" />
     <ol class="mx-auto grid max-w-6xl justify-center gap-x-8 gap-y-6 md:grid-cols-3">
       <li

@@ -1,10 +1,10 @@
 ---
-import Container from '@components/atoms/Container.astro';
-import { getImage, Image } from 'astro:assets';
-import { classNames } from 'src/utils';
-import 'lightgallery/css/lg-thumbnail.css';
-import 'lightgallery/css/lg-transitions.css';
-import 'lightgallery/css/lightgallery.css';
+import Container from "@components/atoms/Container.astro";
+import { getImage, Image } from "astro:assets";
+import { classNames } from "src/utils";
+import "lightgallery/css/lg-thumbnail.css";
+import "lightgallery/css/lg-transitions.css";
+import "lightgallery/css/lightgallery.css";
 
 export type Props = {
   title: string;
@@ -38,23 +38,23 @@ const gallery = await Promise.all(
       <time
         datetime={new Date(date).toISOString()}
         class={classNames(
-          'blockshadow-sm w-fit mx-auto',
-          'rounded-full bg-green-700 bg-gradient-to-b  px-4 py-1 font-medium uppercase leading-5 tracking-wide text-white',
+          "block shadow-sm w-fit mx-auto",
+          "rounded-full bg-green-700 bg-gradient-to-b  px-4 py-1 font-medium uppercase leading-5 tracking-wide text-white",
         )}
       >
-        {new Date(date).toLocaleDateString('cs')}{' '}
+        {new Date(date).toLocaleDateString("cs")}{" "}
       </time>
       <h1 class="text-3xl font-bold text-slate-900 sm:text-4xl md:text-5xl lg:text-6xl">
         {title}
       </h1>
     </header>
     <div class="mx-auto mb-16 max-w-6xl space-y-2 leading-loose text-slate-800 sm:text-lg sm:leading-loose">
-      {description.split('\n').map((line, index) => <p>{line}</p>)}
+      {description.split("\n").map((line, index) => <p>{line}</p>)}
     </div>
     <Image
       src={image}
       width={2800}
-      alt={`${title}-${new Date(date).toLocaleDateString('cs')}`}
+      alt={`${title}-${new Date(date).toLocaleDateString("cs")}`}
       class="mb-4 aspect-[4/3] max-h-[22rem] w-full rounded-lg object-cover shadow-sm shadow-blue-800/25 saturate-[125%] sm:max-h-[24rem] md:max-h-[28rem] lg:max-h-[32rem] xl:max-h-[36rem]"
       loading="eager"
     />
@@ -76,10 +76,10 @@ const gallery = await Promise.all(
 </section>
 
 <script>
-  import lightGallery from 'lightgallery';
-  import lgThumbnail from 'lightgallery/plugins/thumbnail';
+  import lightGallery from "lightgallery";
+  import lgThumbnail from "lightgallery/plugins/thumbnail";
 
-  var gallery = document.getElementById('lightgallery');
+  var gallery = document.getElementById("lightgallery");
   if (gallery) {
     lightGallery(gallery, {
       plugins: [lgThumbnail],

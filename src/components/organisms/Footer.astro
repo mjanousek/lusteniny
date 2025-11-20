@@ -1,35 +1,35 @@
 ---
-import { Image } from 'astro:assets';
-import kudyZnudyImage from '../../images/kudyznudy.jpg';
-import { Logo } from '../atoms';
+import { Image } from "astro:assets";
+import kudyZnudyImage from "../../images/kudyznudy.jpg";
+import { Logo } from "../atoms";
 
 const links = [
   {
-    title: 'Domů',
-    href: '/',
+    title: "Domů",
+    href: "/",
   },
   {
-    title: 'Informace',
-    href: '/#informace',
+    title: "Informace",
+    href: "/#informace",
   },
   {
-    title: 'Pravidla',
-    href: '/#pravidla',
+    title: "Pravidla",
+    href: "/#pravidla",
   },
   {
-    title: 'Kontakt',
-    href: '/kontakt',
+    title: "Kontakt",
+    href: "/kontakt",
   },
   {
-    title: 'Archiv událostí',
-    href: '/udalosti',
+    title: "Archiv událostí",
+    href: "/udalosti",
   },
 ];
 ---
 
 <footer class="bg-gradient-to-b from-gray-100 to-gray-200">
   <div
-    class="container mx-auto flex flex-col items-center justify-between gap-12 px-4 pb-12 pt-24 text-center md:flex-row md:text-left"
+    class="container mx-auto flex flex-col items-center justify-between gap-12 px-4 pt-24 pb-12 text-center md:flex-row md:text-left"
   >
     <h2 class="flex items-center gap-4" id="footer-heading">
       <Logo className="h-10" />
@@ -37,7 +37,7 @@ const links = [
     </h2>
     <nav
       aria-label="Patička - Navigace"
-      class="flex flex-col gap-x-12 gap-y-6 font-medium uppercase text-slate-500 xl:flex-row xl:border-l-2 xl:border-slate-300 xl:pl-12"
+      class="flex flex-col gap-x-12 gap-y-6 font-medium text-slate-500 uppercase xl:flex-row xl:border-l-2 xl:border-slate-300 xl:pl-12"
     >
       {
         links.map((link) => (

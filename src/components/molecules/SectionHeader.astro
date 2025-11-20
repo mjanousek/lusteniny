@@ -1,9 +1,9 @@
 ---
-import Heading from '../atoms/Heading.astro';
-import Subtitle from '../atoms/Subtitle.astro';
+import Heading from "../atoms/Heading.astro";
+import Subtitle from "../atoms/Subtitle.astro";
 
 interface Props {
-  variant: 'light' | 'dark';
+  variant: "light" | "dark";
   title: string;
   subtitle: string;
   text: string;
@@ -13,10 +13,10 @@ interface Props {
 const { variant, title, subtitle, text, extraClass } = Astro.props;
 ---
 
-<header class:list={['space-y-4 md:space-y-5 lg:space-y-6', extraClass]}>
+<header class:list={["space-y-4 md:space-y-5 lg:space-y-6", extraClass]}>
   <Subtitle text={subtitle} variant={variant} />
   <Heading level={2} text={title} variant={variant} />
-  <p class="max-w-4xl font-medium leading-loose text-slate-600 md:text-lg md:leading-loose xl:text-xl xl:leading-loose">
+  <p class="max-w-4xl leading-loose font-medium text-slate-600 md:text-lg md:leading-loose xl:text-xl xl:leading-loose">
     {text}
   </p>
 </header>

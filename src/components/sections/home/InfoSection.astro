@@ -1,49 +1,49 @@
 ---
-import Container from '@components/atoms/Container.astro';
-import { Icon, type IconType } from '@components/atoms/Icon';
-import Pattern from '@components/atoms/Pattern.astro';
-import Section from '@components/atoms/Section.astro';
-import SectionHeader from '@components/molecules/SectionHeader.astro';
-import img from '@images/Zlin.jpg';
-import { Image } from 'astro:assets';
-import tailwindColors from 'tailwindcss/colors';
+import Container from "@components/atoms/Container.astro";
+import { Icon, type IconType } from "@components/atoms/Icon";
+import Pattern from "@components/atoms/Pattern.astro";
+import Section from "@components/atoms/Section.astro";
+import SectionHeader from "@components/molecules/SectionHeader.astro";
+import img from "@images/Zlin.jpg";
+import { Image } from "astro:assets";
+import tailwindColors from "tailwindcss/colors";
 
 const features: Feature[] = [
   {
-    icon: 'route',
-    title: 'Krátká procházka Zlínem',
+    icon: "route",
+    title: "Krátká procházka Zlínem",
     description:
-      'Čeká na tebe krátká procházka Zlínem lemovaná stanovišti s šiframi a tvým úkolem bude, jich vyluštit co nejvíc.',
+      "Čeká na tebe krátká procházka Zlínem lemovaná stanovišti s šiframi a tvým úkolem bude, jich vyluštit co nejvíc.",
   },
   {
-    icon: 'marker',
-    title: 'Stanoviště s šiframi',
+    icon: "marker",
+    title: "Stanoviště s šiframi",
     description:
-      'Na každém stanovišti na tebe bude čekat jeden z organizátorů, který ti předá zadání a případně pomůže s čím bude potřeba.',
+      "Na každém stanovišti na tebe bude čekat jeden z organizátorů, který ti předá zadání a případně pomůže s čím bude potřeba.",
   },
   {
-    icon: 'pencil',
-    title: 'Připravené pomůcky',
+    icon: "pencil",
+    title: "Připravené pomůcky",
     description:
-      'Před zahájením dostaneš vše potřebné k luštění, včetně propisek, papírů a praktického taháku na šifry.',
+      "Před zahájením dostaneš vše potřebné k luštění, včetně propisek, papírů a praktického taháku na šifry.",
   },
   {
-    icon: 'child',
-    title: 'Šifry i pro děti',
+    icon: "child",
+    title: "Šifry i pro děti",
     description:
-      'Můžeš s sebou vzít i děti, protože pro ně budou připravené jednodušší šifry, aby si akci užily stejně jako dospělí.',
+      "Můžeš s sebou vzít i děti, protože pro ně budou připravené jednodušší šifry, aby si akci užily stejně jako dospělí.",
   },
   {
-    icon: 'phone',
-    title: 'Řešení šifer v telefonu',
+    icon: "phone",
+    title: "Řešení šifer v telefonu",
     description:
-      'Pro účastníky šifrovačky bude připravena webová aplikace, kde bude například možnost šifru odevzat a získat místo dalšího stanoviště.',
+      "Pro účastníky šifrovačky bude připravena webová aplikace, kde bude například možnost šifru odevzat a získat místo dalšího stanoviště.",
   },
   {
-    icon: 'award',
-    title: 'Vyhlášení vítězů',
+    icon: "award",
+    title: "Vyhlášení vítězů",
     description:
-      'Na konci události tě bude čekat vyhlášení vítězů, předání cen a nějaký ten networking včetně občerstvení.',
+      "Na konci události tě bude čekat vyhlášení vítězů, předání cen a nějaký ten networking včetně občerstvení.",
   },
 ];
 
@@ -56,7 +56,7 @@ type Feature = {
 
 <Section id="informace" extraClass="bg-white">
   <Pattern
-    class="absolute left-0 top-[50%] -translate-y-1/2"
+    class="absolute top-[50%] left-0 -translate-y-1/2"
     backgroundColor={tailwindColors.white}
     lineColor={tailwindColors.slate[200]}
     spotColor={tailwindColors.white}

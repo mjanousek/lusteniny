@@ -1,14 +1,14 @@
 ---
-import { getCollection } from 'astro:content';
-import Layout from '../../components/Layout.astro';
-import BonusInformationSection from '../../components/sections/event/BonusInformationSection.astro';
-import CyphersSection from '../../components/sections/event/CyphersSection.astro';
-import IntroSection from '../../components/sections/event/IntroSection.astro';
-import WinnersSection from '../../components/sections/event/WinnersSection.astro';
-import { settings } from '../../settings';
+import { getCollection } from "astro:content";
+import Layout from "../../components/Layout.astro";
+import BonusInformationSection from "../../components/sections/event/BonusInformationSection.astro";
+import CyphersSection from "../../components/sections/event/CyphersSection.astro";
+import IntroSection from "../../components/sections/event/IntroSection.astro";
+import WinnersSection from "../../components/sections/event/WinnersSection.astro";
+import { settings } from "../../settings";
 
 export async function getStaticPaths() {
-  const blogEntries = await getCollection('events');
+  const blogEntries = await getCollection("events");
   return blogEntries.map((entry) => ({
     params: { event: entry.id },
     props: { entry },

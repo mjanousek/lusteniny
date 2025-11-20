@@ -1,7 +1,7 @@
-import { defineCollection, z } from 'astro:content';
+import { defineCollection, z } from "astro:content";
 
 const events = defineCollection({
-  type: 'data', // v2.5.0 and later
+  type: "data", // v2.5.0 and later
   schema: ({ image }) =>
     z.object({
       title: z.string(),

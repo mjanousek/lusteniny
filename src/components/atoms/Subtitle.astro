@@ -1,16 +1,16 @@
 ---
-import { classNames } from '../../utils';
+import { classNames } from "../../utils";
 
 interface Props {
-  variant: 'light' | 'dark';
+  variant: "light" | "dark";
   text: string;
 }
 ---
 
 <span
   class={classNames(
-    'inline-block rounded-full px-3.5 py-px text-xs uppercase leading-5 tracking-wide text-white',
-    Astro.props.variant === 'light' ? 'bg-gradient-to-b from-green-600 to-green-600' : 'bg-green-700',
+    "inline-block rounded-full px-3.5 py-px text-xs uppercase leading-5 tracking-wide text-white",
+    Astro.props.variant === "light" ? "bg-gradient-to-b from-green-600 to-green-600" : "bg-green-700",
   )}
 >
   {Astro.props.text}

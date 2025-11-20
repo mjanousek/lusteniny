@@ -1,7 +1,52 @@
 /* The integration's default injected base.css file */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --font-sans:
+    Quicksand Variable, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+
+  --color-green-50: #ecfdf5;
+  --color-green-100: #d1fae5;
+  --color-green-200: #a7f3d0;
+  --color-green-300: #6ee7b7;
+  --color-green-400: #34d399;
+  --color-green-500: #10b981;
+  --color-green-600: #059669;
+  --color-green-700: #047857;
+  --color-green-800: #065f46;
+  --color-green-900: #064e3b;
+  --color-green-950: #022c22;
+
+  --color-blue-50: #f2f7fb;
+  --color-blue-100: #e6eef7;
+  --color-blue-200: #bfd5ec;
+  --color-blue-300: #99bbe0;
+  --color-blue-400: #4d89c9;
+  --color-blue-500: #0056b2;
+  --color-blue-600: #004da0;
+  --color-blue-700: #004186;
+  --color-blue-800: #00346b;
+  --color-blue-900: #002a57;
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
 
 html,
 body {
@@ -10,38 +55,38 @@ body {
 
 .swiper-button-next,
 .swiper-button-prev {
-  @apply right-0 top-0 mt-0 h-full px-6 text-green-600  transition duration-300 hover:text-green-600 !important;
+  @apply top-0! right-0! mt-0! h-full! px-6! text-green-600! transition! duration-300! hover:text-green-600!;
 }
 
 .swiper-button-next {
-  @apply right-0 !important;
+  @apply right-0!;
 }
 
 .swiper-button-prev {
-  @apply left-0 !important;
+  @apply left-0!;
 }
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  @apply text-3xl font-extrabold !important;
+  @apply text-3xl! font-extrabold!;
 }
 
 .swiper-pagination-bullet {
-  @apply transition duration-300 !important;
+  @apply transition! duration-300!;
 }
 
 .swiper-pagination-bullet.active {
-  @apply bg-green-600 opacity-100 !important;
+  @apply bg-green-600! opacity-100!;
 }
 
 .lg-backdrop {
-  @apply bg-black/90 !important;
+  @apply bg-black/90!;
 }
 
 .lg-thumb-item {
-  @apply border-transparent !important;
+  @apply border-transparent!;
 }
 
 .lg-thumb-item.active {
-  @apply border-green-500 !important;
+  @apply border-green-500!;
 }

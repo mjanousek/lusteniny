@@ -1,34 +1,34 @@
-import { classNames } from '../../utils';
-import { Icon, type IconType } from './Icon';
+import { classNames } from "../../utils";
+import { Icon, type IconType } from "./Icon";
 
 type Props = {
   text: string;
-  size?: 'small' | 'regular' | 'large';
+  size?: "small" | "regular" | "large";
   icon?: IconType;
-  color?: 'green' | 'blue' | 'pink-gradient';
-} & ({ onClick: () => void } | { to: string } | { externalHref: string } | { type: 'submit' });
+  color?: "green" | "blue" | "pink-gradient";
+} & ({ onClick: () => void } | { to: string } | { externalHref: string } | { type: "submit" });
 
 export const Button = (props: Props) => {
-  const size = props.size ?? 'regular';
-  const color = props.color ?? 'green';
+  const size = props.size ?? "regular";
+  const color = props.color ?? "green";
 
   const className = classNames(
-    'rounded-lg text-green-50 hover:text-white shadow hover:shadow-lg',
-    'group/button relative block overflow-hidden font-medium duration-700',
-    size === 'small' && 'px-5 py-2.5 tracking-wide text-sm',
-    size === 'regular' && 'px-7 py-3.5 tracking-wide',
-    size === 'large' && 'px-8 py-4 text-lg tracking-wider',
-    color === 'green' && 'bg-gradient-to-r from-green-600 to-green-700 shadow-green-800/30',
-    color === 'blue' && 'bg-gradient-to-r from-blue-500 to-blue-600 shadow-blue-800/30',
-    color === 'pink-gradient' && 'bg-gradient-to-r from-red-600 via-pink-600 to-purple-600 shadow-pink-800/30',
+    "rounded-lg text-green-50 hover:text-white shadow hover:shadow-lg",
+    "group/button relative block overflow-hidden font-medium duration-700",
+    size === "small" && "px-5 py-2.5 tracking-wide text-sm",
+    size === "regular" && "px-7 py-3.5 tracking-wide",
+    size === "large" && "px-8 py-4 text-lg tracking-wider",
+    color === "green" && "bg-gradient-to-r from-green-600 to-green-700 shadow-green-800/30",
+    color === "blue" && "bg-gradient-to-r from-blue-500 to-blue-600 shadow-blue-800/30",
+    color === "pink-gradient" && "bg-gradient-to-r from-red-600 via-pink-600 to-purple-600 shadow-pink-800/30",
   );
 
   const bubbleClassName = classNames(
-    'pointer-events-none absolute right-[70%] top-[50%] aspect-square w-[150%]  rounded-full bg-black/10',
-    'transition-all duration-700 group-hover/button:-top-[100%] group-hover/button:-right-[20%]',
+    "pointer-events-none absolute right-[70%] top-[50%] aspect-square w-[150%]  rounded-full bg-black/10",
+    "transition-all duration-700 group-hover/button:-top-[100%] group-hover/button:-right-[20%]",
   );
 
-  if ('to' in props)
+  if ("to" in props)
     return (
       <a href={props.to} className={className}>
         <div className={bubbleClassName} />
@@ -43,7 +43,7 @@ export const Button = (props: Props) => {
       </a>
     );
 
-  if ('externalHref' in props)
+  if ("externalHref" in props)
     return (
       <a href={props.externalHref} className={className} target="_blank" rel="noopener noreferrer">
         <div className={bubbleClassName} />

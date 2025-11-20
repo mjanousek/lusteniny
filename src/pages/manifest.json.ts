@@ -1,7 +1,7 @@
-import type { APIRoute } from 'astro';
-import { getImage } from 'astro:assets';
-import favicon from '../images/favicon.png';
-import { settings } from '../settings';
+import type { APIRoute } from "astro";
+import { getImage } from "astro:assets";
+import favicon from "../images/favicon.png";
+import { settings } from "../settings";
 
 const faviconPngSizes = [192, 512];
 
@@ -12,7 +12,7 @@ export const GET: APIRoute = async () => {
         src: favicon,
         width: size,
         height: size,
-        format: 'png',
+        format: "png",
       });
       return {
         src: image.src,
@@ -25,9 +25,9 @@ export const GET: APIRoute = async () => {
   const manifest = {
     name: settings.title,
     description: settings.description,
-    start_url: '/',
-    display: 'standalone',
-    id: settings.color['bg-blue-50'],
+    start_url: "/",
+    display: "standalone",
+    id: settings.color["bg-blue-50"],
     icons,
   };
 
