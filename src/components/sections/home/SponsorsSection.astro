@@ -2,7 +2,7 @@
 import PatternRectangle from "@components/atoms/PatternRectangle.astro";
 import exitRoomImage from "@images/sponsors/exit_room_2.png";
 import jamfImage from "@images/sponsors/jamf.png";
-import papirflyImage from "@images/sponsors/papirfly.png";
+import mindokImage from "@images/sponsors/mindok.png";
 import zivyZlinImage from "@images/sponsors/zivy_zlin.png";
 import { Image } from "astro:assets";
 import tailwindColors from "tailwindcss/colors";
@@ -12,25 +12,25 @@ const sponsors = [
     image: zivyZlinImage,
     title: "Živý Zlín",
     link: "https://www.kulturazlin.cz/",
-    height: 52,
-  },
-  {
-    image: papirflyImage,
-    title: "Papirfly",
-    link: "https://www.papirfly.com/",
-    height: 44,
+    height: 300,
   },
   {
     image: jamfImage,
     title: "Jamf",
     link: "https://www.jamf.com/",
-    height: 66,
+    height: 300,
   },
   {
     image: exitRoomImage,
     title: "Exit room Zlín",
     link: "https://www.exitroomzlin.cz/",
-    height: 56,
+    height: 300,
+  },
+  {
+    image: mindokImage,
+    title: "Mindok",
+    link: "https://mindok.cz",
+    height: 300,
   },
 ];
 ---
@@ -62,7 +62,7 @@ const sponsors = [
             <Image
               src={sponsor.image}
               alt={sponsor.title}
-              class="h-6 w-fit overflow-hidden rounded-lg object-contain sm:h-7 md:h-auto"
+              class="max-h-12 w-fit overflow-hidden rounded-lg object-contain sm:max-h-14 md:max-h-16"
               height={sponsor.height}
               loading="eager"
             />
