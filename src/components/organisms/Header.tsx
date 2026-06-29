@@ -48,7 +48,7 @@ export const Header = () => {
               ))}
             </div>
             <div className="hidden lg:block">
-              <Button to="/#aktuality" text="Luštěniny 2026" />
+              <Button to="/udalosti/lusteniny-2026" text="Luštěniny 2026" />
             </div>
             <MenuButton
               className="flex h-11 w-11 items-center justify-center rounded-full bg-slate-300 text-slate-700 md:h-12 md:w-12 lg:hidden"
@@ -68,7 +68,7 @@ export const Header = () => {
           >
             <MenuItems
               as="div"
-              className="absolute left-0 top-full z-40 flex max-h-screen w-full flex-col overflow-hidden"
+              className="absolute top-full left-0 z-40 flex max-h-screen w-full flex-col overflow-hidden"
             >
               <nav className="flex w-full grow flex-col items-center justify-between gap-6 border-b bg-white py-8 text-center text-lg font-medium text-slate-600 shadow-xl">
                 {links.map((link) => (
@@ -81,14 +81,14 @@ export const Header = () => {
                     </a>
                   </MenuItem>
                 ))}
-                <Button to="/udalosti/lusteniny-2025" text="Luštěniny 2025" />
+                <Button to="/udalosti/lusteniny-2026" text="Luštěniny 2026" />
               </nav>
             </MenuItems>
           </Transition>
 
           <div
             className={classNames(
-              "pointer-events-none absolute left-0 top-full z-30 h-[calc(100vh-100%)] w-full bg-black/50 transition duration-300 ease-in",
+              "pointer-events-none absolute top-full left-0 z-30 h-[calc(100vh-100%)] w-full bg-black/50 transition duration-300 ease-in",
               open ? "opacity-100" : "opacity-0",
             )}
           ></div>
