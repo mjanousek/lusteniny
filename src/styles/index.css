@@ -55,15 +55,23 @@ body {
 
 .swiper-button-next,
 .swiper-button-prev {
-  @apply top-0! right-0! mt-0! h-full! px-6! text-green-600! transition! duration-300! hover:text-green-600!;
+  @apply top-0! right-0! mt-0! h-full! fill-green-600! px-6! text-green-600! transition! duration-300! hover:text-green-600!;
 }
 
 .swiper-button-next {
-  @apply right-0!;
+  @apply right-0! bg-linear-to-r from-black/0 to-black/0!;
+}
+
+.swiper-button-next:hover {
+  @apply from-black/0 to-black/10!;
 }
 
 .swiper-button-prev {
-  @apply left-0!;
+  @apply left-0! bg-linear-to-l from-black/0 to-black/0!;
+}
+
+.swiper-button-prev:hover {
+  @apply from-black/0 to-black/10!;
 }
 
 .swiper-button-next::after,

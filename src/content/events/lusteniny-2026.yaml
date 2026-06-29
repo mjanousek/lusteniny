@@ -1,0 +1,241 @@
+title: Luštěniny IX.
+description: |
+  Velké díky a potlesk 
+  Devátý ročník luštěnin je za námi. Rádi bychom vám poděkovali za vaši účast! Letos se nám sešlo 35 týmu v zhruba 120 členech! Opět o kousíček větší účast než minulý rok a my jsme za to velice rádi 🙂
+  Tímto také bychom rádi zopakovali potlesk nejen vítězům ale i všem zúčastněným, kteří se pustili do letošních šifer (jaké že bylo to téma?). V následujících dnech na web nahrajeme galerii fotek, dokonce i s mini sekvencí “pozorování zatmění slunce včetně ochranných pomůcek” - na její vychutnání si určitě počkejte.
+  Dále také zveřejníme kompletní bodovou tabulky včetně dalších statistik a nakonec pak na našem webu naleznete i zadání a řešení všech šifer.
+  Pokud budete mít ještě na srdci něco co by jste nám rádi sdělili (jakože to bylo třeba moc jednoduché), tak nám napište zde na sítích, nebo využijte email info@lusteniny.eu. Budeme rádi za vaši zprávu 🙂
+  Zatím ještě jednou díky a luštění zdar 🫛
+date: 2026-06-13
+image: ../../images/2026/Lusteniny2026.jpg
+images:
+  # up to 39
+  - ../../images/2026/Photos/Photo_1.JPG
+  - ../../images/2026/Photos/Photo_2.JPG
+  - ../../images/2026/Photos/Photo_3.JPG
+  - ../../images/2026/Photos/Photo_4.JPG
+  - ../../images/2026/Photos/Photo_5.JPG
+  - ../../images/2026/Photos/Photo_6.JPG
+  - ../../images/2026/Photos/Photo_7.JPG
+  - ../../images/2026/Photos/Photo_8.JPG
+  - ../../images/2026/Photos/Photo_9.JPG
+  - ../../images/2026/Photos/Photo_10.JPG
+  - ../../images/2026/Photos/Photo_11.JPG
+  - ../../images/2026/Photos/Photo_12.JPG
+  - ../../images/2026/Photos/Photo_13.JPG
+  - ../../images/2026/Photos/Photo_14.JPG
+  - ../../images/2026/Photos/Photo_15.JPG
+  - ../../images/2026/Photos/Photo_16.JPG
+  - ../../images/2026/Photos/Photo_17.JPG
+  - ../../images/2026/Photos/Photo_18.JPG
+  - ../../images/2026/Photos/Photo_19.JPG
+  - ../../images/2026/Photos/Photo_20.JPG
+  - ../../images/2026/Photos/Photo_21.JPG
+  - ../../images/2026/Photos/Photo_22.JPG
+  - ../../images/2026/Photos/Photo_23.JPG
+  - ../../images/2026/Photos/Photo_24.JPG
+  - ../../images/2026/Photos/Photo_25.JPG
+  - ../../images/2026/Photos/Photo_26.JPG
+  - ../../images/2026/Photos/Photo_27.JPG
+  - ../../images/2026/Photos/Photo_28.JPG
+  - ../../images/2026/Photos/Photo_29.JPG
+  - ../../images/2026/Photos/Photo_30.JPG
+  - ../../images/2026/Photos/Photo_31.JPG
+  - ../../images/2026/Photos/Photo_32.JPG
+  - ../../images/2026/Photos/Photo_33.JPG
+  - ../../images/2026/Photos/Photo_34.JPG
+  - ../../images/2026/Photos/Photo_35.JPG
+  - ../../images/2026/Photos/Photo_36.JPG
+  - ../../images/2026/Photos/Photo_37.JPG
+  - ../../images/2026/Photos/Photo_38.JPG
+  - ../../images/2026/Photos/Photo_39.JPG
+
+galleryLink: "https://www.facebook.com/lusteniny/Photos_albums"
+winners:
+  - "Abakus"
+  - "Kdesi v lusku"
+  - "Proudoví krtci"
+cyphers:
+  - title: Svačinka na začátek
+    image: ../../images/2026/Lusteniny2026-Svacinka.jpg
+    hints:
+      - Počet kusů určuje pořadí písmene v názvu potraviny
+    steps:
+      - Na obrázku je svačinka, ve které jsou různé potraviny.
+      - U každé potraviny si nejprve spočítej, kolik kusů na obrázku vidíš.
+      - Tento počet určuje, které písmeno z názvu potraviny použiješ - vezmi tolikáté písmeno z názvu dané potraviny.
+      - "Příklad: Na obrázku jsou 4 bábovky = 4. písmeno je O"
+      - Seřaď písmena podle klíče 523343.
+      - 5 jablko, 2 hrach, 3 hruška, 3 citron, 4 bábovka, 3 banány
+    solution: KRUTON
+
+  - title: Sůl a pepř
+    image: ../../images/2026/Lusteniny2026-SulAPepr.jpg
+    hints:
+      - Pootoč s mlýnky podle značek
+    steps:
+      - Pootoč mlýnky podle značek tak, aby značky (▼, ▲) byly nad sebou
+      - Sloupce mlýnku dáme nad sebe a v jednom sloupci nám vyjde výsledek
+    solution: TIRAMISU
+
+  - title: Kolečka
+    image: ../../images/2026/Lusteniny2026-Kolecka.jpg
+    hints:
+      - Vytrhejte si jednotlivé vrstvy/kolečka a přikládejte je na sebe.
+    steps:
+      - Každé kolečko je jedna vrstva hamburgeru, bulka, omáčka, maso, sýr, atd…
+      - Nejprve musíte vrstvy osvobodit z papíru (vytrhat) a seřadit / poskládat jako hamburger (obecný konsenzus pořadí je bulka, omáčka, maso, sýr, karamelizovaná cibulka, horní bulka, propíchnout špejlí)
+      - Pak vzít vždy 2 sousedící vrstvy, položit na sebe aby se horní tečka překrývala a z mezery mezi slovy horní vrstvy se vyrýsuje slovo ze spodní vrstvy. Poté vezmete X té písmeno z daného slova kde X je počet které má daná vrstva na sobě.
+      - Tedy pro vrstvu 1 a 2 (bulka a omáčka) vám vyjde slovo “droždí” a vrstva 1 má jednu tečku, tedy vezmete písmeno “d”
+      - Pak na sebe přiložíte vrstvu 2 a 3 (omáčka, maso) kde vám vyjde “majonézy” a jelikož vrstva 2 má 4 tečky, vyjde písmeno “o”
+      - Takto budete pokračovat přes všechny vrstvy až dostanete “dortí” a pak vám zbyde už jen špejle složená z písmene “k” čímž vyjde kompletní výsledek “dortík”
+    solution: DORTIK
+
+  - title: La pizzeria dei legumi
+    images:
+      - ../../images/2026/Lusteniny2026-Pizzeria-1.jpg
+      - ../../images/2026/Lusteniny2026-Pizzeria-2.jpg
+    hints:
+      - Identifikuj správnou pizzu.
+    steps:
+      - "V jídelním lístku je 26 pizz. Každá z nich představuje jedno písmeno abecedy:"
+      - 1. Margherita = A
+      - 2. Prosciutto = B
+      - …
+      - Dále máte k dispozici lístky s objednávkami od jednotlivých stolů, které musíte seřadit podle počtu piv.
+      - Jakmile je máte seřazeny, už jen stačí k pizzám na lískách přiřadit odpovídající písmena.
+      - "Má to ale ještě jeden háček. Pokud se budete orientovat pouze podle názvů pizz na objednávkách, dostanete falešné řešení: JAHODOVA LIMO"
+      - "Musíte totiž zohlednit přidané nebo odebrané ingredience. Například pokud je na objednávce:"
+      - Margh. (+žamp,)
+      - Nejedná se o 1. Margherita, ale o 5. Funghi. Tj. písmeno nebude A, ale E
+    solution: JABLKOVE LIPO
+
+  - title: Polední menu
+    images:
+      - ../../images/2026/Lusteniny2026-PoledniMenu-1.jpg
+      - ../../images/2026/Lusteniny2026-PoledniMenu-2.jpg
+      - ../../images/2026/Lusteniny2026-PoledniMenu-3.jpg
+    hints:
+      - Luštěniny! A pozor na alergie.
+    steps:
+      - V poledním menu jsou názvy jídel. Je potřeba vybrat jídla obsahující luštěniny.
+      - U těchto jídel je možné si všimnout, že jedny alergeny nejsou seřazeny vzestupně jako všechny ostatní. To byla snaha o malou nápovědu.
+      - Tedy už stačí jen vybrat písmena z názvu jídla podle čísel alergenů (mezery se přeskakují).
+      - Pokud jsou alergeny [1, 7] pak vybíráme 1. a 7. písmeno.
+    solution: INTERNAT
+
+  - title: Pastva pro uši
+    image: ../../images/2026/Lusteniny2026-PastvaProUsi.jpg
+    hints:
+      - Najdi pokrm nebo pití z písně - nemusí být nutně v názvu samotné písně!
+    steps:
+      - V nahrávce se nachází úryvky písní (bez zpěvu), ve kterých se zpívá o jednom pokrmu či jídle
+      - Čerešně - Hana Hegerová
+      - Vilém Peče Housky - Naďa Urbánková
+      - Vínečko bílé - Lidová
+      - Pramen zdraví z Posázaví - Svěrák, Uhlíř
+      - Jarošovský pivovar - Argema
+      - Jahody Mražený - Jiří Schellinger
+      - Některé písně jsou jasné, nicméně u pramenu zdraví je potřeba vzpomenout o čem se to vlastně zpívá, byť název pokrmu v písni nezazní
+      - Vyjde tedy
+      - Čerešně
+      - Housky
+      - Vínečko
+      - Pribináček
+      - Pivo
+      - Jahody
+      - Stopneme si jak dlouho hraje stopy jednotlivý písní a délka nám ukáže na dané písmeno
+      - Čerešně - 17s -> R
+      - Housky - 15s -> U
+      - Vínečko - 20s -> K
+      - Pribináček - 17s -> Á
+      - Pivo - 23s -> V
+      - Jahody - 24s -> Y
+    solution: RUKAVY
+
+  - title: Na Houby
+    images:
+      - ../../images/2026/Lusteniny2026-NaHouby-1.jpg
+      - ../../images/2026/Lusteniny2026-NaHouby-2.jpg
+    hints:
+      - Neotravte se - pracujte pouze s jedlými houbami
+    steps:
+      - Je potřeba pracovat pouze s jedlými houbami. Je-li houba jedlá nebo jedovatá lze poznat podle znaku na listu z knihy v pravém, či levém dolním rohu.
+      - "Poté pokud si vezmeme čísla u každé jedlé houby z pravého horního rohu a vyjdou nám dvojice. Například:"
+      - 1 - Suchohřib uťatovýtrusý a Hřib dubový
+      - 2 - Klouzek zrnitý a Hřib dubový
+      - 3 - Suchohřib uťatovýtrusý a Mechovka obecná
+      - atd…
+      - Na mapě najdeme pro každou tuto dvojici průnik jejich zón a ty se protínají pouze v jednom písmenu.
+      - Pro dvojici číslo 1 je to “d” z názvu Napajedla
+      - Pro dvojici číslo 2 je to “e” z názvu Holešov
+      - "Takto pak sestavíte celý výsledek: D E Z E R T"
+    solution: DEZERT
+
+  - title: Fish à la Crème
+    images:
+      - ../../images/2026/Lusteniny2026-FischAlaCrem-1.jpg
+      - ../../images/2026/Lusteniny2026-FischAlaCrem-2.jpg
+      - ../../images/2026/Lusteniny2026-FischAlaCrem-3.jpg
+      - ../../images/2026/Lusteniny2026-FischAlaCrem-4.jpg
+    hints:
+      - Každá ryba ukrývá zašifrovanou hádanku, šifra je dána pořadím objednávek v sekci „Přílohy a další objednávky“.
+    steps:
+      - Každá ryba obsahuje zašifrovanou hádanku.
+      - "Podle pořadí objednávek v sekci „Přílohy a další objednávky“ použij šifru k dešifrování každé hádanky následovně:"
+      - 7x Caesar Salad small -> Použij Caesarovu šifru s posunem „7“
+      - 1x Beaufort „Fish“ Stew -> Použij Beaufortovu šifru s klíčem „FISH“
+      - 1x „Pinot“ 're Vigenère région -> Použij Vigenèrovu šifru s klíčem „PINOT“
+      - 1x Mir'athbash Bread -> Použij šifru Atbash
+      - 1x Tarte Tatin (v češtině „obrácený koláč“) -> Jednoduchý revers (čtení odzadu dopředu)
+      - 4x Caesar Salad regular ->Použij Caesarovu šifru s posunem „4“
+      - Jednotlivé hádanky jsou převzaty z knihy „Hobit“, kapitola „Hádanky ve tmě“.
+      - V každé rybě je zvýrazněn jeden sloupec, po výběru správného písmene z odpovědi na hádanku získáme následující řešení šifry
+      - B - zuBy
+      - I - vItr
+      - S - caS
+      - T - Tma
+      - R - Ryba
+      - O - hOra
+    solution: BLOK
+
+bonusInformation:
+  - title: Svačinka na začátek
+    text: |
+      Slovo svačina má docela zajímavý původ. Neobjevuje se ve většině slovanských jazyků a jazykovědci ho dávají do souvislosti se slovem svak, tedy švagr. Původně prý označovalo jídlo, které se jedlo před svátky při rodinných setkáních. 
+      Dnes už je z toho úplně běžná věc, malé jídlo mezi hlavními chody, které si během dne dává skoro každý.
+  - title: Sůl a pepř
+    text: |
+      Věděl jsi, že za obrovskou popularitou tiramisù v Americe stojí částečně Hollywood? 
+      Ve filmu Sleepless in Seattle z roku 1993 Tom Hanks záhadně zmíní tiramisu jako něco, co ženy prostě milují — a právě tato zmínka vyvolala v USA obrovský zájem o tento dezert. 
+      A popularita pak rostla dál: v Číně je tiramisu nejklikatelnější italské slovo na internetu a italská Akademie Crusca oficiálně potvrdila, že slovo „tiramisu" je mezinárodně rozšířeným „gastronomickým italismem" přítomným ve 23 různých jazycích.
+  - title: Kolečka
+    text: |
+      Původně to byla jen hovězí placka z mletého masa, jak se stále interpretuje v mnoha jazycích, a název „hamburger“ může být odkazem na mleté hovězí maso prodávané v Hamburku. 
+      Důkazy také naznačují, že Spojené státy byly první zemí, která vytvořila „hamburger“, jak je známý dnes, kde dva krajíce chleba a hovězí placka z mletého masa byly sloučeny do „hamburgerového sendviče“ a prodávány jako sandwich. Hamburger brzy obsahoval všechny své současné charakteristické přísady, včetně cibule, hlávkového salátu a nakrájených okurek.
+      O původu hamburgeru stále existují určité kontroverze - hlavně proto, že jeho dvě základní ingredience, chléb a hovězí maso, se v mnoha zemích po mnoho let připravovaly a konzumovaly odděleně, než došlo k jejich spojení. 
+      Po různých kontroverzích ve 20. století, včetně nutriční kontroverze na konci 90. let, je však burger nyní snadno ztotožňován se Spojenými státy a také se specifickým stylem americké kuchyně, konkrétně s rychlým občerstvením. Spolu se smaženým kuřetem a jablečným koláčem se hamburger stal kulinářskou ikonou ve Spojených státech.
+
+  - title: La pizzeria dei legumi
+    text: |
+      Ovocné bonbony LIPO existují už od roku 1927 a původně je vyráběl obchodník Eduard Haas z Lince pod mezinárodně známou značkou PEZ. Až později se výroba přesunula do Liberce-Ruprechtic, kde v roce 1968 vznikl název LIPO.
+      Ano, ta stejná značka PEZ, jejíž plastové zásobníky s figurkami zná dnes celý svět. Cukrovinka byla původně oblíbená v nóbl kruzích jako alternativa zaměstnávající ústa namísto kouření, se sloganem „Nekouřit – PEZing povolen!”
+
+  - title: Polední menu
+    text: |
+      Luštěniny mají vysoký obsah bílkovin. Běžně obsahují sacharidy krátkých řetězců, které, ač nestravitelné lidským trávicím ústrojím, jsou tráveny bakteriemi nacházejícími se v tlustém střevě, což bohužel způsobuje nadýmání. Nicméně dále obsahují značné množství vitaminů skupiny B, poměrně dostatek minerálů jako jsou vápník, fosfor a železo.
+      Díky vysokému obsahu bílkovin jsou velmi důležitým prvkem ve stravě vegetariánů. Velmi vhodné jsou také pro diabetiky, snižují hladinu cukru v krvi, neboť mají nízkou hladinu glykemického indexu.
+      Až na sóju a podzemnici olejnou jsou všechny chudé na tuky.
+
+  - title: Pastva pro uši
+    text: |
+      Na první pohled se může zdát, že vybrané skladby k sobě příliš neladí. Ve skutečnosti ale tvoří pestré degustační menu české a slovenské populární hudby. Jako předkrm se podává moravský folklór (Vínečko bílé), následuje šansonové sousto v podobě Čerešní, lehčí chod televizní tvorby (Vilém peče housky) a filmová specialita (Pramen zdraví z Posázaví). 
+      Hlavní chod obstarává folkrockový Jarošovský pivovar a celé menu uzavírá rockový dezert Jahody mražený. Výsledkem je překvapivě vyvážená ochutnávka žánrů, které by se na jednom talíři běžně nesešly.
+
+  - title: Na Houby
+    text: |
+      Jedlé druhy slouží jako potravina s malou kalorickou hodnotou nebo jako pochutina. Jsou bohaté na vitamíny a minerální látky. Z hlediska poživatelnosti se zpravidla rozlišují na jedlé houby, nejedlé houby a jedovaté houby, které sice nejsou početné, ale kvůli obsahu prudkých jedů jsou nebezpečné.
+  - title: Fish à la Crème
+    text: |
+      Hádanky ve tmě z knihy „Hobit“ patří mezi nejznámější literární souboje důvtipu. Nejde v nich jen o správnou odpověď, ale o schopnost uvažovat v obrazech, metaforách a skrytých významech.
+      J. R. R. Tolkien je přitom původně vymyslel jako jazykovou hru, která měla ukázat, jak bohatý a hravý může být starý anglický folklor.
