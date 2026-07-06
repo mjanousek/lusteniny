@@ -1,6 +1,6 @@
 title: Luštěniny IX.
 description: |
-  Velké díky a potlesk 
+  Velké díky a potlesk
   Devátý ročník luštěnin je za námi. Rádi bychom vám poděkovali za vaši účast! Letos se nám sešlo 35 týmu v zhruba 120 členech! Opět o kousíček větší účast než minulý rok a my jsme za to velice rádi 🙂
   Tímto také bychom rádi zopakovali potlesk nejen vítězům ale i všem zúčastněným, kteří se pustili do letošních šifer (jaké že bylo to téma?). V následujících dnech na web nahrajeme galerii fotek, dokonce i s mini sekvencí “pozorování zatmění slunce včetně ochranných pomůcek” - na její vychutnání si určitě počkejte.
   Dále také zveřejníme kompletní bodovou tabulky včetně dalších statistik a nakonec pak na našem webu naleznete i zadání a řešení všech šifer.
@@ -122,7 +122,7 @@ cyphers:
       - U těchto jídel je možné si všimnout, že jedny alergeny nejsou seřazeny vzestupně jako všechny ostatní. To byla snaha o malou nápovědu.
       - Tedy už stačí jen vybrat písmena z názvu jídla podle čísel alergenů (mezery se přeskakují).
       - Pokud jsou alergeny [1, 7] pak vybíráme 1. a 7. písmeno.
-    solution: INTERNAT
+    solution: ŠIFROVAČKA
 
   - title: Pastva pro uši
     image: ../../images/2026/Lusteniny2026-PastvaProUsi.jpg
@@ -197,23 +197,23 @@ cyphers:
       - T - Tma
       - R - Ryba
       - O - hOra
-    solution: BLOK
+    solution: BISTRO
 
 bonusInformation:
   - title: Svačinka na začátek
     text: |
-      Slovo svačina má docela zajímavý původ. Neobjevuje se ve většině slovanských jazyků a jazykovědci ho dávají do souvislosti se slovem svak, tedy švagr. Původně prý označovalo jídlo, které se jedlo před svátky při rodinných setkáních. 
+      Slovo svačina má docela zajímavý původ. Neobjevuje se ve většině slovanských jazyků a jazykovědci ho dávají do souvislosti se slovem svak, tedy švagr. Původně prý označovalo jídlo, které se jedlo před svátky při rodinných setkáních.
       Dnes už je z toho úplně běžná věc, malé jídlo mezi hlavními chody, které si během dne dává skoro každý.
   - title: Sůl a pepř
     text: |
-      Věděl jsi, že za obrovskou popularitou tiramisù v Americe stojí částečně Hollywood? 
-      Ve filmu Sleepless in Seattle z roku 1993 Tom Hanks záhadně zmíní tiramisu jako něco, co ženy prostě milují — a právě tato zmínka vyvolala v USA obrovský zájem o tento dezert. 
+      Věděl jsi, že za obrovskou popularitou tiramisù v Americe stojí částečně Hollywood?
+      Ve filmu Sleepless in Seattle z roku 1993 Tom Hanks záhadně zmíní tiramisu jako něco, co ženy prostě milují — a právě tato zmínka vyvolala v USA obrovský zájem o tento dezert.
       A popularita pak rostla dál: v Číně je tiramisu nejklikatelnější italské slovo na internetu a italská Akademie Crusca oficiálně potvrdila, že slovo „tiramisu" je mezinárodně rozšířeným „gastronomickým italismem" přítomným ve 23 různých jazycích.
   - title: Kolečka
     text: |
-      Původně to byla jen hovězí placka z mletého masa, jak se stále interpretuje v mnoha jazycích, a název „hamburger“ může být odkazem na mleté hovězí maso prodávané v Hamburku. 
+      Původně to byla jen hovězí placka z mletého masa, jak se stále interpretuje v mnoha jazycích, a název „hamburger“ může být odkazem na mleté hovězí maso prodávané v Hamburku.
       Důkazy také naznačují, že Spojené státy byly první zemí, která vytvořila „hamburger“, jak je známý dnes, kde dva krajíce chleba a hovězí placka z mletého masa byly sloučeny do „hamburgerového sendviče“ a prodávány jako sandwich. Hamburger brzy obsahoval všechny své současné charakteristické přísady, včetně cibule, hlávkového salátu a nakrájených okurek.
-      O původu hamburgeru stále existují určité kontroverze - hlavně proto, že jeho dvě základní ingredience, chléb a hovězí maso, se v mnoha zemích po mnoho let připravovaly a konzumovaly odděleně, než došlo k jejich spojení. 
+      O původu hamburgeru stále existují určité kontroverze - hlavně proto, že jeho dvě základní ingredience, chléb a hovězí maso, se v mnoha zemích po mnoho let připravovaly a konzumovaly odděleně, než došlo k jejich spojení.
       Po různých kontroverzích ve 20. století, včetně nutriční kontroverze na konci 90. let, je však burger nyní snadno ztotožňován se Spojenými státy a také se specifickým stylem americké kuchyně, konkrétně s rychlým občerstvením. Spolu se smaženým kuřetem a jablečným koláčem se hamburger stal kulinářskou ikonou ve Spojených státech.
 
   - title: La pizzeria dei legumi
@@ -229,7 +229,7 @@ bonusInformation:
 
   - title: Pastva pro uši
     text: |
-      Na první pohled se může zdát, že vybrané skladby k sobě příliš neladí. Ve skutečnosti ale tvoří pestré degustační menu české a slovenské populární hudby. Jako předkrm se podává moravský folklór (Vínečko bílé), následuje šansonové sousto v podobě Čerešní, lehčí chod televizní tvorby (Vilém peče housky) a filmová specialita (Pramen zdraví z Posázaví). 
+      Na první pohled se může zdát, že vybrané skladby k sobě příliš neladí. Ve skutečnosti ale tvoří pestré degustační menu české a slovenské populární hudby. Jako předkrm se podává moravský folklór (Vínečko bílé), následuje šansonové sousto v podobě Čerešní, lehčí chod televizní tvorby (Vilém peče housky) a filmová specialita (Pramen zdraví z Posázaví).
       Hlavní chod obstarává folkrockový Jarošovský pivovar a celé menu uzavírá rockový dezert Jahody mražený. Výsledkem je překvapivě vyvážená ochutnávka žánrů, které by se na jednom talíři běžně nesešly.
 
   - title: Na Houby
